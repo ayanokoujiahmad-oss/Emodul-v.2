@@ -7,7 +7,7 @@
 
 import { initializeApp, type FirebaseApp } from 'firebase/app';
 import { getAuth, type Auth } from 'firebase/auth';
-import { getFirestore, type Firestore } from 'firebase/firestore';
+import { initializeFirestore, type Firestore } from 'firebase/firestore';
 
 type PublicEnvKey =
   | 'VITE_DEMO_MODE'
@@ -70,7 +70,9 @@ if (isFirebaseConfigured) {
     // credential without replacing the teacher's own session.
     const studentProvisioningApp = initializeApp(firebaseConfig, 'student-provisioning');
     studentProvisioningAuth = getAuth(studentProvisioningApp);
-    db = getFirestore(app);
+    db = initializeFirestore(app, {
+      experimentalForceLongPolling: true,
+    });
     console.info(
       `[Firebase] ✅ Terhubung ke project: ${firebaseConfig.projectId}`,
     );
