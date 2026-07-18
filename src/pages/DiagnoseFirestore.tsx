@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { db, auth, isFirebaseConfigured } from '../lib/firebase';
+import { app, db, auth, isFirebaseConfigured } from '../lib/firebase';
 import { getDoc, doc } from 'firebase/firestore';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
@@ -17,6 +17,19 @@ export default function DiagnoseFirestore() {
     setRunning(true);
     log('Mulai diagnosis koneksi Firebase...');
     log(`Configured: ${isFirebaseConfigured}`);
+
+    // Print Firebase Config (API key masked)
+    log(`Firebase Config loaded:`);
+    if (app) {
+      log(`- apiKey: ${app.options.apiKey ? app.options.apiKey.substring(0, 6) + '...' + app.options.apiKey.substring(app.options.apiKey.length - 4) : '(empty)'}`);
+      log(`- authDomain: ${app.options.authDomain || '(empty)'}`);
+      log(`- projectId: ${app.options.projectId || '(empty)'}`);
+      log(`- storageBucket: ${app.options.storageBucket || '(empty)'}`);
+      log(`- messagingSenderId: ${app.options.messagingSenderId || '(empty)'}`);
+      log(`- appId: ${app.options.appId || '(empty)'}`);
+    } else {
+      log('- Firebase App instance is null');
+    }
 
     if (typeof window !== 'undefined') {
       log(`Window location: ${window.location.href}`);
