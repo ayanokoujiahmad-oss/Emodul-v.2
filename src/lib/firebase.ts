@@ -7,7 +7,7 @@
 
 import { initializeApp, type FirebaseApp } from 'firebase/app';
 import { getAuth, type Auth } from 'firebase/auth';
-import { initializeFirestore, type Firestore } from 'firebase/firestore';
+import { initializeFirestore, type Firestore, setLogLevel } from 'firebase/firestore';
 
 type PublicEnvKey =
   | 'VITE_DEMO_MODE'
@@ -64,6 +64,7 @@ let db: Firestore | null = null;
 
 if (isFirebaseConfigured) {
   try {
+    setLogLevel('debug');
     app = initializeApp(firebaseConfig);
     auth = getAuth(app);
     // A second Auth instance lets a logged-in teacher create a student
