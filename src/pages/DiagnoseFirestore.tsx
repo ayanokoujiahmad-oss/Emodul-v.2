@@ -40,6 +40,20 @@ export default function DiagnoseFirestore() {
     const projectId = db ? (db as any)._databaseId?.projectId || 'Not accessible' : 'Null db';
     log(`Firestore Project ID dari instance: ${projectId}`);
 
+    // Test unauthenticated Firestore read before logging in
+    log('Menguji Firestore Read Tanpa Login (seharusnya PERMISSION_DENIED)...');
+    try {
+      if (!db) throw new Error('DB is null');
+      const docRef = doc(db, 'settings', 'test-id');
+      const unauthTimeout = new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error('TIMEOUT: getDoc Tanpa Login tidak merespon setelah 6 detik')), 6000)
+      );
+      await Promise.race([getDoc(docRef), unauthTimeout]);
+      log('Unauthenticated read succeeded (unexpected!)');
+    } catch (unauthErr: any) {
+      log(`Unauthenticated read result: ${unauthErr.message || String(unauthErr)}`);
+    }
+
     // 2. Auth Test
     log('Menguji Firebase Auth...');
     try {
