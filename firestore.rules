@@ -79,7 +79,8 @@ service cloud.firestore {
         && changed.hasOnly([
           'uid', 'currentStep', 'submissionStatus', 'submittedAt',
           'quizScore', 'quizCorrect', 'quizTotal', 'scoreStatus',
-          'badges', 'badgeEarned'
+          'badges', 'badgeEarned',
+          'studentUid', 'guruId', 'topicId', 'moduleId'
         ])
         && (!changed.hasAny(['quizScore']) || validPercent(request.resource.data.quizScore))
         && (!changed.hasAny(['scoreStatus']) || request.resource.data.scoreStatus == 'pending_teacher')
@@ -130,7 +131,8 @@ service cloud.firestore {
           'uid', 'step', 'answers', 'simulationResult', 'mcAnswers',
           'textAnswers', 'simulationScore', 'quizScore', 'quizCorrect',
           'quizTotal', 'isDraft', 'lastSaved', 'submittedAt',
-          'page2ActivitySubmitted', 'page2ActivitySubmittedAt'
+          'page2ActivitySubmitted', 'page2ActivitySubmittedAt',
+          'studentUid', 'guruId', 'topicId', 'moduleId'
         ])
         && validOptionalPercent(request.resource.data, 'quizScore')
         && validOptionalPercent(request.resource.data, 'simulationScore');
@@ -157,7 +159,8 @@ service cloud.firestore {
         && request.resource.data.guruId == resource.data.guruId
         && changed.hasOnly([
           'preTestScore', 'postTestScore', 'totalScore',
-          'nGainScore', 'nGain', 'createdAt', 'completedAt'
+          'nGainScore', 'nGain', 'createdAt', 'completedAt',
+          'studentUid', 'guruId', 'moduleId'
         ])
         && validModuleGradePayload(request.resource.data)
         && (!changed.hasAny(['preTestScore']) || !('preTestScore' in resource.data))
