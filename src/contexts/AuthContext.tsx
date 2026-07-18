@@ -6,6 +6,19 @@ import {
   useCallback,
   type ReactNode,
 } from 'react';
+import {
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signOut,
+  createUserWithEmailAndPassword,
+  sendPasswordResetEmail,
+} from 'firebase/auth';
+import {
+  doc,
+  getDoc,
+  setDoc,
+  updateDoc,
+} from 'firebase/firestore';
 import { auth, db, isFirebaseConfigured } from '../lib/firebase';
 import { safeLog } from '../lib/safeLog';
 import { studentEmailFromUsername } from '../lib/studentAuth';
@@ -94,7 +107,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const fetchProfile = useCallback(async (uid: string) => {
     if (!db) return;
     try {
-      const { doc, getDoc } = await import('firebase/firestore');
       // Race getDoc against a timeout to prevent hanging when Firestore
       // persistence hasn't established a server connection yet.
       const timeoutPromise = new Promise<never>((_, reject) =>
@@ -136,33 +148,31 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       }
     }, 8000);
 
-    import('firebase/auth').then(({ onAuthStateChanged }) => {
-      unsubscribe = onAuthStateChanged(
-        auth!,
-        async (firebaseUser) => {
-          if (firebaseUser) {
-            setUser({ uid: firebaseUser.uid });
-            await fetchProfile(firebaseUser.uid);
-          } else {
-            setUser(null);
-            setUserProfile(null);
-          }
-          if (!resolved) {
-            resolved = true;
-            clearTimeout(safetyTimer);
-            setLoading(false);
-          }
-        },
-        (err) => {
-          safeLog('error', 'AuthContext.onAuthStateChanged', err);
-          if (!resolved) {
-            resolved = true;
-            clearTimeout(safetyTimer);
-            setLoading(false);
-          }
-        },
-      );
-    });
+    unsubscribe = onAuthStateChanged(
+      auth!,
+      async (firebaseUser) => {
+        if (firebaseUser) {
+          setUser({ uid: firebaseUser.uid });
+          await fetchProfile(firebaseUser.uid);
+        } else {
+          setUser(null);
+          setUserProfile(null);
+        }
+        if (!resolved) {
+          resolved = true;
+          clearTimeout(safetyTimer);
+          setLoading(false);
+        }
+      },
+      (err) => {
+        safeLog('error', 'AuthContext.onAuthStateChanged', err);
+        if (!resolved) {
+          resolved = true;
+          clearTimeout(safetyTimer);
+          setLoading(false);
+        }
+      },
+    );
 
     return () => {
       clearTimeout(safetyTimer);
@@ -202,8 +212,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         'Login resmi tidak tersedia di Mode Demo. Gunakan tombol demo atau aktifkan Firebase.',
       );
     }
-    const { signInWithEmailAndPassword } = await import('firebase/auth');
-    const { doc, updateDoc } = await import('firebase/firestore');
     const credential = await signInWithEmailAndPassword(auth, email, password);
     try {
       if (db) {
@@ -244,8 +252,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           'Username atau password salah. Pastikan Anda menggunakan akun demo yang tersedia.',
         );
       }
-      const { signInWithEmailAndPassword, signOut } = await import('firebase/auth');
-      const { doc, getDoc, updateDoc } = await import('firebase/firestore');
 
       const credential = await signInWithEmailAndPassword(
         auth,
@@ -300,8 +306,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           'Pendaftaran guru memerlukan koneksi Firebase. Pastikan VITE_DEMO_MODE=false dan konfigurasi Firebase terisi di .env.',
         );
       }
-      const { createUserWithEmailAndPassword } = await import('firebase/auth');
-      const { doc, setDoc } = await import('firebase/firestore');
 
       const credential = await createUserWithEmailAndPassword(
         auth,
@@ -337,7 +341,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         'Reset password memerlukan koneksi Firebase. Fitur ini tidak tersedia di Mode Demo.',
       );
     }
-    const { sendPasswordResetEmail } = await import('firebase/auth');
     await sendPasswordResetEmail(auth, email);
   }, []);
 
@@ -345,7 +348,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const logout = useCallback(async () => {
     if (auth) {
       try {
-        const { signOut } = await import('firebase/auth');
         await signOut(auth);
       } catch (err: unknown) {
         safeLog('error', 'AuthContext.logout', err);
