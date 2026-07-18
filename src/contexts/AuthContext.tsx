@@ -255,22 +255,32 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       // Firebase Auth verifies the password before the profile is read.
       // Students can therefore never enumerate the accounts collection.
+      // Race getDoc against a timeout to prevent hanging when Firestore
+      // persistence hasn't established a connection yet.
+      const timeoutPromise = new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error('Koneksi ke database terlalu lama. Coba lagi.')), 8000)
+      );
+
+      let profileSnap;
       try {
-        const profileSnap = await getDoc(doc(db, 'users', credential.user.uid));
-        if (!profileSnap.exists() || profileSnap.data().role !== 'siswa') {
-          await signOut(auth);
-          throw new Error('Akun siswa tidak ditemukan');
-        }
-        setUserProfile(profileSnap.data() as UserProfile);
+        profileSnap = await Promise.race([
+          getDoc(doc(db, 'users', credential.user.uid)),
+          timeoutPromise,
+        ]);
       } catch (err: unknown) {
-        safeLog('error', 'AuthContext.loginStudent.verifyProfile', err);
-        throw new Error('Akun siswa tidak dapat digunakan. Hubungi guru.');
+        safeLog('error', 'AuthContext.loginStudent.getProfile', err);
+        // Don't sign out – user is authenticated, profile will load via onAuthStateChanged
+        const msg = err instanceof Error ? err.message : 'Gagal memuat profil.';
+        throw new Error(msg);
       }
 
-      // 2. Verify password (simple comparison — these are teacher-generated)
-      // 3. Sign in anonymously to get a Firebase UID
-      // 4. Link the anonymous UID to the account
-      // 5. Create / update the /users profile
+      if (!profileSnap.exists() || profileSnap.data().role !== 'siswa') {
+        await signOut(auth);
+        throw new Error('Akun siswa tidak ditemukan. Hubungi guru.');
+      }
+
+      setUserProfile(profileSnap.data() as UserProfile);
+
       try {
         await updateDoc(doc(db, 'users', credential.user.uid), {
           lastLogin: Date.now(),

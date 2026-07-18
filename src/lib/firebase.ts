@@ -7,7 +7,7 @@
 
 import { initializeApp, type FirebaseApp } from 'firebase/app';
 import { getAuth, type Auth } from 'firebase/auth';
-import { initializeFirestore, persistentLocalCache, persistentMultipleTabManager, type Firestore } from 'firebase/firestore';
+import { initializeFirestore, persistentLocalCache, persistentSingleTabManager, type Firestore } from 'firebase/firestore';
 
 type PublicEnvKey =
   | 'VITE_DEMO_MODE'
@@ -72,7 +72,7 @@ if (isFirebaseConfigured) {
     studentProvisioningAuth = getAuth(studentProvisioningApp);
     db = initializeFirestore(app, {
       localCache: persistentLocalCache({
-        tabManager: persistentMultipleTabManager(),
+        tabManager: persistentSingleTabManager({ forceOwnership: true }),
       }),
     });
     console.info(
