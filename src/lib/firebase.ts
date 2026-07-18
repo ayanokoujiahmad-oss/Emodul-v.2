@@ -7,7 +7,7 @@
 
 import { initializeApp, type FirebaseApp } from 'firebase/app';
 import { getAuth, type Auth } from 'firebase/auth';
-import { initializeFirestore, persistentLocalCache, persistentSingleTabManager, type Firestore } from 'firebase/firestore';
+import { getFirestore, type Firestore } from 'firebase/firestore';
 
 type PublicEnvKey =
   | 'VITE_DEMO_MODE'
@@ -70,11 +70,7 @@ if (isFirebaseConfigured) {
     // credential without replacing the teacher's own session.
     const studentProvisioningApp = initializeApp(firebaseConfig, 'student-provisioning');
     studentProvisioningAuth = getAuth(studentProvisioningApp);
-    db = initializeFirestore(app, {
-      localCache: persistentLocalCache({
-        tabManager: persistentSingleTabManager({ forceOwnership: true }),
-      }),
-    });
+    db = getFirestore(app);
     console.info(
       `[Firebase] ✅ Terhubung ke project: ${firebaseConfig.projectId}`,
     );
