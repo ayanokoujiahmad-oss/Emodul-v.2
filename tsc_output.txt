@@ -1,0 +1,899 @@
+src/components/common/StepComponents.tsx(4600,6): error TS17008: JSX element 'StepWrapper' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(4602,8): error TS17008: JSX element 'div' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(4617,7): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(5166,7): error TS17002: Expected corresponding JSX closing tag for 'div'.
+src/components/common/StepComponents.tsx(5168,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5175,18): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(5175,51): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(5176,34): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(5176,39): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5178,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5184,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(5185,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(5185,46): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(5185,73): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5186,56): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(5186,58): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5187,56): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(5194,57): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(5194,63): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5195,58): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(5195,60): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5196,46): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(5196,65): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5204,52): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(5204,69): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5207,17): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5208,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(5209,53): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5212,32): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5213,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5214,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5216,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(5221,30): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5222,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5223,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5225,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(5231,32): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5232,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5233,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5234,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5236,49): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5237,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(5238,31): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5239,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5240,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5244,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5248,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5250,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5254,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5256,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5260,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5262,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5266,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5268,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5272,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5275,59): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5276,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(5276,53): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5276,59): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5281,28): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5282,22): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5283,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5285,42): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5287,30): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5289,22): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5291,20): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5291,26): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5292,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5293,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5294,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5296,59): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5297,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5301,15): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5303,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5304,15): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5306,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5307,15): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5309,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5312,28): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5314,22): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5316,20): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5316,26): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5317,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5318,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5319,29): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5320,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5321,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5323,79): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5324,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5328,16): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5330,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5331,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5333,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5334,18): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5336,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5340,30): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5342,22): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5344,20): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5344,26): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5345,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5346,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5347,31): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5348,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5349,57): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5349,71): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5350,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5352,50): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5353,24): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5354,35): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5354,96): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5355,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5358,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5358,54): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5359,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5359,56): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5360,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5360,50): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5361,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5361,49): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5362,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5362,53): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5365,31): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(5365,40): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5366,6): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5369,28): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5371,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(5373,46): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5376,54): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5377,21): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(5378,28): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(5379,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6095,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6106,5): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6112,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6115,15): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6115,34): error TS1011: An element access expression should take an argument.
+src/components/common/StepComponents.tsx(6115,35): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6117,43): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6118,45): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6123,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6134,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6136,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6136,46): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(6136,74): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6137,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6137,33): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(6137,41): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6138,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6139,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6141,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6143,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6146,52): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(6146,80): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6147,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6147,33): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(6147,41): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6148,33): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6149,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6151,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6153,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6155,52): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(6158,54): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6159,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6160,26): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6160,45): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6160,51): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6163,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6165,58): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6166,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6167,29): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6167,48): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6167,55): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6169,29): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6169,48): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6169,59): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6170,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6172,42): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6173,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6176,29): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6176,48): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6176,58): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6177,20): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6178,62): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6179,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6180,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6182,78): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6182,118): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6317,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6320,12): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6321,10): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6324,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6325,48): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6326,25): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(6326,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6329,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6337,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6338,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6338,52): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(6341,57): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6342,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6344,29): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6344,48): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6344,59): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6345,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6347,37): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6348,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6349,29): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6349,48): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6349,58): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6350,20): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6351,62): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6352,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6353,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6413,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6416,13): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6417,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6420,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6421,17): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6423,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6429,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6430,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6466,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6469,14): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6471,38): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(6471,46): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6471,76): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(6471,84): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6471,88): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6471,98): error TS17008: JSX element 'void' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(6477,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6488,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6490,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6490,46): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(6490,74): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6491,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6491,33): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(6491,41): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6492,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6493,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6495,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6497,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6500,52): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(6500,80): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6501,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6501,33): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(6501,41): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6502,33): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6503,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6505,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6507,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6511,54): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6512,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6513,26): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6513,45): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6513,51): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6515,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6517,58): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6518,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6519,29): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6519,48): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6519,55): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6521,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6523,56): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6524,23): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6528,46): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6529,52): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6532,86): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6534,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6537,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6538,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6541,26): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6543,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6544,25): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6545,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6546,27): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6547,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6548,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6550,78): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6550,118): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6716,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6719,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6721,26): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6726,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6736,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6737,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6738,46): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(6738,73): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6741,17): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6742,26): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6743,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6745,40): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6746,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6749,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6751,26): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6752,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6755,20): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6756,27): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6757,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6758,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6803,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6811,10): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6811,25): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(6811,33): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6812,23): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6814,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6820,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6821,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6823,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6849,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6851,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6876,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6878,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6902,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6904,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6928,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6930,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6957,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6960,93): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(6961,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(6962,60): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(6962,66): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(6964,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7079,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7082,10): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7082,25): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7082,33): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7083,23): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7085,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7091,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7092,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7093,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7093,158): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7094,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7094,151): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7095,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7095,155): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7096,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7096,165): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7097,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7097,161): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7098,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7098,153): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7099,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7099,174): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7100,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7100,154): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7101,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7101,175): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7102,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7102,160): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7109,63): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7109,72): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7112,35): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7112,43): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7113,34): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7114,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7115,41): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7116,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7120,38): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7121,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7122,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7123,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7126,33): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7126,41): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7127,34): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7128,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7130,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7132,16): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7133,9): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7133,33): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7134,34): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7135,9): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7136,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7137,38): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7138,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7139,41): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7140,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7141,41): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7142,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7144,38): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7145,9): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7145,22): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7146,11): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7149,9): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7150,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7151,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7152,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7154,56): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7155,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7157,38): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7157,50): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7158,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7160,40): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7161,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7162,44): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7162,51): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7163,35): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7163,47): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7164,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7166,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7167,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7170,49): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7172,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7174,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7176,38): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7176,45): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7178,50): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7179,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7181,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7188,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7189,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7190,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7192,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7193,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7197,38): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7197,43): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7198,19): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7200,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7201,33): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7202,41): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7203,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7205,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7207,54): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7208,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7208,43): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7210,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7212,46): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7213,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7213,40): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7214,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7214,43): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7215,9): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7218,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7220,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7221,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7403,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7406,10): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7407,10): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7407,18): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7412,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7413,23): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7415,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7421,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7422,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7423,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7423,81): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7424,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7424,76): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7425,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7425,77): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7426,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7426,81): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7430,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7430,82): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7431,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7431,80): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7441,28): error TS17008: JSX element 'HTMLCanvasElement' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(7447,17): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7448,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7449,28): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7452,9): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7454,26): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7455,11): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7456,83): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7458,11): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7459,9): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7461,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7462,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7463,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7465,43): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7466,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7467,30): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7467,36): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7468,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7470,44): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7471,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7473,27): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7475,31): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7475,38): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7476,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7478,48): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7479,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7481,31): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7483,35): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7483,42): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7484,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7487,71): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7487,91): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7487,101): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7488,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7492,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7495,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7496,26): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7498,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7500,8): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7502,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7503,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7505,66): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7506,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7516,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7518,58): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7519,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7527,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7529,27): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7530,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7534,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7535,37): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7535,47): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7536,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7537,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7539,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7540,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7546,35): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7546,40): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7547,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7549,34): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7550,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(7552,60): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7554,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7555,44): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7556,86): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7558,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7559,52): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(7560,93): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7562,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7564,67): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7566,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7570,20): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7573,18): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7573,25): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7577,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7579,27): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7587,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7589,22): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7592,20): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7592,34): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7595,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7596,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7598,33): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7598,40): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7600,27): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7601,31): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(7602,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7603,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(7606,18): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(7606,62): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8094,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8097,10): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8097,25): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(8097,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8098,30): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(8098,35): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8098,39): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8099,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8104,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8105,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8105,61): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(8105,67): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8111,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8121,19): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8124,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8125,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8127,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8147,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8149,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8169,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8171,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8191,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8193,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8213,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8216,33): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8217,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8219,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8220,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8222,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8223,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8225,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8227,58): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8228,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8229,33): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8229,39): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8230,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8232,56): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8233,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8234,31): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8234,37): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8235,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8237,28): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8238,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8241,14): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8245,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8248,42): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8249,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8249,78): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(8249,83): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8251,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8257,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8258,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8259,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8261,50): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8262,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8264,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8267,39): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8269,45): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8270,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8270,16): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(8270,35): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8270,94): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8271,36): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8271,93): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8272,36): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8272,96): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8273,36): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8273,95): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8274,19): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8274,111): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8275,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8739,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8742,10): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8742,25): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(8742,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8743,30): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(8743,35): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8743,39): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8744,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8749,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8750,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8750,52): error TS17008: JSX element 'string' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(8756,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8768,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8770,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8782,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8784,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8796,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8798,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8810,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8813,75): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8814,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8816,58): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8816,64): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8817,34): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8817,52): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8818,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8820,28): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8821,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8822,36): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8822,43): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8825,43): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8826,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8828,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8834,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(8835,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8836,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(8838,40): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8841,45): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(8842,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(8844,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9205,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9208,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9209,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9212,8): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9215,25): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9215,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9216,48): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9218,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9226,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9227,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9227,46): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9227,74): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9228,65): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9228,71): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9229,52): error TS17008: JSX element 'string' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9230,54): error TS17008: JSX element 'boolean' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9232,20): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9232,69): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9233,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9233,139): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9234,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9234,135): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9235,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9235,129): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9236,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9236,130): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9237,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9237,138): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9239,50): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9240,58): error TS17008: JSX element 'string' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9241,62): error TS17008: JSX element 'boolean' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9243,52): error TS17008: JSX element 'string' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9244,60): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9244,62): error TS1005: '...' expected.
+src/components/common/StepComponents.tsx(9244,66): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9244,93): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9244,101): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9245,64): error TS17008: JSX element 'boolean' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9250,17): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9251,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9252,29): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9255,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9257,33): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9258,37): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9258,57): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9259,24): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9260,33): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9261,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9264,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9266,47): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9268,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9269,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9271,45): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9272,30): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9274,29): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9277,362): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9278,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9280,22): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9282,20): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9282,26): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9283,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9284,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9285,136): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9286,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9287,240): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9288,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9289,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9291,70): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9292,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9292,48): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9292,55): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9296,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9296,41): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9298,35): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9301,43): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9301,77): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9302,44): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9302,79): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9306,40): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9307,9): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9309,24): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9311,22): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9311,28): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9312,9): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9313,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9314,36): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9316,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9317,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9318,34): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9320,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9321,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9323,34): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9324,23): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9327,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9329,35): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9330,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9330,38): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9334,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9336,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9347,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9349,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9355,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9357,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9363,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9365,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9370,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9372,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9375,38): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9376,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9379,20): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9381,18): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9381,24): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9382,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9383,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9386,51): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9811,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9814,8): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9816,25): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9816,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9817,47): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9819,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9827,1): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9828,3): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9828,44): error TS17008: JSX element 'number' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9829,46): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9829,68): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9830,58): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9831,58): error TS17008: JSX element 'Record' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9832,44): error TS17008: JSX element 'boolean' has no corresponding closing tag.
+src/components/common/StepComponents.tsx(9836,41): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9840,15): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9842,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9842,220): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9843,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9843,215): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9844,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9844,213): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9845,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9845,204): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9848,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9850,15): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9852,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9852,216): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9853,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9853,171): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9854,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9854,180): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9855,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9855,177): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9858,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9860,15): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9862,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9862,241): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9863,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9863,184): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9864,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9864,202): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9865,17): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9865,190): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9868,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9873,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9878,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9880,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9885,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9887,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9892,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9894,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9899,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9901,11): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9906,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9910,17): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9911,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9911,32): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9911,40): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9912,38): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9912,47): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9913,43): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9914,7): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9916,9): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9918,32): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9918,45): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9919,28): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9921,9): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9922,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9923,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9926,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9928,51): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9929,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9932,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9934,72): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9935,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9936,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9936,57): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9936,69): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9937,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9937,57): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9937,64): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9946,9): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9947,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9948,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9950,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9951,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9951,18): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9952,31): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9953,25): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9954,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9955,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9957,30): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9958,5): error TS1109: Expression expected.
+src/components/common/StepComponents.tsx(9958,33): error TS1003: Identifier expected.
+src/components/common/StepComponents.tsx(9959,30): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9960,25): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9961,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9962,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9965,12): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9965,45): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9966,14): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9970,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9972,14): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9977,10): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9977,18): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9977,67): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9978,28): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9978,34): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9979,28): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9979,34): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9980,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9981,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9982,42): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/components/common/StepComponents.tsx(9983,14): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9988,10): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9988,22): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9988,29): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9989,28): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9989,35): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9990,28): error TS1005: '}' expected.
+src/components/common/StepComponents.tsx(9990,34): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9991,7): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9992,5): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(9993,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(10306,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/common/StepComponents.tsx(10307,1): error TS1005: '</' expected.

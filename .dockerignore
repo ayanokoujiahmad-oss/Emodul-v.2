@@ -1,0 +1,11 @@
+.git
+.npm-cache
+.vite-dev*.log
+artifacts
+dist
+node_modules
+npm-debug.log*
+*.local
+.env
+.env.*
+compile_errors.txt

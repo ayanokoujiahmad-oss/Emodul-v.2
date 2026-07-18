@@ -1,0 +1,316 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function myProfile() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid));
+    }
+
+    function isTeacher() {
+      return signedIn() && myProfile().data.role == 'guru';
+    }
+
+    function isStudent() {
+      return signedIn() && myProfile().data.role == 'siswa';
+    }
+
+    function myGuruId() {
+      return myProfile().data.guruId;
+    }
+
+    function teacherOwns(data) {
+      return isTeacher() && data.guruId == request.auth.uid;
+    }
+
+    function studentOwns(data) {
+      return signedIn() && (
+        data.uid == request.auth.uid || data.studentUid == request.auth.uid
+      );
+    }
+
+    function belongsToMyClass(data) {
+      return isStudent() && data.guruId == myGuruId();
+    }
+
+    function studentCreatesOwnRecord(data) {
+      return isStudent()
+        && data.studentUid == request.auth.uid
+        && data.guruId == myGuruId();
+    }
+
+    function validPercent(value) {
+      return value is number && value >= 0 && value <= 100;
+    }
+
+    function validOptionalPercent(data, field) {
+      return !(field in data) || validPercent(data[field]);
+    }
+
+    function keepsStudentRecordIdentity() {
+      return request.resource.data.studentUid == resource.data.studentUid
+        && request.resource.data.guruId == resource.data.guruId
+        && (!('uid' in request.resource.data) || request.resource.data.uid == request.auth.uid);
+    }
+
+    function validStudentProgressCreate(data) {
+      return studentCreatesOwnRecord(data)
+        && data.keys().hasOnly([
+          'uid', 'studentUid', 'guruId', 'topicId', 'moduleId',
+          'currentStep', 'status', 'score', 'scoreStatus',
+          'submissionStatus', 'quizScore', 'quizCorrect', 'quizTotal',
+          'badges', 'badgeEarned', 'startedAt', 'submittedAt'
+        ])
+        && (!('uid' in data) || data.uid == request.auth.uid)
+        && data.status == 'active'
+        && data.score == 0
+        && (!('scoreStatus' in data) || data.scoreStatus == 'pending_teacher')
+        && (!('submissionStatus' in data) || data.submissionStatus in ['draft', 'submitted'])
+        && validOptionalPercent(data, 'quizScore');
+    }
+
+    function validStudentProgressUpdate() {
+      let changed = request.resource.data.diff(resource.data).affectedKeys();
+      return studentOwns(resource.data)
+        && keepsStudentRecordIdentity()
+        && changed.hasOnly([
+          'uid', 'currentStep', 'submissionStatus', 'submittedAt',
+          'quizScore', 'quizCorrect', 'quizTotal', 'scoreStatus',
+          'badges', 'badgeEarned'
+        ])
+        && (!changed.hasAny(['quizScore']) || validPercent(request.resource.data.quizScore))
+        && (!changed.hasAny(['scoreStatus']) || request.resource.data.scoreStatus == 'pending_teacher')
+        && (!changed.hasAny(['submissionStatus'])
+          || request.resource.data.submissionStatus in ['draft', 'submitted']);
+    }
+
+    function validTeacherProgressWrite(data) {
+      return isTeacher() && data.guruId == request.auth.uid;
+    }
+
+    function validTeacherProgressUpdate() {
+      let changed = request.resource.data.diff(resource.data).affectedKeys();
+      return teacherOwns(resource.data)
+        && request.resource.data.guruId == resource.data.guruId
+        && request.resource.data.studentUid == resource.data.studentUid
+        && changed.hasOnly([
+          'uid', 'studentUid', 'guruId', 'topicId', 'moduleId',
+          'currentStep', 'status', 'score', 'finalScore', 'scoreStatus',
+          'submissionStatus', 'badges', 'badgeEarned', 'gradedAt', 'completedAt'
+        ])
+        && (!changed.hasAny(['score', 'finalScore']) || (
+          validPercent(request.resource.data.score)
+          && validPercent(request.resource.data.finalScore)
+        ))
+        && (!changed.hasAny(['scoreStatus']) || request.resource.data.scoreStatus == 'final')
+        && (!changed.hasAny(['status']) || request.resource.data.status == 'completed');
+    }
+
+    function validStudentTopicResponsePayload(data) {
+      return studentCreatesOwnRecord(data)
+        && data.keys().hasOnly([
+          'studentUid', 'uid', 'guruId', 'topicId', 'moduleId',
+          'step', 'answers', 'simulationResult', 'mcAnswers',
+          'textAnswers', 'simulationScore', 'quizScore', 'quizCorrect',
+          'quizTotal', 'isDraft', 'lastSaved', 'submittedAt',
+          'page2ActivitySubmitted', 'page2ActivitySubmittedAt'
+        ])
+        && (!('uid' in data) || data.uid == request.auth.uid)
+        && validOptionalPercent(data, 'quizScore')
+        && validOptionalPercent(data, 'simulationScore');
+    }
+
+    function validStudentTopicResponseUpdate() {
+      return studentOwns(resource.data)
+        && keepsStudentRecordIdentity()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'uid', 'step', 'answers', 'simulationResult', 'mcAnswers',
+          'textAnswers', 'simulationScore', 'quizScore', 'quizCorrect',
+          'quizTotal', 'isDraft', 'lastSaved', 'submittedAt',
+          'page2ActivitySubmitted', 'page2ActivitySubmittedAt'
+        ])
+        && validOptionalPercent(request.resource.data, 'quizScore')
+        && validOptionalPercent(request.resource.data, 'simulationScore');
+    }
+
+    function validModuleGradePayload(data) {
+      return studentCreatesOwnRecord(data)
+        && data.keys().hasOnly([
+          'studentUid', 'guruId', 'moduleId', 'preTestScore',
+          'postTestScore', 'totalScore', 'nGainScore', 'nGain',
+          'createdAt', 'completedAt'
+        ])
+        && validOptionalPercent(data, 'preTestScore')
+        && validOptionalPercent(data, 'postTestScore')
+        && validOptionalPercent(data, 'totalScore')
+        && (!('nGainScore' in data) || (data.nGainScore is number && data.nGainScore >= -1 && data.nGainScore <= 1))
+        && (!('nGain' in data) || (data.nGain is number && data.nGain >= -1 && data.nGain <= 1));
+    }
+
+    function validStudentModuleGradeUpdate() {
+      let changed = request.resource.data.diff(resource.data).affectedKeys();
+      return studentOwns(resource.data)
+        && request.resource.data.studentUid == resource.data.studentUid
+        && request.resource.data.guruId == resource.data.guruId
+        && changed.hasOnly([
+          'preTestScore', 'postTestScore', 'totalScore',
+          'nGainScore', 'nGain', 'createdAt', 'completedAt'
+        ])
+        && validModuleGradePayload(request.resource.data)
+        && (!changed.hasAny(['preTestScore']) || !('preTestScore' in resource.data))
+        && (!changed.hasAny(['postTestScore']) || !('postTestScore' in resource.data));
+    }
+
+    match /users/{userId} {
+      allow get: if signedIn() && (
+        userId == request.auth.uid || resource == null || teacherOwns(resource.data)
+      );
+      allow list: if teacherOwns(resource.data);
+
+      // A new teacher creates their own profile immediately after Firebase Auth
+      // registration. A teacher creates student profiles while provisioning a
+      // student credential.
+      allow create: if signedIn() && (
+        (userId == request.auth.uid && request.resource.data.role == 'guru') ||
+        (isTeacher()
+          && request.resource.data.role == 'siswa'
+          && request.resource.data.guruId == request.auth.uid)
+      );
+
+      allow update: if (
+        userId == request.auth.uid
+        && request.resource.data.role == resource.data.role
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'displayName', 'email', 'avatarEmoji', 'avatar', 'lastLogin'
+        ])
+      ) || (
+        isTeacher()
+        && resource.data.role == 'siswa'
+        && resource.data.guruId == request.auth.uid
+        && request.resource.data.role == 'siswa'
+        && request.resource.data.guruId == request.auth.uid
+        && request.resource.data.uid == resource.data.uid
+        && request.resource.data.createdAt == resource.data.createdAt
+      );
+
+      allow delete: if teacherOwns(resource.data);
+    }
+
+    // Student credentials are readable only by the teacher who owns them.
+    // Firebase Authentication verifies student passwords; students never query
+    // this collection at sign-in.
+    match /accounts/{accountId} {
+      allow read: if resource == null || teacherOwns(resource.data);
+      allow create: if isTeacher() && request.resource.data.guruId == request.auth.uid;
+      allow update: if isTeacher()
+        && resource.data.guruId == request.auth.uid
+        && request.resource.data.guruId == request.auth.uid;
+      allow delete: if teacherOwns(resource.data);
+    }
+
+    match /classrooms/{classroomId} {
+      allow read: if teacherOwns(resource.data);
+      allow create: if isTeacher() && request.resource.data.guruId == request.auth.uid;
+      allow update: if isTeacher()
+        && resource.data.guruId == request.auth.uid
+        && request.resource.data.guruId == request.auth.uid;
+      allow delete: if teacherOwns(resource.data);
+    }
+
+    match /settings/{teacherId} {
+      allow read: if signedIn();
+      allow create, update: if isTeacher() && request.resource.data.guruId == request.auth.uid;
+      allow delete: if teacherOwns(resource.data);
+    }
+
+    match /custom_topics/{topicId} {
+      allow read: if signedIn();
+      allow create, update: if isTeacher() && request.resource.data.guruId == request.auth.uid;
+      allow delete: if teacherOwns(resource.data);
+    }
+
+    match /progress/{progressId} {
+      allow read: if resource == null || studentOwns(resource.data) || teacherOwns(resource.data);
+      allow create: if validStudentProgressCreate(request.resource.data)
+        || validTeacherProgressWrite(request.resource.data);
+      allow update: if validStudentProgressUpdate() || validTeacherProgressUpdate();
+      allow delete: if teacherOwns(resource.data);
+    }
+
+    match /student_topic_responses/{responseId} {
+      allow read: if resource == null || studentOwns(resource.data) || teacherOwns(resource.data);
+      allow create: if validStudentTopicResponsePayload(request.resource.data);
+      allow update: if validStudentTopicResponseUpdate() || teacherOwns(resource.data);
+      allow delete: if teacherOwns(resource.data);
+    }
+
+    match /moduleGrades/{gradeId} {
+      allow read: if resource == null || studentOwns(resource.data) || teacherOwns(resource.data);
+      allow create: if validModuleGradePayload(request.resource.data);
+      allow update: if validStudentModuleGradeUpdate() || teacherOwns(resource.data);
+      allow delete: if teacherOwns(resource.data);
+    }
+
+    match /topicGrades/{gradeId} {
+      allow get: if resource == null || studentOwns(resource.data) || teacherOwns(resource.data);
+      allow list: if teacherOwns(resource.data);
+      allow create: if isTeacher() && request.resource.data.guruId == request.auth.uid;
+      allow update: if isTeacher()
+        && resource.data.guruId == request.auth.uid
+        && request.resource.data.guruId == request.auth.uid;
+      allow delete: if teacherOwns(resource.data);
+    }
+
+    match /activityLog/{logId} {
+      allow read: if teacherOwns(resource.data);
+      allow create: if isStudent()
+        && request.resource.data.studentUid == request.auth.uid
+        && request.resource.data.guruId == myGuruId();
+      allow update, delete: if teacherOwns(resource.data);
+    }
+
+    match /classGallery/{galleryId} {
+      allow get, list: if teacherOwns(resource.data)
+        || studentOwns(resource.data)
+        || (belongsToMyClass(resource.data) && resource.data.status == 'approved');
+
+      allow create: if studentCreatesOwnRecord(request.resource.data);
+
+      // Students may only react to approved work in their own class. Teachers
+      // retain moderation control, including pending and rejected work.
+      allow update: if teacherOwns(resource.data) || (
+        belongsToMyClass(resource.data)
+        && resource.data.status == 'approved'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'thumbsBy', 'heartsBy', 'appreciations'
+        ])
+      );
+      allow delete: if teacherOwns(resource.data);
+
+      match /comments/{commentId} {
+        function canReadParent() {
+          return teacherOwns(
+            get(/databases/$(database)/documents/classGallery/$(galleryId)).data
+          ) || studentOwns(
+            get(/databases/$(database)/documents/classGallery/$(galleryId)).data
+          ) || (
+            belongsToMyClass(
+              get(/databases/$(database)/documents/classGallery/$(galleryId)).data
+            )
+            && get(/databases/$(database)/documents/classGallery/$(galleryId)).data.status == 'approved'
+          );
+        }
+
+        allow read: if canReadParent();
+        allow create: if canReadParent()
+          && isStudent()
+          && request.resource.data.uid == request.auth.uid
+          && request.resource.data.text is string
+          && request.resource.data.text.size() <= 500;
+      }
+    }
+  }
+}
