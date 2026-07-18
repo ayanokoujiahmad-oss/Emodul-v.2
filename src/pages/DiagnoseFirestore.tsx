@@ -61,6 +61,19 @@ export default function DiagnoseFirestore() {
         throw new Error('Firestore DB instance null');
       }
 
+      log('Menguji Firestore REST API menggunakan fetch()...');
+      try {
+        if (app) {
+          const url = `https://firestore.googleapis.com/v1/projects/sibercerdas-a1899/databases/(default)/documents/settings/test-id?key=${app.options.apiKey}`;
+          const res = await fetch(url);
+          log(`REST API Status: ${res.status} ${res.statusText}`);
+          const data = await res.json();
+          log(`REST API Response: ${JSON.stringify(data)}`);
+        }
+      } catch (fetchErr: any) {
+        log(`❌ REST API Fetch Gagal: ${fetchErr.message || String(fetchErr)}`);
+      }
+
       log('Melakukan getDoc(doc(db, "settings", "test-id"))...');
       
       const timeoutPromise = new Promise<never>((_, reject) =>
