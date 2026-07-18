@@ -14,6 +14,7 @@ const PrePostTest = lazy(() => import('./pages/student/PrePostTest'));
 const ClassGallery = lazy(() => import('./pages/student/ClassGallery'));
 const TeacherDashboard = lazy(() => import('./pages/teacher/TeacherDashboard'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
+const DiagnoseFirestore = lazy(() => import('./pages/DiagnoseFirestore'));
 
 /* ── Error Boundary ────────────────────────────────────────────── */
 class ErrorBoundary extends React.Component<
@@ -174,6 +175,14 @@ export default function App() {
               element={
                 <PageTransition>
                   <AboutPage />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/diagnose"
+              element={
+                <PageTransition>
+                  <DiagnoseFirestore />
                 </PageTransition>
               }
             />
