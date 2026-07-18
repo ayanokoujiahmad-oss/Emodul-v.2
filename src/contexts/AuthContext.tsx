@@ -95,7 +95,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (!db) return;
     try {
       const { doc, getDoc } = await import('firebase/firestore');
-      const snap = await getDoc(doc(db, 'users', uid));
+      // Race getDoc against a timeout to prevent hanging when Firestore
+      // persistence hasn't established a server connection yet.
+      const timeoutPromise = new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error('fetchProfile timeout (6s)')), 6000)
+      );
+      const snap = await Promise.race([
+        getDoc(doc(db, 'users', uid)),
+        timeoutPromise
+      ]);
       if (snap.exists()) {
         setUserProfile(snap.data() as UserProfile);
       } else {
@@ -116,6 +124,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
 
     let unsubscribe: (() => void) | undefined;
+    let resolved = false;
+
+    // Safety net: guarantee loading screen is dismissed within 8 seconds
+    // even if onAuthStateChanged or fetchProfile hang indefinitely.
+    const safetyTimer = setTimeout(() => {
+      if (!resolved) {
+        safeLog('warn', 'AuthContext', 'Safety timeout triggered – dismissing loading screen');
+        resolved = true;
+        setLoading(false);
+      }
+    }, 8000);
 
     import('firebase/auth').then(({ onAuthStateChanged }) => {
       unsubscribe = onAuthStateChanged(
@@ -128,16 +147,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             setUser(null);
             setUserProfile(null);
           }
-          setLoading(false);
+          if (!resolved) {
+            resolved = true;
+            clearTimeout(safetyTimer);
+            setLoading(false);
+          }
         },
         (err) => {
           safeLog('error', 'AuthContext.onAuthStateChanged', err);
-          setLoading(false);
+          if (!resolved) {
+            resolved = true;
+            clearTimeout(safetyTimer);
+            setLoading(false);
+          }
         },
       );
     });
 
     return () => {
+      clearTimeout(safetyTimer);
       if (unsubscribe) unsubscribe();
     };
   }, [fetchProfile]);
