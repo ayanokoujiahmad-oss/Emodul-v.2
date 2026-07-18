@@ -29,7 +29,8 @@ const buildEnv = import.meta.env as Record<string, string | undefined>;
 function readPublicEnv(key: PublicEnvKey): string {
   const runtimeConfig =
     typeof window !== 'undefined' ? window.__SIBERCERDAS_CONFIG__ : undefined;
-  return runtimeConfig?.[key] ?? buildEnv[key] ?? '';
+  const value = runtimeConfig?.[key] ?? buildEnv[key] ?? '';
+  return value.trim();
 }
 
 const firebaseConfig = {
