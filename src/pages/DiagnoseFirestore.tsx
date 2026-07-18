@@ -56,16 +56,29 @@ export default function DiagnoseFirestore() {
 
       // 3. Firestore Read Test
       log('Menguji Firestore Read...');
+      const start = performance.now();
       if (!db) {
         throw new Error('Firestore DB instance null');
       }
 
-      log('Melakukan getDoc(doc(db, "users", UID))...');
+      log('Melakukan getDoc(doc(db, "settings", "test-id"))...');
       
       const timeoutPromise = new Promise<never>((_, reject) =>
         setTimeout(() => reject(new Error('TIMEOUT: getDoc tidak merespon setelah 8 detik')), 8000)
       );
 
+      const readSettingsPromise = (async () => {
+        const docRef = doc(db, 'settings', 'test-id');
+        const snap = await getDoc(docRef);
+        log(`settings/test-id read finished. exists: ${snap.exists()}`);
+        return snap;
+      })();
+
+      await Promise.race([readSettingsPromise, timeoutPromise]);
+      log(`✅ settings/test-id Read Sukses!`);
+
+      log('Melakukan getDoc(doc(db, "users", UID))...');
+      
       const readPromise = (async () => {
         const docRef = doc(db, 'users', cred.user.uid);
         log(`Path dokumen: users/${cred.user.uid}`);
@@ -77,7 +90,6 @@ export default function DiagnoseFirestore() {
         return snap;
       })();
 
-      const start = performance.now();
       await Promise.race([readPromise, timeoutPromise]);
       const duration = ((performance.now() - start) / 1000).toFixed(2);
       log(`✅ Firestore Read Sukses dalam ${duration} detik!`);
