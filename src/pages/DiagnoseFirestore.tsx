@@ -124,7 +124,7 @@ export default function DiagnoseFirestore() {
           {running ? 'Menjalankan...' : 'Mulai Jalankan Tes'}
         </button>
 
-        <div className="bg-surface-950 text-white font-mono text-xs p-4 rounded-xl h-96 overflow-y-auto whitespace-pre-wrap">
+        <div className="bg-black text-green-400 font-mono text-xs p-4 rounded-xl h-96 overflow-y-auto whitespace-pre-wrap border border-surface-300">
           {logs.length === 0 ? (
             <span className="text-surface-400">Belum ada log. Klik tombol di atas untuk memulai.</span>
           ) : (
