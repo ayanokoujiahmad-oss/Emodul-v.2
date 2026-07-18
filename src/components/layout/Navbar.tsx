@@ -99,7 +99,7 @@ export default function Navbar({ pageTitle = 'Beranda' }: NavbarProps) {
           </div>
 
           {/* Center: Page title */}
-          <h1 className="absolute left-1/2 -translate-x-1/2 font-display text-sm font-semibold text-surface-800 sm:text-base">
+          <h1 className="hidden md:block absolute left-1/2 -translate-x-1/2 font-display text-sm font-semibold text-surface-800 sm:text-base">
             {pageTitle}
           </h1>
 
