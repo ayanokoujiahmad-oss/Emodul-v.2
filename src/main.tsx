@@ -5,6 +5,7 @@ import App from './App';
 import { AuthProvider } from './contexts/AuthContext';
 import { ModuleProvider } from './contexts/ModuleContext';
 import './index.css';
+import './lib/lazyImages';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

@@ -572,7 +572,7 @@ export function TantanganAwalStep({
               )}
               {q.imageUrl && (
                 <div className="mb-3 overflow-hidden rounded-xl border border-gray-100 max-h-48 flex justify-center bg-gray-50">
-                  <img src={q.imageUrl} alt="Pertanyaan" className="object-contain max-h-48 w-full" />
+                  <img src={q.imageUrl} alt="Pertanyaan" className="object-contain max-h-48 w-full" loading="lazy" decoding="async" />
                 </div>
               )}
 
@@ -971,7 +971,7 @@ export function StudentRichContentRenderer({ content, onActivitySave, activityAn
           const url = text.substring(7, text.length - 1).trim();
           return (
             <div key={idx} className="my-4 overflow-hidden rounded-2xl border border-gray-100 shadow-sm flex justify-center bg-gray-50 max-h-60">
-              <img src={url} alt="Materi SiberCerdas" className="object-contain max-h-60 w-full" />
+              <img src={url} alt="Materi SiberCerdas" className="object-contain max-h-60 w-full" loading="lazy" decoding="async" />
             </div>
           );
         }
@@ -1227,7 +1227,7 @@ export function YukBelajarStep({ sections, onActivitySave, activityAnswers }: Yu
                     <div className="border-t border-primary-50 bg-white px-4 py-4">
                       {section.imageUrl && (
                         <div className="mb-3 overflow-hidden rounded-xl border border-primary-100 max-h-60 flex justify-center bg-gray-50">
-                          <img src={section.imageUrl} alt={section.title} className="object-contain max-h-60 w-full" />
+                          <img src={section.imageUrl} alt={section.title} className="object-contain max-h-60 w-full" loading="lazy" decoding="async" />
                         </div>
                       )}
                       <StudentRichContentRenderer
@@ -1405,7 +1405,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               </p>
             </div>
             <div className="my-4 overflow-hidden rounded-2xl border border-slate-100 shadow-sm flex justify-center bg-slate-50 max-h-72">
-              <img src="/form_pribadi_chromebook.png" alt="Anak melihat form di Chromebook" className="object-contain max-h-72 w-full" />
+              <img src="/form_pribadi_chromebook.png" alt="Anak melihat form di Chromebook" className="object-contain max-h-72 w-full" loading="lazy" decoding="async" />
             </div>
             <div className="space-y-3">
               <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest">
@@ -1522,7 +1522,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               )}
             </div>
             <div className="my-4 overflow-hidden rounded-2xl border border-slate-100 shadow-sm flex justify-center bg-slate-50 max-h-72">
-              <img src="/unggahan_aman_risiko.png" alt="Contoh Unggahan Aman vs Risiko" className="object-contain max-h-72 w-full" />
+              <img src="/unggahan_aman_risiko.png" alt="Contoh Unggahan Aman vs Risiko" className="object-contain max-h-72 w-full" loading="lazy" decoding="async" />
             </div>
             <div className="text-left">
               <p className="text-xs sm:text-sm text-slate-655 leading-relaxed font-semibold">
@@ -1571,7 +1571,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               </p>
             </div>
             <div className="my-4 overflow-hidden rounded-2xl border border-slate-100 shadow-sm flex justify-center bg-slate-50 max-h-72">
-              <img src="/kunci_kata_sandi.png" alt="Ilustrasi Kunci Kata Sandi" className="object-contain max-h-72 w-full" />
+              <img src="/kunci_kata_sandi.png" alt="Ilustrasi Kunci Kata Sandi" className="object-contain max-h-72 w-full" loading="lazy" decoding="async" />
             </div>
 
             {/* Video Edukasi Kunci Akun */}
@@ -1664,7 +1664,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               ))}
             </div>
             <div className="my-4 overflow-hidden rounded-2xl border border-slate-100 shadow-sm flex justify-center bg-slate-50 max-h-72">
-              <img src="/kirim_aman_konfirmasi.png" alt="Anak ragu menekan Kirim" className="object-contain max-h-72 w-full" />
+              <img src="/kirim_aman_konfirmasi.png" alt="Anak ragu menekan Kirim" className="object-contain max-h-72 w-full" loading="lazy" decoding="async" />
             </div>
           </motion.div>
         )}
@@ -1688,7 +1688,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               </p>
             </div>
             <div className="my-4 overflow-hidden rounded-2xl border border-slate-100 shadow-sm flex justify-center bg-slate-50 max-h-72">
-              <img src="/jejak_digital_kaki.png" alt="Jejak Kaki Digital" className="object-contain max-h-72 w-full" />
+              <img src="/jejak_digital_kaki.png" alt="Jejak Kaki Digital" className="object-contain max-h-72 w-full" loading="lazy" decoding="async" />
             </div>
             <div className="space-y-3">
               <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest">Dua Jenis Jejak Digital:</p>
@@ -3277,7 +3277,7 @@ export function YukBelajarTopik6({
                   </p>
                 </div>
                 <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-sm flex justify-center bg-slate-50 p-2 max-h-72">
-                  <img src="/pasta_gigi_digital_indo.png" alt="Analogi Pasta Gigi Digital" className="object-contain max-h-72 w-full" />
+                  <img src="/pasta_gigi_digital_indo.png" alt="Analogi Pasta Gigi Digital" className="object-contain max-h-72 w-full" loading="lazy" decoding="async" />
                 </div>
               </div>
               <div className="space-y-3 mt-4">
@@ -3448,7 +3448,7 @@ export function YukBelajarTopik6({
                 </p>
               </div>
               <div className="my-4 overflow-hidden rounded-2xl border border-slate-100 shadow-sm flex justify-center bg-slate-50 max-h-72">
-                <img src="/pahlawan_upstander.png" alt="Menjadi Pahlawan Digital (Upstander)" className="object-contain max-h-72 w-full" />
+                <img src="/pahlawan_upstander.png" alt="Menjadi Pahlawan Digital (Upstander)" className="object-contain max-h-72 w-full" loading="lazy" decoding="async" />
               </div>
               <div className="p-5 rounded-2xl border border-pink-100 bg-pink-50/10 space-y-4 text-left">
                 <h4 className="text-xs font-bold text-pink-855 uppercase tracking-wider flex items-center gap-1.5">Jurus Penyelamat: Apa yang Harus Dilakukan Jika Terkena Cyberbullying?</h4>

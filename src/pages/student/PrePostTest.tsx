@@ -378,7 +378,7 @@ export default function PrePostTest({ mode }: PrePostTestProps) {
  )}
  {questions[currentIdx].imageUrl && (
  <div className="mb-3 overflow-hidden rounded-2xl border border-slate-100 max-h-48 flex justify-center bg-slate-50">
- <img src={questions[currentIdx].imageUrl} alt="Ilustrasi Soal" className="object-contain max-h-48 w-full" />
+ <img src={questions[currentIdx].imageUrl} alt="Ilustrasi Soal" className="object-contain max-h-48 w-full" loading="lazy" decoding="async" />
  </div>
  )}
 

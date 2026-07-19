@@ -510,7 +510,7 @@ const ClassGallery: React.FC = () => {
                   {/* Media Preview inside card */}
                   {item.mediaType === 'image' && item.imageUrl && (
                     <div className="mb-4 rounded-xl overflow-hidden border border-gray-100 aspect-video bg-gray-50 flex items-center justify-center">
-                      <img src={item.imageUrl} alt="Karya poster" className="w-full h-full object-cover" />
+                      <img src={item.imageUrl} alt="Karya poster" className="w-full h-full object-cover" loading="lazy" decoding="async" />
                     </div>
                   )}
                   {item.mediaType === 'video' && item.videoUrl && (
@@ -812,7 +812,7 @@ const DetailModal: React.FC<DetailModalProps> = ({
         <div className="p-5 border-b border-gray-100 max-h-[60vh] overflow-y-auto">
           {item.mediaType === 'image' && item.imageUrl && (
             <div className="mb-4 rounded-2xl overflow-hidden border border-gray-150 bg-gray-50 max-h-[300px] flex items-center justify-center">
-              <img src={item.imageUrl} alt="Karya poster" className="max-h-[300px] w-auto object-contain" />
+              <img src={item.imageUrl} alt="Karya poster" className="max-h-[300px] w-auto object-contain" loading="lazy" decoding="async" />
             </div>
           )}
           {item.mediaType === 'video' && item.videoUrl && (

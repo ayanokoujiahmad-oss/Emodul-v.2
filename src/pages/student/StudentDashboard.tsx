@@ -306,7 +306,7 @@ const StudentDashboard: React.FC = () => {
         >
           {/* Avatar khusus (tanpa background) */}
           <div className="flex h-20 w-20 md:h-24 md:w-24 shrink-0 items-center justify-center p-1 bg-transparent">
-            <img src="/logo_anak_sekolah.png" alt="Anak Sekolah" className="h-full w-full object-contain" />
+            <img src="/logo_anak_sekolah.png" alt="Anak Sekolah" className="h-full w-full object-contain" loading="lazy" decoding="async" />
           </div>
 
           <div className="flex-1 text-center sm:text-left space-y-1.5">
