@@ -25,6 +25,7 @@ import {
   onSnapshot,
   query,
   where,
+  getDocs,
 } from 'firebase/firestore';
 import { db, auth } from '../../lib/firebase';
 import {
@@ -775,7 +776,27 @@ export default function StudentManager() {
         await deleteStudentCredential(account.username, account.password || '');
         await deleteDoc(doc(db, 'accounts', account.id));
         const studentUid = account.studentUid || account.id;
-        if (studentUid) await deleteDoc(doc(db, 'users', studentUid));
+        if (studentUid) {
+          await deleteDoc(doc(db, 'users', studentUid));
+          
+          // Delete progress/grades
+          try {
+            const gradesQ = query(collection(db, 'moduleGrades'), where('studentUid', '==', studentUid));
+            const gradesSnap = await getDocs(gradesQ);
+            await Promise.all(gradesSnap.docs.map((d) => deleteDoc(d.ref)));
+          } catch (e) {
+            safeLog('delete-student-grades', e);
+          }
+
+          // Delete activity logs
+          try {
+            const logsQ = query(collection(db, 'activityLog'), where('studentUid', '==', studentUid));
+            const logsSnap = await getDocs(logsQ);
+            await Promise.all(logsSnap.docs.map((d) => deleteDoc(d.ref)));
+          } catch (e) {
+            safeLog('delete-student-logs', e);
+          }
+        }
       }
     } catch (err) {
       safeLog('delete-account', err);

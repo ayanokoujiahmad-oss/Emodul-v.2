@@ -1132,6 +1132,12 @@ export function getDemoActivityLogs(guruId: string): any[] {
   return logs.filter((l) => l.guruId === guruId).slice(0, 15);
 }
 
+export function clearDemoActivityLogs(guruId: string): void {
+  let logs = readKey<any[]>('sibercerdas_demo_activity_logs', []);
+  logs = logs.filter((l) => l.guruId !== guruId);
+  writeKey('sibercerdas_demo_activity_logs', logs);
+}
+
 export function logDemoActivity(guruId: string, studentName: string, action: string, topicTitle: string, studentUid?: string): void {
   const logs = readKey<any[]>('sibercerdas_demo_activity_logs', []);
   const newLog = {

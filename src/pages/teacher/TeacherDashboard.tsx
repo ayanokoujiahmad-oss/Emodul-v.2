@@ -15,6 +15,7 @@ import {
   School,
   Menu,
   ArrowLeft,
+  Trash2,
 } from 'lucide-react';
 import {
   BarChart,
@@ -30,6 +31,8 @@ import {
   onSnapshot,
   query,
   where,
+  getDocs,
+  deleteDoc,
 } from 'firebase/firestore';
 import { db, auth } from '../../lib/firebase';
 import Sidebar, { type TeacherTab } from '../../components/Sidebar';
@@ -39,7 +42,7 @@ import RubricGrading from './RubricGrading';
 import MaterialManager from './MaterialManager';
 import ClassroomManager from './ClassroomManager';
 import GalleryModeration from './GalleryModeration';
-import { getDemoAccounts, getAllDemoModuleGrades, getDemoActivityLogs } from '../../lib/demoStore';
+import { getDemoAccounts, getAllDemoModuleGrades, getDemoActivityLogs, clearDemoActivityLogs } from '../../lib/demoStore';
 import type { ModuleGrade, ActivityLog } from '../../types';
 
 /* ─── Helper ──────────────────────────────────────────────────────────────── */
@@ -125,6 +128,28 @@ const AnalyticsView: React.FC<AnalyticsViewProps> = ({ onTabChange }) => {
   const [loading, setLoading] = useState(true);
 
   const guruId = auth?.currentUser?.uid || 'demo-guru-001';
+  const [clearingLogs, setClearingLogs] = useState(false);
+
+  const handleClearLogs = async () => {
+    if (!window.confirm('Hapus semua log aktivitas murid? Tindakan ini tidak bisa dibatalkan.')) return;
+    setClearingLogs(true);
+    try {
+      if (!db) {
+        clearDemoActivityLogs(guruId);
+        setRecentActivity([]);
+      } else {
+        const actQ = query(collection(db, 'activityLog'), where('guruId', '==', guruId));
+        const snap = await getDocs(actQ);
+        await Promise.all(snap.docs.map((doc) => deleteDoc(doc.ref)));
+        setRecentActivity([]);
+      }
+    } catch (err) {
+      safeLog('clear-activity-logs', err);
+      alert('Gagal membersihkan log aktivitas.');
+    } finally {
+      setClearingLogs(false);
+    }
+  };
 
   useEffect(() => {
     if (!db) {
@@ -375,7 +400,20 @@ const AnalyticsView: React.FC<AnalyticsViewProps> = ({ onTabChange }) => {
           transition={{ delay: 0.4 }}
           className="flex flex-col rounded-2xl border border-surface-200 bg-white p-6 shadow-card"
         >
-          <h3 className="font-display font-semibold text-surface-800 mb-4">Aktivitas Terbaru Murid</h3>
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="font-display font-semibold text-surface-800">Aktivitas Terbaru Murid</h3>
+            {recentActivity.length > 0 && (
+              <button
+                onClick={handleClearLogs}
+                disabled={clearingLogs}
+                className="flex items-center gap-1 text-[11px] font-medium text-danger-500 hover:text-danger-600 transition-colors disabled:opacity-50"
+                title="Hapus Semua Log Aktivitas"
+              >
+                <Trash2 size={13} />
+                <span>{clearingLogs ? 'Membersihkan...' : 'Hapus Semua Log'}</span>
+              </button>
+            )}
+          </div>
           {recentActivity.length === 0 ? (
             <div className="flex-1 flex flex-col items-center justify-center h-48 text-surface-500">
               <Clock size={32} className="mb-2 animate-pulse" />
