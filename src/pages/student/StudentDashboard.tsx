@@ -385,7 +385,10 @@ const StudentDashboard: React.FC = () => {
                     className="absolute -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center"
                   >
                     {/* Mascot bouncing character on active node */}
-                    {(isActive || (!hasActiveNode && idx === topicModules.length - 1)) && (
+                    {(profile?.isPenguji
+                      ? idx === 0
+                      : (isActive || (!hasActiveNode && idx === topicModules.length - 1))
+                    ) && (
                       <motion.div
                         className="absolute -top-20 left-1/2 z-20 flex -translate-x-1/2 flex-col items-center cursor-pointer pointer-events-auto select-none"
                         onClick={(e) => {
