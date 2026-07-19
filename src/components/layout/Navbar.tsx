@@ -77,6 +77,7 @@ export default function Navbar({ pageTitle = 'Beranda' }: NavbarProps) {
 
   const displayName = userProfile?.displayName ?? 'Pengguna';
   const role = userProfile?.role ?? 'siswa';
+  const isPenguji = userProfile?.isPenguji ?? false;
   const initials = displayName
     .split(/\s+/)
     .filter(Boolean)
@@ -141,13 +142,20 @@ export default function Navbar({ pageTitle = 'Beranda' }: NavbarProps) {
                 {initials}
               </span>
               <div className="flex flex-col">
-                <span className="text-sm font-medium leading-tight text-surface-800">
+                <span 
+                  className="text-sm font-medium leading-tight text-surface-800 truncate max-w-[80px] sm:max-w-[100px] md:max-w-[120px] lg:max-w-[180px]" 
+                  title={displayName}
+                >
                   {displayName}
                 </span>
                 <span
-                  className={`inline-block w-fit rounded-md px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none ${roleBadgeStyles[role]}`}
+                  className={`inline-block w-fit rounded-md px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none ${
+                    isPenguji
+                      ? 'bg-purple-50 text-purple-700 border border-purple-100'
+                      : roleBadgeStyles[role]
+                  }`}
                 >
-                  {role}
+                  {isPenguji ? 'Dosen Penguji' : role === 'guru' ? 'Guru' : 'Siswa'}
                 </span>
               </div>
             </div>

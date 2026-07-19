@@ -58,7 +58,7 @@ function getInitials(name?: string) {
 
 // ---- Main Component ----
 const ClassGallery: React.FC = () => {
-  const { user, profile } = useAuth();
+  const { user, userProfile: profile } = useAuth();
   const { topics: topicModules } = useModules();
 
   // State

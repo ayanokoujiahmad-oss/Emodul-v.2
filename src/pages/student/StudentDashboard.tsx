@@ -94,7 +94,7 @@ const SkeletonNode: React.FC = () => (
 
 // ---- Main Dashboard ----
 const StudentDashboard: React.FC = () => {
-  const { user, profile } = useAuth();
+  const { user, userProfile: profile } = useAuth();
   const navigate = useNavigate();
   const { topics: topicModules, loading: modulesLoading } = useModules();
 
