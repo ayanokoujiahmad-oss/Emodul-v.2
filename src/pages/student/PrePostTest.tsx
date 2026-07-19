@@ -18,7 +18,7 @@ import { db } from '../../lib/firebase';
 import { safeLog } from '../../lib/safeLog';
 import { useAuth } from '../../contexts/AuthContext';
 import { preTestQuestions, postTestQuestions } from '../../data/modules';
-import { getDemoModuleGrades, saveDemoModuleGrade } from '../../lib/demoStore';
+import { getDemoModuleGrades, saveDemoModuleGrade, logDemoActivity } from '../../lib/demoStore';
 import canvasConfetti from 'canvas-confetti';
 
 interface PrePostTestProps {
@@ -160,31 +160,45 @@ export default function PrePostTest({ mode }: PrePostTestProps) {
  };
 
  if (mode === 'pre-test') {
- currentModuleGrade.preTestScore = finalScorePercent;
- saveDemoModuleGrade(studentUid, currentModuleGrade);
- setFinished(true);
- if (finalScorePercent >= 70) {
- canvasConfetti({ particleCount: 80, spread: 60 });
- }
- } else {
- const preScore = currentModuleGrade.preTestScore?? 0;
- const gain = preScore === 100 
-? (finalScorePercent === 100? 1: 0) 
-: (finalScorePercent - preScore) / (100 - preScore);
- 
- const roundedGain = Math.round(gain * 100) / 100;
- setNGain(roundedGain);
+  currentModuleGrade.preTestScore = finalScorePercent;
+  saveDemoModuleGrade(studentUid, currentModuleGrade);
+  logDemoActivity(
+    guruId,
+    userProfile?.displayName || 'Siswa',
+    `Menyelesaikan Pre-Test dengan skor ${finalScorePercent}%`,
+    'Pre-Test',
+    studentUid
+  );
+  setFinished(true);
+  if (finalScorePercent >= 70) {
+  canvasConfetti({ particleCount: 80, spread: 60 });
+  }
+  } else {
+  const preScore = currentModuleGrade.preTestScore?? 0;
+  const gain = preScore === 100 
+ ? (finalScorePercent === 100? 1: 0) 
+ : (finalScorePercent - preScore) / (100 - preScore);
+  
+  const roundedGain = Math.round(gain * 100) / 100;
+  setNGain(roundedGain);
 
- currentModuleGrade.postTestScore = finalScorePercent;
- currentModuleGrade.nGainScore = roundedGain;
- currentModuleGrade.totalScore = Math.round((preScore + finalScorePercent) / 2);
- currentModuleGrade.completedAt = Date.now();
- saveDemoModuleGrade(studentUid, currentModuleGrade);
- setFinished(true);
- if (finalScorePercent >= 70) {
- canvasConfetti({ particleCount: 120, spread: 80 });
- }
- }
+  currentModuleGrade.postTestScore = finalScorePercent;
+  currentModuleGrade.nGainScore = roundedGain;
+  currentModuleGrade.totalScore = Math.round((preScore + finalScorePercent) / 2);
+  currentModuleGrade.completedAt = Date.now();
+  saveDemoModuleGrade(studentUid, currentModuleGrade);
+  logDemoActivity(
+    guruId,
+    userProfile?.displayName || 'Siswa',
+    `Menyelesaikan Post-Test dengan skor ${finalScorePercent}% (N-Gain: ${roundedGain})`,
+    'Post-Test',
+    studentUid
+  );
+  setFinished(true);
+  if (finalScorePercent >= 70) {
+  canvasConfetti({ particleCount: 120, spread: 80 });
+  }
+  }
  setSubmitting(false);
  return;
  }
@@ -194,45 +208,67 @@ export default function PrePostTest({ mode }: PrePostTestProps) {
  const existingData = gradeSnap.exists()? gradeSnap.data(): {};
 
  if (mode === 'pre-test') {
- const payload = {
- ...existingData,
- studentUid,
- guruId,
- moduleId: 'aku-cerdas-digital',
- preTestScore: finalScorePercent,
- createdAt: existingData.createdAt || serverTimestamp(),
- };
- await setDoc(docRef, payload, { merge: true });
- setFinished(true);
- if (finalScorePercent >= 70) {
- canvasConfetti({ particleCount: 80, spread: 60 });
- }
- } else {
- // Mode post-test
- const preScore = existingData.preTestScore?? 0;
- // Calculate N-Gain
- const gain = preScore === 100 
-? (finalScorePercent === 100? 1: 0) 
-: (finalScorePercent - preScore) / (100 - preScore);
- 
- const roundedGain = Math.round(gain * 100) / 100; // round to 2 decimals
- setNGain(roundedGain);
+  const payload = {
+  ...existingData,
+  studentUid,
+  guruId,
+  moduleId: 'aku-cerdas-digital',
+  preTestScore: finalScorePercent,
+  createdAt: existingData.createdAt || serverTimestamp(),
+  };
+  await setDoc(docRef, payload, { merge: true });
 
- const payload = {
- studentUid,
- guruId,
- moduleId: 'aku-cerdas-digital',
- postTestScore: finalScorePercent,
- nGainScore: roundedGain,
- completedAt: serverTimestamp(),
- totalScore: Math.round((preScore + finalScorePercent) / 2),
- };
- await setDoc(docRef, payload, { merge: true });
- setFinished(true);
- if (finalScorePercent >= 70) {
- canvasConfetti({ particleCount: 120, spread: 80 });
- }
- }
+  const activityLogDocId = `${studentUid}_pretest_${Date.now()}`;
+  await setDoc(doc(db, 'activityLog', activityLogDocId), {
+    guruId,
+    studentUid,
+    studentName: userProfile?.displayName || 'Siswa',
+    action: `Menyelesaikan Pre-Test dengan skor ${finalScorePercent}%`,
+    topicTitle: 'Pre-Test',
+    timestamp: serverTimestamp(),
+  });
+
+  setFinished(true);
+  if (finalScorePercent >= 70) {
+  canvasConfetti({ particleCount: 80, spread: 60 });
+  }
+  } else {
+  // Mode post-test
+  const preScore = existingData.preTestScore?? 0;
+  // Calculate N-Gain
+  const gain = preScore === 100 
+ ? (finalScorePercent === 100? 1: 0) 
+ : (finalScorePercent - preScore) / (100 - preScore);
+  
+  const roundedGain = Math.round(gain * 100) / 100; // round to 2 decimals
+  setNGain(roundedGain);
+
+  const payload = {
+  studentUid,
+  guruId,
+  moduleId: 'aku-cerdas-digital',
+  postTestScore: finalScorePercent,
+  nGainScore: roundedGain,
+  completedAt: serverTimestamp(),
+  totalScore: Math.round((preScore + finalScorePercent) / 2),
+  };
+  await setDoc(docRef, payload, { merge: true });
+
+  const activityLogDocId = `${studentUid}_posttest_${Date.now()}`;
+  await setDoc(doc(db, 'activityLog', activityLogDocId), {
+    guruId,
+    studentUid,
+    studentName: userProfile?.displayName || 'Siswa',
+    action: `Menyelesaikan Post-Test dengan skor ${finalScorePercent}% (N-Gain: ${roundedGain})`,
+    topicTitle: 'Post-Test',
+    timestamp: serverTimestamp(),
+  });
+
+  setFinished(true);
+  if (finalScorePercent >= 70) {
+  canvasConfetti({ particleCount: 120, spread: 80 });
+  }
+  }
  } catch (err) {
  safeLog('error', 'Failed submitting module test', err);
  alert('Gagal mengirim jawaban. Coba ulangi lagi.');

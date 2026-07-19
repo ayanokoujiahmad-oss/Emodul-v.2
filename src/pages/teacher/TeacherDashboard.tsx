@@ -29,8 +29,6 @@ import {
   collection,
   onSnapshot,
   query,
-  orderBy,
-  limit,
   where,
 } from 'firebase/firestore';
 import { db, auth } from '../../lib/firebase';
@@ -202,13 +200,23 @@ const AnalyticsView: React.FC<AnalyticsViewProps> = ({ onTabChange }) => {
     const actQ = query(
       collection(db!, 'activityLog'),
       where('guruId', '==', guruId),
-      orderBy('timestamp', 'desc'),
-      limit(10),
     );
     const unsubActivity = onSnapshot(
       actQ,
       (snap) => {
-        setRecentActivity(snap.docs.map((d: any) => ({ id: d.id, ...d.data() } as ActivityLog)));
+        const sorted = snap.docs
+          .map((d: any) => ({ id: d.id, ...d.data() } as ActivityLog))
+          .sort((a, b) => {
+            const timeA = a.timestamp?.toMillis 
+              ? a.timestamp.toMillis() 
+              : (typeof a.timestamp === 'number' ? a.timestamp : new Date(a.timestamp).getTime() || 0);
+            const timeB = b.timestamp?.toMillis 
+              ? b.timestamp.toMillis() 
+              : (typeof b.timestamp === 'number' ? b.timestamp : new Date(b.timestamp).getTime() || 0);
+            return timeB - timeA;
+          })
+          .slice(0, 10);
+        setRecentActivity(sorted);
       },
       (err) => safeLog('activity-snapshot', err),
     );
@@ -417,7 +425,11 @@ const AnalyticsView: React.FC<AnalyticsViewProps> = ({ onTabChange }) => {
                       )}
                     </div>
                     <span className="text-[10px] text-surface-500 whitespace-nowrap">
-                      {new Date(act.timestamp).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })}
+                      {(() => {
+                        if (!act.timestamp) return '';
+                        const date = act.timestamp?.toDate ? act.timestamp.toDate() : new Date(act.timestamp);
+                        return isNaN(date.getTime()) ? '' : date.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+                      })()}
                     </span>
                   </motion.div>
                 );

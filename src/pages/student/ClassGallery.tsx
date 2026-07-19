@@ -42,6 +42,7 @@ import {
   saveDemoGalleryItem,
   reactionDemoGallery,
   commentDemoGallery,
+  logDemoActivity,
 } from '../../lib/demoStore';
 
 // ---- Sort options ----
@@ -277,11 +278,30 @@ const ClassGallery: React.FC = () => {
           sharedAt: Date.now(),
           ...newWork,
         });
+        logDemoActivity(
+          profile.guruId || '',
+          profile.displayName || 'Siswa',
+          `Membagikan karya baru di Galeri Kelas untuk Topik: ${topicData?.title ?? 'Umum'}`,
+          topicData?.title ?? 'Umum',
+          user.uid
+        );
         triggerRefresh();
       } else {
         await addDoc(collection(db, 'classGallery'), {
           ...newWork,
           createdAt: Timestamp.now(),
+        });
+        
+        const activityLogPayload = {
+          guruId: profile.guruId || '',
+          studentUid: user.uid,
+          studentName: profile.displayName || 'Siswa',
+          action: `Membagikan karya baru di Galeri Kelas untuk Topik: ${topicData?.title ?? 'Umum'}`,
+          topicTitle: topicData?.title ?? 'Umum',
+        };
+        await addDoc(collection(db, 'activityLog'), {
+          ...activityLogPayload,
+          timestamp: Timestamp.now(),
         });
       }
       setShareText('');

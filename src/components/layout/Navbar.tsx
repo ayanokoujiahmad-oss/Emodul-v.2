@@ -100,7 +100,7 @@ export default function Navbar({ pageTitle = 'Beranda' }: NavbarProps) {
           </div>
 
           {/* Center: Page title */}
-          <h1 className="hidden md:block absolute left-1/2 -translate-x-1/2 font-display text-sm font-semibold text-surface-800 sm:text-base">
+          <h1 className="hidden lg:block absolute left-1/2 -translate-x-1/2 font-display text-sm font-semibold text-surface-800 sm:text-base">
             {pageTitle}
           </h1>
 
@@ -114,7 +114,7 @@ export default function Navbar({ pageTitle = 'Beranda' }: NavbarProps) {
                 title="Muat Ulang Halaman"
               >
                 <RefreshCw className="h-3.5 w-3.5 animate-hover-spin" />
-                <span>Segarkan</span>
+                <span className="hidden xl:inline">Segarkan</span>
               </button>
             )}
             {/* About button */}
@@ -124,7 +124,7 @@ export default function Navbar({ pageTitle = 'Beranda' }: NavbarProps) {
               title="Tentang Aplikasi"
             >
               <Info className="h-3.5 w-3.5" />
-              <span className="hidden md:inline">Tentang</span>
+              <span className="hidden xl:inline">Tentang</span>
             </button>
             {/* Online status */}
             <div className="flex items-center gap-1.5" title={statusLabels[status]}>
