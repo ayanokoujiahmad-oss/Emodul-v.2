@@ -997,79 +997,95 @@ export default function TopicFlow() {
       badgeEarned: true,
     };
 
-    const completedProgressForCelebration: BadgeProgressSnapshot = {
-      ...payloadProgress,
-    };
-    const previousProgressList = await loadProgressForBadgeCelebration();
-    const celebrationBadges = getCompletionCelebrationBadges(
-      previousProgressList,
-      completedProgressForCelebration,
-      topic.badgeId,
-    );
-
-    if (!db) {
-      const localResponse = {
-        ...payloadResponse,
-        lastSaved: Date.now(),
-        submittedAt: Date.now(),
+    // Badge celebration — wrapped in try-catch to prevent failures from
+    // blocking the submit flow entirely.
+    let celebrationBadges: Badge[] = [];
+    try {
+      const completedProgressForCelebration: BadgeProgressSnapshot = {
+        ...payloadProgress,
       };
-      saveDemoResponse(localResponse);
-
-      const localProgress = {
-        id: progressDocId,
-        uid: studentUid,
-        studentUid,
-        moduleId: 'aku-cerdas-digital',
-        topicId,
-        currentStep: finalStepIndex,
-        status: 'active' as const,
-        submissionStatus: 'submitted' as const,
-        score: 0,
-        scoreStatus: 'pending_teacher' as const,
-        quizScore: mcScore,
-        quizCorrect: quizResult.correct,
-        quizTotal: quizResult.total,
-        badges: [topic.badgeId],
-        submittedAt: Date.now(),
-        badgeEarned: true,
-      };
-      saveDemoProgress(localProgress);
-
-      const bestEssay = formattedTextAnswers[0]?.answer || '';
-      if (bestEssay.trim().length > 15) {
-        saveDemoGalleryItem({
-          id: `${studentUid}_${topicId}`,
-          uid: studentUid,
-          studentUid,
-          guruId,
-          displayName: userProfile?.displayName || 'Petualang Cerdas',
-          studentName: userProfile?.displayName || 'Petualang Cerdas',
-          avatar: userProfile?.avatarEmoji || '',
-          topicId,
-          topicTitle: topic.title,
-          content: bestEssay,
-          createdAt: Date.now(),
-          sharedAt: Date.now(),
-          appreciations: { thumbs: 0, hearts: 0, comments: 0 },
-          thumbsBy: [],
-          heartsBy: [],
-          status: 'pending',
-        });
-      }
-
-      logDemoActivity(
-        guruId,
-        userProfile?.displayName || 'Siswa',
-        `Menyelesaikan Topik: ${topic.title} dengan skor kuis ${mcScore}%`,
-        topic.title,
-        studentUid
+      const previousProgressList = await loadProgressForBadgeCelebration();
+      celebrationBadges = getCompletionCelebrationBadges(
+        previousProgressList,
+        completedProgressForCelebration,
+        topic.badgeId,
       );
+    } catch (badgeErr) {
+      safeLog('warn', 'Badge celebration loading failed; continuing submit', badgeErr);
+    }
 
+    // Helper to finalize local state regardless of success/failure
+    const finalizeLocalState = () => {
       setCurrentStep(finalStepIndex);
       setCurrentPage(getPageForStepIndex(topic, finalStepIndex));
       setCompletedScore(mcScore);
       triggerBadgeCelebration(celebrationBadges);
-      setSubmitting(false);
+    };
+
+    if (!db) {
+      try {
+        const localResponse = {
+          ...payloadResponse,
+          lastSaved: Date.now(),
+          submittedAt: Date.now(),
+        };
+        saveDemoResponse(localResponse);
+
+        const localProgress = {
+          id: progressDocId,
+          uid: studentUid,
+          studentUid,
+          moduleId: 'aku-cerdas-digital',
+          topicId,
+          currentStep: finalStepIndex,
+          status: 'active' as const,
+          submissionStatus: 'submitted' as const,
+          score: 0,
+          scoreStatus: 'pending_teacher' as const,
+          quizScore: mcScore,
+          quizCorrect: quizResult.correct,
+          quizTotal: quizResult.total,
+          badges: [topic.badgeId],
+          submittedAt: Date.now(),
+          badgeEarned: true,
+        };
+        saveDemoProgress(localProgress);
+
+        const bestEssay = formattedTextAnswers[0]?.answer || '';
+        if (bestEssay.trim().length > 15) {
+          saveDemoGalleryItem({
+            id: `${studentUid}_${topicId}`,
+            uid: studentUid,
+            studentUid,
+            guruId,
+            displayName: userProfile?.displayName || 'Petualang Cerdas',
+            studentName: userProfile?.displayName || 'Petualang Cerdas',
+            avatar: userProfile?.avatarEmoji || '',
+            topicId,
+            topicTitle: topic.title,
+            content: bestEssay,
+            createdAt: Date.now(),
+            sharedAt: Date.now(),
+            appreciations: { thumbs: 0, hearts: 0, comments: 0 },
+            thumbsBy: [],
+            heartsBy: [],
+            status: 'pending',
+          });
+        }
+
+        logDemoActivity(
+          guruId,
+          userProfile?.displayName || 'Siswa',
+          `Menyelesaikan Topik: ${topic.title} dengan skor kuis ${mcScore}%`,
+          topic.title,
+          studentUid
+        );
+      } catch (demoErr) {
+        safeLog('error', 'Demo mode save failed', demoErr);
+      } finally {
+        finalizeLocalState();
+        setSubmitting(false);
+      }
       return;
     }
 
@@ -1126,35 +1142,32 @@ export default function TopicFlow() {
           timestamp: queuedAt,
         }, 'set');
       }
-
-      setCurrentStep(finalStepIndex);
-      setCurrentPage(getPageForStepIndex(topic, finalStepIndex));
-      setCompletedScore(mcScore);
-      triggerBadgeCelebration(celebrationBadges);
     } catch (err) {
       safeLog('error', 'Failed submitting final responses', err);
       // fallback to offline queue
-      const queuedAt = Date.now();
-      enqueue('student_topic_responses', progressDocId, {
-        ...payloadResponse,
-        lastSaved: queuedAt,
-        submittedAt: queuedAt,
-      }, 'set');
-      enqueue('progress', progressDocId, {
-        ...payloadProgress,
-        status: 'active',
-        score: 0,
-        submittedAt: queuedAt,
-      }, 'set');
-      enqueue('activityLog', activityLogDocId, {
-        ...activityLogPayload,
-        timestamp: queuedAt,
-      }, 'set');
-      setCurrentStep(finalStepIndex);
-      setCurrentPage(getPageForStepIndex(topic, finalStepIndex));
-      setCompletedScore(mcScore);
-      triggerBadgeCelebration(celebrationBadges);
+      try {
+        const queuedAt = Date.now();
+        enqueue('student_topic_responses', progressDocId, {
+          ...payloadResponse,
+          lastSaved: queuedAt,
+          submittedAt: queuedAt,
+        }, 'set');
+        enqueue('progress', progressDocId, {
+          ...payloadProgress,
+          status: 'active',
+          score: 0,
+          submittedAt: queuedAt,
+        }, 'set');
+        enqueue('activityLog', activityLogDocId, {
+          ...activityLogPayload,
+          timestamp: queuedAt,
+        }, 'set');
+      } catch (queueErr) {
+        safeLog('error', 'Offline queue also failed', queueErr);
+      }
     } finally {
+      // ALWAYS finalize local state so the UI reflects completion
+      finalizeLocalState();
       setSubmitting(false);
     }
   };

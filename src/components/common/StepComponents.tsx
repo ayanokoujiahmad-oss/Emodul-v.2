@@ -6870,7 +6870,8 @@ export function UjiPemahamanStep({
       setSubmitting(true);
       await onSubmit(mcAnswers, essayAnswers);
     } catch (err) {
-      console.error(err);
+      console.error('UjiPemahaman submit error:', err);
+      alert('Terjadi kesalahan saat mengirim jawaban. Silakan coba lagi.');
     } finally {
       setSubmitting(false);
     }
