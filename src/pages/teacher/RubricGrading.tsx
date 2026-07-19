@@ -685,42 +685,50 @@ function ManageRubricModal({ initialCriteria, onClose, onSave }: ManageRubricMod
 }
 
 interface StudentItemProps {
- student: UserProfile;
- isSelected: boolean;
- hasSubmission: boolean;
- isGraded: boolean;
- onClick: () => void;
+  student: UserProfile;
+  isSelected: boolean;
+  hasSubmission: boolean;
+  isGraded: boolean;
+  quizScore?: number;
+  onClick: () => void;
 }
 
-function StudentItem({ student, isSelected, hasSubmission, isGraded, onClick }: StudentItemProps) {
- return (
- <button
- onClick={onClick}
- className={`w-full flex items-center justify-between p-3 rounded-xl text-left transition-all ${
- isSelected
-? 'bg-primary-50 text-primary-900 border-l-4 border-primary-500'
-: 'hover:bg-gray-50 text-gray-700'
- }`}
- >
- <div className="flex items-center gap-3">
- <span className="text-xl">{student.avatarEmoji || ''}</span>
- <div className="min-w-0">
- <p className="font-semibold text-sm truncate">{student.displayName}</p>
- <p className="text-[10px] text-gray-400">
- {hasSubmission? 'Mengerjakan': 'Belum Mulai'}
- </p>
- </div>
- </div>
- <div className="flex gap-1">
- {isGraded && (
- <span className="w-2.5 h-2.5 rounded-full bg-success-500" title="Sudah dinilai" />
- )}
- {!isGraded && hasSubmission && (
- <span className="w-2.5 h-2.5 rounded-full bg-warning-500 animate-pulse" title="Butuh penilaian" />
- )}
- </div>
- </button>
- );
+function StudentItem({ student, isSelected, hasSubmission, isGraded, quizScore, onClick }: StudentItemProps) {
+  return (
+    <button
+      onClick={onClick}
+      className={`w-full flex items-center justify-between p-3 rounded-xl text-left transition-all ${
+        isSelected
+          ? 'bg-primary-50 text-primary-900 border-l-4 border-primary-500'
+          : 'hover:bg-gray-50 text-gray-700'
+      }`}
+    >
+      <div className="flex items-center gap-3">
+        <span className="text-xl">{student.avatarEmoji || ''}</span>
+        <div className="min-w-0">
+          <p className="font-semibold text-sm truncate">{student.displayName}</p>
+          <p className="text-[10px] text-gray-400">
+            {hasSubmission 
+              ? (quizScore !== undefined ? `Kuis: ${quizScore}%` : 'Mengerjakan') 
+              : 'Belum Mulai'}
+          </p>
+        </div>
+      </div>
+      <div className="flex gap-1 items-center">
+        {quizScore !== undefined && (
+          <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded bg-primary-100 text-primary-700 mr-1">
+            {quizScore}
+          </span>
+        )}
+        {isGraded && (
+          <span className="w-2.5 h-2.5 rounded-full bg-success-500" title="Sudah dinilai" />
+        )}
+        {!isGraded && hasSubmission && (
+          <span className="w-2.5 h-2.5 rounded-full bg-warning-500 animate-pulse" title="Butuh penilaian" />
+        )}
+      </div>
+    </button>
+  );
 }
 
 function buildStudentProfilesFromAccounts(accounts: StudentAccount[]): UserProfile[] {
@@ -1415,13 +1423,15 @@ export default function RubricGrading() {
  ): (
  students.map((s, idx) => {
  const key = `${s.uid}_${selectedTopicId}`;
+ const submission = submissions[key];
  return (
  <StudentItem
  key={s.uid}
  student={s}
  isSelected={idx === selectedStudentIdx}
- hasSubmission={!!submissions[key]}
+ hasSubmission={!!submission}
  isGraded={!!existingGrades[key]}
+ quizScore={submission?.quizScore}
  onClick={() => setSelectedStudentIdx(idx)}
  />
  );
