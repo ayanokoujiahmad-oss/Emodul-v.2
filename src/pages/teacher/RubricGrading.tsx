@@ -1424,12 +1424,13 @@ export default function RubricGrading() {
  students.map((s, idx) => {
  const key = `${s.uid}_${selectedTopicId}`;
  const submission = submissions[key];
+ const hasStarted = submission && (Object.keys(submission.answers || {}).length > 0 || (submission.step || 0) > 0);
  return (
  <StudentItem
  key={s.uid}
  student={s}
  isSelected={idx === selectedStudentIdx}
- hasSubmission={!!submission}
+ hasSubmission={!!submission && !!hasStarted}
  isGraded={!!existingGrades[key]}
  quizScore={submission && !submission.isDraft ? submission.quizScore : undefined}
  onClick={() => setSelectedStudentIdx(idx)}
