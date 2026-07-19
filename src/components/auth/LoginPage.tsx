@@ -194,7 +194,7 @@ export default function LoginPage() {
                         className="mb-4 flex items-center justify-center gap-2 rounded-full border border-success-200 bg-success-50 px-4 py-2 text-xs font-semibold text-success-700"
                     >
                         <Wifi className="h-3.5 w-3.5" />
-                        <span>Terhubung ke Firebase</span>
+                        <span>Sistem Online (Terhubung)</span>
                         <span className="h-2 w-2 rounded-full bg-success-400 animate-pulse" />
                     </motion.div>
                 ) : (
