@@ -1431,7 +1431,7 @@ export default function RubricGrading() {
  isSelected={idx === selectedStudentIdx}
  hasSubmission={!!submission}
  isGraded={!!existingGrades[key]}
- quizScore={submission?.quizScore}
+ quizScore={submission && !submission.isDraft ? submission.quizScore : undefined}
  onClick={() => setSelectedStudentIdx(idx)}
  />
  );
@@ -1494,6 +1494,12 @@ export default function RubricGrading() {
 
  {/* Main grading body */}
  <div className="flex-1 overflow-y-auto p-6 space-y-6">
+    {currentSubmission?.isDraft && (
+      <div className="flex items-center gap-2 p-3 bg-amber-50 rounded-xl text-amber-700 text-xs font-bold border border-amber-200">
+        <AlertCircle size={14} className="text-amber-500" />
+        <span>Karya/Jawaban siswa ini masih berupa DRAFT dan belum dikirim secara resmi.</span>
+      </div>
+    )}
  
  {/* Step Tab selector */}
  {gradableSteps.length > 0 && (
