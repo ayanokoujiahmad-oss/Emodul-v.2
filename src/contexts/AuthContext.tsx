@@ -110,7 +110,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       // Race getDoc against a timeout to prevent hanging when Firestore
       // persistence hasn't established a server connection yet.
       const timeoutPromise = new Promise<never>((_, reject) =>
-        setTimeout(() => reject(new Error('fetchProfile timeout (6s)')), 6000)
+        setTimeout(() => reject(new Error('fetchProfile timeout (12s)')), 12000)
       );
       const snap = await Promise.race([
         getDoc(doc(db, 'users', uid)),
@@ -146,7 +146,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         resolved = true;
         setLoading(false);
       }
-    }, 8000);
+    }, 15000);
 
     unsubscribe = onAuthStateChanged(
       auth!,

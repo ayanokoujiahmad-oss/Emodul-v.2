@@ -32,6 +32,7 @@ import {
   where,
   onSnapshot,
   orderBy,
+  limit,
 } from 'firebase/firestore';
 import { db } from '../../lib/firebase';
 import { safeLog } from '../../lib/safeLog';
@@ -187,6 +188,7 @@ const StudentDashboard: React.FC = () => {
       where('guruId', '==', profile.guruId),
       where('status', '==', 'approved'),
       orderBy('createdAt', 'desc'),
+      limit(8),
     );
 
     const unsub = onSnapshot(
