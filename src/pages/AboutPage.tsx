@@ -44,7 +44,7 @@ export default function AboutPage() {
                         <ArrowLeft className="w-4 h-4" />
                         Kembali
                     </button>
-                    <span className="rounded-full border border-surface-200 bg-white px-3 py-1 text-[10px] font-black uppercase tracking-widest text-primary-600 shadow-card">
+                    <span className="rounded-full border border-surface-200 bg-white px-3 py-1 text-xs font-black uppercase tracking-widest text-primary-600 shadow-card">
                         TENTANG APLIKASI
                     </span>
                 </div>
@@ -151,22 +151,22 @@ export default function AboutPage() {
                             Pengembangan juga diselaraskan dengan <strong>Panduan Implementasi Pendidikan Keamanan Siber</strong> (Pusat Kurikulum dan Pembelajaran, Kemendikdasmen, 2026) beserta lima elemen kompetensinya: Kesadaran Keamanan Siber; Pelindungan Data Pribadi &amp; Jejak Digital; Etika &amp; Perilaku Digital; Keterampilan Teknis Keamanan Siber; dan Kesadaran Hukum di Ruang Siber.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-1">
-                            <span className="px-3 py-1 bg-primary-50 border border-primary-100 rounded-full text-[10px] font-semibold text-primary-600">
+                            <span className="px-3 py-1 bg-primary-50 border border-primary-100 rounded-full text-xs font-semibold text-primary-600">
                                 BSKAP No. 46/H/KR/2025
                             </span>
-                            <span className="px-3 py-1 bg-indigo-50 border border-indigo-100 rounded-full text-[10px] font-semibold text-indigo-600">
+                            <span className="px-3 py-1 bg-indigo-50 border border-indigo-100 rounded-full text-xs font-semibold text-indigo-600">
                                 Panduan Kemendikdasmen 2026
                             </span>
-                            <span className="px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-[10px] font-semibold text-emerald-600">
+                            <span className="px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-xs font-semibold text-emerald-600">
                                 Perpres 47/2023
                             </span>
-                            <span className="px-3 py-1 bg-amber-50 border border-amber-100 rounded-full text-[10px] font-semibold text-amber-600">
+                            <span className="px-3 py-1 bg-amber-50 border border-amber-100 rounded-full text-xs font-semibold text-amber-600">
                                 PP 17/2025 (PP Tunas)
                             </span>
-                            <span className="px-3 py-1 bg-rose-50 border border-rose-100 rounded-full text-[10px] font-semibold text-rose-600">
+                            <span className="px-3 py-1 bg-rose-50 border border-rose-100 rounded-full text-xs font-semibold text-rose-600">
                                 Perpres 87/2025
                             </span>
-                            <span className="px-3 py-1 bg-sky-50 border border-sky-100 rounded-full text-[10px] font-semibold text-sky-600">
+                            <span className="px-3 py-1 bg-sky-50 border border-sky-100 rounded-full text-xs font-semibold text-sky-600">
                                 UU ITE &amp; UU PDP
                             </span>
                         </div>
@@ -193,35 +193,35 @@ export default function AboutPage() {
                     </p>
                     <ol className="space-y-3 text-xs text-surface-700 leading-relaxed">
                         <li className="flex gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[10px] font-bold text-primary-600 border border-primary-100">1</span>
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-600 border border-primary-100">1</span>
                             <span className="flex-1">Badan Standar, Kurikulum, dan Asesmen Pendidikan. (2025). <em>Keputusan BSKAP No. 46/H/KR/2025</em> — Capaian Pembelajaran (termasuk elemen Literasi Digital, Fase C). Kementerian Pendidikan Dasar dan Menengah.</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[10px] font-bold text-primary-600 border border-primary-100">2</span>
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-600 border border-primary-100">2</span>
                             <span className="flex-1">Pusat Kurikulum dan Pembelajaran, BSKAP. (2026). <em>Panduan Implementasi Pendidikan Keamanan Siber untuk Satuan Pendidikan dan Pemangku Kepentingan</em>. Kementerian Pendidikan Dasar dan Menengah Republik Indonesia.</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[10px] font-bold text-primary-600 border border-primary-100">3</span>
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-600 border border-primary-100">3</span>
                             <span className="flex-1">Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber.</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[10px] font-bold text-primary-600 border border-primary-100">4</span>
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-600 border border-primary-100">4</span>
                             <span className="flex-1">Peraturan Pemerintah Nomor 17 Tahun 2025 tentang Tata Kelola Penyelenggaraan Sistem Elektronik Dalam Pelindungan Anak (PP Tunas).</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[10px] font-bold text-primary-600 border border-primary-100">5</span>
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-600 border border-primary-100">5</span>
                             <span className="flex-1">Peraturan Badan Siber dan Sandi Negara Nomor 5 Tahun 2024 tentang Rencana Aksi Nasional Keamanan Siber Tahun 2024–2028.</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[10px] font-bold text-primary-600 border border-primary-100">6</span>
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-600 border border-primary-100">6</span>
                             <span className="flex-1">Peraturan Presiden Nomor 87 Tahun 2025 tentang Peta Jalan Pelindungan Anak di Ranah Dalam Jaringan Tahun 2025–2029.</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[10px] font-bold text-primary-600 border border-primary-100">7</span>
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-600 border border-primary-100">7</span>
                             <span className="flex-1">Undang-Undang Informasi dan Transaksi Elektronik (UU ITE).</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[10px] font-bold text-primary-600 border border-primary-100">8</span>
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-600 border border-primary-100">8</span>
                             <span className="flex-1">Undang-Undang Pelindungan Data Pribadi (UU PDP).</span>
                         </li>
                     </ol>
@@ -250,7 +250,7 @@ export default function AboutPage() {
                                 className="h-full w-full object-cover"
                             />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 transition-opacity group-hover:opacity-100">
-                                <span className="text-[10px] font-bold text-white uppercase tracking-wider">Zoom</span>
+                                <span className="text-xs font-bold text-white uppercase tracking-wider">Zoom</span>
                             </div>
                         </div>
 
@@ -271,13 +271,13 @@ export default function AboutPage() {
                                 Sebagai pendidik dan pengembang <em>edu-tech</em> Indonesia, saya menghadirkan platform <strong>SiberCerdas</strong> sebagai wujud nyata kontribusi dalam gerakan literasi digital nasional. Platform ini dirancang dengan pendekatan pedagogis yang sesuai perkembangan peserta didik sekolah dasar, memadukan desain visual menyenangkan (gamifikasi) dan materi selaras kurikulum nasional, agar anak-anak Indonesia tumbuh dengan kecakapan dan ketahanan digital yang kokoh saat berselancar di dunia siber.
                             </p>
                             <div className="flex flex-wrap gap-2 justify-center md:justify-start pt-2">
-                                <span className="px-3 py-1 bg-primary-50 border border-primary-100 rounded-full text-[10px] font-semibold text-primary-600">
+                                <span className="px-3 py-1 bg-primary-50 border border-primary-100 rounded-full text-xs font-semibold text-primary-600">
                                     Magister Pendas UNJA
                                 </span>
-                                <span className="px-3 py-1 bg-indigo-50 border border-indigo-100 rounded-full text-[10px] font-semibold text-indigo-600">
+                                <span className="px-3 py-1 bg-indigo-50 border border-indigo-100 rounded-full text-xs font-semibold text-indigo-600">
                                     Pendidik & Pengembang
                                 </span>
-                                <span className="px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-[10px] font-semibold text-emerald-600">
+                                <span className="px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-xs font-semibold text-emerald-600">
                                     Ramah Anak SD
                                 </span>
                             </div>

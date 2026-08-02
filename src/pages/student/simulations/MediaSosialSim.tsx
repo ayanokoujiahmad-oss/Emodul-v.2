@@ -245,7 +245,7 @@ export default function MediaSosialSim({ onComplete }: MediaSosialSimProps) {
  </div>
  <div>
  <p className="text-xs font-bold text-gray-800">{currentPost.creator}</p>
- <p className="text-[9px] text-gray-400">Sponsor/Postingan Populer</p>
+ <p className="text-xs text-gray-400">Sponsor/Postingan Populer</p>
  </div>
  </div>
 
@@ -263,10 +263,10 @@ export default function MediaSosialSim({ onComplete }: MediaSosialSimProps) {
 
  {/* Problematic Comment */}
  <div className="bg-rose-50/50 border border-rose-100 p-3 rounded-xl space-y-1">
- <p className="text-[10px] font-bold text-rose-500">Komentar Terpopuler:</p>
+ <p className="text-xs font-bold text-rose-500">Komentar Terpopuler:</p>
  <div className="flex items-start gap-2">
  <span className="text-sm shrink-0">{currentPost.commenterAvatar}</span>
- <p className="text-[11px] text-gray-700 leading-relaxed">
+ <p className="text-xs text-gray-700 leading-relaxed">
  <span className="font-bold mr-1 text-gray-800">{currentPost.commenter}</span>
  {currentPost.problemComment}
  </p>
@@ -297,7 +297,7 @@ export default function MediaSosialSim({ onComplete }: MediaSosialSimProps) {
  <div className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0 ${
  selectedOpt === idx? 'bg-indigo-500 border-indigo-500 text-white': 'border-gray-200'
  }`}>
- {selectedOpt === idx && <span className="text-[8px]">●</span>}
+ {selectedOpt === idx && <span className="text-xs">●</span>}
  </div>
  <span>{opt.text}</span>
  </button>

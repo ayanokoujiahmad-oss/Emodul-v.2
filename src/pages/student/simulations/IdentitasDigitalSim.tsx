@@ -206,7 +206,7 @@ export default function IdentitasDigitalSim({ onComplete }: IdentitasDigitalSimP
  className="space-y-5"
  >
  <div className="p-4 bg-white/95 rounded-2xl border border-primary-100">
- <span className="text-[10px] uppercase font-bold tracking-widest text-primary-400">
+ <span className="text-xs uppercase font-bold tracking-widest text-primary-400">
  Tahap {currentIdx + 1} dari {SCENARIOS.length}: {currentScenario.field}
  </span>
  <p className="text-sm font-medium text-primary-800 mt-1">

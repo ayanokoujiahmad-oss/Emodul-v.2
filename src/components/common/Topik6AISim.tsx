@@ -461,7 +461,7 @@ export function Topik6SimulationCenter({ answers = {}, onSave }: ActivityProps) 
  <div className="bg-white border border-pink-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-6">
  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-pink-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-pink-500">
  Eksplorasi · Aktivitas 3
  </span>
  <h3 className="font-display font-bold text-2xl text-primary-800 mt-1">
@@ -481,7 +481,7 @@ export function Topik6SimulationCenter({ answers = {}, onSave }: ActivityProps) 
  </div>
  <div className="bg-pink-50 border border-pink-100 rounded-2xl px-4 py-2.5 flex items-center gap-3 shrink-0">
  <div>
- <p className="text-[10px] font-bold text-pink-600 uppercase">Progres Latihan</p>
+ <p className="text-xs font-bold text-pink-600 uppercase">Progres Latihan</p>
  <p className="text-sm font-black text-primary-800">
  {completedCount} / 8 Selesai {completedCount >= 3 && <CheckCircle2 className="ml-1 inline h-4 w-4 text-emerald-500" />}
  </p>
@@ -518,7 +518,7 @@ export function Topik6SimulationCenter({ answers = {}, onSave }: ActivityProps) 
  <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-slate-200 text-slate-600">
  {sim.platform === 'wa'? ' WhatsApp': ' TikTok'}
  </span>
- <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${compColor}`}>
+ <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${compColor}`}>
  {sim.complexity}
  </span>
  </div>
@@ -533,7 +533,7 @@ export function Topik6SimulationCenter({ answers = {}, onSave }: ActivityProps) 
  </div>
 
  <div className="pt-4 flex items-center justify-between gap-2 border-t border-slate-100/50 mt-3">
- <span className="text-[10px] text-slate-400 italic">Pelaku: {sim.bullyName}</span>
+ <span className="text-xs text-slate-400 italic">Pelaku: {sim.bullyName}</span>
  <button
  onClick={() => setActiveSimId(sim.id)}
  className={`px-4 py-1.5 rounded-full text-xs font-bold shadow-sm transition-all ${
@@ -803,7 +803,7 @@ PENTING UNTUK DIIKUTI:
  return (
  <div className="bg-white border border-pink-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-4">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-pink-500">{config.badge}</span>
+ <span className="text-xs uppercase font-bold tracking-widest text-pink-500">{config.badge}</span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1"> {config.title}</h3>
  <p className="text-sm text-primary-500 mt-2 leading-relaxed">{config.intro}</p>
  </div>
@@ -816,9 +816,9 @@ PENTING UNTUK DIIKUTI:
  <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-base shrink-0">{config.avatar}</div>
  <div className="flex-1 min-w-0">
  <p className="text-sm font-bold truncate">{config.headerName}</p>
- <p className="text-[10px] text-white/70 truncate">{config.headerSub}</p>
+ <p className="text-xs text-white/70 truncate">{config.headerSub}</p>
  </div>
- <span className="text-[9px] px-2 py-0.5 rounded-full bg-emerald-500/80 font-bold">AI</span>
+ <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-500/80 font-bold">AI</span>
  </div>
 
  <div 
@@ -830,7 +830,7 @@ PENTING UNTUK DIIKUTI:
  if (m.who === 'system') {
  return (
  <div key={i} className="text-center py-1">
- <span className="inline-block bg-slate-800/80 text-slate-100 rounded-xl px-3 py-1.5 text-[9px] leading-relaxed max-w-[90%]">
+ <span className="inline-block bg-slate-800/80 text-slate-100 rounded-xl px-3 py-1.5 text-xs leading-relaxed max-w-[90%]">
  {m.text}
  </span>
  </div>
@@ -840,8 +840,8 @@ PENTING UNTUK DIIKUTI:
  return (
  <div key={i} className="flex items-start gap-1.5">
  <div className="bg-sky-50 border border-sky-200 rounded-xl px-2.5 py-1.5 max-w-[85%]">
- <p className="text-[9px] font-bold text-sky-500 uppercase tracking-wide">Mentor AI</p>
- <p className="text-[11px] text-sky-800 leading-snug">{m.text}</p>
+ <p className="text-xs font-bold text-sky-500 uppercase tracking-wide">Mentor AI</p>
+ <p className="text-xs text-sky-800 leading-snug">{m.text}</p>
  </div>
  </div>
  );
@@ -867,7 +867,7 @@ PENTING UNTUK DIIKUTI:
 ? 'bg-sky-50 border border-sky-100' 
 : 'bg-white'
  }`}>
- <p className={`text-[11px] font-bold leading-tight ${
+ <p className={`text-xs font-bold leading-tight ${
  m.who === 'bully' 
 ? 'text-rose-600' 
 : isVictim 
@@ -899,7 +899,7 @@ PENTING UNTUK DIIKUTI:
 
  {phase === 'chat' && (
     <div className="space-y-1.5 bg-[#f0f0f0]/30 p-2 border-t border-slate-150">
-      <div className="px-3 py-1 bg-amber-50 text-[10px] text-amber-800 rounded-lg border border-amber-150/50 flex items-center gap-1.5 font-medium leading-relaxed text-left">
+      <div className="px-3 py-1 bg-amber-50 text-xs text-amber-800 rounded-lg border border-amber-150/50 flex items-center gap-1.5 font-medium leading-relaxed text-left">
         👉 <strong>Instruksi</strong>: Tulis pesan balasanmu di bawah untuk membela teman yang sedang di-bully, lalu tekan tombol panah bulat hijau <strong>(➔)</strong> untuk mengirim.
       </div>
       <div className="bg-[#f0f0f0] px-2 py-2 flex items-center gap-2 rounded-xl">
@@ -960,13 +960,13 @@ PENTING UNTUK DIIKUTI:
 </div>
  )}
 
- <div className="absolute top-2 inset-x-0 flex justify-between items-center px-4 py-1 text-[9px] font-semibold text-white/80 z-20 pointer-events-none">
+ <div className="absolute top-2 inset-x-0 flex justify-between items-center px-4 py-1 text-xs font-semibold text-white/80 z-20 pointer-events-none">
  <span>09.41</span>
  </div>
 
  <div className="absolute bottom-3 left-3 right-16 z-20 text-white pointer-events-none">
  <p className="font-bold text-xs">{config.headerName}</p>
- <p className="text-[10px] text-white/80 mt-0.5 leading-snug">{config.headerSub}</p>
+ <p className="text-xs text-white/80 mt-0.5 leading-snug">{config.headerSub}</p>
  </div>
 
  {/* Tombol aksi sisi kanan */}
@@ -974,15 +974,15 @@ PENTING UNTUK DIIKUTI:
 <div className="w-8 h-8 rounded-full bg-slate-500 border border-white flex items-center justify-center text-sm">{config.avatar}</div>
 <button onClick={() => setLiked((v) =>!v)} className="flex flex-col items-center text-white text-shadow">
 <Heart className={`h-6 w-6 ${liked? 'fill-rose-500 text-rose-500': 'text-white'}`} />
-<span className="text-[9px] mt-0.5 font-bold">{liked? '1.5K': '1.4K'}</span>
+<span className="text-xs mt-0.5 font-bold">{liked? '1.5K': '1.4K'}</span>
 </button>
 <button onClick={() => setShowKomentar(true)} className="flex flex-col items-center text-white text-shadow">
 <MessageCircle className="h-6 w-6" />
-<span className="text-[9px] mt-0.5 font-bold">{chat.filter(m => m.who === 'bully' || m.who === 'me' || m.who === 'victim').length}</span>
+<span className="text-xs mt-0.5 font-bold">{chat.filter(m => m.who === 'bully' || m.who === 'me' || m.who === 'victim').length}</span>
 </button>
 <button onClick={() => setMuted((m) =>!m)} className="flex flex-col items-center text-white text-shadow active:scale-95 transition-transform">
 {muted? <VolumeX className="h-6 w-6" />: <Volume2 className="h-6 w-6" />}
-<span className="text-[9px] mt-0.5 font-bold">{muted? 'Bisu': 'Suara'}</span>
+<span className="text-xs mt-0.5 font-bold">{muted? 'Bisu': 'Suara'}</span>
 </button>
  </div>
 
@@ -993,7 +993,7 @@ PENTING UNTUK DIIKUTI:
  <div className="relative bg-white rounded-t-2xl max-h-[75%] flex flex-col pointer-events-auto">
  <div className="flex items-center justify-center relative px-3 py-2.5 border-b border-slate-100">
  <span className="w-8 h-1 bg-slate-300 rounded-full absolute top-1" />
- <p className="text-[11px] font-bold text-slate-700">Komentar Latihan</p>
+ <p className="text-xs font-bold text-slate-700">Komentar Latihan</p>
  <button onClick={() => setShowKomentar(false)} className="absolute right-3 text-slate-400 text-xs font-bold">✕</button>
  </div>
 
@@ -1005,7 +1005,7 @@ PENTING UNTUK DIIKUTI:
  if (m.who === 'system') {
  return (
  <div key={i} className="text-center py-1">
- <span className="inline-block bg-slate-100 text-slate-600 rounded-lg px-2.5 py-1 text-[9px] leading-relaxed">
+ <span className="inline-block bg-slate-100 text-slate-600 rounded-lg px-2.5 py-1 text-xs leading-relaxed">
  {m.text}
  </span>
  </div>
@@ -1015,8 +1015,8 @@ PENTING UNTUK DIIKUTI:
  return (
  <div key={i} className="flex gap-1.5 items-start bg-sky-50/70 p-2 rounded-xl border border-sky-100">
  <div>
- <p className="text-[8px] font-bold text-sky-500 uppercase">Mentor</p>
- <p className="text-[10px] text-sky-800 leading-snug">{m.text}</p>
+ <p className="text-xs font-bold text-sky-500 uppercase">Mentor</p>
+ <p className="text-xs text-sky-800 leading-snug">{m.text}</p>
  </div>
  </div>
  );
@@ -1034,21 +1034,21 @@ PENTING UNTUK DIIKUTI:
       }`}
       onClick={() => handleReplyClick(m.name || '')}
     >
-      <div className="w-6 h-6 rounded-full bg-slate-200 flex items-center justify-center text-[9px] font-bold text-slate-600 shrink-0">
+      <div className="w-6 h-6 rounded-full bg-slate-200 flex items-center justify-center text-xs font-bold text-slate-600 shrink-0">
         {init}
       </div>
       <div className="flex-1">
-        <p className={`text-[9px] font-bold ${isVictim ? 'text-sky-600' : 'text-slate-500'}`}>{m.name || '@saya'}</p>
-        <p className="text-[11px] text-slate-800 leading-snug">{m.text}</p>
+        <p className={`text-xs font-bold ${isVictim ? 'text-sky-600' : 'text-slate-500'}`}>{m.name || '@saya'}</p>
+        <p className="text-xs text-slate-800 leading-snug">{m.text}</p>
         <div className="flex items-center gap-3 mt-1.5">
-          <span className="text-[8px] text-slate-400">Balas · {10 - i} m</span>
+          <span className="text-xs text-slate-400">Balas · {10 - i} m</span>
           {isTargetBully && phase === 'chat' && (
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 handleReplyClick(m.name || '');
               }}
-              className="text-[9px] font-black text-pink-500 hover:text-pink-700 bg-pink-50 px-2 py-0.5 rounded-md active:scale-95 transition-transform"
+              className="text-xs font-black text-pink-500 hover:text-pink-700 bg-pink-50 px-2 py-0.5 rounded-md active:scale-95 transition-transform"
             >
               Balas
             </button>
@@ -1060,7 +1060,7 @@ PENTING UNTUK DIIKUTI:
  })}
  {loading && (
  <div className="flex items-center gap-1.5 pl-8">
- <span className="text-[10px] text-slate-400 animate-pulse">Mengetik...</span>
+ <span className="text-xs text-slate-400 animate-pulse">Mengetik...</span>
  </div>
  )}
  </div>
@@ -1068,13 +1068,13 @@ PENTING UNTUK DIIKUTI:
  {phase === 'chat' && (
  <div className="bg-slate-50 border-t border-slate-100 px-2 py-2 flex flex-col gap-1.5">
  {replyingTo? (
- <div className="flex items-center justify-between px-2 py-0.5 bg-pink-50 text-[9px] text-pink-700 rounded-md font-bold">
+ <div className="flex items-center justify-between px-2 py-0.5 bg-pink-50 text-xs text-pink-700 rounded-md font-bold">
  <span>Membalas {replyingTo}</span>
- <button onClick={() => setReplyingTo(null)} className="text-pink-600 text-[11px] font-black">✕</button>
+ <button onClick={() => setReplyingTo(null)} className="text-pink-600 text-xs font-black">✕</button>
  </div>
   ): (
-    <div className="px-3 py-2 bg-amber-50 text-[10px] text-amber-800 rounded-lg font-bold text-center border border-amber-200 animate-pulse leading-normal text-left">
-      👉 <strong>Instruksi</strong>: Ketuk komentar <strong>{config.bullyName}</strong> di atas, lalu klik tombol <span className="bg-pink-100 text-pink-600 px-1 py-0.5 rounded font-black text-[9px]">Balas</span> untuk menulis pesan belamu!
+    <div className="px-3 py-2 bg-amber-50 text-xs text-amber-800 rounded-lg font-bold text-center border border-amber-200 animate-pulse leading-normal text-left">
+      👉 <strong>Instruksi</strong>: Ketuk komentar <strong>{config.bullyName}</strong> di atas, lalu klik tombol <span className="bg-pink-100 text-pink-600 px-1 py-0.5 rounded font-black text-xs">Balas</span> untuk menulis pesan belamu!
     </div>
  )}
 
@@ -1087,7 +1087,7 @@ PENTING UNTUK DIIKUTI:
  onKeyDown={(e) => { if (e.key === 'Enter') send(); }}
  disabled={loading ||!replyingTo}
  placeholder={replyingTo? `Tulis balasan untuk ${replyingTo}...`: `Ketuk tombol "Balas" di komentar...`}
- className="flex-1 text-[11px] rounded-full px-3 py-1.5 focus:outline-none border border-slate-200 bg-white text-slate-800 disabled:bg-slate-100 disabled:text-slate-400"
+ className="flex-1 text-xs rounded-full px-3 py-1.5 focus:outline-none border border-slate-200 bg-white text-slate-800 disabled:bg-slate-100 disabled:text-slate-400"
  />
  <button
  onClick={send}
@@ -1107,7 +1107,7 @@ PENTING UNTUK DIIKUTI:
  )}
 
  {phase === 'chat' && (
- <p className="text-center text-[10px] text-slate-400 italic">
+ <p className="text-center text-xs text-slate-400 italic">
  Kirim minimal {MAX_TURNS} pesan tegas dan sopan. Progres obrolan: {turns}/{MAX_TURNS}
  </p>
  )}
@@ -1117,7 +1117,7 @@ PENTING UNTUK DIIKUTI:
  <div className="space-y-3 animate-pop-in max-w-md mx-auto pt-3">
  <div className="bg-pink-50 border border-pink-100 rounded-2xl p-3 text-center text-xs text-pink-700 font-semibold leading-relaxed">
  Sesi obrolan selesai! Analisis kasus ini dengan teliti. Sebagai Penolong Digital, apa tindakan paling tepat, beretika, dan berdampak positif yang akan kamu pilih?
- <p className="text-[10px] text-pink-500 font-normal mt-1 italic"> Peringatan: Jawaban hanya bisa dikirim 1 kali dan tidak dapat diubah!</p>
+ <p className="text-xs text-pink-500 font-normal mt-1 italic"> Peringatan: Jawaban hanya bisa dikirim 1 kali dan tidak dapat diubah!</p>
  </div>
  <div className="space-y-2.5">
  {config.actions.map((a, idx) => (
@@ -1128,7 +1128,7 @@ PENTING UNTUK DIIKUTI:
  >
  <span className="text-base shrink-0 mt-0.5">{a.emoji}</span>
  <div>
- <span className="font-bold text-pink-600 text-[10px] block uppercase mb-1">Opsi {idx + 1}</span>
+ <span className="font-bold text-pink-600 text-xs block uppercase mb-1">Opsi {idx + 1}</span>
  <span className="font-medium">{a.label}</span>
  </div>
  </button>
@@ -1146,7 +1146,7 @@ PENTING UNTUK DIIKUTI:
  >
  <p className="font-bold text-xs flex items-center gap-2 uppercase tracking-wider">
  <span>{action.good? ' Pilihan Tepat': ' Evaluasi Tindakan'}</span>
- <span className="ml-auto text-[8px] bg-white/50 px-2 py-0.5 rounded-full border border-black/5">Terkunci</span>
+ <span className="ml-auto text-xs bg-white/50 px-2 py-0.5 rounded-full border border-black/5">Terkunci</span>
  </p>
  <div className="flex gap-2.5 items-start">
  <span className="text-2xl shrink-0">{action.emoji}</span>

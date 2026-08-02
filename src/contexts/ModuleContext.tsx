@@ -76,10 +76,10 @@ export function ModuleProvider({ children }: { children: ReactNode }) {
         const localData = localStorage.getItem(`sibercerdas_custom_topics_${guruId}`);
         if (localData) {
           const parsed: Topic[] = JSON.parse(localData);
-          // Safety cleanup: filter out custom overrides that are empty or have fewer than 5 steps
+          // Safety cleanup: filter out cached default topic overrides so latest DEFAULT_TOPICS from modules.ts take effect
           const validList = parsed.filter((t) => {
             const isDefaultId = DEFAULT_TOPICS.some((dt) => dt.id === t.id);
-            if (isDefaultId && (!t.steps || t.steps.length < 5)) {
+            if (isDefaultId && (!t.isEditedByTeacher || !t.steps || t.steps.length < 5)) {
               return false;
             }
             return true;
@@ -157,7 +157,8 @@ export function ModuleProvider({ children }: { children: ReactNode }) {
 
   // Save/Update a topic
   const saveTopic = useCallback(
-    async (topic: Topic) => {
+    async (topicInput: Topic) => {
+      const topic = { ...topicInput, isEditedByTeacher: true };
       if (isDemo || !db) {
         // Save to localStorage
         try {

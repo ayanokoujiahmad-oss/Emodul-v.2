@@ -95,6 +95,7 @@ export interface Topic {
   steps: TopicStep[];
   badgeId: string;
   backgroundImageUrl?: string;
+  isEditedByTeacher?: boolean;
 }
 
 export interface Module {

@@ -154,7 +154,7 @@ export function Topik3Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  return (
  <div className="bg-white border border-emerald-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-emerald-500">
  Eksplorasi · Aktivitas 1
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -194,7 +194,7 @@ export function Topik3Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  <span className="w-2.5 h-2.5 rounded-full bg-amber-450 block" />
  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 block" />
  </div>
- <div className="bg-white rounded-lg px-3 py-1 text-[10px] font-mono text-slate-500 flex-1 border border-slate-300 flex items-center gap-1.5 truncate">
+ <div className="bg-white rounded-lg px-3 py-1 text-xs font-mono text-slate-500 flex-1 border border-slate-300 flex items-center gap-1.5 truncate">
  {form.domain.endsWith('.xyz') ? (
  <AlertTriangle className="h-3 w-3 text-amber-500" />
  ) : (
@@ -210,19 +210,19 @@ export function Topik3Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  <p className="font-display font-extrabold text-sm text-slate-800 flex items-center gap-1.5">
  {form.nama}
  </p>
- <p className="text-[10px] text-slate-400 mt-1">{form.deskripsi}</p>
+ <p className="text-xs text-slate-400 mt-1">{form.deskripsi}</p>
  </div>
 
  {/* Visual Fields */}
  <div className="space-y-3 bg-slate-50/50 p-3 rounded-xl border border-slate-200/50">
  {form.fieldsMock.map((field, i) => (
  <div key={i} className="space-y-1">
- <label className="text-[10px] font-bold text-slate-600 flex items-center gap-1">
+ <label className="text-xs font-bold text-slate-600 flex items-center gap-1">
  <span>{field.label}</span>
- {field.required && <span className="text-rose-500 text-[9px] font-normal">*Wajib</span>}
+ {field.required && <span className="text-rose-500 text-xs font-normal">*Wajib</span>}
  </label>
  {field.type === 'file'? (
- <div className="border border-dashed border-slate-300 rounded-lg p-3 bg-white text-center text-[10px] text-slate-400 font-semibold cursor-not-allowed">
+ <div className="border border-dashed border-slate-300 rounded-lg p-3 bg-white text-center text-xs text-slate-400 font-semibold cursor-not-allowed">
  Klik untuk mengunggah berkas ({field.placeholder})
  </div>
  ): (
@@ -252,11 +252,11 @@ export function Topik3Aktivitas1({ answers = {}, onSave }: ActivityProps) {
 
  {/* Classification Table Area */}
  <div className="bg-white p-4">
- <p className="text-[10px] uppercase font-bold tracking-widest text-slate-400 mb-3 text-left">
+ <p className="text-xs uppercase font-bold tracking-widest text-slate-400 mb-3 text-left">
  KLASIFIKASIKAN DATA PADA FORMULIR DI ATAS:
  </p>
  <div className="overflow-x-auto">
- <table className="w-full border-collapse text-[11px] text-left">
+ <table className="w-full border-collapse text-xs text-left">
  <thead>
  <tr className="bg-emerald-50 text-emerald-800">
  <th className="p-2.5 border border-emerald-100 font-bold">Data yang Diminta</th>
@@ -295,7 +295,7 @@ export function Topik3Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  disabled={submitted}
  onChange={(e) => update(fieldKey, 'alasan', e.target.value)}
  placeholder="Tulis alasan singkat..."
- className="w-full px-2.5 py-1.5 border border-slate-200 rounded-lg focus:border-emerald-400 focus:outline-none text-[11px] disabled:bg-slate-50 disabled:text-slate-400"
+ className="w-full px-2.5 py-1.5 border border-slate-200 rounded-lg focus:border-emerald-400 focus:outline-none text-xs disabled:bg-slate-50 disabled:text-slate-400"
  />
  </td>
  </tr>
@@ -370,7 +370,7 @@ export function Topik3Aktivitas2({ answers = {}, onSave }: ActivityProps) {
  return (
  <div className="bg-white border border-emerald-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-emerald-500">
  Eksplorasi · Aktivitas 2
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -395,7 +395,7 @@ export function Topik3Aktivitas2({ answers = {}, onSave }: ActivityProps) {
  💬
  </div>
  <div className="bg-white border border-slate-200 rounded-2xl rounded-tl-sm px-4 py-2.5 shadow-sm">
- <p className="text-[10px] font-bold text-slate-400 mb-0.5">Pesan {idx + 1} · {p.from}</p>
+ <p className="text-xs font-bold text-slate-400 mb-0.5">Pesan {idx + 1} · {p.from}</p>
  <p className="text-sm text-slate-705 leading-relaxed">"{p.text}"</p>
  </div>
  </div>
@@ -403,7 +403,7 @@ export function Topik3Aktivitas2({ answers = {}, onSave }: ActivityProps) {
  {/* Analysis fields */}
  <div className="grid sm:grid-cols-2 gap-3 pl-10">
  <div>
- <label className="text-[11px] font-bold text-slate-655 block mb-1">Data yang diminta:</label>
+ <label className="text-xs font-bold text-slate-655 block mb-1">Data yang diminta:</label>
  <input
  type="text"
  value={pd.data || ''}
@@ -413,7 +413,7 @@ export function Topik3Aktivitas2({ answers = {}, onSave }: ActivityProps) {
  />
  </div>
  <div>
- <label className="text-[11px] font-bold text-slate-655 block mb-1">Keputusanmu:</label>
+ <label className="text-xs font-bold text-slate-655 block mb-1">Keputusanmu:</label>
  <div className="flex gap-2 flex-row">
  <button
  onClick={() => update(p.id, 'keputusan', 'boleh')}
@@ -491,7 +491,7 @@ export function Topik3Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  return (
  <div className="bg-white border border-emerald-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-emerald-500">
  Eksplorasi · Aktivitas 3
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -533,7 +533,7 @@ export function Topik3Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  <ChecklistItem ok={checks.simbol} label="Ada simbol (!@#$...)" />
  </ul>
 
- <p className="text-[11px] text-slate-400 italic">
+ <p className="text-xs text-slate-400 italic">
  Tips: gabungkan kata yang mudah kamu ingat dengan angka dan simbol. Contoh aman:
  <b className="text-slate-655"> Kuc1ng_Oren!</b>
  </p>
@@ -726,7 +726,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
       `}</style>
 
       <div>
-        <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-500">
+        <span className="text-xs uppercase font-bold tracking-widest text-emerald-500">
           Eksplorasi · Aktivitas 4
         </span>
         <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -744,7 +744,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
         <div className="flex items-center gap-1.5">
           <span>🖥️ Browser Evaluasi Situs</span>
         </div>
-        <div className="bg-emerald-50/60 text-emerald-700 border border-emerald-100 rounded-full px-3 py-1 flex items-center gap-2 font-mono text-[11px]">
+        <div className="bg-emerald-50/60 text-emerald-700 border border-emerald-100 rounded-full px-3 py-1 flex items-center gap-2 font-mono text-xs">
           <span>Analisis: <b>{totalAnalyzed}/5</b></span>
           <span className="text-emerald-250">|</span>
           <span>Benar: <b>{correctCount}/5</b></span>
@@ -807,19 +807,19 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
           {/* Address Bar */}
           <div className="bg-white rounded-lg px-2.5 py-1 flex-1 border border-slate-300 flex items-center gap-2 truncate shadow-inner flex-row">
             {activeSiteData.isSecure ? (
-              <div className="flex items-center gap-1 text-emerald-600 bg-emerald-50 border border-emerald-100 px-1.5 py-0.5 rounded-md text-[8px] font-bold shrink-0">
+              <div className="flex items-center gap-1 text-emerald-600 bg-emerald-50 border border-emerald-100 px-1.5 py-0.5 rounded-md text-xs font-bold shrink-0">
                 <Lock className="h-2 w-2" />
                 <span>Aman</span>
               </div>
             ) : (
-              <div className="flex items-center gap-1 text-rose-600 bg-rose-50 border border-rose-100 px-1.5 py-0.5 rounded-md text-[8px] font-bold shrink-0">
+              <div className="flex items-center gap-1 text-rose-600 bg-rose-50 border border-rose-100 px-1.5 py-0.5 rounded-md text-xs font-bold shrink-0">
                 <AlertTriangle className="h-2 w-2" />
                 <span>Bahaya</span>
               </div>
             )}
             
             {/* Highlight Domain */}
-            <div className="text-[10px] font-mono text-slate-700 flex-1 truncate text-left">
+            <div className="text-xs font-mono text-slate-700 flex-1 truncate text-left">
               {activeSiteData.isSecure ? (
                 <>
                   <span className="text-slate-400">https://</span>
@@ -848,7 +848,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
           <button 
             disabled={activeProgress.actionTaken !== null || virusInfected} 
             onClick={handleExitSite} 
-            className={`font-display font-extrabold text-[10px] px-3 py-1.5 rounded-lg border transition-all flex items-center gap-1 shrink-0 ${
+            className={`font-display font-extrabold text-xs px-3 py-1.5 rounded-lg border transition-all flex items-center gap-1 shrink-0 ${
               activeProgress.actionTaken !== null || virusInfected
                 ? 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed' 
                 : 'bg-rose-50 text-rose-600 border-rose-250 hover:bg-rose-650 hover:text-white hover:border-rose-650 active:scale-95 shadow-sm'
@@ -869,11 +869,11 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                 <h1 className="font-black text-xs sm:text-sm tracking-widest text-red-500 animate-pulse animate-glitch-text">
                   🚨 SYSTEM SECURITY ALERT: DATA DIBOBOBOL! 🚨
                 </h1>
-                <p className="text-[9px] text-red-400 mt-1">PROTOKOL KEAMANAN DIHACK · VIRUS TERDETEKSI</p>
+                <p className="text-xs text-red-400 mt-1">PROTOKOL KEAMANAN DIHACK · VIRUS TERDETEKSI</p>
               </div>
 
               {/* simulated logs */}
-              <div className="bg-red-950/20 border border-red-900 rounded-lg p-3 text-[9px] sm:text-[10px] space-y-1 text-red-400 font-mono flex-1 overflow-y-auto">
+              <div className="bg-red-950/20 border border-red-900 rounded-lg p-3 text-xs space-y-1 text-red-400 font-mono flex-1 overflow-y-auto">
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500 block animate-ping" />
                   <span>[ATTACK] Domain Phishing: <span className="underline">{activeSiteData.url}</span></span>
@@ -889,7 +889,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
               </div>
 
               <div className="space-y-2 pt-2 shrink-0">
-                <div className="bg-red-950/40 border border-red-500/30 rounded-xl p-3 text-[10px] sm:text-xs leading-relaxed text-red-300 font-sans text-center">
+                <div className="bg-red-950/40 border border-red-500/30 rounded-xl p-3 text-xs leading-relaxed text-red-300 font-sans text-center">
                   💡 <b>Pelajaran:</b> Situs palsu (phishing) dibuat semirip mungkin untuk memancing emosi seperti kuis berhadiah, robux gratis, atau lomba palsu. Jangan pernah memasukkan sandi atau data sensitif di web tidak aman (HTTP).
                 </div>
                 
@@ -930,22 +930,22 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                   }`}>
                     {activeProgress.isCorrect ? 'Analisis Tepat! ✅' : 'Keputusan Kurang Aman! ❌'}
                   </h3>
-                  <p className="text-[9px] text-slate-400 font-mono">
+                  <p className="text-xs text-slate-400 font-mono">
                     Tindakan: {activeProgress.actionTaken === 'close' ? 'Menutup Tab (Keluar)' : 'Mengisi & Mengirim Formulir'}
                   </p>
                 </div>
 
                 {/* Analysis Box */}
                 <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-3 text-left text-xs leading-relaxed space-y-1.5">
-                  <span className="font-bold text-[9px] text-slate-400 uppercase tracking-widest block">
+                  <span className="font-bold text-xs text-slate-400 uppercase tracking-widest block">
                     🔍 Ulasan Analisis:
                   </span>
-                  <p className="text-slate-350 text-[11px] sm:text-xs">
+                  <p className="text-slate-350 text-xs">
                     {activeProgress.actionTaken === 'close' ? activeSiteData.feedbackClose : activeSiteData.feedbackSubmit}
                   </p>
                 </div>
 
-                <div className="text-[10px] text-slate-400 italic">
+                <div className="text-xs text-slate-400 italic">
                   💡 Klik tab nomor situs lain di atas untuk melanjutkan evaluasi.
                 </div>
               </div>
@@ -969,14 +969,14 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                     <h4 className="font-extrabold text-sm sm:text-base text-yellow-400 tracking-wider uppercase animate-pulse">
                       🎁 HADIAH 10.000 ROBUX GRATIS INDONESIA 🎁
                     </h4>
-                    <p className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">
+                    <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">
                       Promo Terbatas Khusus Murid Sekolah Hari Ini!
                     </p>
                   </div>
 
                   <form onSubmit={submitSite1} className="w-full max-w-xs space-y-2 bg-slate-900 border border-yellow-500/10 p-3.5 rounded-xl text-left">
                     <div className="space-y-0.5">
-                      <label className="text-[9px] font-bold text-slate-400">Username Akun Roblox</label>
+                      <label className="text-xs font-bold text-slate-400">Username Akun Roblox</label>
                       <input 
                         required 
                         placeholder="Contoh: RakaGamer77" 
@@ -985,7 +985,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                       />
                     </div>
                     <div className="space-y-0.5">
-                      <label className="text-[9px] font-bold text-slate-400">Kata Sandi Roblox (Password)</label>
+                      <label className="text-xs font-bold text-slate-400">Kata Sandi Roblox (Password)</label>
                       <input 
                         required 
                         type="password" 
@@ -995,7 +995,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                       />
                     </div>
                     <div className="space-y-0.5">
-                      <label className="text-[9px] font-bold text-slate-400">Nomor HP Orang Tua (Konfirmasi Penerima)</label>
+                      <label className="text-xs font-bold text-slate-400">Nomor HP Orang Tua (Konfirmasi Penerima)</label>
                       <input 
                         required 
                         placeholder="Contoh: 0812-xxxx-xxxx" 
@@ -1026,14 +1026,14 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                     <h4 className="font-extrabold text-sm sm:text-base text-indigo-900 tracking-tight">
                       🏆 LOMBA MENGGAMBAR NASIONAL KREATIF 🏆
                     </h4>
-                    <p className="text-[9px] text-fuchsia-600 font-bold uppercase tracking-wider">
+                    <p className="text-xs text-fuchsia-600 font-bold uppercase tracking-wider">
                       Menangkan Hadiah Laptop & Beasiswa Uang Tunai!
                     </p>
                   </div>
 
                   <form onSubmit={submitSite2} className="w-full max-w-xs space-y-2 bg-white/95 border border-indigo-50 p-3.5 rounded-xl text-left">
                     <div className="space-y-0.5">
-                      <label className="text-[9px] font-bold text-slate-600">Nama Lengkap Siswa</label>
+                      <label className="text-xs font-bold text-slate-600">Nama Lengkap Siswa</label>
                       <input 
                         required 
                         placeholder="Nama lengkap sesuai rapor sekolah..." 
@@ -1042,7 +1042,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                       />
                     </div>
                     <div className="space-y-0.5">
-                      <label className="text-[9px] font-bold text-slate-600">Alamat Rumah Lengkap (Untuk Pengiriman)</label>
+                      <label className="text-xs font-bold text-slate-600">Alamat Rumah Lengkap (Untuk Pengiriman)</label>
                       <input 
                         required 
                         placeholder="Nama jalan, RT/RW, nomor rumah..." 
@@ -1051,7 +1051,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                       />
                     </div>
                     <div className="space-y-0.5">
-                      <label className="text-[9px] font-bold text-slate-600">Nomor HP Orang Tua</label>
+                      <label className="text-xs font-bold text-slate-600">Nomor HP Orang Tua</label>
                       <input 
                         required 
                         placeholder="Contoh: 0812-xxxx-xxxx" 
@@ -1075,7 +1075,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                       🇮🇩
                     </div>
                     <div className="text-left">
-                      <h5 className="font-extrabold text-[8px] uppercase tracking-wider text-amber-300">
+                      <h5 className="font-extrabold text-xs uppercase tracking-wider text-amber-300">
                         Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi
                       </h5>
                       <h4 className="font-bold text-xs uppercase tracking-tight text-white leading-tight">
@@ -1086,14 +1086,14 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
 
                   <div className="p-4 flex flex-col items-center space-y-3">
                     <div className="text-center">
-                      <span className="text-[9px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full uppercase border border-blue-100 inline-block">
+                      <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full uppercase border border-blue-100 inline-block">
                         Portal Resmi Ujian Sekolah
                       </span>
                     </div>
 
                     <form onSubmit={submitSite3} className="w-full max-w-xs space-y-2 bg-white border border-slate-200 p-3.5 rounded-xl text-left shadow-sm">
                       <div className="space-y-0.5">
-                        <label className="text-[9px] font-bold text-slate-655">Username ANBK Siswa</label>
+                        <label className="text-xs font-bold text-slate-655">Username ANBK Siswa</label>
                         <input 
                           required 
                           placeholder="Username ANBK (contoh: U0305xxxx)" 
@@ -1102,7 +1102,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                         />
                       </div>
                       <div className="space-y-0.5">
-                        <label className="text-[9px] font-bold text-slate-655">Token Ujian (Minta ke Pengawas)</label>
+                        <label className="text-xs font-bold text-slate-655">Token Ujian (Minta ke Pengawas)</label>
                         <input 
                           required 
                           type="password" 
@@ -1112,7 +1112,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                         />
                       </div>
                       <div className="space-y-0.5">
-                        <label className="text-[9px] font-bold text-slate-655">Nomor Peserta Ujian</label>
+                        <label className="text-xs font-bold text-slate-655">Nomor Peserta Ujian</label>
                         <input 
                           required 
                           placeholder="Contoh: 1-26-02-xxxx-xxxx" 
@@ -1143,7 +1143,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                     <h4 className="font-extrabold text-sm sm:text-base text-cyan-300 tracking-wide uppercase">
                       🔮 KUIS INSTAN: WAJAH HEWAN KEREN KEPRIBADIANMU! 🔮
                     </h4>
-                    <p className="text-[9px] text-purple-200">
+                    <p className="text-xs text-purple-200">
                       Cari tahu hewan pelindung jiwamu secara instan!
                     </p>
                   </div>
@@ -1151,12 +1151,12 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                   <form onSubmit={submitSite4} className="w-full max-w-xs space-y-2 bg-white text-slate-800 p-3.5 rounded-xl text-left shadow-lg border border-slate-200">
                     <div className="border-b border-slate-100 pb-1.5 text-center">
                       <span className="text-xs font-extrabold text-blue-600 tracking-tight flex items-center justify-center gap-1">
-                        <span className="bg-blue-650 text-white font-mono font-black w-4.5 h-4.5 rounded flex items-center justify-center text-[10px]">f</span>
+                        <span className="bg-blue-650 text-white font-mono font-black w-4.5 h-4.5 rounded flex items-center justify-center text-xs">f</span>
                         Masuk dengan Facebook
                       </span>
                     </div>
                     <div className="space-y-0.5">
-                      <label className="text-[9px] font-bold text-slate-500">Email atau Nomor HP Facebook</label>
+                      <label className="text-xs font-bold text-slate-500">Email atau Nomor HP Facebook</label>
                       <input 
                         required 
                         placeholder="Email atau nomor HP Facebook..." 
@@ -1165,7 +1165,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                       />
                     </div>
                     <div className="space-y-0.5">
-                      <label className="text-[9px] font-bold text-slate-500">Kata Sandi Facebook (Password)</label>
+                      <label className="text-xs font-bold text-slate-500">Kata Sandi Facebook (Password)</label>
                       <input 
                         required 
                         type="password" 
@@ -1190,7 +1190,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                       🏫
                     </div>
                     <div className="text-left">
-                      <h5 className="font-extrabold text-[8px] uppercase tracking-wider text-teal-300">
+                      <h5 className="font-extrabold text-xs uppercase tracking-wider text-teal-300">
                         Portal Tugas Resmi Sekolah
                       </h5>
                       <h4 className="font-bold text-xs uppercase tracking-tight text-white leading-tight">
@@ -1203,7 +1203,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                     {/* CSS Notebook illustration */}
                     <div className="relative w-16 h-10 animate-float my-1 shrink-0 flex items-center justify-center">
                       <div className="absolute w-12 h-8 bg-amber-400 rounded border border-amber-500 transform -rotate-6 translate-y-0.5"></div>
-                      <div className="absolute w-12 h-8 bg-teal-500 rounded border border-teal-600 transform rotate-3 flex items-center justify-center text-[10px]">
+                      <div className="absolute w-12 h-8 bg-teal-500 rounded border border-teal-600 transform rotate-3 flex items-center justify-center text-xs">
                         📝
                       </div>
                     </div>
@@ -1211,7 +1211,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                     <form onSubmit={submitSite5} className="w-full max-w-xs space-y-2 bg-white border border-teal-150 p-3.5 rounded-xl text-left shadow-sm">
                       <div className="grid grid-cols-2 gap-2">
                         <div className="space-y-0.5">
-                          <label className="text-[9px] font-bold text-slate-600">Nama Lengkap</label>
+                          <label className="text-xs font-bold text-slate-600">Nama Lengkap</label>
                           <input 
                             required 
                             placeholder="Nama siswa..." 
@@ -1220,7 +1220,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                           />
                         </div>
                         <div className="space-y-0.5">
-                          <label className="text-[9px] font-bold text-slate-600">Kelas</label>
+                          <label className="text-xs font-bold text-slate-600">Kelas</label>
                           <input 
                             required 
                             placeholder="Contoh: 6-A" 
@@ -1230,7 +1230,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                         </div>
                       </div>
                       <div className="space-y-0.5">
-                        <label className="text-[9px] font-bold text-slate-600">Nomor Urut Absen</label>
+                        <label className="text-xs font-bold text-slate-600">Nomor Urut Absen</label>
                         <input 
                           required 
                           type="number"
@@ -1240,10 +1240,10 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                         />
                       </div>
                       <div className="space-y-0.5">
-                        <label className="text-[9px] font-bold text-slate-600">Berkas Lampiran (Simulasi)</label>
+                        <label className="text-xs font-bold text-slate-600">Berkas Lampiran (Simulasi)</label>
                         <div className="border border-dashed border-teal-200 rounded p-2 bg-teal-50/30 text-center">
-                          <span className="text-[8px] font-bold text-teal-800 block">📄 ringkasan_tugas_keamanan.pdf</span>
-                          <span className="text-[7px] text-slate-400">Terlampir otomatis dari perangkat sekolah</span>
+                          <span className="text-xs font-bold text-teal-800 block">📄 ringkasan_tugas_keamanan.pdf</span>
+                          <span className="text-xs text-slate-400">Terlampir otomatis dari perangkat sekolah</span>
                         </div>
                       </div>
                       <button className="w-full py-2 bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold rounded-lg transition-all shadow-md mt-2">
@@ -1267,7 +1267,7 @@ export function Topik3Aktivitas4({ answers = {}, onSave }: ActivityProps) {
             <AlertTriangle className="h-4 w-4 text-amber-500 shrink-0" />
             <span>Kamu baru mengevaluasi <b>{totalAnalyzed} dari 5</b> situs. Evaluasi semua situs di atas terlebih dahulu untuk membuka pengiriman jawaban.</span>
           </div>
-          <div className="text-[10px] uppercase font-bold text-amber-600 tracking-wider shrink-0">
+          <div className="text-xs uppercase font-bold text-amber-600 tracking-wider shrink-0">
             Belum Selesai
           </div>
         </div>

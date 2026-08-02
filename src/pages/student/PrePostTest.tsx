@@ -336,7 +336,7 @@ export default function PrePostTest({ mode }: PrePostTestProps) {
  <button
  key={idx}
  onClick={() => setCurrentIdx(idx)}
- className={`w-7 h-7 rounded-full flex items-center justify-center text-[10px] font-bold transition-all ${
+ className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
  idx === currentIdx
 ? 'bg-primary-500 text-white shadow-glow'
 : answers[questions[idx].id]!== undefined
@@ -351,7 +351,7 @@ export default function PrePostTest({ mode }: PrePostTestProps) {
 
  {/* Progress bar */}
  <div className="bg-white rounded-2xl p-4 border border-primary-100/40 shadow-sm space-y-1.5">
- <div className="flex justify-between text-[10px] font-bold text-primary-400">
+ <div className="flex justify-between text-xs font-bold text-primary-400">
  <span>SOAL TERJAWAB: {answeredCount} / {questions.length}</span>
  <span>{progressPercent}%</span>
  </div>
@@ -459,7 +459,7 @@ export default function PrePostTest({ mode }: PrePostTestProps) {
 
  <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
  <div className="bg-white border border-primary-100 p-4 rounded-2xl shadow-sm">
- <span className="text-[10px] text-primary-400 font-bold block">SKOR KAMU</span>
+ <span className="text-xs text-primary-400 font-bold block">SKOR KAMU</span>
  <span className="text-3xl font-black text-primary-600 font-display">
  {score}%
  </span>
@@ -467,11 +467,11 @@ export default function PrePostTest({ mode }: PrePostTestProps) {
 
  {mode === 'post-test' && nGain!== null && (
  <div className="bg-white border border-primary-100 p-4 rounded-2xl shadow-sm">
- <span className="text-[10px] text-primary-400 font-bold block">N-GAIN SCORE</span>
+ <span className="text-xs text-primary-400 font-bold block">N-GAIN SCORE</span>
  <span className={`text-base font-bold px-2 py-0.5 rounded-lg border inline-block mt-1 ${getNGainInterpretation(nGain).style}`}>
  {getNGainInterpretation(nGain).label}
  </span>
- <span className="text-[9px] text-gray-400 block mt-1">Nilai Gain: {nGain}</span>
+ <span className="text-xs text-gray-400 block mt-1">Nilai Gain: {nGain}</span>
  </div>
  )}
  </div>

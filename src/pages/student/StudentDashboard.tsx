@@ -313,7 +313,7 @@ const StudentDashboard: React.FC = () => {
             <h1 className="text-2xl md:text-3xl font-display font-bold text-surface-900">
               Halo, {profile?.displayName ?? 'Penjelajah'}!
             </h1>
-            <p className="text-surface-600 text-sm leading-relaxed">
+            <p className="text-surface-600 text-base leading-relaxed">
               Ayo lanjutkan petualangan etika dan keamanan digitalmu! <span className="font-bold text-primary-600">Ketuk ikon topik aktif (berwarna biru)</span> pada peta petualangan di bawah untuk memulai pembelajaran.
             </p>
           </div>
@@ -329,7 +329,7 @@ const StudentDashboard: React.FC = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="bg-danger-50 border border-danger-200 rounded-2xl p-4 text-danger-600 text-sm"
+              className="bg-danger-50 border border-danger-200 rounded-2xl p-4 text-danger-600 text-base"
             >
               {error}
             </motion.div>
@@ -345,7 +345,7 @@ const StudentDashboard: React.FC = () => {
 
           <div className="relative h-64 min-h-[260px] w-full overflow-x-auto rounded-2xl border border-surface-200 bg-white p-6 shadow-card scrollbar-none">
             {/* Scroll Hint for Mobile */}
-            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-surface-850/80 backdrop-blur-xs text-white px-3 py-1 rounded-full text-[9px] font-black flex items-center gap-1 lg:hidden animate-pulse pointer-events-none z-30 shadow-sm">
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-surface-850/80 backdrop-blur-xs text-white px-3 py-1 rounded-full text-xs font-black flex items-center gap-1 lg:hidden animate-pulse pointer-events-none z-30 shadow-sm">
               <span>👈 Geser ke samping untuk melihat topik lain 👉</span>
             </div>
 
@@ -412,7 +412,7 @@ const StudentDashboard: React.FC = () => {
                           scale: { type: "spring", stiffness: 300, damping: 15 }
                         }}
                       >
-                        <div className="mb-0.5 whitespace-nowrap rounded-full bg-primary-500 px-2 py-0.5 text-[8px] font-black uppercase tracking-wider text-white shadow-card">
+                        <div className="mb-0.5 whitespace-nowrap rounded-full bg-primary-500 px-2 py-0.5 text-xs font-black uppercase tracking-wider text-white shadow-card">
                           {isActive ? 'Kamu di sini!' : 'Misi Selesai!'}
                         </div>
                         <img
@@ -444,15 +444,15 @@ const StudentDashboard: React.FC = () => {
                       </span>
 
                       {/* Small Indicator Badge */}
-                      <span className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full border border-surface-200 bg-white text-[10px] font-extrabold text-surface-700 shadow-xs">
+                      <span className="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full border border-surface-200 bg-white text-xs font-extrabold text-surface-700 shadow-xs">
                         {topic.number}
                       </span>
                     </button>
 
                     {/* Floating Title */}
                     <div className="absolute top-16 pointer-events-none max-w-[120px] rounded-lg border border-surface-200 bg-white px-2.5 py-1 text-center shadow-2xs">
-                      <p className="truncate text-[10px] font-black leading-tight text-surface-800">{topic.title}</p>
-                      <p className="mt-0.5 text-[8px] font-bold uppercase tracking-wide text-surface-400">
+                      <p className="truncate text-xs font-black leading-tight text-surface-800">{topic.title}</p>
+                      <p className="mt-0.5 text-xs font-bold uppercase tracking-wide text-surface-400">
                         {isCompleted ? 'Selesai' : isActive ? 'Aktif' : 'Terkunci'}
                       </p>
                     </div>
@@ -506,7 +506,7 @@ const StudentDashboard: React.FC = () => {
                   <div className="relative z-10 p-5 flex flex-col justify-between h-full text-white">
                     {/* Top row: Topic Number & Status Icon */}
                     <div className="flex justify-between items-center">
-                      <span className="text-[10px] font-bold bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10">
+                      <span className="text-xs font-bold bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10">
                         Topik {topic.number}
                       </span>
                       <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15 text-white">
@@ -525,7 +525,7 @@ const StudentDashboard: React.FC = () => {
                       <h3 className="font-display font-bold text-base leading-tight text-white">
                         {topic.title}
                       </h3>
-                      <p className="text-[10px] text-white/70 line-clamp-2 leading-relaxed">
+                      <p className="text-xs text-white/70 line-clamp-2 leading-relaxed">
                         {topic.description}
                       </p>
                     </div>
@@ -533,7 +533,7 @@ const StudentDashboard: React.FC = () => {
                     {/* Bottom row: Button / Lock status */}
                     <div className="pt-3 border-t border-white/10 mt-3 flex justify-between items-center">
                       {isLocked ? (
-                        <span className="text-xs text-white/50 flex items-center gap-1 font-semibold">
+                        <span className="text-sm text-white/50 flex items-center gap-1 font-semibold">
                           <Lock className="h-3.5 w-3.5" />
                           Terkunci
                         </span>
@@ -541,7 +541,7 @@ const StudentDashboard: React.FC = () => {
                         <button
                           onClick={() => navigate(`/siswa/topik/${topic.id}`)}
                           aria-label={`${isCompleted ? 'Ulangi' : isActive ? 'Mulai' : 'Lanjut'} topik ${topic.number}: ${topic.title}`}
-                          className={`px-4 py-1.5 rounded-xl text-xs font-bold transition-all shadow-md active:scale-95 ${isCompleted
+                          className={`px-4 py-1.5 rounded-xl text-sm font-bold transition-all shadow-md active:scale-95 ${isCompleted
                             ? 'bg-success-500 hover:bg-success-600 text-white'
                             : 'bg-primary-500 hover:bg-primary-600 text-white'
                             }`}
@@ -605,7 +605,7 @@ const StudentDashboard: React.FC = () => {
             >
               <div className="flex items-center gap-2 mb-2">
                 <span className={`${card.text}`}>{card.icon}</span>
-                <span className="text-xs font-bold text-surface-500 uppercase tracking-wide">{card.label}</span>
+                <span className="text-sm font-bold text-surface-500 uppercase tracking-wide">{card.label}</span>
               </div>
               <p className={`text-2xl font-display font-bold ${card.text}`}>{card.value}</p>
             </motion.div>
@@ -655,7 +655,7 @@ const StudentDashboard: React.FC = () => {
               Galeri Kelas
             </h2>
             <motion.button
-              className="text-sm text-primary-500 font-semibold flex items-center gap-1 hover:text-primary-600 transition-colors"
+              className="text-base text-primary-500 font-semibold flex items-center gap-1 hover:text-primary-600 transition-colors"
               whileHover={{ x: 4 }}
               onClick={() => navigate('/siswa/galeri')}
             >
@@ -665,7 +665,7 @@ const StudentDashboard: React.FC = () => {
 
           {galleryItems.length === 0 ? (
             <div className="rounded-2xl border border-surface-200 bg-white p-8 text-center shadow-card">
-              <p className="text-surface-500 text-sm">
+              <p className="text-surface-500 text-base">
                 Belum ada karya yang dibagikan. Jadilah yang pertama.
               </p>
             </div>
@@ -692,22 +692,22 @@ const StudentDashboard: React.FC = () => {
                 >
                   {/* Author */}
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-50 text-[11px] font-bold text-primary-700">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-700">
                       {(item.displayName || 'SC').slice(0, 2).toUpperCase()}
                     </span>
                     <div>
-                      <p className="text-sm font-semibold text-surface-800 leading-tight">
+                      <p className="text-base font-semibold text-surface-800 leading-tight">
                         {item.displayName}
                       </p>
-                      <p className="text-[10px] text-surface-500">{item.topicTitle}</p>
+                      <p className="text-xs text-surface-500">{item.topicTitle}</p>
                     </div>
                   </div>
                   {/* Excerpt */}
-                  <p className="mb-3 line-clamp-3 text-xs leading-relaxed text-surface-600">
+                  <p className="mb-3 line-clamp-3 text-sm leading-relaxed text-surface-600">
                     {item.content}
                   </p>
                   {/* Appreciations */}
-                  <div className="flex gap-3 text-xs text-surface-500">
+                  <div className="flex gap-3 text-sm text-surface-500">
                     <span className="inline-flex items-center gap-1">
                       <ThumbsUp className="h-3.5 w-3.5" />
                       {item.appreciations?.thumbs ?? 0}

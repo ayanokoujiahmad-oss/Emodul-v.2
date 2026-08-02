@@ -132,7 +132,7 @@ export function Topik4Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  <div className="bg-white border border-red-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
  <div className="flex items-start justify-between gap-3">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-red-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-red-500">
  Eksplorasi · Aktivitas 1
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -148,7 +148,7 @@ export function Topik4Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  </span>
  </div>
 
- <div className="flex items-center justify-between text-[11px] font-bold text-slate-400">
+ <div className="flex items-center justify-between text-xs font-bold text-slate-400">
  <span>Tautan {idx + 1} dari {TAUTAN.length}</span>
  <span>{link.label}</span>
  </div>
@@ -161,7 +161,7 @@ export function Topik4Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  <span className="w-2.5 h-2.5 rounded-full bg-amber-400 block" />
  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 block" />
  </div>
- <div className="flex-1 bg-slate-900 rounded-lg px-3 py-1 text-[10px] font-mono text-slate-300 truncate">
+ <div className="flex-1 bg-slate-900 rounded-lg px-3 py-1 text-xs font-mono text-slate-300 truncate">
  {link.url.startsWith('https') ? (
  <Lock className="mr-1 inline h-3 w-3 text-emerald-300" />
  ) : (
@@ -469,7 +469,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
       <div className="bg-white border border-red-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-6">
         {/* Top Header Info */}
         <div className="border-b border-slate-100 pb-4">
-          <span className="text-[10px] uppercase font-bold tracking-widest text-red-500">
+          <span className="text-xs uppercase font-bold tracking-widest text-red-500">
             Eksplorasi · Aktivitas 3
           </span>
           <h3 className="font-display font-bold text-xl text-primary-800 mt-1">
@@ -491,8 +491,8 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                   <span className="w-2.5 h-2.5 rounded-full bg-amber-400 block" />
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 block" />
                 </div>
-                <div className="text-[10px] text-slate-400 font-mono">http://sibercerdas.kemdikbud.go.id/simulasi-topik4</div>
-                <span className="text-[10px] text-slate-500 font-mono">🔋 100%</span>
+                <div className="text-xs text-slate-400 font-mono">http://sibercerdas.kemdikbud.go.id/simulasi-topik4</div>
+                <span className="text-xs text-slate-500 font-mono">🔋 100%</span>
               </div>
               <div className="flex-1 p-6 bg-slate-950 flex flex-col justify-center items-center text-center space-y-5 relative">
                 <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px]" />
@@ -503,16 +503,16 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                   <h4 className="font-display font-black text-lg text-primary-450 tracking-wider">
                     🚀 MISI KAPTEN DIGITAL: PENYELAMATAN SIBER
                   </h4>
-                  <p className="text-[10.5px] text-slate-350 leading-relaxed">
+                  <p className="text-xs text-slate-350 leading-relaxed">
                     Chromebook belajarmu dan akun game-mu sedang diincar oleh peretas jahat! Hadapi 5 situasi siber berbahaya dan ambil keputusan penyelamatan yang tepat.
                   </p>
-                  <p className="text-[10px] text-emerald-450 font-bold pt-1 bg-emerald-950/30 border border-emerald-900/35 px-4 py-2 rounded-xl inline-block">
+                  <p className="text-xs text-emerald-450 font-bold pt-1 bg-emerald-950/30 border border-emerald-900/35 px-4 py-2 rounded-xl inline-block">
                     Aturan: Amati gambar di layar laptop, lalu ketuk area tindakan yang aman. Pilihanmu langsung dinilai secara permanen!
                   </p>
                 </div>
                 <button
                   onClick={() => setStarted(true)}
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-black text-[10px] py-2.5 px-6 rounded-xl shadow-lg shadow-emerald-600/20 hover:scale-105 transition-all z-10 cursor-pointer animate-bounce"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs py-2.5 px-6 rounded-xl shadow-lg shadow-emerald-600/20 hover:scale-105 transition-all z-10 cursor-pointer animate-bounce"
                 >
                   👉 MULAI MISI SEKARANG 👈
                 </button>
@@ -531,7 +531,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
     <div className="bg-white border border-red-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-6">
       {/* Top Header Info */}
       <div className="border-b border-slate-100 pb-4">
-        <span className="text-[10px] uppercase font-bold tracking-widest text-red-500">
+        <span className="text-xs uppercase font-bold tracking-widest text-red-500">
           Eksplorasi · Aktivitas 3
         </span>
         <h3 className="font-display font-bold text-xl text-primary-800 mt-1">
@@ -545,7 +545,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
       {/* Case Context & Progress horizontal card */}
       <div className="bg-slate-50 border border-slate-150 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 shadow-sm text-left">
         <div className="space-y-1 flex-1">
-          <span className="text-[9.5px] uppercase font-black tracking-widest text-slate-500 flex items-center gap-1.5">
+          <span className="text-xs uppercase font-black tracking-widest text-slate-500 flex items-center gap-1.5">
             <span>{activeCase.emoji}</span>
             <span>{activeCase.judul}</span>
           </span>
@@ -554,11 +554,11 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
           </p>
         </div>
         <div className="flex sm:flex-col items-end gap-2 shrink-0">
-          <span className="text-[10px] font-bold text-slate-500 bg-slate-100 border border-slate-200 rounded-lg px-2.5 py-1">
+          <span className="text-xs font-bold text-slate-500 bg-slate-100 border border-slate-200 rounded-lg px-2.5 py-1">
             Kasus {activeCaseIdx + 1} dari {KASUS.length}
           </span>
           {submitted && (
-            <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 rounded-lg px-2.5 py-1">
+            <span className="text-xs font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 rounded-lg px-2.5 py-1">
               Skor: {score}/{KASUS.length} Tepat
             </span>
           )}
@@ -584,7 +584,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 block" />
               </div>
               {/* Address Bar */}
-              <div className="flex-1 max-w-[280px] bg-slate-950 rounded-lg py-1 px-3 text-[10px] font-mono text-slate-400 flex items-center gap-1.5 mx-auto truncate border border-slate-800 text-left">
+              <div className="flex-1 max-w-[280px] bg-slate-950 rounded-lg py-1 px-3 text-xs font-mono text-slate-400 flex items-center gap-1.5 mx-auto truncate border border-slate-800 text-left">
                 {activeCase.id === 'kasus-1' && (
                   <>
                     <span className="text-amber-500">⚠️ Tidak Aman</span>
@@ -622,7 +622,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                 )}
               </div>
               {/* Battery / Status icon */}
-              <span className="text-[10px] text-slate-500 font-mono hidden sm:inline">📶 94% 🔋</span>
+              <span className="text-xs text-slate-500 font-mono hidden sm:inline">📶 94% 🔋</span>
             </div>
 
             {/* Full Width Display Body */}
@@ -636,26 +636,26 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                   <div className="w-full max-w-xs border border-red-500/30 rounded-2xl bg-slate-900/90 shadow-2xl p-4 text-center space-y-3 animate-pulse-slow relative">
                     <button 
                       onClick={() => handleAction('b')}
-                      className="absolute top-1.5 right-1.5 w-5 h-5 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center font-bold text-[10px]"
+                      className="absolute top-1.5 right-1.5 w-5 h-5 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center font-bold text-xs"
                     >
                       ✕
                     </button>
                     <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mx-auto text-red-600 border border-red-200">
                       <AlertTriangle className="h-5 w-5" />
                     </div>
-                    <h4 className="font-extrabold text-red-500 text-[11px] tracking-wide">🚨 AWAS! LAPTOP TERINFEKSI VIRUS! 🚨</h4>
-                    <p className="text-[9px] text-slate-300 leading-relaxed">
+                    <h4 className="font-extrabold text-red-500 text-xs tracking-wide">🚨 AWAS! LAPTOP TERINFEKSI VIRUS! 🚨</h4>
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       Laptop Anda terdeteksi terkena <b>17 virus berbahaya</b>. Sistem akan rusak jika tidak dibersihkan sekarang!
                     </p>
                     <div className="pt-1">
                       <button 
                         onClick={() => handleAction('a')} 
-                        className="w-full bg-emerald-500 text-white font-black text-[9px] py-2 px-3 rounded-lg shadow-lg hover:bg-emerald-600 transition-all"
+                        className="w-full bg-emerald-500 text-white font-black text-xs py-2 px-3 rounded-lg shadow-lg hover:bg-emerald-600 transition-all"
                       >
                         👉 BERSIHKAN SEKARANG 👈
                       </button>
                     </div>
-                    <div className="text-slate-500 text-[8px] hover:underline cursor-pointer" onClick={() => handleAction('b')}>
+                    <div className="text-slate-500 text-xs hover:underline cursor-pointer" onClick={() => handleAction('b')}>
                       Tutup Peringatan (X)
                     </div>
                   </div>
@@ -665,15 +665,15 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                   <div className="w-full max-w-xs rounded-2xl overflow-hidden bg-slate-900 border border-slate-700 flex flex-col h-[200px] justify-between shadow-2xl">
                     <div className="bg-emerald-800 py-1.5 px-3 flex items-center gap-2 text-white shrink-0">
                       <span className="text-xs">💬</span>
-                      <span className="text-[10px] font-extrabold">Pengirim Misterius</span>
+                      <span className="text-xs font-extrabold">Pengirim Misterius</span>
                     </div>
                     <div className="flex-1 p-2 space-y-2 bg-slate-950 flex flex-col justify-end">
-                      <div className="bg-slate-800 border border-slate-700 text-slate-200 rounded-xl rounded-tl-none p-2 text-[9px] leading-relaxed max-w-[90%] self-start shadow-md space-y-1 text-left">
+                      <div className="bg-slate-800 border border-slate-700 text-slate-200 rounded-xl rounded-tl-none p-2 text-xs leading-relaxed max-w-[90%] self-start shadow-md space-y-1 text-left">
                         <p>Selamat! Kamu menang event <b>10.000 Diamond Free Roblox</b>!</p>
                         <p>Klik link ini untuk klaim sekarang juga: 👇</p>
                         <div 
                           onClick={() => handleAction('a')} 
-                          className="text-cyan-400 underline font-semibold font-mono truncate block mt-0.5 hover:text-cyan-300 cursor-pointer text-[8px] bg-slate-900 rounded p-1"
+                          className="text-cyan-400 underline font-semibold font-mono truncate block mt-0.5 hover:text-cyan-300 cursor-pointer text-xs bg-slate-900 rounded p-1"
                         >
                           🔗 http://roblox-diamond-gratis.site/klaim
                         </div>
@@ -682,7 +682,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                     <div className="p-1.5 bg-slate-905 border-t border-slate-800/85 flex gap-2 shrink-0">
                       <button 
                         onClick={() => handleAction('c')} 
-                        className="flex-1 bg-red-655/90 text-white text-[9px] py-1.5 rounded-lg font-bold transition-all text-center"
+                        className="flex-1 bg-red-655/90 text-white text-xs py-1.5 rounded-lg font-bold transition-all text-center"
                       >
                         🚫 Blokir & Abaikan Chat
                       </button>
@@ -693,8 +693,8 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                 {activeCase.id === 'kasus-3' && (
                   <div className="w-full max-w-xs rounded-2xl overflow-hidden bg-slate-900 border border-slate-700 flex flex-col p-3 shadow-2xl text-slate-200 space-y-2">
                     <div className="border-b border-slate-800 pb-1.5 text-left shrink-0">
-                      <h5 className="font-extrabold text-[10px] text-slate-200">📡 Koneksi Wi-Fi Tersedia</h5>
-                      <p className="text-[8px] text-slate-500">Pilih jaringan untuk terhubung:</p>
+                      <h5 className="font-extrabold text-xs text-slate-200">📡 Koneksi Wi-Fi Tersedia</h5>
+                      <p className="text-xs text-slate-500">Pilih jaringan untuk terhubung:</p>
                     </div>
                     
                     <div className="space-y-1.5 flex-1 flex flex-col justify-center">
@@ -705,8 +705,8 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                         <div className="flex items-center gap-1.5 text-left">
                           <span className="text-sm">🔓</span>
                           <div>
-                            <p className="text-[9px] font-bold text-red-400 leading-tight">WI-FI_GRATIS_KLAIM_HADIAH</p>
-                            <span className="text-[7.5px] text-slate-500 block leading-none">Terbuka (Tanpa Sandi)</span>
+                            <p className="text-xs font-bold text-red-400 leading-tight">WI-FI_GRATIS_KLAIM_HADIAH</p>
+                            <span className="text-xs text-slate-500 block leading-none">Terbuka (Tanpa Sandi)</span>
                           </div>
                         </div>
                       </div>
@@ -718,8 +718,8 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                         <div className="flex items-center gap-1.5 text-left">
                           <span className="text-sm">🔒</span>
                           <div>
-                            <p className="text-[9px] font-bold text-emerald-400 leading-tight">Kafe_Cerdas_Secure</p>
-                            <span className="text-[7.5px] text-slate-500 block leading-none">Terkunci (Butuh Sandi Kafe)</span>
+                            <p className="text-xs font-bold text-emerald-400 leading-tight">Kafe_Cerdas_Secure</p>
+                            <span className="text-xs text-slate-500 block leading-none">Terkunci (Butuh Sandi Kafe)</span>
                           </div>
                         </div>
                       </div>
@@ -730,30 +730,30 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                 {activeCase.id === 'kasus-4' && (
                   <div className="w-full max-w-xs rounded-2xl overflow-hidden bg-slate-900 border border-slate-700 flex flex-col p-3 shadow-2xl space-y-2">
                     <div className="bg-red-950/40 border border-red-900/30 rounded-lg p-2 text-center shrink-0">
-                      <h5 className="font-extrabold text-[9.5px] text-yellow-500">
+                      <h5 className="font-extrabold text-xs text-yellow-500">
                         🎁 KLAIM HADIAH SKIN ROBLOX 🎁
                       </h5>
                     </div>
                     <div className="space-y-1.5 flex-1">
                       <div>
-                        <label className="text-[7.5px] font-bold text-slate-400 block mb-0.5">Username</label>
-                        <input type="text" disabled value="Raka_Gamer" className="w-full bg-slate-950 border border-slate-850 rounded px-2 py-1 text-[9px] text-slate-400 focus:outline-none" />
+                        <label className="text-xs font-bold text-slate-400 block mb-0.5">Username</label>
+                        <input type="text" disabled value="Raka_Gamer" className="w-full bg-slate-950 border border-slate-850 rounded px-2 py-1 text-xs text-slate-400 focus:outline-none" />
                       </div>
                       <div>
-                        <label className="text-[7.5px] font-bold text-slate-400 block mb-0.5">Kata Sandi (Password)</label>
-                        <input type="password" placeholder="••••••••" disabled className="w-full bg-slate-950 border border-slate-850 rounded px-2 py-1 text-[9px] text-slate-500 focus:outline-none" />
+                        <label className="text-xs font-bold text-slate-400 block mb-0.5">Kata Sandi (Password)</label>
+                        <input type="password" placeholder="••••••••" disabled className="w-full bg-slate-950 border border-slate-850 rounded px-2 py-1 text-xs text-slate-500 focus:outline-none" />
                       </div>
                     </div>
                     <div className="space-y-1 shrink-0 pt-1">
                       <button 
                         onClick={() => handleAction('a')} 
-                        className="w-full bg-amber-500 text-white font-extrabold text-[9px] py-1.5 rounded-lg shadow-md animate-pulse-slow"
+                        className="w-full bg-amber-500 text-white font-extrabold text-xs py-1.5 rounded-lg shadow-md animate-pulse-slow"
                       >
                         🔑 MASUK & KLAIM SKIN SEKARANG
                       </button>
                       <button 
                         onClick={() => handleAction('b')} 
-                        className="w-full bg-slate-750 text-slate-350 text-[9px] py-1.5 rounded-lg"
+                        className="w-full bg-slate-750 text-slate-350 text-xs py-1.5 rounded-lg"
                       >
                         Tutup Halaman Web (Kembali)
                       </button>
@@ -764,26 +764,26 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                 {activeCase.id === 'kasus-5' && (
                   <div className="w-full max-w-xs rounded-2xl overflow-hidden bg-slate-900 border border-slate-700 flex flex-col p-3 shadow-2xl text-center space-y-2.5">
                     <div className="text-left border-b border-slate-850 pb-1 shrink-0">
-                      <h5 className="font-extrabold text-[9px] text-slate-200">🗂️ File PDF Siswa Kelas 6</h5>
-                      <p className="text-[8px] text-slate-455">Tugas_Harian_Siswa_IPA.pdf</p>
+                      <h5 className="font-extrabold text-xs text-slate-200">🗂️ File PDF Siswa Kelas 6</h5>
+                      <p className="text-xs text-slate-455">Tugas_Harian_Siswa_IPA.pdf</p>
                     </div>
                     <div className="space-y-2 flex-1 flex flex-col justify-center">
                       <button 
                         onClick={() => handleAction('a')} 
-                        className="w-full bg-emerald-500 text-white font-black text-[9px] py-2 rounded-lg shadow-lg flex items-center justify-center gap-1"
+                        className="w-full bg-emerald-500 text-white font-black text-xs py-2 rounded-lg shadow-lg flex items-center justify-center gap-1"
                       >
                         🟢 DOWNLOAD NOW (FREE)
                       </button>
                       <button 
                         onClick={() => handleAction('a')} 
-                        className="w-full bg-rose-600 text-white font-black text-[9px] py-2 rounded-lg shadow-lg flex items-center justify-center gap-1"
+                        className="w-full bg-rose-600 text-white font-black text-xs py-2 rounded-lg shadow-lg flex items-center justify-center gap-1"
                       >
                         ⚡ FAST DOWNLOAD SPEED
                       </button>
                       <div className="pt-1 border-t border-slate-850">
                         <span 
                           onClick={() => handleAction('c')} 
-                          className="text-[9px] text-slate-450 hover:text-slate-300 underline cursor-pointer inline-block"
+                          className="text-xs text-slate-450 hover:text-slate-300 underline cursor-pointer inline-block"
                         >
                           Unduh Lembar_Kerja_IPA_Kelas_6.pdf
                         </span>
@@ -809,7 +809,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                       <h4 className="font-display font-black text-[15px] tracking-wide text-emerald-400 uppercase">
                         🛡️ KEPUTUSAN AMAN TERVERIFIKASI!
                       </h4>
-                      <p className="text-[10.5px] leading-relaxed text-slate-100 max-w-md mt-3 font-semibold px-4 text-center">
+                      <p className="text-xs leading-relaxed text-slate-100 max-w-md mt-3 font-semibold px-4 text-center">
                         {feedback.desc}
                       </p>
                     </>
@@ -819,7 +819,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                       <h4 className="font-display font-black text-[16px] tracking-widest text-red-500 uppercase animate-pulse">
                         🚨 LAPTOP DIKUNCI VIRUS MALWARE 🚨
                       </h4>
-                      <p className="text-[10px] leading-relaxed text-red-200 max-w-md mt-3 font-mono border border-red-500/20 bg-red-950/40 p-4 rounded-xl shadow-inner text-left">
+                      <p className="text-xs leading-relaxed text-red-200 max-w-md mt-3 font-mono border border-red-500/20 bg-red-950/40 p-4 rounded-xl shadow-inner text-left">
                         {feedback.desc}
                       </p>
                     </>
@@ -836,7 +836,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                           handleNextCase();
                         }
                       }}
-                      className={`font-extrabold text-[10px] py-2 px-5 rounded-xl shadow-md transition-all flex items-center gap-1 ${
+                      className={`font-extrabold text-xs py-2 px-5 rounded-xl shadow-md transition-all flex items-center gap-1 ${
                         countdown > 0 
                           ? 'bg-slate-800 text-slate-500 cursor-not-allowed border border-slate-700' 
                           : 'bg-white text-slate-900 hover:bg-slate-100 hover:scale-105 cursor-pointer'
@@ -866,14 +866,14 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
           <button
             onClick={handlePrevCase}
             disabled={activeCaseIdx === 0}
-            className="btn-secondary py-1.5 px-3.5 rounded-xl text-[10px] font-bold disabled:opacity-40"
+            className="btn-secondary py-1.5 px-3.5 rounded-xl text-xs font-bold disabled:opacity-40"
           >
             ◀ Kembali
           </button>
           <button
             onClick={handleNextCase}
             disabled={activeCaseIdx === KASUS.length - 1}
-            className="btn-secondary py-1.5 px-3.5 rounded-xl text-[10px] font-bold disabled:opacity-40"
+            className="btn-secondary py-1.5 px-3.5 rounded-xl text-xs font-bold disabled:opacity-40"
           >
             Lanjut ▶
           </button>
@@ -883,7 +883,7 @@ export function Topik4Aktivitas3({ answers = {}, onSave }: ActivityProps) {
         {allAnswered && !submitted && (
           <button
             onClick={handleConfirmSubmit}
-            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] py-1.5 px-4 rounded-xl shadow-md transition-all cursor-pointer"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-1.5 px-4 rounded-xl shadow-md transition-all cursor-pointer"
           >
             💾 Simpan & Kirim Jawaban
           </button>
@@ -1071,7 +1071,7 @@ export function Topik4Aktivitas4({ answers = {}, onSave }: ActivityProps) {
   return (
     <div className="bg-white border border-red-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
       <div>
-        <span className="text-[10px] uppercase font-bold tracking-widest text-red-500">
+        <span className="text-xs uppercase font-bold tracking-widest text-red-500">
           Eksplorasi · Aktivitas 4
         </span>
         <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -1087,13 +1087,13 @@ export function Topik4Aktivitas4({ answers = {}, onSave }: ActivityProps) {
       <div className="flex flex-col md:flex-row gap-6 items-stretch">
         <div className="flex flex-col items-center gap-2 flex-shrink-0">
           <div className="w-[280px] h-[480px] bg-slate-950 border-[8px] border-slate-800 rounded-[40px] overflow-hidden shadow-2xl relative flex flex-col justify-between select-none">
-            <div className="absolute top-0 inset-x-0 h-6 bg-gradient-to-b from-black/60 to-transparent flex justify-between items-center px-4 text-[9px] text-white/95 font-semibold z-20 pointer-events-none">
+            <div className="absolute top-0 inset-x-0 h-6 bg-gradient-to-b from-black/60 to-transparent flex justify-between items-center px-4 text-xs text-white/95 font-semibold z-20 pointer-events-none">
               <span>13:40</span>
               <div className="w-14 h-3 bg-black rounded-full border border-white/10" />
               <span> 100%</span>
             </div>
 
-            <div className="absolute top-6 inset-x-0 h-8 bg-gradient-to-b from-black/40 to-transparent flex justify-center items-center text-white/90 font-bold text-[11px] tracking-wider z-20 pointer-events-none">
+            <div className="absolute top-6 inset-x-0 h-8 bg-gradient-to-b from-black/40 to-transparent flex justify-center items-center text-white/90 font-bold text-xs tracking-wider z-20 pointer-events-none">
               <span>SiberTok</span>
             </div>
 
@@ -1117,7 +1117,7 @@ export function Topik4Aktivitas4({ answers = {}, onSave }: ActivityProps) {
               </button>
 
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex flex-col items-center gap-3.5 text-white/90 select-none z-10">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-pink-500 to-yellow-400 border border-white flex items-center justify-center font-bold text-[10px] shadow-md text-white">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-pink-500 to-yellow-400 border border-white flex items-center justify-center font-bold text-xs shadow-md text-white">
                   {konten.creator.substring(1, 3).toUpperCase()}
                 </div>
                 
@@ -1135,14 +1135,14 @@ export function Topik4Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                   <div className={`w-8 h-8 rounded-full ${liked[konten.id] ? 'bg-rose-500/20' : 'bg-black/45'} flex items-center justify-center border border-white/10 group-hover:bg-white/10`}>
                     <Heart className={`w-4 h-4 transition-colors ${liked[konten.id] ? 'fill-rose-500 text-rose-500' : 'text-white'}`} />
                   </div>
-                  <span className="text-[9px] font-bold mt-0.5 drop-shadow-md">{likeCounts[konten.id]}</span>
+                  <span className="text-xs font-bold mt-0.5 drop-shadow-md">{likeCounts[konten.id]}</span>
                 </button>
 
                 <div className="flex flex-col items-center">
                   <div className="w-8 h-8 rounded-full bg-black/45 flex items-center justify-center border border-white/10">
                     <MessageCircle className="w-4 h-4 text-white" />
                   </div>
-                  <span className="text-[9px] font-bold mt-0.5 drop-shadow-md font-mono">
+                  <span className="text-xs font-bold mt-0.5 drop-shadow-md font-mono">
                     {konten.aman ? Math.floor(likeCounts[konten.id] / 15) : '0'}
                   </span>
                 </div>
@@ -1157,7 +1157,7 @@ export function Topik4Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                   <div className="w-8 h-8 rounded-full bg-black/45 flex items-center justify-center border border-white/10 group-hover:bg-white/10">
                     <Share2 className="w-4 h-4 text-white" />
                   </div>
-                  <span className="text-[9px] font-bold mt-0.5 drop-shadow-md font-mono">
+                  <span className="text-xs font-bold mt-0.5 drop-shadow-md font-mono">
                     {(shareCount[konten.id] || 0) > 0 ? (shareCount[konten.id] || 0) : Math.floor(likeCounts[konten.id] / 20)}
                   </span>
                 </button>
@@ -1165,17 +1165,17 @@ export function Topik4Aktivitas4({ answers = {}, onSave }: ActivityProps) {
 
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent p-4 pt-16 text-white text-xs z-10 flex flex-col justify-end text-left pointer-events-none">
                 <div className="space-y-1.5 max-w-[80%]">
-                  <p className="font-bold text-[12px] tracking-wide text-white drop-shadow">
+                  <p className="font-bold text-xs tracking-wide text-white drop-shadow">
                     {konten.creator}
                   </p>
-                  <p className="text-[10.5px] leading-relaxed text-slate-200 drop-shadow line-clamp-3">
+                  <p className="text-xs leading-relaxed text-slate-200 drop-shadow line-clamp-3">
                     {konten.caption}
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <span className="text-[10px] font-bold text-slate-400 inline-flex items-center gap-1">
+          <span className="text-xs font-bold text-slate-400 inline-flex items-center gap-1">
             <Volume2 className="w-3 h-3 text-slate-500 animate-pulse" /> Tekan speaker untuk suara 
           </span>
         </div>
@@ -1183,7 +1183,7 @@ export function Topik4Aktivitas4({ answers = {}, onSave }: ActivityProps) {
         <div className="flex-1 flex flex-col justify-between border border-slate-150 rounded-2xl p-4 sm:p-5 bg-slate-50/40">
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-              <span className="text-[11px] font-black uppercase text-rose-500 tracking-wider">Lembar Kerja Analisis</span>
+              <span className="text-xs font-black uppercase text-rose-500 tracking-wider">Lembar Kerja Analisis</span>
               <span className="text-xs font-bold text-slate-455 bg-slate-100 px-3 py-1 rounded-full border border-slate-200/50">
                 Postingan {idx + 1} dari {KONTEN_LAPOR.length}
               </span>
@@ -1243,7 +1243,7 @@ export function Topik4Aktivitas4({ answers = {}, onSave }: ActivityProps) {
                           type="button"
                           onClick={() => chooseTindakan(t.key)}
                           disabled={submitted}
-                          className={`px-3 py-2.5 rounded-xl text-[10px] sm:text-xs font-bold border transition-all text-left leading-normal ${style}`}
+                          className={`px-3 py-2.5 rounded-xl text-xs font-bold border transition-all text-left leading-normal ${style}`}
                         >
                           {t.label}
                         </button>
@@ -1254,7 +1254,7 @@ export function Topik4Aktivitas4({ answers = {}, onSave }: ActivityProps) {
 
                 <div className="space-y-1.5">
                   <p className="text-xs font-bold text-primary-750">Langkah 3 — Tulis laporan singkatmu</p>
-                  <p className="text-[10px] text-slate-400 leading-normal">
+                  <p className="text-xs text-slate-400 leading-normal">
                     Jelaskan apa yang terjadi di video dan mengapa konten tersebut membahayakan/tidak pantas:
                   </p>
                   <textarea
@@ -1391,10 +1391,10 @@ const SKENARIO_AMAN: SkenarioData[] = [
             <span className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
             <span className="w-2.5 h-2.5 rounded-full bg-green-500" />
           </div>
-          <div className="bg-slate-950 text-slate-400 px-2 py-0.5 rounded text-[10px] truncate max-w-[200px] font-mono text-left">
+          <div className="bg-slate-950 text-slate-400 px-2 py-0.5 rounded text-xs truncate max-w-[200px] font-mono text-left">
             http://warning-system-secure.xyz/scan
           </div>
-          <span className="text-[10px] text-red-400 font-bold animate-pulse">⚠️ BAHAYA</span>
+          <span className="text-xs text-red-400 font-bold animate-pulse">⚠️ BAHAYA</span>
         </div>
         <div className="p-6 text-center bg-red-950/80 text-white space-y-4">
           <div className="w-12 h-12 rounded-full bg-red-900/50 flex items-center justify-center mx-auto border border-red-500 animate-bounce">
@@ -1402,7 +1402,7 @@ const SKENARIO_AMAN: SkenarioData[] = [
           </div>
           <div className="space-y-1">
             <h4 className="font-bold text-sm tracking-wide text-red-200 uppercase">HP-mu Terinfeksi 5 Virus!</h4>
-            <p className="text-[11px] text-slate-350 leading-relaxed">System damage: 28%. Virus akan menghapus file gawai dalam waktu:</p>
+            <p className="text-xs text-slate-350 leading-relaxed">System damage: 28%. Virus akan menghapus file gawai dalam waktu:</p>
           </div>
           <div className="text-xl font-mono font-black text-red-400 bg-black/45 py-1 px-3 rounded-lg inline-block">
             01:45
@@ -1435,7 +1435,7 @@ const SKENARIO_AMAN: SkenarioData[] = [
             </div>
             <div className="text-left">
               <p className="text-xs font-bold leading-none">Roni (Teman)</p>
-              <span className="text-[9px] text-emerald-400">online</span>
+              <span className="text-xs text-emerald-400">online</span>
             </div>
           </div>
           <div className="flex items-center gap-3 text-slate-300">
@@ -1450,13 +1450,13 @@ const SKENARIO_AMAN: SkenarioData[] = [
             </p>
             <div className="bg-[#111b21] rounded-xl p-2.5 flex items-center gap-2.5 border border-slate-800/80">
               <div className="w-8 h-8 rounded bg-emerald-750 flex items-center justify-center shrink-0">
-                <span className="text-[10px] font-black text-white uppercase">APK</span>
+                <span className="text-xs font-black text-white uppercase">APK</span>
               </div>
               <div className="flex-1 min-w-0 text-left">
-                <p className="text-[10.5px] font-bold text-slate-100 truncate leading-snug">Roblox_Mod_Free_Robux.apk</p>
-                <span className="text-[9px] text-slate-400">5.2 MB · APK File</span>
+                <p className="text-xs font-bold text-slate-100 truncate leading-snug">Roblox_Mod_Free_Robux.apk</p>
+                <span className="text-xs text-slate-400">5.2 MB · APK File</span>
               </div>
-              <button type="button" className="w-6 h-6 rounded-full bg-emerald-600 flex items-center justify-center text-white hover:bg-emerald-700 shrink-0 text-[10px] font-bold">
+              <button type="button" className="w-6 h-6 rounded-full bg-emerald-600 flex items-center justify-center text-white hover:bg-emerald-700 shrink-0 text-xs font-bold">
                 ↓
               </button>
             </div>
@@ -1481,19 +1481,19 @@ const SKENARIO_AMAN: SkenarioData[] = [
       <div className="border border-slate-200 rounded-2xl overflow-hidden shadow-sm max-w-md mx-auto bg-slate-950">
         <div className="bg-slate-900 px-4 py-2.5 flex items-center justify-between border-b border-slate-800 text-white">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center text-[10px] font-bold">
+            <div className="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold">
               +62
             </div>
             <div className="text-left">
               <p className="text-xs font-bold">+62 821-9988-1234</p>
-              <span className="text-[9px] text-slate-400">Pesan SMS</span>
+              <span className="text-xs text-slate-400">Pesan SMS</span>
             </div>
           </div>
           <MoreVertical className="w-3.5 h-3.5 text-slate-400" />
         </div>
         <div className="p-4 space-y-3 min-h-[120px] bg-slate-950">
           <div className="bg-slate-900/80 rounded-2xl p-3 text-slate-200 text-xs leading-relaxed space-y-1.5 border border-slate-800 text-left">
-            <span className="text-[9px] uppercase tracking-wider text-amber-500 font-bold block text-left">Pesan Hari Ini</span>
+            <span className="text-xs uppercase tracking-wider text-amber-500 font-bold block text-left">Pesan Hari Ini</span>
             <p className="text-left text-slate-200">
               TELKOMSEL POIN: Selamat! Anda mendapat HADIAH Uang Rp 50.000.000. Untuk mencairkan dana silakan kunjungi website resmi kami di: 
               <span className="text-blue-400 font-bold block mt-1 underline truncate text-left">http://pemenang-telkomsel-2026.xyz</span>
@@ -1523,13 +1523,13 @@ const SKENARIO_AMAN: SkenarioData[] = [
           </div>
           <div className="space-y-1">
             <h5 className="font-bold text-xs text-amber-300">Pemberitahuan Konten Sensitif</h5>
-            <p className="text-[10px] text-slate-300 max-w-[80%] mx-auto leading-normal">
+            <p className="text-xs text-slate-300 max-w-[80%] mx-auto leading-normal">
               Video ini diburamkan karena berpotensi memuat unsur kekerasan, perundungan, atau bahasa kasar.
             </p>
           </div>
         </div>
         <div className="p-3 flex items-center justify-between text-white bg-black/40 z-0">
-          <span className="text-[10px]">Playing: @fight_channel</span>
+          <span className="text-xs">Playing: @fight_channel</span>
           <Play className="w-4 h-4 opacity-50" />
         </div>
         <div className="p-3 bg-black/55 z-0">
@@ -1557,7 +1557,7 @@ const SKENARIO_AMAN: SkenarioData[] = [
         <div className="bg-indigo-650 px-4 py-3 text-white flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 rounded bg-emerald-600 flex items-center justify-center">
-              <span className="text-white text-[10px] font-bold">GC</span>
+              <span className="text-white text-xs font-bold">GC</span>
             </div>
             <span className="text-xs font-bold leading-none">Wali Kelas 6-B</span>
           </div>
@@ -1566,15 +1566,15 @@ const SKENARIO_AMAN: SkenarioData[] = [
         <div className="p-4 space-y-3 bg-slate-50/40">
           <div className="bg-white rounded-xl border border-slate-150 p-3.5 space-y-2.5">
             <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center font-bold text-[10px] text-indigo-700">
+              <div className="w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center font-bold text-xs text-indigo-700">
                 MU
               </div>
               <div className="text-left">
-                <p className="text-[11px] font-bold text-slate-800">Ibu Maria Ulfah</p>
-                <span className="text-[9px] text-slate-455">Hari ini, 07:15</span>
+                <p className="text-xs font-bold text-slate-800">Ibu Maria Ulfah</p>
+                <span className="text-xs text-slate-455">Hari ini, 07:15</span>
               </div>
             </div>
-            <p className="text-[11px] text-slate-650 leading-relaxed text-left">
+            <p className="text-xs text-slate-650 leading-relaxed text-left">
               Halo anak-anak, berikut adalah link resmi materi kisi-kisi dan persiapan simulasi ANBK sekolah kita. Silakan dipelajari, ya!
             </p>
             <div className="border border-slate-200 hover:bg-slate-50 transition-colors rounded-xl p-2.5 flex items-center gap-3 cursor-pointer">
@@ -1582,8 +1582,8 @@ const SKENARIO_AMAN: SkenarioData[] = [
                 <ShieldCheck className="w-5 h-5 text-indigo-600" />
               </div>
               <div className="flex-1 min-w-0 text-left">
-                <p className="text-[10.5px] font-bold text-indigo-900 leading-none">Simulasi ANBK 2026</p>
-                <span className="text-[9px] text-emerald-600 font-semibold flex items-center gap-0.5 mt-1">
+                <p className="text-xs font-bold text-indigo-900 leading-none">Simulasi ANBK 2026</p>
+                <span className="text-xs text-emerald-600 font-semibold flex items-center gap-0.5 mt-1">
                   <Lock className="w-2 h-2 fill-emerald-600" /> classroom.google.com (Tautan Aman)
                 </span>
               </div>
@@ -1689,7 +1689,7 @@ export function Topik4Aktivitas2({ answers = {}, onSave }: ActivityProps) {
   return (
     <div className="bg-white border border-red-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-6">
       <div className="border-b border-slate-100 pb-4">
-        <span className="text-[10px] uppercase font-bold tracking-widest text-red-500">
+        <span className="text-xs uppercase font-bold tracking-widest text-red-500">
           Eksplorasi · Aktivitas 2
         </span>
         <h3 className="font-display font-bold text-xl text-primary-800 mt-1">
@@ -1725,7 +1725,7 @@ export function Topik4Aktivitas2({ answers = {}, onSave }: ActivityProps) {
               key={s.id}
               type="button"
               onClick={() => setActiveScenarioIdx(idx)}
-              className={`px-3 py-1.5 rounded-t-xl text-[11px] font-bold border transition-all shrink-0 flex items-center gap-1.5 ${tabStyle}`}
+              className={`px-3 py-1.5 rounded-t-xl text-xs font-bold border transition-all shrink-0 flex items-center gap-1.5 ${tabStyle}`}
             >
               <span>{s.emoji}</span>
               <span>Kasus {idx + 1}</span>
@@ -1749,7 +1749,7 @@ export function Topik4Aktivitas2({ answers = {}, onSave }: ActivityProps) {
             <h4 className="font-display font-bold text-sm text-slate-800">
               Studi Kasus {activeScenarioIdx + 1}: {currentScenario.judul}
             </h4>
-            <p className="text-[11px] text-slate-400">Pilihlah pertahanan terbaikmu di dunia digital.</p>
+            <p className="text-xs text-slate-400">Pilihlah pertahanan terbaikmu di dunia digital.</p>
           </div>
         </div>
 
@@ -1788,12 +1788,12 @@ export function Topik4Aktivitas2({ answers = {}, onSave }: ActivityProps) {
                 >
                   <span className="flex-1">{o.label}</span>
                   {submitted && o.benar && (
-                    <span className="text-[9px] font-bold text-emerald-600 mt-2 inline-flex items-center gap-1">
+                    <span className="text-xs font-bold text-emerald-600 mt-2 inline-flex items-center gap-1">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" /> Tindakan Tepat
                     </span>
                   )}
                   {submitted && !o.benar && val.tindakan === o.key && (
-                    <span className="text-[9px] font-bold text-red-655 mt-2 inline-flex items-center gap-1">
+                    <span className="text-xs font-bold text-red-655 mt-2 inline-flex items-center gap-1">
                       <AlertCircle className="w-3.5 h-3.5 text-red-500 shrink-0" /> Kurang Tepat
                     </span>
                   )}
@@ -1816,7 +1816,7 @@ export function Topik4Aktivitas2({ answers = {}, onSave }: ActivityProps) {
             className="w-full text-xs rounded-xl border border-slate-200 px-3.5 py-2.5 focus:outline-none focus:border-red-300 disabled:bg-slate-50 disabled:text-slate-500 leading-relaxed font-medium transition-all text-left"
           />
           {!submitted && val.alasan.trim().length < 5 && (
-            <p className="text-[10px] text-amber-600 font-semibold flex items-center gap-1 text-left">
+            <p className="text-xs text-amber-600 font-semibold flex items-center gap-1 text-left">
               ⚠️ Alasan harus diisi minimal 5 karakter (saat ini: {val.alasan.trim().length}/5)
             </p>
           )}
@@ -1827,10 +1827,10 @@ export function Topik4Aktivitas2({ answers = {}, onSave }: ActivityProps) {
             isCorrect ? 'bg-emerald-50/70 border-emerald-200 text-emerald-800' : 'bg-red-50/70 border-red-200 text-red-800'
           }`}>
             <div>
-              <span className="font-extrabold block text-[11px] uppercase tracking-wider mb-0.5">Analisis Keamanan Siber</span>
+              <span className="font-extrabold block text-xs uppercase tracking-wider mb-0.5">Analisis Keamanan Siber</span>
               <p className="font-medium text-slate-700">{currentScenario.ulasan}</p>
             </div>
-            <div className="border-t border-slate-200/50 pt-2 text-[11px]">
+            <div className="border-t border-slate-200/50 pt-2 text-xs">
               <span className="font-bold block text-slate-600">Model Jawaban/Alasan Teoretis:</span>
               <p className="italic text-slate-550 mt-0.5 font-medium">"{currentScenario.modelAlasan}"</p>
             </div>
@@ -1875,7 +1875,7 @@ export function Topik4Aktivitas2({ answers = {}, onSave }: ActivityProps) {
           </div>
         ) : (
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-[11px] text-slate-400 max-w-md text-left">
+            <p className="text-xs text-slate-400 max-w-md text-left">
               Pastikan kamu telah memilih opsi tindakan dan menulis alasan dengan lengkap untuk semua studi kasus sebelum menyimpan jawaban.
             </p>
             <button

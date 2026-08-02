@@ -208,7 +208,7 @@ export default function AIChatBullyingSim({ onComplete }: AIChatBullyingSimProps
  </div>
  <div className="flex-1">
  <p className="text-xs font-bold">{finished? 'Selesai Simulasi': scenario.sender}</p>
- <p className="text-[9px] text-emerald-400">Evaluator AI Aktif</p>
+ <p className="text-xs text-emerald-400">Evaluator AI Aktif</p>
  </div>
  <Bot className="w-5 h-5 text-primary-400 animate-pulse" />
  </div>
@@ -228,7 +228,7 @@ export default function AIChatBullyingSim({ onComplete }: AIChatBullyingSimProps
  if (chat.sender === 'system') {
  return (
  <div key={idx} className="text-center">
- <span className="inline-block bg-slate-800/80 border border-slate-700/60 rounded-xl px-3 py-1.5 text-[9px] leading-relaxed text-slate-300 max-w-[90%] shadow-sm">
+ <span className="inline-block bg-slate-800/80 border border-slate-700/60 rounded-xl px-3 py-1.5 text-xs leading-relaxed text-slate-300 max-w-[90%] shadow-sm">
  {chat.text}
  </span>
  </div>
@@ -240,11 +240,11 @@ export default function AIChatBullyingSim({ onComplete }: AIChatBullyingSimProps
  <div key={idx} className="flex items-start gap-2 max-w-[85%]">
  <span className="text-xl shrink-0 mt-1">{chat.avatar}</span>
  <div className="bg-slate-800/90 border border-slate-700/50 p-3 rounded-2xl rounded-tl-none">
- <p className="text-[10px] font-bold text-slate-400 mb-0.5">{chat.name}</p>
+ <p className="text-xs font-bold text-slate-400 mb-0.5">{chat.name}</p>
  <p className="text-xs text-slate-100 leading-relaxed font-medium">
  {chat.text}
  </p>
- <span className="text-[8px] text-slate-500 block text-right mt-1">{chat.time}</span>
+ <span className="text-xs text-slate-500 block text-right mt-1">{chat.time}</span>
  </div>
  </div>
  );
@@ -255,7 +255,7 @@ export default function AIChatBullyingSim({ onComplete }: AIChatBullyingSimProps
  <div key={idx} className="flex items-start justify-end max-w-[85%] ml-auto">
  <div className="bg-primary-600 border border-primary-500 p-3 rounded-2xl rounded-tr-none text-right">
  <p className="text-xs text-white leading-relaxed">{chat.text}</p>
- <span className="text-[8px] text-primary-200 block mt-1">{chat.time}</span>
+ <span className="text-xs text-primary-200 block mt-1">{chat.time}</span>
  </div>
  </div>
  );
@@ -276,7 +276,7 @@ export default function AIChatBullyingSim({ onComplete }: AIChatBullyingSimProps
 ? 'bg-rose-950/80 border-rose-500 text-rose-100'
 : 'bg-amber-950/80 border-amber-500 text-amber-100'
  }`}>
- <div className="flex items-center gap-1.5 mb-1 font-bold text-[11px]">
+ <div className="flex items-center gap-1.5 mb-1 font-bold text-xs">
  {chat.type === 'assertive'? (
  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
  ): (
@@ -285,7 +285,7 @@ export default function AIChatBullyingSim({ onComplete }: AIChatBullyingSimProps
  <span>{chat.name} ({chat.type === 'assertive'? 'Sangat Baik': 'Butuh Perbaikan'})</span>
  </div>
  <p className="whitespace-pre-wrap">{chat.text}</p>
- <span className="text-[8px] opacity-60 block text-right mt-1.5">{chat.time}</span>
+ <span className="text-xs opacity-60 block text-right mt-1.5">{chat.time}</span>
  </div>
  </motion.div>
  );
@@ -361,7 +361,7 @@ export default function AIChatBullyingSim({ onComplete }: AIChatBullyingSimProps
  </div>
 
  <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-4 inline-block shadow-sm">
- <p className="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Skor Ketahanan Siber</p>
+ <p className="text-xs text-slate-400 uppercase tracking-widest font-bold">Skor Ketahanan Siber</p>
  <p className="font-display text-4xl font-black text-primary-400 mt-1">
  {Math.min(score, 100)}%
  </p>

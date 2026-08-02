@@ -249,7 +249,7 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
               {!isUploadStep ? (
                 <>
                   <div className="p-4 bg-white/95 rounded-2xl border border-primary-100">
-                    <span className="text-[10px] uppercase font-bold tracking-widest text-primary-400">
+                    <span className="text-xs uppercase font-bold tracking-widest text-primary-400">
                       {currentStep.title}
                     </span>
                     <p className="text-xs font-medium text-primary-800 mt-1">
@@ -282,7 +282,7 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
                           <div className={`mt-0.5 w-4 h-4 rounded-full border flex items-center justify-center shrink-0 ${
                             selectedOpt === idx ? 'bg-primary-500 border-primary-500 text-white' : 'border-primary-200'
                           }`}>
-                            {selectedOpt === idx && <span className="text-[8px]">●</span>}
+                            {selectedOpt === idx && <span className="text-xs">●</span>}
                           </div>
                           <span>{opt.text}</span>
                         </button>
@@ -322,7 +322,7 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
                 /* Upload Step */
                 <div className="space-y-4 text-left">
                   <div className="p-4 bg-white/95 rounded-2xl border border-primary-100">
-                    <span className="text-[10px] uppercase font-bold tracking-widest text-primary-400">
+                    <span className="text-xs uppercase font-bold tracking-widest text-primary-400">
                       Langkah 4: Unggah Karya Kampanyemu
                     </span>
                     <p className="text-xs font-medium text-primary-800 mt-1">
@@ -370,7 +370,7 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
                       <label className="flex-1 p-5 border-2 border-dashed border-primary-300 hover:border-primary-500 rounded-xl flex flex-col items-center justify-center gap-2 cursor-pointer bg-primary-50/5 hover:bg-primary-50/20 transition-all text-center">
                         <Upload className="w-6 h-6 text-primary-500 animate-bounce" />
                         <span className="text-xs font-bold text-primary-800">Pilih berkas dari perangkat</span>
-                        <span className="text-[10px] text-gray-400 leading-normal">
+                        <span className="text-xs text-gray-400 leading-normal">
                           {uploadedMediaType === 'image' ? 'Format PNG, JPG (Maks. 800KB)' : 'Format MP4, WebM (Maks. 3MB)'}
                         </span>
                         <input
@@ -384,20 +384,20 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
 
                     <div className="relative flex py-1 items-center">
                       <div className="flex-grow border-t border-gray-150"></div>
-                      <span className="flex-shrink mx-3 text-[9px] font-extrabold text-gray-400 uppercase tracking-widest">atau</span>
+                      <span className="flex-shrink mx-3 text-xs font-extrabold text-gray-400 uppercase tracking-widest">atau</span>
                       <div className="flex-grow border-t border-gray-150"></div>
                     </div>
 
                     {/* Preloaded Options */}
                     <div className="space-y-2">
-                      <span className="text-[9px] font-extrabold text-gray-400 uppercase tracking-wider block">Gunakan karya contoh bawaan:</span>
+                      <span className="text-xs font-extrabold text-gray-400 uppercase tracking-wider block">Gunakan karya contoh bawaan:</span>
                       <div className="grid grid-cols-2 gap-2">
                         {uploadedMediaType === 'image' ? (
                           <>
                             <button
                               type="button"
                               onClick={() => selectPreloaded('/gambar/topik 8/contoh poster 1.png')}
-                              className={`p-2.5 rounded-xl border text-[11px] font-semibold text-left flex items-center gap-2 transition-all ${
+                              className={`p-2.5 rounded-xl border text-xs font-semibold text-left flex items-center gap-2 transition-all ${
                                 preloadedSelected === '/gambar/topik 8/contoh poster 1.png'
                                   ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-2xs'
                                   : 'border-gray-200 hover:border-gray-300 text-gray-700 bg-gray-50/20'
@@ -408,7 +408,7 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
                             <button
                               type="button"
                               onClick={() => selectPreloaded('/gambar/topik 8/contoh poster 2.png')}
-                              className={`p-2.5 rounded-xl border text-[11px] font-semibold text-left flex items-center gap-2 transition-all ${
+                              className={`p-2.5 rounded-xl border text-xs font-semibold text-left flex items-center gap-2 transition-all ${
                                 preloadedSelected === '/gambar/topik 8/contoh poster 2.png'
                                   ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-2xs'
                                   : 'border-gray-200 hover:border-gray-300 text-gray-700 bg-gray-50/20'
@@ -422,7 +422,7 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
                             <button
                               type="button"
                               onClick={() => selectPreloaded('/gambar/topik 8/contoh video.mp4')}
-                              className={`p-2.5 rounded-xl border text-[11px] font-semibold text-left flex items-center gap-2 transition-all ${
+                              className={`p-2.5 rounded-xl border text-xs font-semibold text-left flex items-center gap-2 transition-all ${
                                 preloadedSelected === '/gambar/topik 8/contoh video.mp4'
                                   ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-2xs'
                                   : 'border-gray-200 hover:border-gray-300 text-gray-700 bg-gray-50/20'
@@ -433,7 +433,7 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
                             <button
                               type="button"
                               onClick={() => selectPreloaded('/gambar/topik 8/video 2.mp4')}
-                              className={`p-2.5 rounded-xl border text-[11px] font-semibold text-left flex items-center gap-2 transition-all ${
+                              className={`p-2.5 rounded-xl border text-xs font-semibold text-left flex items-center gap-2 transition-all ${
                                 preloadedSelected === '/gambar/topik 8/video 2.mp4'
                                   ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-2xs'
                                   : 'border-gray-200 hover:border-gray-300 text-gray-700 bg-gray-50/20'
@@ -449,7 +449,7 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
 
                   {/* Refine Caption */}
                   <div className="space-y-1 bg-white p-4 rounded-2xl border border-primary-100 shadow-2xs">
-                    <label className="text-[10px] font-bold text-primary-600 uppercase tracking-wide block">
+                    <label className="text-xs font-bold text-primary-600 uppercase tracking-wide block">
                       Tulis Caption Kampanyemu (Akan Tampil di Galeri):
                     </label>
                     <textarea
@@ -519,18 +519,18 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
 
       {/* Right Mockup Preview Panel */}
       <div className="w-full md:w-64 bg-slate-900 rounded-3xl p-4 border border-slate-800 text-white shrink-0 self-start">
-        <p className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-3 select-none">MOCKUP POST PREVIEW</p>
+        <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 select-none">MOCKUP POST PREVIEW</p>
         
         {/* Post Mockup Card */}
         <div className="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-inner">
           <div className="p-3 flex items-center justify-between border-b border-slate-900 bg-slate-900/30">
             <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-indigo-500 flex items-center justify-center text-[10px] border border-white/20 font-bold font-display">
+              <div className="w-5 h-5 rounded-full bg-indigo-500 flex items-center justify-center text-xs border border-white/20 font-bold font-display">
                 KC
               </div>
-              <span className="text-[10px] font-bold text-slate-200">Kreator_Cerdas</span>
+              <span className="text-xs font-bold text-slate-200">Kreator_Cerdas</span>
             </div>
-            <span className="text-[8px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full">
+            <span className="text-xs bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full">
               {previewPrivacy}
             </span>
           </div>
@@ -543,7 +543,7 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
               ) : (
                 <div className="w-full h-full relative bg-black flex items-center justify-center">
                   <video src={uploadedMedia} className="w-full h-full object-contain" muted playsInline autoPlay loop />
-                  <div className="absolute top-2 right-2 bg-black/60 rounded px-1.5 py-0.5 text-[8px] text-white">Video</div>
+                  <div className="absolute top-2 right-2 bg-black/60 rounded px-1.5 py-0.5 text-xs text-white">Video</div>
                 </div>
               )
             ) : (
@@ -552,14 +552,14 @@ export default function KreatorKontenSim({ onComplete }: KreatorKontenSimProps) 
           </div>
 
           <div className="p-3 space-y-1">
-            <p className="text-[10px] font-bold text-indigo-400 truncate">{previewTopic}</p>
-            <p className="text-[10px] text-slate-300 leading-normal line-clamp-3">
+            <p className="text-xs font-bold text-indigo-400 truncate">{previewTopic}</p>
+            <p className="text-xs text-slate-300 leading-normal line-clamp-3">
               {previewCaption}
             </p>
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-slate-800/40 border border-slate-800 rounded-2xl text-[9px] text-slate-400 leading-relaxed">
+        <div className="mt-4 p-3 bg-slate-800/40 border border-slate-800 rounded-2xl text-xs text-slate-400 leading-relaxed">
           Karya digitalmu akan terkirim secara instan setelah menekan tombol Simpan di akhir simulator.
         </div>
       </div>

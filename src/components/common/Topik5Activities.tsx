@@ -358,7 +358,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
     <div className="bg-white border border-sky-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="text-left">
-          <span className="text-[10px] uppercase font-bold tracking-widest text-sky-500">
+          <span className="text-xs uppercase font-bold tracking-widest text-sky-500">
             Simulasi Penutup
           </span>
           <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -389,7 +389,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
               key={s.id}
               type="button"
               onClick={() => setActiveScenarioIdx(idx)}
-              className={`px-3 py-2 rounded-xl text-[10px] sm:text-xs font-bold transition-all flex items-center gap-1.5 border ${
+              className={`px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 border ${
                 isActive
                   ? 'bg-sky-600 text-white border-sky-600 shadow-sm'
                   : isDone
@@ -399,7 +399,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
             >
               <span>{idx + 1}. {s.namaGrup}</span>
               {isDone && (
-                <span className="text-[10px] text-emerald-500 font-bold">✓</span>
+                <span className="text-xs text-emerald-500 font-bold">✓</span>
               )}
             </button>
           );
@@ -417,7 +417,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
             <div key={s.id} className="space-y-3 max-w-md mx-auto">
               {/* Konteks */}
               <div className="bg-sky-50/50 border border-sky-100/80 rounded-2xl p-3 text-left">
-                <span className="text-[9px] uppercase font-extrabold text-sky-600 tracking-wider block mb-1">Konteks Skenario</span>
+                <span className="text-xs uppercase font-extrabold text-sky-600 tracking-wider block mb-1">Konteks Skenario</span>
                 <p className="text-xs text-slate-655 leading-relaxed font-semibold">
                   {s.konteks}
                 </p>
@@ -451,7 +451,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
                   </div>
                   <div className="flex-1 min-w-0 text-left">
                     <p className="text-sm font-bold truncate">{s.namaGrup}</p>
-                    <p className="text-[10px] text-white/70 truncate">
+                    <p className="text-xs text-white/70 truncate">
                       {isGroup ? s.anggota : <>{s.pesan[0].n}, Kamu</>}
                     </p>
                   </div>
@@ -467,7 +467,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
                     <div key={i} className="flex text-left">
                       <div className={`relative max-w-[82%] rounded-lg px-2.5 py-1.5 shadow-xs ${m.buruk ? 'bg-rose-50 border border-rose-100' : 'bg-white border border-slate-100'}`}>
                         {isGroup && (
-                          <p className={`text-[11px] font-bold ${m.warna} leading-tight`}>{m.n}</p>
+                          <p className={`text-xs font-bold ${m.warna} leading-tight`}>{m.n}</p>
                         )}
                         {m.gambar && (
                           <img 
@@ -485,7 +485,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
                           />
                         )}
                         <p className="text-xs text-slate-800 leading-snug pr-8 whitespace-pre-line">{m.t}</p>
-                        <span className="absolute bottom-1 right-1.5 text-[8px] text-slate-400">09.4{i}</span>
+                        <span className="absolute bottom-1 right-1.5 text-xs text-slate-400">09.4{i}</span>
                       </div>
                     </div>
                   ))}
@@ -495,7 +495,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
                     <div className="flex justify-end pt-0.5 animate-pop-in text-left">
                       <div className="relative max-w-[82%] rounded-lg px-2.5 py-1.5 shadow-xs bg-[#dcf8c6] border border-emerald-150">
                         <p className="text-xs text-slate-800 leading-snug pr-10">{balasan}</p>
-                        <span className="absolute bottom-1 right-1.5 text-[8px] text-slate-550 flex items-center gap-0.5">
+                        <span className="absolute bottom-1 right-1.5 text-xs text-slate-550 flex items-center gap-0.5">
                           09.45 <span className="text-sky-500 font-bold">✓✓</span>
                         </span>
                       </div>
@@ -505,7 +505,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
                   {/* AI Mentor Typing Indicator */}
                   {typing[s.id] && (
                     <div className="flex items-center gap-2 py-1 animate-pulse">
-                      <span className="text-[11px] text-slate-600 font-semibold bg-white px-2.5 py-1 rounded-md shadow-xs border border-slate-100">
+                      <span className="text-xs text-slate-600 font-semibold bg-white px-2.5 py-1 rounded-md shadow-xs border border-slate-100">
                         AI Mentor sedang menilai...
                       </span>
                     </div>
@@ -515,9 +515,9 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
                   {evaluation && (
                     <div className="flex justify-start pt-1 animate-pop-in text-left">
                       <div className="relative max-w-[88%] rounded-xl px-3 py-2 shadow-xs bg-sky-50 border border-sky-200">
-                        <p className="text-[11px] font-bold text-sky-700 flex items-center gap-1.5 mb-1">
+                        <p className="text-xs font-bold text-sky-700 flex items-center gap-1.5 mb-1">
                           AI Mentor 
-                          <span className={`text-[9px] px-2 py-0.5 rounded-full font-bold ${
+                          <span className={`text-xs px-2 py-0.5 rounded-full font-bold ${
                             evaluation.type === 'assertive' 
                               ? 'bg-emerald-100 text-emerald-700' 
                               : evaluation.type === 'passive' 
@@ -530,7 +530,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
                         <p className="text-xs text-slate-800 leading-relaxed font-semibold">
                           {evaluation.feedback}
                         </p>
-                        <p className="text-[11px] text-slate-655 leading-normal mt-1.5 pt-1.5 border-t border-sky-100/60 italic font-medium">
+                        <p className="text-xs text-slate-655 leading-normal mt-1.5 pt-1.5 border-t border-sky-100/60 italic font-medium">
                           <b>Saran:</b> "{evaluation.recommendation}"
                         </p>
                       </div>
@@ -564,7 +564,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
                       </button>
                     </>
                   ) : (
-                    <p className="text-[11px] text-slate-550 py-1.5 w-full text-center font-bold">
+                    <p className="text-xs text-slate-550 py-1.5 w-full text-center font-bold">
                       {typing[s.id] ? '⏳ Sedang dianalisis oleh AI Mentor...' : balasan ? '✅ Balasanmu sudah dinilai' : '🔒 Sudah dikunci'}
                     </p>
                   )}
@@ -573,7 +573,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
 
               {/* Tugas */}
               <div className="bg-sky-50 rounded-xl p-2.5 border border-sky-100 text-center">
-                <p className="text-[10px] font-extrabold text-sky-850">🎯 Tugas: {s.tugas}</p>
+                <p className="text-xs font-extrabold text-sky-850">🎯 Tugas: {s.tugas}</p>
               </div>
 
               {/* Slide Navigation Buttons */}
@@ -581,14 +581,14 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
                 <button
                   type="button"
                   onClick={() => setActiveScenarioIdx((prev) => (prev > 0 ? prev - 1 : SKENARIO_CHAT.length - 1))}
-                  className="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-[10px] rounded-xl flex items-center gap-1 transition-all active:scale-95 border border-slate-200/60 shadow-xs"
+                  className="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs rounded-xl flex items-center gap-1 transition-all active:scale-95 border border-slate-200/60 shadow-xs"
                 >
                   <ChevronLeft className="h-3.5 w-3.5" /> Skenario Sebelumnya
                 </button>
                 <button
                   type="button"
                   onClick={() => setActiveScenarioIdx((prev) => (prev < SKENARIO_CHAT.length - 1 ? prev + 1 : 0))}
-                  className="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-[10px] rounded-xl flex items-center gap-1 transition-all active:scale-95 border border-slate-200/60 shadow-xs"
+                  className="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs rounded-xl flex items-center gap-1 transition-all active:scale-95 border border-slate-200/60 shadow-xs"
                 >
                   Skenario Berikutnya <ChevronRight className="h-3.5 w-3.5" />
                 </button>
@@ -683,7 +683,7 @@ export function Topik5TantanganAwal({ answers = {}, onSave }: ActivityProps) {
  return (
  <div className="bg-white border border-sky-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-sky-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-sky-500">
  Tantangan Awal
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -698,7 +698,7 @@ export function Topik5TantanganAwal({ answers = {}, onSave }: ActivityProps) {
  {/* Phone mockup with two chat messages */}
  <div className="mx-auto max-w-xs bg-gradient-to-br from-sky-900 to-indigo-900 rounded-[2rem] border-[8px] border-slate-800 p-3 shadow-2xl">
  {/* status bar */}
- <div className="flex justify-between items-center px-2 py-1 text-[9px] font-semibold text-white/70">
+ <div className="flex justify-between items-center px-2 py-1 text-xs font-semibold text-white/70">
  <span>09.41</span>
  <span> 100%</span>
  </div>
@@ -709,7 +709,7 @@ export function Topik5TantanganAwal({ answers = {}, onSave }: ActivityProps) {
  {/* messages */}
  <div className="bg-slate-100 rounded-b-2xl p-3 space-y-3 mt-1">
  <div className="space-y-1">
- <span className="text-[9px] font-bold text-rose-500 ml-1">Pesan 1</span>
+ <span className="text-xs font-bold text-rose-500 ml-1">Pesan 1</span>
  <div className="bg-white border border-slate-200 rounded-2xl rounded-tl-sm px-3 py-2 shadow-sm">
  <p className="text-xs text-slate-700 leading-relaxed">
  "Gambarmu jelek banget. Aku bisa bikin yang lebih bagus." 
@@ -717,7 +717,7 @@ export function Topik5TantanganAwal({ answers = {}, onSave }: ActivityProps) {
  </div>
  </div>
  <div className="space-y-1">
- <span className="text-[9px] font-bold text-emerald-600 ml-1">Pesan 2</span>
+ <span className="text-xs font-bold text-emerald-600 ml-1">Pesan 2</span>
  <div className="bg-white border border-slate-200 rounded-2xl rounded-tl-sm px-3 py-2 shadow-sm">
  <p className="text-xs text-slate-700 leading-relaxed">
  "Gambarmu sudah menarik. Mungkin warnanya bisa dibuat lebih rapi agar terlihat lebih jelas." 
@@ -790,7 +790,7 @@ export function Topik5TantanganAwal({ answers = {}, onSave }: ActivityProps) {
  </div>
  </div>
 
- <p className="text-[11px] text-slate-400 italic">
+ <p className="text-xs text-slate-400 italic">
  Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
  </p>
  </div>
@@ -848,7 +848,7 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  <div className="bg-white border border-sky-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-6">
 
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-sky-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-sky-500">
  Eksplorasi · Aktivitas 3
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -872,7 +872,7 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  {/* Layar video vertikal */}
  <div className="relative aspect-[9/16] bg-gradient-to-b from-slate-800 via-slate-900 to-black overflow-hidden">
  {/* status bar */}
- <div className="absolute top-0 inset-x-0 flex justify-between items-center px-4 py-1.5 text-[9px] font-semibold text-white/80 z-20">
+ <div className="absolute top-0 inset-x-0 flex justify-between items-center px-4 py-1.5 text-xs font-semibold text-white/80 z-20">
  <span>09.41</span>
  </div>
 
@@ -892,10 +892,10 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  {/* caption kiri bawah */}
  <div className="absolute bottom-3 left-3 right-16 z-20 pointer-events-none">
  <p className="text-white font-bold text-xs">@naya.kreatif</p>
- <p className="text-white/80 text-[10px] leading-snug mt-0.5">
+ <p className="text-white/80 text-xs leading-snug mt-0.5">
  Yuk jaga kebersihan kelas bareng-bareng! #kelasbersih #tugassekolah
  </p>
- <p className="text-white/70 text-[10px] mt-1 flex items-center gap-1">
+ <p className="text-white/70 text-xs mt-1 flex items-center gap-1">
  <Music2 className="h-3 w-3 animate-pulse" /> suara asli - Naya
  </p>
  </div>
@@ -904,25 +904,25 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  <div className="absolute bottom-3 right-2 flex flex-col items-center gap-4 z-20">
  {/* Foto profil */}
  <div className="relative">
- <div className="w-9 h-9 rounded-full bg-gradient-to-br from-sky-400 to-blue-500 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">
+ <div className="w-9 h-9 rounded-full bg-gradient-to-br from-sky-400 to-blue-500 border-2 border-white flex items-center justify-center text-xs font-bold text-white">
  NY
  </div>
- <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-rose-500 text-white flex items-center justify-center text-[10px] font-bold">+</div>
+ <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-rose-500 text-white flex items-center justify-center text-xs font-bold">+</div>
  </div>
  {/* Like */}
  <button onClick={() => setLiked((v) =>!v)} className="flex flex-col items-center text-white">
  <Heart className={`h-7 w-7 ${liked? 'animate-heart-beat fill-rose-500 text-rose-500': 'text-white'}`} />
- <span className="text-[9px] font-semibold mt-0.5">{liked? '1.3rb': '1.2rb'}</span>
+ <span className="text-xs font-semibold mt-0.5">{liked? '1.3rb': '1.2rb'}</span>
  </button>
  {/* Comment */}
  <button onClick={() => setShowKomentar(true)} className="flex flex-col items-center text-white">
  <MessageCircle className="h-7 w-7" />
- <span className="text-[9px] font-semibold mt-0.5">{totalKomentar}</span>
+ <span className="text-xs font-semibold mt-0.5">{totalKomentar}</span>
  </button>
  {/* Share */}
  <button className="flex flex-col items-center text-white">
  <Share2 className="h-7 w-7" />
- <span className="text-[9px] font-semibold mt-0.5">Bagikan</span>
+ <span className="text-xs font-semibold mt-0.5">Bagikan</span>
  </button>
  </div>
 
@@ -941,32 +941,32 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  <div className="flex-1 overflow-y-auto px-3 py-2 space-y-3">
  {TIKTOK_KOMENTAR_AWAL.map((c, i) => (
  <div key={i} className="flex items-start gap-2">
- <div className="w-7 h-7 rounded-full bg-slate-300 flex items-center justify-center text-[10px] font-bold text-slate-600 shrink-0">
+ <div className="w-7 h-7 rounded-full bg-slate-300 flex items-center justify-center text-xs font-bold text-slate-600 shrink-0">
  {c.u.charAt(0).toUpperCase()}
  </div>
  <div className="flex-1">
- <p className="text-[10px] font-bold text-slate-500">@{c.u}</p>
+ <p className="text-xs font-bold text-slate-500">@{c.u}</p>
  <p className="text-xs text-slate-800 leading-snug">{c.t}</p>
- <p className="text-[9px] text-slate-400 mt-0.5">Balas</p>
+ <p className="text-xs text-slate-400 mt-0.5">Balas</p>
  </div>
  <div className="flex flex-col items-center text-slate-400 shrink-0">
- <span className="text-[9px]">{c.love}</span>
+ <span className="text-xs">{c.love}</span>
  </div>
  </div>
  ))}
  {/* komentar murid yang di-append */}
  {komentarMurid.map((t, i) => (
  <div key={`me-${i}`} className="flex items-start gap-2 animate-pop-in">
- <div className="w-7 h-7 rounded-full bg-gradient-to-br from-sky-400 to-blue-500 flex items-center justify-center text-[10px] font-bold text-white shrink-0">
+ <div className="w-7 h-7 rounded-full bg-gradient-to-br from-sky-400 to-blue-500 flex items-center justify-center text-xs font-bold text-white shrink-0">
  KM
  </div>
  <div className="flex-1">
- <p className="text-[10px] font-bold text-sky-600">@kamu <span className="text-[8px] bg-sky-100 text-sky-600 px-1 py-0.5 rounded ml-1">Baru</span></p>
+ <p className="text-xs font-bold text-sky-600">@kamu <span className="text-xs bg-sky-100 text-sky-600 px-1 py-0.5 rounded ml-1">Baru</span></p>
  <p className="text-xs text-slate-800 leading-snug">{t}</p>
- <p className="text-[9px] text-slate-400 mt-0.5">Balas</p>
+ <p className="text-xs text-slate-400 mt-0.5">Balas</p>
  </div>
  <div className="flex flex-col items-center text-rose-400 shrink-0">
- <span className="text-[9px]">1</span>
+ <span className="text-xs">1</span>
  </div>
  </div>
  ))}
@@ -995,7 +995,7 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  </div>
  </div>
 
- <p className="text-center text-[11px] text-slate-500">
+ <p className="text-center text-xs text-slate-500">
  Tekan ikon <b>komentar</b> untuk membuka kolom komentar, lalu tulis komentar santunmu. Komentarmu akan
  langsung muncul di daftar komentar, seperti memposting di TikTok sungguhan!
  </p>
@@ -1044,9 +1044,9 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  ].map((c, i) => (
  <div key={i} className="flex">
  <div className="relative max-w-[80%] bg-white rounded-lg px-2.5 py-1.5 shadow-sm">
- <p className={`text-[11px] font-bold ${c.warna} leading-tight`}>{c.n}</p>
+ <p className={`text-xs font-bold ${c.warna} leading-tight`}>{c.n}</p>
  <p className="text-[13px] text-slate-800 leading-snug pr-8">{c.t}</p>
- <span className="absolute bottom-1 right-1.5 text-[8px] text-slate-400">09.1{i}</span>
+ <span className="absolute bottom-1 right-1.5 text-xs text-slate-400">09.1{i}</span>
  </div>
  </div>
  ))}
@@ -1056,7 +1056,7 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  <div key={`me-${i}`} className="flex justify-end animate-pop-in">
  <div className="relative max-w-[80%] bg-[#dcf8c6] rounded-lg px-2.5 py-1.5 shadow-sm">
  <p className="text-[13px] text-slate-800 leading-snug pr-10">{t}</p>
- <span className="absolute bottom-1 right-1.5 text-[8px] text-slate-500 flex items-center gap-0.5">
+ <span className="absolute bottom-1 right-1.5 text-xs text-slate-500 flex items-center gap-0.5">
  09.20 <span className="text-sky-500">✓✓</span>
  </span>
  </div>
@@ -1083,7 +1083,7 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  <Send className="h-4 w-4" />
  </button>
  </div>
- <p className="text-center text-[11px] text-slate-500">
+ <p className="text-center text-xs text-slate-500">
  Ketik balasan santunmu lalu tekan <b>Kirim</b>. Balasanmu akan langsung muncul di grup sebagai bubble hijau.
  </p>
 
@@ -1108,7 +1108,7 @@ export function Topik5Aktivitas3({ answers = {}, onSave }: ActivityProps) {
  </div>
 
 
- <p className="text-[11px] text-slate-400 italic">
+ <p className="text-xs text-slate-400 italic">
  Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
  </p>
  </div>
@@ -1151,7 +1151,7 @@ export function Topik5Aktivitas1({ answers = {}, onSave }: ActivityProps) {
     <div className="bg-white border border-sky-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <span className="text-[10px] uppercase font-bold tracking-widest text-sky-500">
+          <span className="text-xs uppercase font-bold tracking-widest text-sky-500">
             Eksplorasi · Aktivitas 1
           </span>
           <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -1179,7 +1179,7 @@ export function Topik5Aktivitas1({ answers = {}, onSave }: ActivityProps) {
                   💬
                 </div>
                 <div className="bg-white border border-slate-200 rounded-2xl rounded-tl-sm px-4 py-2.5 shadow-sm">
-                  <p className="text-[10px] font-bold text-slate-400 mb-0.5">Komentar {idx + 1}</p>
+                  <p className="text-xs font-bold text-slate-400 mb-0.5">Komentar {idx + 1}</p>
                   <p className="text-sm text-slate-700 leading-relaxed">{p.text}</p>
                 </div>
               </div>
@@ -1211,7 +1211,7 @@ export function Topik5Aktivitas1({ answers = {}, onSave }: ActivityProps) {
               {/* Feedback + alasan */}
               {pilihan && (
                 <div className="pl-10 space-y-2">
-                  <p className={`text-[11px] font-bold ${benar ? 'text-emerald-600' : 'text-rose-600'}`}>
+                  <p className={`text-xs font-bold ${benar ? 'text-emerald-600' : 'text-rose-600'}`}>
                     {benar ? '✓ Tepat!' : '✗ Coba pikirkan lagi.'}
                   </p>
                   <input
@@ -1273,7 +1273,7 @@ export function Topik5Aktivitas2({ answers = {}, onSave }: ActivityProps) {
     <div className="bg-white border border-sky-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <span className="text-[10px] uppercase font-bold tracking-widest text-sky-500">
+          <span className="text-xs uppercase font-bold tracking-widest text-sky-500">
             Eksplorasi · Aktivitas 2
           </span>
           <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -1296,7 +1296,7 @@ export function Topik5Aktivitas2({ answers = {}, onSave }: ActivityProps) {
           const sudah = (data[k.id] || '').trim().length > 0;
           return (
             <div key={k.id} className="border border-slate-200 rounded-2xl p-4 bg-slate-50/40 space-y-3">
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
                 Kalimat {idx + 1} · {k.konteks}
               </p>
 
@@ -1304,14 +1304,14 @@ export function Topik5Aktivitas2({ answers = {}, onSave }: ActivityProps) {
               {!sudah ? (
                 <div className="flex items-start gap-2">
                   <div className="bg-rose-50 border border-rose-200 rounded-2xl rounded-tl-sm px-3 py-2">
-                    <p className="text-[9px] font-bold text-rose-400 uppercase tracking-wide mb-0.5">Pesan kurang santun</p>
+                    <p className="text-xs font-bold text-rose-400 uppercase tracking-wide mb-0.5">Pesan kurang santun</p>
                     <p className="text-sm text-rose-800 font-medium">"{k.text}"</p>
                   </div>
                 </div>
               ) : (
                 <div className="flex items-start gap-2 animate-bubble-swap">
                   <div className="bg-emerald-50 border border-emerald-200 rounded-2xl rounded-tl-sm px-3 py-2 flex-1">
-                    <p className="text-[9px] font-bold text-emerald-500 uppercase tracking-wide mb-0.5 flex items-center gap-1">
+                    <p className="text-xs font-bold text-emerald-500 uppercase tracking-wide mb-0.5 flex items-center gap-1">
                       Versi lebih baik {justSent === k.id && <CheckCircle2 className="h-3 w-3 animate-heart-beat" />}
                     </p>
                     <p className="text-sm text-emerald-800 font-medium">"{data[k.id]}"</p>
@@ -1322,7 +1322,7 @@ export function Topik5Aktivitas2({ answers = {}, onSave }: ActivityProps) {
               {/* Form input + tombol Kirim */}
               {!sudah ? (
                 <div className="pl-9 space-y-1.5">
-                  <label className="text-[11px] font-bold text-emerald-600"> Ubah jadi lebih santun:</label>
+                  <label className="text-xs font-bold text-emerald-600"> Ubah jadi lebih santun:</label>
                   <div className="flex gap-2">
                     <textarea
                       value={drafts[k.id] || ''}
@@ -1343,12 +1343,12 @@ export function Topik5Aktivitas2({ answers = {}, onSave }: ActivityProps) {
                 </div>
               ) : (
                 <div className="pl-9 flex items-center justify-between gap-2">
-                  <p className="text-[11px] font-bold text-emerald-600 flex items-center gap-1">
+                  <p className="text-xs font-bold text-emerald-600 flex items-center gap-1">
                     Berhasil diubah jadi lebih baik!
                   </p>
                   <button
                     onClick={() => editLagi(k.id)}
-                    className="text-[11px] font-bold text-sky-500 hover:text-sky-700 underline underline-offset-2"
+                    className="text-xs font-bold text-sky-500 hover:text-sky-700 underline underline-offset-2"
                   >
                     Ubah lagi
                   </button>
@@ -1359,7 +1359,7 @@ export function Topik5Aktivitas2({ answers = {}, onSave }: ActivityProps) {
         })}
       </div>
 
-      <p className="text-[11px] text-slate-400 italic">
+      <p className="text-xs text-slate-400 italic">
         Saat kamu menekan <b>Kirim</b>, pesan kurang santun akan langsung berubah menjadi versi yang lebih baik.
         Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
       </p>

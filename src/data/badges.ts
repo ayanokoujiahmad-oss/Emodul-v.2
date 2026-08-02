@@ -24,7 +24,7 @@ export const topicBadges: Badge[] = [
     imageUrl: '/gambar/lencana-detektif-fakta.png',
     color: 'bg-amber-500',
     topicId: 'topik-2',
-    requirement: 'Selesaikan semua langkah di Topik 2: Benar atau Meragukan? Yuk, Cek Dulu!',
+    requirement: 'Selesaikan semua langkah di Topik 2: Benar atau Meragukan? Yuk, Cek Dulu',
   },
   {
     id: 'badge-guardian-privasi',

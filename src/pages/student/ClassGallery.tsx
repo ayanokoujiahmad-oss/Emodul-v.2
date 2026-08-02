@@ -468,14 +468,14 @@ const ClassGallery: React.FC = () => {
                 <div className="p-5">
                   {/* Author row */}
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[11px] font-bold text-primary-700">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-700">
                       {getInitials(item.displayName)}
                     </span>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-semibold text-gray-800 truncate">
                         {item.displayName}
                       </p>
-                      <p className="text-[10px] text-gray-400 truncate">{item.topicTitle}</p>
+                      <p className="text-xs text-gray-400 truncate">{item.topicTitle}</p>
                     </div>
                   </div>
 
@@ -499,7 +499,7 @@ const ClassGallery: React.FC = () => {
                         target="_blank" 
                         rel="noopener noreferrer" 
                         onClick={(e) => e.stopPropagation()} 
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-violet-50 hover:bg-violet-100 text-[11px] font-bold rounded-xl border border-violet-100 transition-colors text-violet-700"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-violet-50 hover:bg-violet-100 text-xs font-bold rounded-xl border border-violet-100 transition-colors text-violet-700"
                       >
                         <ExternalLink className="h-3.5 w-3.5 text-violet-500" />
                         Buka Link Karya
@@ -517,7 +517,7 @@ const ClassGallery: React.FC = () => {
                     <div className="mb-4 rounded-xl overflow-hidden border border-gray-150 aspect-video bg-slate-950 flex items-center justify-center relative">
                       <video src={item.videoUrl} className="w-full h-full object-contain" muted playsInline />
                       <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                        <span className="p-2 bg-white/95 rounded-xl shadow-sm text-primary-600 text-[10px] font-bold flex items-center gap-1">▶ Putar Video</span>
+                        <span className="p-2 bg-white/95 rounded-xl shadow-sm text-primary-600 text-xs font-bold flex items-center gap-1">▶ Putar Video</span>
                       </div>
                     </div>
                   )}
@@ -792,12 +792,12 @@ const DetailModal: React.FC<DetailModalProps> = ({
         {/* Header */}
         <div className="p-5 border-b border-gray-100 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-50 text-[11px] font-bold text-primary-700">
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-bold text-primary-700">
               {getInitials(item.displayName)}
             </span>
             <div>
               <p className="text-sm font-semibold text-gray-800">{item.displayName}</p>
-              <p className="text-[10px] text-gray-400">{item.topicTitle}</p>
+              <p className="text-xs text-gray-400">{item.topicTitle}</p>
             </div>
           </div>
           <button
@@ -872,7 +872,7 @@ const DetailModal: React.FC<DetailModalProps> = ({
           )}
           {comments.map((c) => (
             <div key={c.id} className="flex items-start gap-2">
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-surface-100 text-[10px] font-bold text-surface-600">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-surface-100 text-xs font-bold text-surface-600">
                 {getInitials(c.displayName)}
               </span>
               <div className="bg-gray-50 rounded-xl px-3 py-2 flex-1">

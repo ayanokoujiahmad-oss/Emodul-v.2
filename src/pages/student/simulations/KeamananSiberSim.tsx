@@ -59,7 +59,7 @@ const THREATS: CyberThreat[] = [
  sourceTitle: ' Halaman Unduh Tugas Sekolah',
  url: 'https://kumpulan-tugas-sd.com/download-file',
  description: 'Kamu sedang membuka situs untuk mengunduh dokumen tugas mewarnai. Terdapat 3 tombol download besar berwarna-warni di halaman tersebut.',
- contentHtml: '<div class="space-y-2"><div class="p-2.5 bg-green-500 text-white rounded text-center font-bold cursor-pointer text-xs"> DOWNLOAD FAST SPEED</div><div class="p-2.5 bg-blue-500 text-white rounded text-center font-bold cursor-pointer text-xs"> DOWNLOAD FILE HERE</div><div class="text-[10px] text-gray-400 text-center">Tugas_Mewarnai.pdf (2 MB)<br/><span class="underline text-blue-500 cursor-pointer">Klik di sini untuk mengunduh berkas asli</span></div></div>',
+ contentHtml: '<div class="space-y-2"><div class="p-2.5 bg-green-500 text-white rounded text-center font-bold cursor-pointer text-xs"> DOWNLOAD FAST SPEED</div><div class="p-2.5 bg-blue-500 text-white rounded text-center font-bold cursor-pointer text-xs"> DOWNLOAD FILE HERE</div><div class="text-xs text-gray-400 text-center">Tugas_Mewarnai.pdf (2 MB)<br/><span class="underline text-blue-500 cursor-pointer">Klik di sini untuk mengunduh berkas asli</span></div></div>',
  options: [
  {
  text: 'Klik tombol besar "DOWNLOAD FILE HERE"',
@@ -107,7 +107,7 @@ const THREATS: CyberThreat[] = [
  sourceTitle: ' Selamat! Anda Menang iPhone 15!',
  url: 'http://menang-hadiah-hari-ini.online',
  description: 'Sebuah pop-up berkedip-kedip muncul menyatakan kamu adalah pengunjung ke-999.999 dan berhak mendapatkan handphone gratis dengan mengisi survey singkat.',
- contentHtml: '<div class="p-3 bg-yellow-100 text-yellow-800 rounded border border-yellow-300 text-xs text-center font-bold animate-pulse"> SELAMAT! ANDA TERPILIH!<br/><span class="text-[10px] text-gray-500">Klaim hadiah iPhone gratis Anda hari ini dengan menekan tombol klaim.</span><br/><div class="mt-2 p-1.5 bg-orange-500 text-white rounded text-[10px]">KLAIM SEKARANG</div></div>',
+ contentHtml: '<div class="p-3 bg-yellow-100 text-yellow-800 rounded border border-yellow-300 text-xs text-center font-bold animate-pulse"> SELAMAT! ANDA TERPILIH!<br/><span class="text-xs text-gray-500">Klaim hadiah iPhone gratis Anda hari ini dengan menekan tombol klaim.</span><br/><div class="mt-2 p-1.5 bg-orange-500 text-white rounded text-xs">KLAIM SEKARANG</div></div>',
  options: [
  {
  text: 'Klik tombol klaim hadiah gratis',
@@ -155,7 +155,7 @@ const THREATS: CyberThreat[] = [
  sourceTitle: ' Wi-Fi Gratis Tanpa Sandi',
  url: 'http://wifi-gratis-cepat.login-now.net',
  description: 'Saat di tempat umum, HP-mu menemukan Wi-Fi gratis bernama "FREE_WIFI_SUPER_CEPAT". Saat dibuka, muncul halaman yang meminta kamu login memakai email dan kata sandi media sosialmu.',
- contentHtml: '<div class="p-3 bg-sky-100 text-sky-900 rounded text-xs"><p class="font-bold"> Selamat datang di FREE WIFI!</p><p class="mt-1 text-[11px]">Untuk konek gratis, masuk dulu pakai email & kata sandi media sosialmu:</p><div class="mt-2 space-y-1"><div class="bg-white border border-sky-200 rounded px-2 py-1 text-[10px] text-gray-400">email kamu...</div><div class="bg-white border border-sky-200 rounded px-2 py-1 text-[10px] text-gray-400">kata sandi...</div></div></div>',
+ contentHtml: '<div class="p-3 bg-sky-100 text-sky-900 rounded text-xs"><p class="font-bold"> Selamat datang di FREE WIFI!</p><p class="mt-1 text-xs">Untuk konek gratis, masuk dulu pakai email & kata sandi media sosialmu:</p><div class="mt-2 space-y-1"><div class="bg-white border border-sky-200 rounded px-2 py-1 text-xs text-gray-400">email kamu...</div><div class="bg-white border border-sky-200 rounded px-2 py-1 text-xs text-gray-400">kata sandi...</div></div></div>',
  options: [
  {
  text: 'Masukkan email dan kata sandi media sosial agar bisa internetan gratis',
@@ -260,7 +260,7 @@ export default function KeamananSiberSim({ onComplete }: KeamananSiberSimProps) 
  </p>
  <div className="flex gap-2">
  <span className="inline-block w-2.5 h-2.5 bg-white rounded-full animate-ping" />
- <span className="text-[10px] text-red-200">Menyinkronkan log keamanan...</span>
+ <span className="text-xs text-red-200">Menyinkronkan log keamanan...</span>
  </div>
  </motion.div>
  )}
@@ -293,12 +293,12 @@ export default function KeamananSiberSim({ onComplete }: KeamananSiberSimProps) 
  <span className="w-3 h-3 rounded-full bg-yellow-500" />
  <span className="w-3 h-3 rounded-full bg-green-500" />
  </div>
- <div className="flex-1 bg-slate-800 rounded-lg px-3 py-1 text-[10px] font-mono text-slate-300 truncate">
+ <div className="flex-1 bg-slate-800 rounded-lg px-3 py-1 text-xs font-mono text-slate-300 truncate">
  {currentThreat.url}
  </div>
  </div>
  <div className="p-4 bg-slate-950 min-h-[120px] text-slate-100 flex flex-col justify-center">
- <p className="text-[10px] uppercase font-bold text-indigo-400 mb-1">{currentThreat.sourceTitle}</p>
+ <p className="text-xs uppercase font-bold text-indigo-400 mb-1">{currentThreat.sourceTitle}</p>
  <div 
  className="text-xs leading-relaxed"
  dangerouslySetInnerHTML={{ __html: currentThreat.contentHtml }} 
@@ -335,7 +335,7 @@ export default function KeamananSiberSim({ onComplete }: KeamananSiberSimProps) 
  <div className={`mt-0.5 w-4 h-4 rounded-full border flex items-center justify-center shrink-0 ${
  selectedOpt === idx? 'bg-indigo-500 border-indigo-500 text-white': 'border-indigo-200'
  }`}>
- {selectedOpt === idx && <span className="text-[8px]">●</span>}
+ {selectedOpt === idx && <span className="text-xs">●</span>}
  </div>
  <span>{opt.text}</span>
  </button>

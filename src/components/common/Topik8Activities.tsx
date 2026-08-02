@@ -93,7 +93,7 @@ export function Topik8TantanganAwal({ answers = {}, onSave }: ActivityProps) {
     <div className="bg-white border border-violet-100 rounded-3xl p-5 sm:p-7 shadow-card space-y-6">
       {/* Title Header */}
       <div>
-        <span className="text-[10px] uppercase font-bold tracking-widest text-violet-500">
+        <span className="text-xs uppercase font-bold tracking-widest text-violet-500">
           Tantangan Awal
         </span>
         <h3 className="font-display font-bold text-xl text-primary-800 mt-1 flex items-center gap-2">
@@ -160,12 +160,12 @@ export function Topik8TantanganAwal({ answers = {}, onSave }: ActivityProps) {
           <table className="min-w-full divide-y divide-slate-200">
             <thead className="bg-slate-50">
               <tr>
-                <th scope="col" className="px-3 py-3 text-left text-[11px] font-bold text-slate-500 uppercase tracking-wider w-[5%]">No</th>
-                <th scope="col" className="px-4 py-3 text-left text-[11px] font-bold text-slate-500 uppercase tracking-wider w-[23%]">Masalah Digital yang Kulihat/Kubaca</th>
-                <th scope="col" className="px-4 py-3 text-left text-[11px] font-bold text-slate-500 uppercase tracking-wider w-[22%]">Dampaknya Jika Dibiarkan</th>
-                <th scope="col" className="px-4 py-3 text-left text-[11px] font-bold text-slate-500 uppercase tracking-wider w-[22%]">Pesan Kampanye yang Ingin Disampaikan</th>
-                <th scope="col" className="px-4 py-3 text-left text-[11px] font-bold text-slate-500 uppercase tracking-wider w-[13%]">Sasaran</th>
-                <th scope="col" className="px-4 py-3 text-left text-[11px] font-bold text-slate-500 uppercase tracking-wider w-[15%]">Bentuk Karya</th>
+                <th scope="col" className="px-3 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider w-[5%]">No</th>
+                <th scope="col" className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider w-[23%]">Masalah Digital yang Kulihat/Kubaca</th>
+                <th scope="col" className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider w-[22%]">Dampaknya Jika Dibiarkan</th>
+                <th scope="col" className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider w-[22%]">Pesan Kampanye yang Ingin Disampaikan</th>
+                <th scope="col" className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider w-[13%]">Sasaran</th>
+                <th scope="col" className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider w-[15%]">Bentuk Karya</th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-slate-100">
@@ -214,7 +214,7 @@ export function Topik8TantanganAwal({ answers = {}, onSave }: ActivityProps) {
                         return (
                           <label
                             key={bentukOption}
-                            className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border text-[11px] font-medium cursor-pointer transition-colors ${
+                            className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border text-xs font-medium cursor-pointer transition-colors ${
                               isChecked
                                 ? 'bg-violet-50 border-violet-200 text-violet-700'
                                 : 'bg-white border-slate-200 text-slate-500 hover:bg-slate-50'
@@ -249,7 +249,7 @@ export function Topik8TantanganAwal({ answers = {}, onSave }: ActivityProps) {
                 Ide #{rowIndex + 1}
               </div>
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Masalah Digital</label>
+                <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Masalah Digital</label>
                 <textarea
                   value={row.masalah}
                   onChange={(e) => handleInputChange(rowIndex, 'masalah', e.target.value)}
@@ -259,7 +259,7 @@ export function Topik8TantanganAwal({ answers = {}, onSave }: ActivityProps) {
                 />
               </div>
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Dampaknya Jika Dibiarkan</label>
+                <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Dampaknya Jika Dibiarkan</label>
                 <textarea
                   value={row.dampak}
                   onChange={(e) => handleInputChange(rowIndex, 'dampak', e.target.value)}
@@ -269,7 +269,7 @@ export function Topik8TantanganAwal({ answers = {}, onSave }: ActivityProps) {
                 />
               </div>
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Pesan Kampanye</label>
+                <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Pesan Kampanye</label>
                 <textarea
                   value={row.pesan}
                   onChange={(e) => handleInputChange(rowIndex, 'pesan', e.target.value)}
@@ -279,7 +279,7 @@ export function Topik8TantanganAwal({ answers = {}, onSave }: ActivityProps) {
                 />
               </div>
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Sasaran Kampanye</label>
+                <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Sasaran Kampanye</label>
                 <input
                   type="text"
                   value={row.sasaran}
@@ -289,7 +289,7 @@ export function Topik8TantanganAwal({ answers = {}, onSave }: ActivityProps) {
                 />
               </div>
               <div className="space-y-1.5">
-                <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Bentuk Karya yang Cocok</label>
+                <label className="text-xs font-bold text-slate-400 uppercase tracking-wider block">Bentuk Karya yang Cocok</label>
                 <div className="flex flex-wrap gap-1.5">
                   {BENTUK_PILIHAN.map((bentukOption) => {
                     const isChecked = row.bentuk.includes(bentukOption);
@@ -328,7 +328,7 @@ export function Topik8TantanganAwal({ answers = {}, onSave }: ActivityProps) {
         </div>
       </div>
 
-      <p className="text-[11px] text-slate-400 italic mt-4 text-center">
+      <p className="text-xs text-slate-400 italic mt-4 text-center">
         Perencanaan kampanye digitalmu otomatis tersimpan sebagai draf.
       </p>
     </div>
@@ -472,7 +472,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
           <motion.p
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-[11px] font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
+            className="text-xs font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
           >
             <Sparkles className="h-4 w-4" /> Semua misi selesai! Kamu siap merancang kampanye hebat! 🏆
           </motion.p>
@@ -499,7 +499,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
               <span>{tab.icon}</span>
               <span>{tab.label}</span>
               {isDone && (
-                <span className={`ml-0.5 text-[10px] ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
+                <span className={`ml-0.5 text-xs ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
               )}
             </button>
           );
@@ -581,7 +581,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                     <span className="text-2xl">{b.emoji}</span>
                     <div className="space-y-0.5">
                       <h5 className="text-xs font-bold text-primary-800">{b.title}</h5>
-                      <p className="text-[11px] text-slate-500 leading-relaxed">{b.text}</p>
+                      <p className="text-xs text-slate-500 leading-relaxed">{b.text}</p>
                     </div>
                   </div>
                 ))}
@@ -616,7 +616,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
             <div className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
                 <h4 className="text-sm font-bold text-primary-800">Daftar Masalah Digital dan Contoh Pesannya</h4>
-                <span className="text-[11px] text-slate-400 font-semibold italic">Ketuk kartu untuk melihat pesan kampanye!</span>
+                <span className="text-xs text-slate-400 font-semibold italic">Ketuk kartu untuk melihat pesan kampanye!</span>
               </div>
 
               {/* Interactive Flipping Cards */}
@@ -634,14 +634,14 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                         <div className="absolute inset-0 w-full h-full bg-white border border-slate-200 rounded-2xl p-4 flex flex-col justify-between shadow-sm [backface-visibility:hidden] hover:border-violet-300 hover:shadow-md transition-all">
                           <div className="flex items-center gap-2">
                             <span className="text-xl bg-slate-50 p-1.5 rounded-lg border border-slate-100">{item.icon}</span>
-                            <span className="text-[10px] uppercase font-bold tracking-wider text-violet-600">Masalah</span>
+                            <span className="text-xs uppercase font-bold tracking-wider text-violet-600">Masalah</span>
                           </div>
                           <p className="text-xs font-bold text-primary-800 leading-relaxed line-clamp-2">{item.masalah}</p>
                         </div>
 
                         {/* Back Side (Pesan) */}
                         <div className="absolute inset-0 w-full h-full bg-violet-600 text-white rounded-2xl p-4 flex flex-col justify-between shadow-md [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                          <span className="text-[9px] uppercase font-extrabold tracking-widest text-violet-200">Rekomendasi Pesan Kampanye</span>
+                          <span className="text-xs uppercase font-extrabold tracking-widest text-violet-200">Rekomendasi Pesan Kampanye</span>
                           <p className="text-xs font-bold leading-relaxed italic">{item.pesan}</p>
                         </div>
                       </div>
@@ -689,7 +689,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                         </span>
                         <div>
                           <span className="text-xs font-bold text-primary-800">{f.title}</span>
-                          <p className="text-[11px] text-slate-400 italic font-medium">{f.q}</p>
+                          <p className="text-xs text-slate-400 italic font-medium">{f.q}</p>
                         </div>
                       </div>
                       <span className="text-slate-400 text-xs">{isExpanded ? '▲' : '▼'}</span>
@@ -715,7 +715,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
             {/* Section E: Contoh Rumus CERDAS */}
             <div className="border border-violet-100 rounded-3xl p-5 bg-violet-50/20 space-y-4">
               <div className="space-y-1">
-                <span className="text-[10px] uppercase font-bold text-violet-600 tracking-wider">Latihan Analisis</span>
+                <span className="text-xs uppercase font-bold text-violet-600 tracking-wider">Latihan Analisis</span>
                 <h4 className="text-sm font-bold text-primary-800">E. Contoh Menggunakan Rumus CERDAS</h4>
               </div>
 
@@ -757,7 +757,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                           <span className="text-xs font-bold">{chk.label}</span>
                         </div>
                         {isChecked && (
-                          <p className="text-[10px] text-emerald-700 font-medium mt-1 ml-5 animate-pop-in">
+                          <p className="text-xs text-emerald-700 font-medium mt-1 ml-5 animate-pop-in">
                             {chk.detail}
                           </p>
                         )}
@@ -805,7 +805,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                   </div>
                   <div className="mt-2.5 px-1">
                     <h5 className="text-xs font-bold text-slate-800">Part 1: Dasar Pembuatan Poster Canva</h5>
-                    <p className="text-[10px] text-slate-400 mt-1 flex items-center gap-1">
+                    <p className="text-xs text-slate-400 mt-1 flex items-center gap-1">
                       <ExternalLink className="h-3 w-3" />
                       Sumber: youtube.com/watch?v=j4BIclCaT80 (Canva Education)
                     </p>
@@ -826,7 +826,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                   </div>
                   <div className="mt-2.5 px-1">
                     <h5 className="text-xs font-bold text-slate-800">Part 2: Tips Desain Poster Cerdas</h5>
-                    <p className="text-[10px] text-slate-400 mt-1 flex items-center gap-1">
+                    <p className="text-xs text-slate-400 mt-1 flex items-center gap-1">
                       <ExternalLink className="h-3 w-3" />
                       Sumber: youtube.com/watch?v=zgG5IlbXMIU (Canva Design School)
                     </p>
@@ -861,7 +861,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                       className="max-h-[220px] rounded-lg object-contain transition-transform group-hover:scale-[1.01]"
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors flex items-center justify-center">
-                      <span className="opacity-0 group-hover:opacity-100 bg-black/70 text-white text-[10px] font-bold px-2.5 py-1.5 rounded-full transition-opacity">
+                      <span className="opacity-0 group-hover:opacity-100 bg-black/70 text-white text-xs font-bold px-2.5 py-1.5 rounded-full transition-opacity">
                         🔍 Perbesar
                       </span>
                     </div>
@@ -895,7 +895,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                     </div>
                     <div className="px-1 pt-1.5">
                       <h5 className="text-xs font-bold text-slate-800">{vid.label}</h5>
-                      <span className="text-[9px] text-slate-400 block mt-0.5">Format: Video MP4</span>
+                      <span className="text-xs text-slate-400 block mt-0.5">Format: Video MP4</span>
                     </div>
                   </div>
                 ))}
@@ -1087,7 +1087,7 @@ export function Topik8AktivitasAkhir({
         {/* Section 1: Campaign Upload Form */}
         <div className="bg-white border border-violet-100 rounded-3xl p-5 sm:p-7 shadow-card space-y-6">
           <div>
-            <span className="text-[10px] uppercase font-bold tracking-widest text-violet-500">
+            <span className="text-xs uppercase font-bold tracking-widest text-violet-500">
               Kampanye Digital
             </span>
             <h3 className="font-display font-bold text-xl text-primary-800 mt-1 flex items-center gap-2">
@@ -1132,7 +1132,7 @@ export function Topik8AktivitasAkhir({
             <div className="space-y-1 text-left">
               <label className="text-xs font-bold text-slate-500 uppercase tracking-wider block flex items-center justify-between">
                 <span>Link Tautan Karya (Canva, TikTok, Drive, dll.)</span>
-                <span className="text-[10px] text-violet-500 font-medium lowercase">Harus diawali http:// atau https://</span>
+                <span className="text-xs text-violet-500 font-medium lowercase">Harus diawali http:// atau https://</span>
               </label>
               <input
                 type="text"
@@ -1178,7 +1178,7 @@ export function Topik8AktivitasAkhir({
                 </>
               )}
             </button>
-            <p className="text-[11px] text-slate-400 text-center italic mt-2.5">
+            <p className="text-xs text-slate-400 text-center italic mt-2.5">
               * Karya yang dibagikan akan divalidasi oleh guru sebelum tampil secara publik di Galeri Kelas.
             </p>
           </div>
@@ -1187,7 +1187,7 @@ export function Topik8AktivitasAkhir({
         {/* Section 2: Final Reflections (Kesan & Saran) */}
         <div className="bg-gradient-to-br from-violet-50/60 to-indigo-50/60 border border-violet-100 rounded-3xl p-5 sm:p-7 shadow-card space-y-6">
           <div>
-            <span className="text-[10px] uppercase font-bold tracking-widest text-violet-600">
+            <span className="text-xs uppercase font-bold tracking-widest text-violet-600">
               Refleksi Akhir
             </span>
             <h3 className="font-display font-bold text-xl text-primary-800 mt-1 flex items-center gap-2">

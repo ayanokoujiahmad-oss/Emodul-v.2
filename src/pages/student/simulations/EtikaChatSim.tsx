@@ -183,7 +183,7 @@ export default function EtikaChatSim({ onComplete }: EtikaChatSimProps) {
  </div>
  <div className="flex-1">
  <p className="text-xs font-bold">{currentChat.sender}</p>
- <p className="text-[9px] text-emerald-400">Online</p>
+ <p className="text-xs text-emerald-400">Online</p>
  </div>
  <MessageCircle className="w-4 h-4 text-white/60" />
  </div>
@@ -201,7 +201,7 @@ export default function EtikaChatSim({ onComplete }: EtikaChatSimProps) {
  <div className="flex-1 overflow-y-auto space-y-3 px-1 pr-2 scrollbar-thin">
  {/* Context Label */}
  <div className="text-center">
- <span className="inline-block bg-slate-800/80 border border-slate-700/60 rounded-xl px-3 py-1.5 text-[9px] leading-relaxed text-slate-300 max-w-[90%]">
+ <span className="inline-block bg-slate-800/80 border border-slate-700/60 rounded-xl px-3 py-1.5 text-xs leading-relaxed text-slate-300 max-w-[90%]">
  Konteks: {currentChat.context}
  </span>
  </div>
@@ -235,7 +235,7 @@ export default function EtikaChatSim({ onComplete }: EtikaChatSimProps) {
  <motion.div
  initial={{ opacity: 0, y: 10 }}
  animate={{ opacity: 1, y: 0 }}
- className={`p-3 rounded-2xl border text-[10px] leading-relaxed ${
+ className={`p-3 rounded-2xl border text-xs leading-relaxed ${
  currentChat.options[selectedOpt!].type === 'santun'
 ? 'bg-success-900/60 border-success-500 text-success-200' 
 : currentChat.options[selectedOpt!].type === 'netral'
@@ -255,7 +255,7 @@ export default function EtikaChatSim({ onComplete }: EtikaChatSimProps) {
  <div className="mt-3 shrink-0 space-y-2">
  {!showFeedback? (
  <div className="space-y-2">
- <p className="text-[10px] text-slate-400 font-bold px-1">PILIH JAWABAN TERBAIK:</p>
+ <p className="text-xs text-slate-400 font-bold px-1">PILIH JAWABAN TERBAIK:</p>
  {currentChat.options.map((opt, idx) => (
  <button
  key={idx}
@@ -302,7 +302,7 @@ export default function EtikaChatSim({ onComplete }: EtikaChatSimProps) {
  Hebat! Kamu sudah belajar memilih respon chat WhatsApp yang santun, sabar, dan menyelesaikan masalah tanpa emosi.
  </p>
  <div className="mt-4 inline-block bg-white/10 border border-white/20 px-5 py-2.5 rounded-xl">
- <span className="text-[9px] text-white/50 block font-bold">SKOR ETIKA</span>
+ <span className="text-xs text-white/50 block font-bold">SKOR ETIKA</span>
  <span className="text-xl font-black text-indigo-300 font-display">
  {score} / {maxScore}
  </span>

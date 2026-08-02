@@ -1340,7 +1340,7 @@ export default function TopicFlow() {
     }
 
     if (pageNum === 2) {
-      // Step 5: Yuk, Belajar Bersama!
+      // Step 5: Yuk, Belajar Bersama
       const step5Index = getStepIndexByType('yuk-belajar', 5);
       const step5 = getStepByIndex(step5Index);
       const sections = step5.content.split('## ').filter(Boolean).map((block, i) => {
@@ -1350,7 +1350,7 @@ export default function TopicFlow() {
         return { id: `sec-${i}`, title, content };
       });
 
-      // Step 6: Ayo, Memahami!
+      // Step 6: Ayo, Memahami
       const step6Index = getStepIndexByType('ayo-memahami', 6);
       const step6 = getStepByIndex(step6Index);
       const step6McQs = (step6.questions || [])
@@ -1373,7 +1373,7 @@ export default function TopicFlow() {
           context: q.context,
         }));
 
-      // Step 7: Ayo, Mengamati!
+      // Step 7: Ayo, Mengamati
       const step7Index = getStepIndexByType('ayo-mengamati', 7);
       const step7 = getStepByIndex(step7Index);
       const step7McQuestionIds = (step7.questions || [])
@@ -1390,7 +1390,7 @@ export default function TopicFlow() {
         }));
       const step7QuestionIds = step7EssayQs.map(q => q.id);
 
-      // Step 8: Ayo, Bereksplorasi!
+      // Step 8: Ayo, Bereksplorasi
       const step8Index = getStepIndexByType('ayo-bereksplorasi', 8);
       const step8 = getStepByIndex(step8Index);
 
@@ -1996,7 +1996,7 @@ export default function TopicFlow() {
 
           <div className="flex items-center gap-2">
             {/* Auto-save status */}
-            <div className="flex items-center gap-1.5 text-[10px] font-extrabold text-emerald-600 bg-emerald-50 border border-emerald-100 rounded-full px-3 py-1.5 shadow-2xs">
+            <div className="flex items-center gap-1.5 text-xs font-extrabold text-emerald-600 bg-emerald-50 border border-emerald-100 rounded-full px-3 py-1.5 shadow-2xs">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
               <span>Draf tersimpan otomatis</span>
             </div>
@@ -2020,7 +2020,7 @@ export default function TopicFlow() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/10" />
             <div className="relative z-10 flex min-h-[180px] flex-col justify-end p-5 text-white sm:min-h-[220px] sm:p-6">
               <div className="mb-auto flex items-center justify-between">
-                <span className="rounded-full border border-white/15 bg-white/20 px-3 py-1 text-[10px] font-black uppercase tracking-wider backdrop-blur-md">
+                <span className="rounded-full border border-white/15 bg-white/20 px-3 py-1 text-xs font-black uppercase tracking-wider backdrop-blur-md">
                   Topik {topic.number}
                 </span>
               </div>
@@ -2058,7 +2058,7 @@ export default function TopicFlow() {
                     } as any
                     : undefined
                 }
-                className={`py-2 px-2 rounded-xl text-center text-[10px] sm:text-xs font-bold transition-all ${isActive
+                className={`py-2 px-2 rounded-xl text-center text-xs font-bold transition-all ${isActive
                   ? 'bg-primary-500 text-white shadow-card ring-2 ring-primary-100'
                   : isFinished
                     ? 'bg-success-50 text-success-700 border border-success-200'
@@ -2117,7 +2117,7 @@ export default function TopicFlow() {
               <ChevronRight className="w-4 h-4" />
             </button>
           ) : (
-            <span className="text-[10px] font-bold" style={{ color: activityTheme.accent }}>
+            <span className="text-xs font-bold" style={{ color: activityTheme.accent }}>
               Evaluasi Kuis Akhir
             </span>
           )}
@@ -2250,7 +2250,7 @@ export default function TopicFlow() {
                   )}
                 </div>
 
-                <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-white bg-white/80 px-3 py-1 text-[11px] font-black uppercase tracking-wider shadow-sm" style={{ color: activityTheme.accent }}>
+                <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-white bg-white/80 px-3 py-1 text-xs font-black uppercase tracking-wider shadow-sm" style={{ color: activityTheme.accent }}>
                   <Sparkles className="h-3.5 w-3.5" />
                   Lencana Baru Didapatkan
                 </div>

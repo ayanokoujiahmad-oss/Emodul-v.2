@@ -73,7 +73,7 @@ export function Topik6Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  return (
  <div className="bg-white border border-pink-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-pink-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-pink-500">
  Eksplorasi · Aktivitas 1
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -95,7 +95,7 @@ export function Topik6Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  alt="Cerita Pengantar Edo Terpeleset"
  className="w-full h-auto max-h-64 object-cover"
  />
- <div className="absolute bottom-2 left-2 bg-pink-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+ <div className="absolute bottom-2 left-2 bg-pink-600/90 backdrop-blur-sm text-white text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
  Bacaan / Cerita Pengantar
  </div>
  </div>
@@ -107,7 +107,7 @@ export function Topik6Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  
  <div className="flex items-center gap-3 bg-pink-50/60 border border-pink-100/50 rounded-2xl p-3.5 shadow-sm max-w-sm">
  <div>
- <p className="text-[10px] font-bold text-pink-600 uppercase tracking-wider">Naya</p>
+ <p className="text-xs font-bold text-pink-600 uppercase tracking-wider">Naya</p>
  <p className="text-xs italic text-slate-700 leading-tight">“Edo, kamu tidak apa-apa?”</p>
  </div>
  </div>
@@ -126,12 +126,12 @@ export function Topik6Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  <div className="rounded-[1.75rem] border-[7px] border-slate-900 overflow-hidden shadow-2xl bg-[#e5ddd5] max-w-sm mx-auto">
 <div className="bg-[#075e54] text-white px-3 py-2 flex items-center gap-2.5">
 <span className="text-lg leading-none">‹</span>
-<div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold text-white shrink-0">
+<div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold text-white shrink-0">
 GK
 </div>
 <div className="flex-1 min-w-0">
 <p className="text-sm font-bold truncate">Grup Kelas 5</p>
- <p className="text-[10px] text-white/70 truncate">28 anggota</p>
+ <p className="text-xs text-white/70 truncate">28 anggota</p>
  </div>
  <span className="text-base">⋮</span>
  </div>
@@ -142,7 +142,7 @@ GK
  {/* Foto yang dibagikan Riko */}
  <div className="flex">
  <div className="relative max-w-[80%] rounded-lg p-1.5 shadow-sm bg-white">
- <p className="text-[11px] font-bold text-amber-600 leading-tight px-1">Riko</p>
+ <p className="text-xs font-bold text-amber-600 leading-tight px-1">Riko</p>
  <div 
  className="mt-1 w-44 rounded-md overflow-hidden border border-slate-100 cursor-zoom-in hover:scale-[1.02] active:scale-95 transition-transform bg-slate-50"
  onClick={() => setShowPreview(true)}
@@ -152,11 +152,11 @@ GK
  alt="Edo terpeleset"
  className="w-full h-28 object-cover"
  />
- <div className="p-1.5 bg-slate-50 text-[9px] font-bold text-slate-500 text-center border-t border-slate-100">
+ <div className="p-1.5 bg-slate-50 text-xs font-bold text-slate-500 text-center border-t border-slate-100">
  Foto: Edo terpeleset
  </div>
  </div>
- <span className="block text-right text-[8px] text-slate-400 pr-1 mt-0.5">14.20</span>
+ <span className="block text-right text-xs text-slate-400 pr-1 mt-0.5">14.20</span>
  </div>
  </div>
 
@@ -167,9 +167,9 @@ GK
  m.buruk? 'bg-rose-50': m.baik? 'bg-emerald-50': 'bg-white'
  }`}
  >
- <p className={`text-[11px] font-bold ${m.warna} leading-tight`}>{m.n}</p>
+ <p className={`text-xs font-bold ${m.warna} leading-tight`}>{m.n}</p>
  <p className={`leading-snug pr-8 ${m.emojiOnly? 'text-lg': 'text-[13px] text-slate-800'}`}>{m.t}</p>
- <span className="absolute bottom-1 right-1.5 text-[8px] text-slate-400">14.2{i}</span>
+ <span className="absolute bottom-1 right-1.5 text-xs text-slate-400">14.2{i}</span>
  </div>
  </div>
  ))}
@@ -220,17 +220,17 @@ GK
  <div key={tokoh.id} className="border border-slate-200 rounded-2xl p-3.5 bg-slate-50/40 space-y-2.5">
  <div className="flex items-start gap-2">
  <span className="text-xs font-black text-pink-600 shrink-0">{tokoh.nama}</span>
- <span className="text-[11px] text-slate-500 italic">— {tokoh.aksi}</span>
+ <span className="text-xs text-slate-500 italic">— {tokoh.aksi}</span>
  </div>
 
  {locked? (
  <div className="flex flex-wrap items-center gap-2">
- <span className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Perannya:</span>
+ <span className="text-xs font-bold uppercase tracking-wide text-slate-400">Perannya:</span>
  <span className="text-xs font-bold px-3 py-1 rounded-full bg-rose-100 text-rose-600 border border-rose-200">
  {locked.peran}
  </span>
- <span className="text-[11px] text-slate-500">({locked.alasan})</span>
- <span className="text-[10px] text-slate-400"> contoh</span>
+ <span className="text-xs text-slate-500">({locked.alasan})</span>
+ <span className="text-xs text-slate-400"> contoh</span>
  </div>
  ): (
  <>
@@ -239,7 +239,7 @@ GK
  <button
  key={p}
  onClick={() => setPeran(tokoh.id, 'peran', p)}
- className={`px-3 py-1.5 rounded-full text-[11px] font-bold border transition-all ${
+ className={`px-3 py-1.5 rounded-full text-xs font-bold border transition-all ${
  cur.peran === p
 ? 'bg-pink-500 border-pink-500 text-white'
 : 'bg-white border-slate-200 text-slate-600 hover:bg-pink-50'
@@ -283,7 +283,7 @@ GK
  ))}
  </div>
 
- <p className="text-[11px] text-slate-400 italic">
+ <p className="text-xs text-slate-400 italic">
  Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
  </p>
 
@@ -391,7 +391,7 @@ export function Topik6Aktivitas2({ answers = {}, onSave }: ActivityProps) {
     <div className="bg-white border border-pink-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-100 pb-3">
         <div>
-          <span className="text-[10px] uppercase font-bold tracking-widest text-pink-500">
+          <span className="text-xs uppercase font-bold tracking-widest text-pink-500">
             Eksplorasi · Aktivitas 2
           </span>
           <h3 className="font-display font-bold text-base sm:text-lg text-primary-800 mt-0.5">
@@ -442,8 +442,8 @@ export function Topik6Aktivitas2({ answers = {}, onSave }: ActivityProps) {
         </p>
         <p>
           Aktivitas ini terdiri dari <strong>3 halaman slide</strong>. Gunakan tombol di kanan atas:
-          <span className="mx-1 px-2 py-0.5 bg-pink-500 text-white rounded font-bold text-[10px]">Kasus Berikutnya →</span> atau 
-          <span className="mx-1 px-2 py-0.5 bg-slate-100 text-slate-600 border border-slate-200 rounded font-bold text-[10px]">← Kasus Sebelumnya</span> 
+          <span className="mx-1 px-2 py-0.5 bg-pink-500 text-white rounded font-bold text-xs">Kasus Berikutnya →</span> atau 
+          <span className="mx-1 px-2 py-0.5 bg-slate-100 text-slate-600 border border-slate-200 rounded font-bold text-xs">← Kasus Sebelumnya</span> 
           untuk berpindah kasus. Jawab semua pertanyaan di setiap halaman, lalu bandingkan hasilnya di halaman terakhir!
         </p>
       </div>
@@ -469,7 +469,7 @@ export function Topik6Aktivitas2({ answers = {}, onSave }: ActivityProps) {
                       <span className="text-lg leading-none">‹</span>
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-bold truncate">Grup Kelas 5</p>
-                        <p className="text-[10px] text-white/70 truncate">28 anggota</p>
+                        <p className="text-xs text-white/70 truncate">28 anggota</p>
                       </div>
                       <span className="text-base">⋮</span>
                     </div>
@@ -484,9 +484,9 @@ export function Topik6Aktivitas2({ answers = {}, onSave }: ActivityProps) {
                               m.buruk ? 'bg-rose-50' : m.baik ? 'bg-emerald-50' : 'bg-white'
                             }`}
                           >
-                            <p className={`text-[11px] font-bold ${m.warna} leading-tight`}>{m.n}</p>
+                            <p className={`text-xs font-bold ${m.warna} leading-tight`}>{m.n}</p>
                             <p className="text-[13px] text-slate-800 leading-snug pr-8">{m.t}</p>
-                            <span className="absolute bottom-1 right-1.5 text-[8px] text-slate-400">15.0{i}</span>
+                            <span className="absolute bottom-1 right-1.5 text-xs text-slate-400">15.0{i}</span>
                           </div>
                         </div>
                       ))}
@@ -528,7 +528,7 @@ export function Topik6Aktivitas2({ answers = {}, onSave }: ActivityProps) {
 
                   <div className="mx-auto max-w-[280px] relative bg-black rounded-[2rem] border-[8px] border-slate-900 overflow-hidden shadow-2xl select-none">
                     <div className="relative aspect-[9/16] bg-gradient-to-b from-slate-800 via-slate-900 to-black overflow-hidden">
-                      <div className="absolute top-0 inset-x-0 flex justify-between items-center px-4 py-1.5 text-[9px] font-semibold text-white/80 z-20">
+                      <div className="absolute top-0 inset-x-0 flex justify-between items-center px-4 py-1.5 text-xs font-semibold text-white/80 z-20">
                         <span>09.41</span>
                       </div>
                       <video
@@ -551,26 +551,26 @@ export function Topik6Aktivitas2({ answers = {}, onSave }: ActivityProps) {
                       )}
 
                       <div className="absolute inset-x-0 bottom-12 px-3 py-1.5 bg-black/20 text-white z-10 pointer-events-none">
-                        <p className="font-bold text-[10px] drop-shadow">Pembacaan Puisi </p>
+                        <p className="font-bold text-xs drop-shadow">Pembacaan Puisi </p>
                       </div>
                       <div className="absolute bottom-3 left-3 right-16 z-10">
                         <p className="text-white font-bold text-xs">@raka.belajar</p>
-                        <p className="text-white/80 text-[10px] leading-snug mt-0.5">
+                        <p className="text-white/80 text-xs leading-snug mt-0.5">
                           Tugas puisi Bahasa Indonesia #tugassekolah #puisi
                         </p>
                       </div>
                       <div className="absolute bottom-3 right-2 flex flex-col items-center gap-3 z-10">
                         <button onClick={() => setLiked((v) => !v)} className="flex flex-col items-center text-white text-shadow">
                           <Heart className={`h-7 w-7 ${liked ? 'fill-rose-500 text-rose-500' : 'text-white'}`} />
-                          <span className="text-[9px] font-semibold mt-0.5">{liked ? '321' : '320'}</span>
+                          <span className="text-xs font-semibold mt-0.5">{liked ? '321' : '320'}</span>
                         </button>
                         <button onClick={() => setShowKomentar(true)} className="flex flex-col items-center text-white text-shadow">
                           <MessageCircle className="h-7 w-7" />
-                          <span className="text-[9px] font-semibold mt-0.5">{KASUS2_KOMENTAR.length}</span>
+                          <span className="text-xs font-semibold mt-0.5">{KASUS2_KOMENTAR.length}</span>
                         </button>
                         <button onClick={() => setMuted((m) => !m)} className="flex flex-col items-center text-white text-shadow active:scale-95 transition-transform">
                           {muted ? <VolumeX className="h-7 w-7" /> : <Volume2 className="h-7 w-7" />}
-                          <span className="text-[9px] font-semibold mt-0.5">{muted ? 'Bisu' : 'Suara'}</span>
+                          <span className="text-xs font-semibold mt-0.5">{muted ? 'Bisu' : 'Suara'}</span>
                         </button>
                       </div>
 
@@ -586,16 +586,16 @@ export function Topik6Aktivitas2({ answers = {}, onSave }: ActivityProps) {
                             <div className="flex-1 overflow-y-auto px-3 py-2 space-y-3 bg-white">
                               {KASUS2_KOMENTAR.map((c, i) => (
                                 <div key={i} className="flex items-start gap-2 text-left">
-                                  <div className="w-7 h-7 rounded-full bg-slate-350 bg-slate-300 flex items-center justify-center text-[10px] font-bold text-slate-600 shrink-0">
+                                  <div className="w-7 h-7 rounded-full bg-slate-350 bg-slate-300 flex items-center justify-center text-xs font-bold text-slate-600 shrink-0">
                                     {c.u.charAt(0).toUpperCase()}
                                   </div>
                                   <div className="flex-1">
-                                    <p className="text-[10px] font-bold text-slate-550 text-slate-500">@{c.u}</p>
+                                    <p className="text-xs font-bold text-slate-550 text-slate-500">@{c.u}</p>
                                     <p className="text-xs text-slate-800 leading-snug">{c.t}</p>
-                                    <p className="text-[9px] text-slate-400 mt-0.5">Balas</p>
+                                    <p className="text-xs text-slate-400 mt-0.5">Balas</p>
                                   </div>
                                   <div className="flex flex-col items-center text-slate-400 shrink-0">
-                                    <span className="text-[9px]">{c.love}</span>
+                                    <span className="text-xs">{c.love}</span>
                                   </div>
                                 </div>
                               ))}
@@ -606,7 +606,7 @@ export function Topik6Aktivitas2({ answers = {}, onSave }: ActivityProps) {
                     </div>
                   </div>
                   
-                  <p className="text-center text-[11px] text-slate-500 mt-1 bg-pink-50/50 py-1.5 rounded-xl border border-pink-100/50 max-w-[280px] mx-auto font-medium">
+                  <p className="text-center text-xs text-slate-500 mt-1 bg-pink-50/50 py-1.5 rounded-xl border border-pink-100/50 max-w-[280px] mx-auto font-medium">
                     👉 <strong>Instruksi</strong>: Ketuk ikon 💬 <strong>komentar</strong> putih di samping kanan layar HP untuk membaca komentar teman-teman Raka.
                   </p>
 
@@ -659,7 +659,7 @@ export function Topik6Aktivitas2({ answers = {}, onSave }: ActivityProps) {
         </motion.div>
       </AnimatePresence>
 
-      <p className="text-[11px] text-slate-400 italic text-center">
+      <p className="text-xs text-slate-400 italic text-center">
         Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
       </p>
     </div>

@@ -191,7 +191,7 @@ export default function LoginPage() {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="mb-4 flex items-center justify-center gap-2 rounded-full border border-success-200 bg-success-50 px-4 py-2 text-xs font-semibold text-success-700"
+                        className="mb-4 flex items-center justify-center gap-2 rounded-full border border-success-200 bg-success-50 px-4 py-2 text-sm font-semibold text-success-700"
                     >
                         <Wifi className="h-3.5 w-3.5" />
                         <span>Sistem Online (Terhubung)</span>
@@ -201,7 +201,7 @@ export default function LoginPage() {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="mb-4 flex items-center justify-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-xs font-semibold text-amber-700"
+                        className="mb-4 flex items-center justify-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700"
                     >
                         <Gamepad2 className="h-3.5 w-3.5" />
                         <span>Mode Demo — Data hanya disimpan lokal</span>
@@ -459,7 +459,7 @@ export default function LoginPage() {
                         <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-amber-700">
                             <Gamepad2 className="h-4 w-4" /> Mode Demo — Jelajahi Tanpa Firebase
                         </div>
-                        <p className="mb-4 text-xs text-amber-600">
+                        <p className="mb-4 text-sm text-amber-600">
                             Firebase belum dikonfigurasi. Gunakan tombol di bawah untuk menjelajahi aplikasi sebagai murid atau guru.
                         </p>
                         <div className="flex gap-3">
@@ -503,7 +503,7 @@ export default function LoginPage() {
                 </div>
 
                 {/* Footer */}
-                <p className="mt-4 text-center text-xs text-surface-500">
+                <p className="mt-4 text-center text-sm text-surface-500">
                     2026 SiberCerdas · Literasi Digital Kelas 6 SD
                 </p>
             </motion.div>
@@ -547,7 +547,7 @@ export default function LoginPage() {
                                 <h2 id="forgot-password-title" className="font-display text-lg font-bold text-white">
                                     Lupa Password?
                                 </h2>
-                                <p className="mt-1 text-xs text-primary-100">
+                                <p className="mt-1 text-sm text-primary-100">
                                     Masukkan email Anda untuk menerima link reset password.
                                 </p>
                             </div>
@@ -565,7 +565,7 @@ export default function LoginPage() {
                                         <p className="text-sm font-semibold text-surface-800">
                                             Link reset telah dikirim!
                                         </p>
-                                        <p className="mt-1 text-xs text-surface-500">
+                                        <p className="mt-1 text-sm text-surface-500">
                                             Periksa email <strong>{resetEmail}</strong> dan ikuti petunjuk untuk mengatur ulang password Anda.
                                         </p>
                                         <button

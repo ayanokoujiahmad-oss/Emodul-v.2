@@ -301,7 +301,7 @@ export default function TemanBaikSim({ onComplete }: TemanBaikSimProps) {
  className="space-y-4"
  >
  {/* progress */}
- <div className="flex items-center justify-between text-[11px] font-bold text-pink-600">
+ <div className="flex items-center justify-between text-xs font-bold text-pink-600">
  <span className="px-2.5 py-1 rounded-full bg-white border border-pink-100">{current.platformLabel}</span>
  <span>Skenario {currentIdx + 1} / {SCENARIOS.length}</span>
  </div>
@@ -333,7 +333,7 @@ export default function TemanBaikSim({ onComplete }: TemanBaikSimProps) {
  m.buruk? 'bg-rose-50': m.baik? 'bg-emerald-50': onDark? 'bg-white/10': 'bg-white'
  }`}
  >
- <p className={`text-[11px] font-bold leading-tight ${onDark? 'text-white/80': 'text-slate-500'}`}>
+ <p className={`text-xs font-bold leading-tight ${onDark? 'text-white/80': 'text-slate-500'}`}>
  {m.n}
  </p>
  <p className={`text-[13px] leading-snug ${onDark? 'text-white': 'text-slate-800'}`}>{m.t}</p>
@@ -364,7 +364,7 @@ export default function TemanBaikSim({ onComplete }: TemanBaikSimProps) {
  selectedOpt === idx? 'bg-pink-500 border-pink-500 text-white': 'border-gray-200'
  }`}
  >
- {selectedOpt === idx && <span className="text-[8px]">●</span>}
+ {selectedOpt === idx && <span className="text-xs">●</span>}
  </div>
  <span>{opt.text}</span>
  </button>

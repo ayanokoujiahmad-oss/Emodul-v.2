@@ -88,7 +88,7 @@ export function Topik7TantanganAwal({ answers = {}, onSave }: ActivityProps) {
     <div className="bg-white border border-orange-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <span className="text-[10px] uppercase font-bold tracking-widest text-orange-500">
+          <span className="text-xs uppercase font-bold tracking-widest text-orange-500">
             Tantangan Awal
           </span>
           <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -103,7 +103,7 @@ export function Topik7TantanganAwal({ answers = {}, onSave }: ActivityProps) {
       {/* ===== Panel cerita komik (Slides) ===== */}
       <div className="rounded-2xl border border-orange-100 bg-gradient-to-br from-orange-50 to-amber-50 p-4 space-y-3">
         <div className="flex items-center justify-between">
-          <span className="text-[11px] font-bold text-orange-600">
+          <span className="text-xs font-bold text-orange-600">
             Halaman Komik {panel + 1} dari {COMIC_SLIDES.length}
           </span>
           <div className="flex gap-1.5">
@@ -129,7 +129,7 @@ export function Topik7TantanganAwal({ answers = {}, onSave }: ActivityProps) {
             className="max-h-[320px] sm:max-h-[400px] w-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-[1.01]"
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors flex items-center justify-center">
-            <span className="opacity-0 group-hover:opacity-100 bg-black/60 text-white text-[10px] font-bold px-3 py-1.5 rounded-full transition-opacity flex items-center gap-1">
+            <span className="opacity-0 group-hover:opacity-100 bg-black/60 text-white text-xs font-bold px-3 py-1.5 rounded-full transition-opacity flex items-center gap-1">
               🔍 Perbesar Gambar
             </span>
           </div>
@@ -144,7 +144,7 @@ export function Topik7TantanganAwal({ answers = {}, onSave }: ActivityProps) {
             ← Sebelumnya
           </button>
           
-          <span className="text-[10px] text-slate-400 font-medium italic hidden sm:inline">
+          <span className="text-xs text-slate-400 font-medium italic hidden sm:inline">
             Klik gambar untuk memperbesar cerita komik
           </span>
 
@@ -236,7 +236,7 @@ export function Topik7TantanganAwal({ answers = {}, onSave }: ActivityProps) {
 
  {sudah && (
  <p
- className={`text-[11px] mt-2.5 leading-relaxed animate-pop-in ${
+ className={`text-xs mt-2.5 leading-relaxed animate-pop-in ${
  tepat? 'text-emerald-700': 'text-rose-700'
  }`}
  >
@@ -256,7 +256,7 @@ export function Topik7TantanganAwal({ answers = {}, onSave }: ActivityProps) {
  <p className="text-sm font-bold text-orange-700">
  Skor Detektif Karya: {benar}/{KARTU_TINDAKAN.length}
  </p>
- <p className="text-[11px] text-orange-600 mt-1">
+ <p className="text-xs text-orange-600 mt-1">
  {benar >= 4
 ? 'Hebat! Kamu jeli membedakan menghargai dan melanggar karya.'
 : 'Bagus! Ayo pelajari lagi agar makin paham menghargai karya orang lain.'}
@@ -305,7 +305,7 @@ export function Topik7TantanganAwal({ answers = {}, onSave }: ActivityProps) {
  </div>
  </div>
 
- <p className="text-[11px] text-slate-400 italic">
+ <p className="text-xs text-slate-400 italic">
  Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
  </p>
  </div>
@@ -401,7 +401,7 @@ function GambarHasil({ src, emoji, alt }: { src: string; emoji: string; alt: str
     return (
       <div className="w-full h-60 rounded-xl bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-200 flex flex-col items-center justify-center text-slate-400">
         <span className="text-5xl">{emoji}</span>
-        <span className="text-[10px] mt-1">Gambar hasil pencarian</span>
+        <span className="text-xs mt-1">Gambar hasil pencarian</span>
       </div>
     );
   }
@@ -480,7 +480,7 @@ export function Topik7Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  return (
  <div className="bg-white border border-orange-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-orange-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-orange-500">
  Aktivitas 1
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -497,7 +497,7 @@ export function Topik7Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  <div className="grid sm:grid-cols-2 gap-3">
  <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-3.5">
  <p className="text-xs font-bold text-emerald-700 mb-1.5"> Gambar lebih aman jika:</p>
- <ul className="text-[11px] text-emerald-700 space-y-1 leading-relaxed list-disc pl-4">
+ <ul className="text-xs text-emerald-700 space-y-1 leading-relaxed list-disc pl-4">
  <li>sumber website-nya jelas;</li>
  <li>ada nama pembuat atau pemilik gambar;</li>
  <li>sesuai dengan tugas sekolah;</li>
@@ -507,7 +507,7 @@ export function Topik7Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  </div>
  <div className="rounded-2xl border border-rose-100 bg-rose-50 p-3.5">
  <p className="text-xs font-bold text-rose-700 mb-1.5"> Jangan dipakai dulu jika:</p>
- <ul className="text-[11px] text-rose-700 space-y-1 leading-relaxed list-disc pl-4">
+ <ul className="text-xs text-rose-700 space-y-1 leading-relaxed list-disc pl-4">
  <li>sumbernya tidak jelas;</li>
  <li>tidak ada nama website;</li>
  <li>diambil dari akun orang lain tanpa keterangan;</li>
@@ -549,7 +549,7 @@ export function Topik7Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  {sudahCariIni &&!mencari && (
  <div className="bg-white rounded-2xl border border-slate-100 p-3.5 animate-pop-in space-y-2.5">
  <GambarHasil src={aktif.imageSrc} emoji={aktif.fallbackEmoji} alt={aktif.keyword} />
- <div className="text-[11px] text-slate-600 space-y-1">
+ <div className="text-xs text-slate-600 space-y-1">
  <p>
  <b> Gambar tentang:</b> {aktif.tentang}
  </p>
@@ -622,11 +622,11 @@ export function Topik7Aktivitas1({ answers = {}, onSave }: ActivityProps) {
 
  {terkunci && (
  <div className="rounded-2xl bg-orange-50 border border-orange-100 p-3.5 animate-pop-in space-y-2">
- <p className="text-[12px] text-orange-700 leading-relaxed">
+ <p className="text-xs text-orange-700 leading-relaxed">
  <b>Alasannya:</b> {aktif.alasan}
  </p>
  <div className="space-y-1">
- <label className="text-[11px] font-bold text-primary-600">
+ <label className="text-xs font-bold text-primary-600">
  Tulis alasanmu sendiri (opsional):
  </label>
  <input
@@ -667,7 +667,7 @@ export function Topik7Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  <p className="text-sm font-bold text-orange-700">
  Skor Berburu Gambar: {poin}/{maksPoin}
  </p>
- <p className="text-[11px] text-orange-600 mt-1">
+ <p className="text-xs text-orange-600 mt-1">
  {poin >= maksPoin - 1
 ? 'Hebat! Kamu jeli memeriksa sumber gambar sebelum menggunakannya.'
 : 'Bagus! Ingat selalu cek sumber gambar sebelum memakainya, ya.'}
@@ -675,7 +675,7 @@ export function Topik7Aktivitas1({ answers = {}, onSave }: ActivityProps) {
  </div>
  )}
 
- <p className="text-[11px] text-slate-400 italic">
+ <p className="text-xs text-slate-400 italic">
  Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
  </p>
  </div>
@@ -765,7 +765,7 @@ export function Topik7Aktivitas2({ answers = {}, onSave }: ActivityProps) {
  return (
  <div className="bg-white border border-orange-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-orange-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-orange-500">
  Aktivitas 2
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -780,7 +780,7 @@ export function Topik7Aktivitas2({ answers = {}, onSave }: ActivityProps) {
 
  {/* Contoh */}
  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3.5">
- <p className="text-[11px] font-bold text-slate-500 mb-1"> Contoh:</p>
+ <p className="text-xs font-bold text-slate-500 mb-1"> Contoh:</p>
  <p className="text-xs text-slate-600 leading-relaxed">
  "Rani mengambil poster orang lain, lalu mengganti nama pembuatnya dengan namanya sendiri."
  <br />
@@ -846,7 +846,7 @@ export function Topik7Aktivitas2({ answers = {}, onSave }: ActivityProps) {
  {sudah && (
  <div className="animate-pop-in mt-2.5 space-y-2">
  <p
- className={`text-[11px] leading-relaxed ${
+ className={`text-xs leading-relaxed ${
  tepat? 'text-emerald-700': 'text-rose-700'
  }`}
  >
@@ -874,7 +874,7 @@ export function Topik7Aktivitas2({ answers = {}, onSave }: ActivityProps) {
  <p className="text-sm font-bold text-orange-700">
  Skor Hakim Karya: {benar}/{SITUASI_KARYA.length}
  </p>
- <p className="text-[11px] text-orange-600 mt-1">
+ <p className="text-xs text-orange-600 mt-1">
  {benar >= 6
 ? 'Luar biasa! Kamu adil dan paham aturan menggunakan karya orang lain.'
 : 'Bagus! Ayo cermati lagi mana yang jujur dan mana yang melanggar.'}
@@ -882,7 +882,7 @@ export function Topik7Aktivitas2({ answers = {}, onSave }: ActivityProps) {
  </div>
  )}
 
- <p className="text-[11px] text-slate-400 italic">
+ <p className="text-xs text-slate-400 italic">
  Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
  </p>
  </div>
@@ -996,22 +996,22 @@ function MockupBerita() {
           <div className="w-2 h-2 rounded-full bg-amber-400" />
           <div className="w-2 h-2 rounded-full bg-emerald-400" />
         </div>
-        <div className="flex-1 bg-white rounded-full px-2.5 py-0.5 text-[8px] text-slate-400 font-mono truncate border border-slate-200">
+        <div className="flex-1 bg-white rounded-full px-2.5 py-0.5 text-xs text-slate-400 font-mono truncate border border-slate-200">
           🔒 https://www.kompas.com/regional/banjir-sungai-sawang-jambi
         </div>
       </div>
       {/* Site header */}
       <div className="bg-red-700 px-3 py-1.5 flex items-center justify-between">
-        <span className="text-[10px] font-black text-white tracking-wider">KOMPAS.com</span>
-        <div className="flex gap-2 text-[8px] text-red-200">
+        <span className="text-xs font-black text-white tracking-wider">KOMPAS.com</span>
+        <div className="flex gap-2 text-xs text-red-200">
           <span>Berita</span><span>Regional</span><span>Video</span>
         </div>
       </div>
       {/* Article body */}
       <div className="p-3 space-y-2">
-        <p className="text-[8px] text-red-600 font-bold uppercase">BENCANA ALAM · JAMBI</p>
-        <h5 className="text-[12px] font-black text-slate-900 leading-tight">Banjir Rendam Pemukiman Warga di Sekitar Sungai Sawang, Jambi</h5>
-        <p className="text-[8px] text-slate-400">Senin, 15 Januari 2024 · 09:30 WIB</p>
+        <p className="text-xs text-red-600 font-bold uppercase">BENCANA ALAM · JAMBI</p>
+        <h5 className="text-xs font-black text-slate-900 leading-tight">Banjir Rendam Pemukiman Warga di Sekitar Sungai Sawang, Jambi</h5>
+        <p className="text-xs text-slate-400">Senin, 15 Januari 2024 · 09:30 WIB</p>
         {!gagal ? (
           <div className="w-full rounded-lg border border-slate-200 overflow-hidden aspect-[16/9]">
             <img
@@ -1024,11 +1024,11 @@ function MockupBerita() {
         ) : (
           <div className="w-full aspect-[16/9] bg-gradient-to-br from-blue-100 to-cyan-50 rounded-lg border border-blue-200 flex flex-col items-center justify-center">
             <span className="text-4xl">🌊🏘️</span>
-            <span className="text-[8px] font-bold text-blue-700 mt-1">[ Foto Banjir Sungai Sawang ]</span>
+            <span className="text-xs font-bold text-blue-700 mt-1">[ Foto Banjir Sungai Sawang ]</span>
           </div>
         )}
-        <p className="text-[8px] text-slate-500 italic">Foto: Wartawan Kompas / Kompas.com</p>
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-2 text-[9px] text-amber-800">
+        <p className="text-xs text-slate-500 italic">Foto: Wartawan Kompas / Kompas.com</p>
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-2 text-xs text-amber-800">
           💡 <b>Kenapa Deni mengambil foto ini?</b> Untuk melengkapi tugas kliping IPS tentang bencana alam yang terjadi di daerah Jambi.
         </div>
       </div>
@@ -1044,11 +1044,11 @@ function MockupInstagram() {
       <div className="px-3 py-2 flex items-center justify-between border-b border-slate-100">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-[2px]">
-            <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-[8px] font-black text-purple-700">A</div>
+            <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-xs font-black text-purple-700">A</div>
           </div>
           <div>
-            <p className="text-[10px] font-bold text-slate-900 leading-none">abrardqdr</p>
-            <p className="text-[8px] text-slate-400 leading-none mt-0.5">📍 Air Terjun Pancaro Rayo, Kerinci, Jambi</p>
+            <p className="text-xs font-bold text-slate-900 leading-none">abrardqdr</p>
+            <p className="text-xs text-slate-400 leading-none mt-0.5">📍 Air Terjun Pancaro Rayo, Kerinci, Jambi</p>
           </div>
         </div>
         <span className="text-slate-400 font-bold text-sm">•••</span>
@@ -1062,13 +1062,13 @@ function MockupInstagram() {
             onError={() => setGagal(true)}
             className="w-full h-full object-cover"
           />
-          <span className="absolute bottom-1.5 left-2 bg-black/50 text-white text-[7px] px-1.5 py-0.5 rounded font-medium">📸 @abrardqdr</span>
+          <span className="absolute bottom-1.5 left-2 bg-black/50 text-white text-xs px-1.5 py-0.5 rounded font-medium">📸 @abrardqdr</span>
         </div>
       ) : (
         <div className="w-full aspect-square bg-gradient-to-br from-emerald-100 via-cyan-50 to-blue-100 flex flex-col items-center justify-center relative">
           <span className="text-5xl">🏞️💧✨</span>
-          <span className="text-[9px] font-bold text-emerald-800 mt-1">[ Foto Air Terjun Pancaro Rayo ]</span>
-          <span className="absolute bottom-1.5 left-2 bg-black/50 text-white text-[7px] px-1.5 py-0.5 rounded font-medium">📸 @abrardqdr</span>
+          <span className="text-xs font-bold text-emerald-800 mt-1">[ Foto Air Terjun Pancaro Rayo ]</span>
+          <span className="absolute bottom-1.5 left-2 bg-black/50 text-white text-xs px-1.5 py-0.5 rounded font-medium">📸 @abrardqdr</span>
         </div>
       )}
       {/* IG Actions */}
@@ -1077,11 +1077,11 @@ function MockupInstagram() {
           <span>❤️</span><span>💬</span><span>📤</span>
           <span className="ml-auto">🔖</span>
         </div>
-        <p className="text-[9px] text-slate-800"><b>289 suka</b></p>
-        <p className="text-[9px] text-slate-700 leading-snug">
+        <p className="text-xs text-slate-800"><b>289 suka</b></p>
+        <p className="text-xs text-slate-700 leading-snug">
           <b>@abrardqdr</b> Keindahan alam Kerinci yang luar biasa! Air Terjun Pancaro Rayo ini tersembunyi di tengah hutan Kerinci, Jambi 🌿 Silakan dipakai untuk tugas sekolah, tag akunku ya! #airterjun #kerinci #jambi #pancararayo
         </p>
-        <div className="bg-purple-50 border border-purple-200 rounded-lg p-2 text-[9px] text-purple-800 mt-1">
+        <div className="bg-purple-50 border border-purple-200 rounded-lg p-2 text-xs text-purple-800 mt-1">
           💡 <b>Kenapa Deni mengambil foto ini?</b> Untuk dijadikan cover karangan Bahasa Indonesia berjudul "Liburanku di Alam Terbuka".
         </div>
       </div>
@@ -1100,7 +1100,7 @@ function MockupGov() {
           <div className="w-2 h-2 rounded-full bg-amber-400" />
           <div className="w-2 h-2 rounded-full bg-emerald-400" />
         </div>
-        <div className="flex-1 bg-white rounded-full px-2.5 py-0.5 text-[8px] text-slate-400 font-mono truncate border border-slate-200">
+        <div className="flex-1 bg-white rounded-full px-2.5 py-0.5 text-xs text-slate-400 font-mono truncate border border-slate-200">
           🔒 https://www.kemendikdasmen.go.id/profil/logo
         </div>
       </div>
@@ -1108,16 +1108,16 @@ function MockupGov() {
       <div className="bg-blue-900 px-3 py-1.5 flex items-center justify-between">
         <div className="flex items-center gap-1.5">
           <span className="text-sm">🇮🇩</span>
-          <span className="text-[9px] font-bold text-white">KEMENDIKDASMEN RI</span>
+          <span className="text-xs font-bold text-white">KEMENDIKDASMEN RI</span>
         </div>
-        <div className="flex gap-2 text-[7px] text-blue-200">
+        <div className="flex gap-2 text-xs text-blue-200">
           <span>Beranda</span><span>Profil</span><span>Layanan</span>
         </div>
       </div>
       {/* Content */}
       <div className="p-3 space-y-2">
-        <h5 className="text-[11px] font-black text-slate-800">Logo Tut Wuri Handayani</h5>
-        <p className="text-[8px] text-slate-500">Logo resmi Kementerian Pendidikan Dasar dan Menengah Republik Indonesia</p>
+        <h5 className="text-xs font-black text-slate-800">Logo Tut Wuri Handayani</h5>
+        <p className="text-xs text-slate-500">Logo resmi Kementerian Pendidikan Dasar dan Menengah Republik Indonesia</p>
         {!gagal ? (
           <div className="w-full rounded-lg border border-sky-200 overflow-hidden bg-gradient-to-br from-sky-50 to-blue-50 flex items-center justify-center p-3">
             <img
@@ -1130,11 +1130,11 @@ function MockupGov() {
         ) : (
           <div className="w-full h-28 bg-gradient-to-br from-sky-50 to-blue-50 rounded-lg border border-sky-200 flex flex-col items-center justify-center">
             <span className="text-4xl">🎓📘🇮🇩</span>
-            <span className="text-[8px] font-bold text-sky-800 mt-1">[ Logo Tut Wuri Handayani ]</span>
+            <span className="text-xs font-bold text-sky-800 mt-1">[ Logo Tut Wuri Handayani ]</span>
           </div>
         )}
-        <p className="text-[8px] text-slate-500 italic">Sumber: Kemendikdasmen RI · Halaman resmi profil kementerian</p>
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-2 text-[9px] text-blue-800">
+        <p className="text-xs text-slate-500 italic">Sumber: Kemendikdasmen RI · Halaman resmi profil kementerian</p>
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-2 text-xs text-blue-800">
           💡 <b>Kenapa Deni mengambil logo ini?</b> Untuk kliping tugas PKN tentang lambang-lambang penting negara Indonesia.
         </div>
       </div>
@@ -1153,7 +1153,7 @@ function MockupGovWisata() {
           <div className="w-2 h-2 rounded-full bg-amber-400" />
           <div className="w-2 h-2 rounded-full bg-emerald-400" />
         </div>
-        <div className="flex-1 bg-white rounded-full px-2.5 py-0.5 text-[8px] text-slate-400 font-mono truncate border border-slate-200">
+        <div className="flex-1 bg-white rounded-full px-2.5 py-0.5 text-xs text-slate-400 font-mono truncate border border-slate-200">
           🔒 https://www.batangharikab.go.id/wisata/danau-letang
         </div>
       </div>
@@ -1161,19 +1161,19 @@ function MockupGovWisata() {
       <div className="bg-emerald-800 px-3 py-1.5 flex items-center justify-between">
         <div className="flex items-center gap-1.5">
           <span className="text-sm">🏛️</span>
-          <span className="text-[9px] font-bold text-white">PEMKAB BATANGHARI</span>
+          <span className="text-xs font-bold text-white">PEMKAB BATANGHARI</span>
         </div>
-        <div className="flex gap-2 text-[7px] text-emerald-200">
+        <div className="flex gap-2 text-xs text-emerald-200">
           <span>Beranda</span><span>Wisata</span><span>Berita</span>
         </div>
       </div>
       {/* Content */}
       <div className="p-3 space-y-2">
         <div className="flex items-center gap-1.5">
-          <span className="text-[8px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded uppercase">WISATA ALAM</span>
-          <span className="text-[8px] text-slate-400">Kabupaten Batanghari, Jambi</span>
+          <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded uppercase">WISATA ALAM</span>
+          <span className="text-xs text-slate-400">Kabupaten Batanghari, Jambi</span>
         </div>
-        <h5 className="text-[12px] font-black text-slate-900 leading-tight">Danau Letang — Pesona Alam Tersembunyi di Batanghari</h5>
+        <h5 className="text-xs font-black text-slate-900 leading-tight">Danau Letang — Pesona Alam Tersembunyi di Batanghari</h5>
         {!gagal ? (
           <div className="w-full rounded-lg border border-emerald-200 overflow-hidden aspect-[16/9]">
             <img
@@ -1186,14 +1186,14 @@ function MockupGovWisata() {
         ) : (
           <div className="w-full aspect-[16/9] bg-gradient-to-br from-emerald-100 to-teal-50 rounded-lg border border-emerald-200 flex flex-col items-center justify-center">
             <span className="text-4xl">🏞️🌿💧</span>
-            <span className="text-[8px] font-bold text-emerald-800 mt-1">[ Foto Danau Letang ]</span>
+            <span className="text-xs font-bold text-emerald-800 mt-1">[ Foto Danau Letang ]</span>
           </div>
         )}
-        <p className="text-[8px] text-slate-500 italic">Foto: Dinas Pariwisata Kab. Batanghari / batangharikab.go.id</p>
-        <p className="text-[9px] text-slate-600 leading-snug">
+        <p className="text-xs text-slate-500 italic">Foto: Dinas Pariwisata Kab. Batanghari / batangharikab.go.id</p>
+        <p className="text-xs text-slate-600 leading-snug">
           Danau Letang merupakan salah satu destinasi wisata alam unggulan di Kabupaten Batanghari, Provinsi Jambi. Dikelilingi oleh pepohonan hijau dan suasana yang asri, danau ini menjadi tempat favorit warga untuk berekreasi.
         </p>
-        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-2 text-[9px] text-emerald-800">
+        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-2 text-xs text-emerald-800">
           💡 <b>Kenapa Deni mengambil foto ini?</b> Untuk poster tugas IPS tentang potensi wisata di daerah Jambi.
         </div>
       </div>
@@ -1214,8 +1214,8 @@ function MockupSketchbook() {
       {/* Page content */}
       <div className="pl-5 pr-3 py-3 space-y-2">
         <div className="flex items-center justify-between">
-          <p className="text-[8px] font-bold text-slate-400 uppercase tracking-widest">Kertas Gambar A4</p>
-          <span className="text-[8px] text-slate-400 font-mono">SBdP · Kelas VI</span>
+          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Kertas Gambar A4</p>
+          <span className="text-xs text-slate-400 font-mono">SBdP · Kelas VI</span>
         </div>
         {!gagal ? (
           <div className="bg-white rounded-lg border border-slate-200 p-2 overflow-hidden">
@@ -1231,19 +1231,19 @@ function MockupSketchbook() {
             <div className="grid grid-cols-2 gap-2">
               <div className="aspect-[4/3] border-2 border-dashed border-slate-300 rounded-lg p-2 flex flex-col items-center justify-center bg-slate-50/50">
                 <span className="text-2xl">🧒🗯️</span>
-                <span className="text-[7px] text-slate-500 font-bold mt-1">"Halo, aku Deni!"</span>
+                <span className="text-xs text-slate-500 font-bold mt-1">"Halo, aku Deni!"</span>
               </div>
               <div className="aspect-[4/3] border-2 border-dashed border-slate-300 rounded-lg p-2 flex flex-col items-center justify-center bg-slate-50/50">
                 <span className="text-2xl">🏫🎒🌤️</span>
-                <span className="text-[7px] text-slate-500 font-bold mt-1">Berangkat Sekolah</span>
+                <span className="text-xs text-slate-500 font-bold mt-1">Berangkat Sekolah</span>
               </div>
             </div>
           </div>
         )}
-        <p className="text-[10px] font-bold text-slate-700 text-center mt-2">
+        <p className="text-xs font-bold text-slate-700 text-center mt-2">
           Komik "Pergi Sekolah" oleh Deni · Karya Sendiri
         </p>
-        <div className="bg-amber-100 border border-amber-300 rounded-lg p-2 text-[9px] text-amber-800">
+        <div className="bg-amber-100 border border-amber-300 rounded-lg p-2 text-xs text-amber-800">
           💡 <b>Kenapa Deni membuat ini?</b> Untuk tugas SBdP membuat komik cerita sederhana. Semua gambar dan cerita ia buat sendiri dari imajinasinya.
         </div>
       </div>
@@ -1402,7 +1402,7 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
   return (
     <div className="bg-white border border-orange-100 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
       <div>
-        <span className="text-[10px] uppercase font-bold tracking-widest text-orange-500">
+        <span className="text-xs uppercase font-bold tracking-widest text-orange-500">
           Aktivitas 3
         </span>
         <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -1419,43 +1419,43 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
           <span className="text-lg">📋</span>
           <h4 className="text-xs font-black text-violet-900 uppercase tracking-wider">Petunjuk Menulis Kredit Karya</h4>
         </div>
-        <p className="text-[11px] text-slate-700 leading-relaxed">
+        <p className="text-xs text-slate-700 leading-relaxed">
           Agar kredit karya <b>lengkap dan benar</b>, pastikan kamu menuliskan <b>tiga hal penting</b> ini:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
           <div className="rounded-xl border border-violet-200 bg-white p-3 space-y-1">
             <div className="flex items-center gap-1.5">
-              <span className="w-6 h-6 rounded-full bg-violet-100 flex items-center justify-center text-[11px] font-black text-violet-700">1</span>
-              <p className="text-[11px] font-black text-violet-800">👤 SIAPA</p>
+              <span className="w-6 h-6 rounded-full bg-violet-100 flex items-center justify-center text-xs font-black text-violet-700">1</span>
+              <p className="text-xs font-black text-violet-800">👤 SIAPA</p>
             </div>
-            <p className="text-[10px] text-slate-600 leading-snug">
+            <p className="text-xs text-slate-600 leading-snug">
               Nama pembuat atau pemilik karya.
             </p>
-            <p className="text-[9px] text-violet-600 italic">
+            <p className="text-xs text-violet-600 italic">
               Contoh: Kak Rian, Kemkes RI, @potret_alam
             </p>
           </div>
           <div className="rounded-xl border border-violet-200 bg-white p-3 space-y-1">
             <div className="flex items-center gap-1.5">
-              <span className="w-6 h-6 rounded-full bg-violet-100 flex items-center justify-center text-[11px] font-black text-violet-700">2</span>
-              <p className="text-[11px] font-black text-violet-800">📄 APA</p>
+              <span className="w-6 h-6 rounded-full bg-violet-100 flex items-center justify-center text-xs font-black text-violet-700">2</span>
+              <p className="text-xs font-black text-violet-800">📄 APA</p>
             </div>
-            <p className="text-[10px] text-slate-600 leading-snug">
+            <p className="text-xs text-slate-600 leading-snug">
               Judul atau nama karyanya.
             </p>
-            <p className="text-[9px] text-violet-600 italic">
+            <p className="text-xs text-violet-600 italic">
               Contoh: Foto "Kucing Oren", Gambar "Hutan Hijau"
             </p>
           </div>
           <div className="rounded-xl border border-violet-200 bg-white p-3 space-y-1">
             <div className="flex items-center gap-1.5">
-              <span className="w-6 h-6 rounded-full bg-violet-100 flex items-center justify-center text-[11px] font-black text-violet-700">3</span>
-              <p className="text-[11px] font-black text-violet-800">🌐 DI MANA</p>
+              <span className="w-6 h-6 rounded-full bg-violet-100 flex items-center justify-center text-xs font-black text-violet-700">3</span>
+              <p className="text-xs font-black text-violet-800">🌐 DI MANA</p>
             </div>
-            <p className="text-[10px] text-slate-600 leading-snug">
+            <p className="text-xs text-slate-600 leading-snug">
               Nama situs atau alamat asalnya.
             </p>
-            <p className="text-[9px] text-violet-600 italic">
+            <p className="text-xs text-violet-600 italic">
               Contoh: Pixabay.com, kemkes.go.id
             </p>
           </div>
@@ -1465,17 +1465,17 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
         <div className="rounded-xl border border-pink-200 bg-gradient-to-r from-pink-50 to-purple-50 p-3 space-y-1.5">
           <div className="flex items-center gap-1.5">
             <span className="text-base">📸</span>
-            <p className="text-[11px] font-black text-pink-800">Cara Menulis Kredit dari Instagram</p>
+            <p className="text-xs font-black text-pink-800">Cara Menulis Kredit dari Instagram</p>
           </div>
-          <p className="text-[10px] text-slate-700 leading-relaxed">
+          <p className="text-xs text-slate-700 leading-relaxed">
             Jika kamu mengambil gambar dari <b>Instagram</b>, tuliskan kredit seperti ini:
           </p>
-          <div className="bg-white border border-pink-100 rounded-lg p-2.5 text-[10px] text-slate-800 font-medium">
+          <div className="bg-white border border-pink-100 rounded-lg p-2.5 text-xs text-slate-800 font-medium">
             <p>👤 <b>Siapa:</b> Nama akun Instagram (contoh: <span className="text-pink-700">@budi_petualang</span>)</p>
             <p>📄 <b>Apa:</b> Judul foto/gambar (contoh: <span className="text-pink-700">Foto "Pemandangan Gunung"</span>)</p>
             <p>🌐 <b>Di mana:</b> Tulis <span className="text-pink-700">Instagram (@budi_petualang)</span></p>
           </div>
-          <p className="text-[9px] text-pink-600 italic">
+          <p className="text-xs text-pink-600 italic">
             Contoh lengkap: Foto "Pemandangan Gunung" oleh @budi_petualang, dari Instagram
           </p>
         </div>
@@ -1483,12 +1483,12 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
 
       {/* Contoh kredit — collapsible */}
       <details className="rounded-2xl border border-orange-100 bg-orange-50/50 overflow-hidden group">
-        <summary className="px-3.5 py-2.5 cursor-pointer text-[11px] font-bold text-orange-700 flex items-center gap-1.5 hover:bg-orange-100/50 transition-colors">
-          <span className="group-open:rotate-90 transition-transform text-[9px]">▶</span>
+        <summary className="px-3.5 py-2.5 cursor-pointer text-xs font-bold text-orange-700 flex items-center gap-1.5 hover:bg-orange-100/50 transition-colors">
+          <span className="group-open:rotate-90 transition-transform text-xs">▶</span>
           💡 Lihat Contoh Kredit Karya & Sitasi Standar
         </summary>
         <div className="px-3.5 pb-3 space-y-2">
-          <div className="grid sm:grid-cols-2 gap-3 text-[10px] text-slate-600 leading-relaxed">
+          <div className="grid sm:grid-cols-2 gap-3 text-xs text-slate-600 leading-relaxed">
             <div>
               <p className="font-bold text-slate-700 mb-1">Gaya Sederhana (Sekolah Dasar):</p>
               <ul className="list-disc pl-4 space-y-0.5">
@@ -1547,7 +1547,7 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
          <span className="text-xs font-bold text-primary-700">
            Soal {activeIdx + 1} dari {KREDIT_ITEMS.length}
          </span>
-         <span className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100">
+         <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100">
            {aktif.labelTugas}
          </span>
        </div>
@@ -1556,16 +1556,16 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
        <div className="rounded-2xl border border-indigo-100 bg-gradient-to-br from-indigo-50/60 to-violet-50/40 p-4 space-y-2">
          <div className="flex items-center gap-1.5">
            <span className="text-base">📖</span>
-           <h4 className="text-[11px] font-black text-indigo-900 uppercase tracking-wider">Cerita Deni</h4>
+           <h4 className="text-xs font-black text-indigo-900 uppercase tracking-wider">Cerita Deni</h4>
          </div>
-         <p className="text-[11.5px] text-slate-700 leading-relaxed">
+         <p className="text-xs text-slate-700 leading-relaxed">
            {aktif.studiKasus}
          </p>
        </div>
 
        {/* ---- Mockup Visual ---- */}
        <div>
-         <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">
+         <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
            👁️ Tampilan Sumber yang Deni Lihat:
          </p>
          <RenderMockup type={aktif.mockupType} />
@@ -1591,7 +1591,7 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
                  key={opt}
                  onClick={() => pilihSumber(aktif.id, opt)}
                  disabled={sumberDipilih !== undefined}
-                 className={`px-3 py-2 rounded-xl text-[11px] font-bold border transition-all disabled:opacity-60 ${style}`}
+                 className={`px-3 py-2 rounded-xl text-xs font-bold border transition-all disabled:opacity-60 ${style}`}
                >
                  {opt}
                </button>
@@ -1599,12 +1599,12 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
            })}
          </div>
          {sumberDipilih && sumberTepat && (
-           <p className="text-[10px] text-emerald-700 animate-pop-in">
+           <p className="text-xs text-emerald-700 animate-pop-in">
              ✅ Tepat! Gambar ini memang berasal dari <b>{aktif.sumberBenar}</b>.
            </p>
          )}
          {sumberDipilih && !sumberTepat && (
-           <p className="text-[10px] text-rose-600 animate-pop-in">
+           <p className="text-xs text-rose-600 animate-pop-in">
              ❌ Kurang tepat. Sumber yang benar: <b>{aktif.sumberBenar}</b>.
            </p>
          )}
@@ -1619,8 +1619,8 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
          {/* Siapa */}
          <div className="space-y-1">
            <div className="flex items-center gap-1.5">
-             <span className="w-5 h-5 rounded-full bg-violet-100 flex items-center justify-center text-[9px] font-black text-violet-700">1</span>
-             <label className="text-[11px] font-bold text-violet-800">👤 Siapa pembuat/pemilik karyanya?</label>
+             <span className="w-5 h-5 rounded-full bg-violet-100 flex items-center justify-center text-xs font-black text-violet-700">1</span>
+             <label className="text-xs font-bold text-violet-800">👤 Siapa pembuat/pemilik karyanya?</label>
            </div>
            <input
              value={kreditAktif.siapa}
@@ -1633,8 +1633,8 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
          {/* Apa */}
          <div className="space-y-1">
            <div className="flex items-center gap-1.5">
-             <span className="w-5 h-5 rounded-full bg-violet-100 flex items-center justify-center text-[9px] font-black text-violet-700">2</span>
-             <label className="text-[11px] font-bold text-violet-800">📄 Apa judul atau nama karyanya?</label>
+             <span className="w-5 h-5 rounded-full bg-violet-100 flex items-center justify-center text-xs font-black text-violet-700">2</span>
+             <label className="text-xs font-bold text-violet-800">📄 Apa judul atau nama karyanya?</label>
            </div>
            <input
              value={kreditAktif.apa}
@@ -1647,8 +1647,8 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
          {/* Di mana */}
          <div className="space-y-1">
            <div className="flex items-center gap-1.5">
-             <span className="w-5 h-5 rounded-full bg-violet-100 flex items-center justify-center text-[9px] font-black text-violet-700">3</span>
-             <label className="text-[11px] font-bold text-violet-800">🌐 Di mana kamu menemukannya? (nama situs/alamat)</label>
+             <span className="w-5 h-5 rounded-full bg-violet-100 flex items-center justify-center text-xs font-black text-violet-700">3</span>
+             <label className="text-xs font-bold text-violet-800">🌐 Di mana kamu menemukannya? (nama situs/alamat)</label>
            </div>
            <input
              value={kreditAktif.dimana}
@@ -1661,9 +1661,9 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
          {/* Preview kredit lengkap */}
          {kreditLengkap && (
             <div className="bg-white border border-emerald-200 rounded-xl p-3 animate-pop-in space-y-1.5">
-              <p className="text-[10px] font-bold text-emerald-700">✅ Hasil Pengelompokan Elemen:</p>
+              <p className="text-xs font-bold text-emerald-700">✅ Hasil Pengelompokan Elemen:</p>
               <div className="bg-emerald-50 rounded-lg p-2 border border-emerald-100">
-                <p className="text-[10px] text-slate-800 font-medium leading-relaxed">
+                <p className="text-xs text-slate-800 font-medium leading-relaxed">
                   Elemen terpisah: {kreditAktif.apa} oleh {kreditAktif.siapa}, dari {kreditAktif.dimana}
                 </p>
               </div>
@@ -1673,10 +1673,10 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
           {/* 4. Tulis Kredit Karya Utuh (Atribusi Gabungan) */}
           <div className="space-y-1">
             <div className="flex items-center gap-1.5">
-              <span className="w-5 h-5 rounded-full bg-violet-100 flex items-center justify-center text-[9px] font-black text-violet-700">4</span>
-              <label className="text-[11px] font-bold text-violet-800">✍️ Tuliskan Kredit Karya Secara Utuh (Atribusi Gabungan):</label>
+              <span className="w-5 h-5 rounded-full bg-violet-100 flex items-center justify-center text-xs font-black text-violet-700">4</span>
+              <label className="text-xs font-bold text-violet-800">✍️ Tuliskan Kredit Karya Secara Utuh (Atribusi Gabungan):</label>
             </div>
-            <p className="text-[10px] text-slate-500 italic mb-1">
+            <p className="text-xs text-slate-500 italic mb-1">
               Rangkai elemen di atas ke dalam kalimat utuh. Contoh format: <b>Judul Karya (Sumber: Platform Akun/Pembuat, Tahun)</b>
             </p>
             <input
@@ -1688,7 +1688,7 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
             {kreditAktif.utuh.trim().length > 0 && (() => {
               const res = cekKreditUtuh(aktif.id, kreditAktif.utuh);
               return (
-                <p className={`text-[10px] font-semibold mt-1.5 animate-pop-in ${res.valid ? 'text-emerald-600' : 'text-amber-600'}`}>
+                <p className={`text-xs font-semibold mt-1.5 animate-pop-in ${res.valid ? 'text-emerald-600' : 'text-amber-600'}`}>
                   {res.valid ? '✅' : '⚠️'} {res.pesan}
                 </p>
               );
@@ -1718,13 +1718,13 @@ export function Topik7Aktivitas3({ answers = {}, onSave }: ActivityProps) {
      {selesai && (
        <div className="rounded-2xl bg-gradient-to-r from-orange-100 to-amber-100 border border-orange-200 p-4 text-center animate-pop-in">
          <p className="text-sm font-bold text-orange-700">🎉 Kredit Karya Lengkap!</p>
-         <p className="text-[11px] text-orange-600 mt-1">
+         <p className="text-xs text-orange-600 mt-1">
            Hebat! Kamu sudah membantu Deni menuliskan kredit lengkap (Siapa, Apa, Di mana) untuk semua gambar yang ia gunakan. Sikap jujur dan menghargai pembuat karya itu penting!
          </p>
        </div>
      )}
 
-     <p className="text-[11px] text-slate-400 italic">
+     <p className="text-xs text-slate-400 italic">
        Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
      </p>
    </div>
@@ -1914,7 +1914,7 @@ export function Topik7SimKonten({ answers = {}, onSave }: ActivityProps) {
  <div className="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-200 rounded-3xl p-5 sm:p-6 shadow-card space-y-5">
  <div className="flex items-start justify-between gap-3">
  <div>
- <span className="text-[10px] uppercase font-bold tracking-widest text-orange-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-orange-500">
  Simulasi Penutup
  </span>
  <h3 className="font-display font-bold text-lg text-primary-800 mt-1">
@@ -1958,7 +1958,7 @@ export function Topik7SimKonten({ answers = {}, onSave }: ActivityProps) {
  <div className="flex items-center gap-2">
  <span className="text-3xl">{misi.emoji}</span>
  <div>
- <p className="text-[10px] font-bold text-orange-500 uppercase tracking-wide">{misi.babak}</p>
+ <p className="text-xs font-bold text-orange-500 uppercase tracking-wide">{misi.babak}</p>
  <p className="text-sm font-bold text-primary-800">{misi.judul}</p>
  </div>
  </div>
@@ -1993,7 +1993,7 @@ export function Topik7SimKonten({ answers = {}, onSave }: ActivityProps) {
  })}
  {jawabMisi.jawaban!== undefined && (
  <p
- className={`text-[11px] leading-relaxed animate-pop-in mt-1 ${
+ className={`text-xs leading-relaxed animate-pop-in mt-1 ${
  jawabMisi.benar? 'text-emerald-700': 'text-rose-700'
  }`}
  >
@@ -2008,7 +2008,7 @@ export function Topik7SimKonten({ answers = {}, onSave }: ActivityProps) {
  {misi.tipe === 'kredit' && (
  <div className="space-y-2">
  <div className="flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-xl px-3 py-2">
- <span className="text-[11px] font-bold text-orange-600 shrink-0">{misi.prefix}</span>
+ <span className="text-xs font-bold text-orange-600 shrink-0">{misi.prefix}</span>
  <input
  value={jawabMisi.kredit || ''}
  onChange={(e) => setKredit(e.target.value)}
@@ -2026,12 +2026,12 @@ export function Topik7SimKonten({ answers = {}, onSave }: ActivityProps) {
  Periksa Kredit
  </button>
  ): jawabMisi.benar? (
- <p className="text-[11px] text-emerald-700 animate-pop-in">
+ <p className="text-xs text-emerald-700 animate-pop-in">
  Kredit lengkap! Kamu mencantumkan nama pembuat dan sumbernya. Hebat!
  </p>
  ): (
  <div className="space-y-2 animate-pop-in">
- <p className="text-[11px] text-rose-700">
+ <p className="text-xs text-rose-700">
  Kreditnya belum lengkap. Pastikan ada <b>nama pembuat (Andi)</b> dan{' '}
  <b>sumber (Freepik)</b>. Contoh: "{misi.contoh}".
  </p>
@@ -2083,7 +2083,7 @@ export function Topik7SimKonten({ answers = {}, onSave }: ActivityProps) {
 				<p className="text-sm font-bold text-orange-700">
 					Misi Selesai! Skor Pelindung Karya: {skor}/{MISI_SIM.length}
 				</p>
-				<p className="text-[11px] text-orange-600 mt-1 max-w-sm mx-auto leading-relaxed">
+				<p className="text-xs text-orange-600 mt-1 max-w-sm mx-auto leading-relaxed">
 					{skor === MISI_SIM.length
 						? 'Sempurna! Kamu sudah bisa menggunakan konten digital dengan jujur dan bertanggung jawab.'
 						: 'Bagus! Ingat untuk selalu memilih sumber yang jelas, cek lisensi, dan mencantumkan kredit.'}
@@ -2108,7 +2108,7 @@ export function Topik7SimKonten({ answers = {}, onSave }: ActivityProps) {
 		</div>
 	)}
 
-	<p className="text-[11px] text-orange-400/80 italic">
+	<p className="text-xs text-orange-400/80 italic">
  Jawabanmu otomatis tersimpan dan dapat dilihat oleh gurumu.
  </p>
  </div>

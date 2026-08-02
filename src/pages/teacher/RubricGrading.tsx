@@ -21,7 +21,7 @@ import {
  where,
 } from 'firebase/firestore';
 import { db, auth } from '../../lib/firebase';
-import { type TopicGrade, type StudentAccount, type StudentTopicResponse, type UserProfile, type TopicStep } from '../../types';
+import { type TopicGrade, type StudentAccount, type StudentTopicResponse, type UserProfile, type TopicStep, type Classroom } from '../../types';
 import { useModules } from '../../contexts/ModuleContext';
 import {
  getDemoAccounts,
@@ -30,6 +30,7 @@ import {
  getDemoProgressList,
  saveDemoGrade,
  saveDemoProgress,
+ getDemoClassrooms,
 } from '../../lib/demoStore';
 import { calculateMultipleChoiceScore, calculateTopicFinalScore } from '../../lib/grading';
 
@@ -809,6 +810,8 @@ export default function RubricGrading() {
  const [students, setStudents] = useState<UserProfile[]>([]);
  const [selectedStudentIdx, setSelectedStudentIdx] = useState(-1);
  const [selectedTopicId, setSelectedTopicId] = useState('topik-1');
+ const [classrooms, setClassrooms] = useState<Classroom[]>([]);
+ const [selectedClassFilter, setSelectedClassFilter] = useState('');
  
  const [submissions, setSubmissions] = useState<Record<string, StudentTopicResponse>>({});
  const [existingGrades, setExistingGrades] = useState<Record<string, TopicGrade>>({});
@@ -879,7 +882,13 @@ export default function RubricGrading() {
  }
  };
 
- const selectedStudent = students[selectedStudentIdx]?? null;
+ // Filter students by selected class
+ const filteredStudents = useMemo(() => {
+ if (!selectedClassFilter) return students;
+ return students.filter((s) => s.classId === selectedClassFilter);
+ }, [students, selectedClassFilter]);
+
+ const selectedStudent = filteredStudents[selectedStudentIdx]?? null;
  const gradeKey = selectedStudent? `${selectedStudent.uid}_${selectedTopicId}`: '';
  const currentTopic = TOPICS.find((t) => t.id === selectedTopicId);
  const currentSubmission = submissions[gradeKey]?? null;
@@ -961,6 +970,24 @@ export default function RubricGrading() {
 
  const activeStep = gradableSteps.find((s) => s.index === selectedStepIdx) || gradableSteps[0] || null;
 
+ // Load classrooms
+ useEffect(() => {
+ if (!db) {
+ setClassrooms(getDemoClassrooms(guruId));
+ return;
+ }
+ const qClass = query(collection(db, 'classrooms'), where('guruId', '==', guruId));
+ const unsub = onSnapshot(
+ qClass,
+ (snap) => {
+ const list = snap.docs.map((d: any) => ({ id: d.id, ...d.data() } as Classroom));
+ setClassrooms(list);
+ },
+ (err) => safeLog('classrooms-snapshot', err)
+ );
+ return unsub;
+ }, [guruId, refreshTrigger]);
+
  // Load students list
  useEffect(() => {
  setLoading(true);
@@ -986,6 +1013,7 @@ export default function RubricGrading() {
  );
  return unsub;
  }, [guruId, refreshTrigger]);
+
 
  // Load submissions
  useEffect(() => {
@@ -1039,10 +1067,10 @@ export default function RubricGrading() {
 
  // Keep selected student index inside the current list.
  useEffect(() => {
- if (selectedStudentIdx >= students.length) {
- setSelectedStudentIdx(Math.max(0, students.length - 1));
+ if (selectedStudentIdx >= filteredStudents.length) {
+ setSelectedStudentIdx(Math.max(0, filteredStudents.length - 1));
  }
- }, [selectedStudentIdx, students.length]);
+ }, [selectedStudentIdx, filteredStudents.length]);
 
  // Set default selected step when gradable steps load
  useEffect(() => {
@@ -1323,7 +1351,7 @@ export default function RubricGrading() {
  };
 
  const goPrev = () => setSelectedStudentIdx((i) => Math.max(0, i - 1));
- const goNext = () => setSelectedStudentIdx((i) => Math.min(students.length - 1, i + 1));
+ const goNext = () => setSelectedStudentIdx((i) => Math.min(filteredStudents.length - 1, i + 1));
 
  // Find answers for active step
  const activeStepAnswers = useMemo(() => {
@@ -1383,6 +1411,24 @@ export default function RubricGrading() {
  ))}
  </select>
  </div>
+ <div>
+ <label className="block text-xs text-gray-400 font-semibold mb-1">Filter Kelas</label>
+ <select
+ value={selectedClassFilter}
+ onChange={(e) => { setSelectedClassFilter(e.target.value); setSelectedStudentIdx(-1); }}
+ className="w-full px-3 py-2 rounded-xl border border-gray-200 text-sm focus:border-primary-400 focus:ring-2 focus:ring-primary-100 outline-none bg-white appearance-none"
+ >
+ <option value="">Semua Kelas ({students.length} siswa)</option>
+ {classrooms.map((cls) => {
+ const count = students.filter((s) => s.classId === cls.name || s.classId === cls.id).length;
+ return (
+ <option key={cls.id} value={cls.name}>
+ {cls.name} ({count} siswa)
+ </option>
+ );
+ })}
+ </select>
+ </div>
  <div className="space-y-2">
  <button
  type="button"
@@ -1410,18 +1456,18 @@ export default function RubricGrading() {
 
  <div className="p-3 border-b border-gray-100 bg-gray-50/50">
  <p className="text-xs text-gray-500 font-semibold">
- {students.length} siswa • {Object.keys(existingGrades).length} dinilai
+ {filteredStudents.length} siswa{selectedClassFilter ? ` (${selectedClassFilter})` : ''} • {Object.keys(existingGrades).length} dinilai
  </p>
  </div>
 
  <div className="flex-1 overflow-y-auto p-2 space-y-0.5">
- {students.length === 0? (
+ {filteredStudents.length === 0? (
  <div className="flex flex-col items-center justify-center h-32 text-gray-400 text-sm">
  <User size={24} className="mb-2" />
- <p>Belum ada siswa</p>
+ <p>{selectedClassFilter ? `Belum ada siswa di ${selectedClassFilter}` : 'Belum ada siswa'}</p>
  </div>
  ): (
- students.map((s, idx) => {
+ filteredStudents.map((s, idx) => {
  const key = `${s.uid}_${selectedTopicId}`;
  const submission = submissions[key];
  const hasStarted = submission && (Object.keys(submission.answers || {}).length > 0 || (submission.step || 0) > 0);
@@ -1481,11 +1527,11 @@ export default function RubricGrading() {
  <ChevronLeft size={18} />
  </button>
  <span className="text-xs text-gray-500 font-semibold min-w-[50px] text-center">
- {selectedStudentIdx + 1} / {students.length}
+ {selectedStudentIdx + 1} / {filteredStudents.length}
  </span>
  <button
  onClick={goNext}
- disabled={selectedStudentIdx === -1 || selectedStudentIdx === students.length - 1}
+ disabled={selectedStudentIdx === -1 || selectedStudentIdx === filteredStudents.length - 1}
  className="p-2 rounded-lg hover:bg-gray-100 disabled:opacity-30 transition-colors"
  >
  <ChevronRight size={18} />

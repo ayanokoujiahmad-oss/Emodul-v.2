@@ -80,7 +80,7 @@ function StatRing({ value, total, label, color, icon: Icon }: { value: number | 
                 <Icon className={`h-4.5 w-4.5 ${color}`} />
             </div>
             <span className="font-display text-xl font-black text-surface-900">{value}{total ? `/${total}` : ''}</span>
-            <span className="text-[10px] font-semibold text-surface-400 uppercase tracking-wide">{label}</span>
+            <span className="text-xs font-semibold text-surface-400 uppercase tracking-wide">{label}</span>
         </motion.div>
     );
 }
@@ -162,7 +162,7 @@ export default function DashboardNilai({ progressMap, topicModules }: DashboardN
                     </motion.div>
                     <div>
                         <h3 className="font-display text-lg font-black">Skor Misi Kuis</h3>
-                        <p className="text-xs text-white/70">Nilai otomatis dari Uji Pemahaman di setiap topik</p>
+                        <p className="text-sm text-white/70">Nilai otomatis dari Uji Pemahaman di setiap topik</p>
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@ export default function DashboardNilai({ progressMap, topicModules }: DashboardN
                     <div className="flex items-center justify-center" style={{ height: chartHeight }}>
                         <div className="flex flex-col items-center gap-2">
                             <div className="h-8 w-8 animate-spin rounded-full border-3 border-indigo-300 border-t-indigo-600" />
-                            <span className="text-xs text-surface-400">Memuat grafik...</span>
+                            <span className="text-sm text-surface-400">Memuat grafik...</span>
                         </div>
                     </div>
                 )}
@@ -212,7 +212,7 @@ export default function DashboardNilai({ progressMap, topicModules }: DashboardN
 
             {/* Topic score cards */}
             <div>
-                <h4 className="mb-3 flex items-center gap-2 text-sm font-bold text-surface-700">
+                <h4 className="mb-3 flex items-center gap-2 text-base font-bold text-surface-700">
                     <Medal className="h-4 w-4 text-amber-500" /> Nilai Per Topik
                 </h4>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -223,14 +223,14 @@ export default function DashboardNilai({ progressMap, topicModules }: DashboardN
                             <div className="absolute -right-3 -top-1 rotate-12 opacity-25 text-4xl">{getScoreEmoji(card.status)}</div>
                             <div className="relative z-10">
                                 <span className="text-2xl">{card.icon}</span>
-                                <p className="mt-1 text-[10px] font-semibold text-surface-400 line-clamp-1">T{card.number}: {card.title}</p>
+                                <p className="mt-1 text-xs font-semibold text-surface-400 line-clamp-1">T{card.number}: {card.title}</p>
                                 {card.status === 'empty' ? (
-                                    <div className="mt-2 flex flex-col items-center gap-1"><HelpCircle className="h-5 w-5 text-surface-300" /><span className="text-[10px] text-surface-400">Belum ada</span></div>
+                                    <div className="mt-2 flex flex-col items-center gap-1"><HelpCircle className="h-5 w-5 text-surface-300" /><span className="text-xs text-surface-400">Belum ada</span></div>
                                 ) : (
                                     <div className="mt-2">
                                         <span className={`inline-block rounded-full bg-gradient-to-r ${getScoreBgColor(card.status)} px-3 py-1 text-sm font-black text-white shadow-sm`}>{card.score}%</span>
-                                        <p className="mt-1 text-[10px] font-semibold" style={{ color: TOPIC_COLORS[card.topicId] }}>{getScoreLabel(card.status)}</p>
-                                        {card.correct !== undefined && card.total !== undefined && <p className="text-[9px] text-surface-400 mt-0.5">✅ {card.correct}/{card.total} benar</p>}
+                                        <p className="mt-1 text-xs font-semibold" style={{ color: TOPIC_COLORS[card.topicId] }}>{getScoreLabel(card.status)}</p>
+                                        {card.correct !== undefined && card.total !== undefined && <p className="text-xs text-surface-400 mt-0.5">✅ {card.correct}/{card.total} benar</p>}
                                     </div>
                                 )}
                             </div>

@@ -22,21 +22,29 @@ export function extractYouTubeId(url: string): string | null {
   return null;
 }
 
-/** Render inline bold formatting */
+/** Render inline bold and italic formatting */
 function renderInline(text: string): React.ReactNode {
   if (!text) return null;
-  const boldRegex = /\*\*(.*?)\*\*/g;
-  if (!boldRegex.test(text)) return text;
-  const parts = text.split(/\*\*(.*?)\*\*/g);
-  return parts.map((part, i) =>
-    i % 2 === 1 ? (
-      <strong key={i} className="font-bold text-slate-900">
-        {part}
-      </strong>
-    ) : (
-      part
-    ),
-  );
+  const pattern = /(\*\*.*?\*\*|\*.*?\*)/g;
+  if (!pattern.test(text)) return text;
+  const parts = text.split(pattern);
+  return parts.map((part, i) => {
+    if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
+      return (
+        <strong key={i} className="font-bold text-slate-900">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    if (part.startsWith('*') && part.endsWith('*') && part.length > 2) {
+      return (
+        <em key={i} className="italic">
+          {part.slice(1, -1)}
+        </em>
+      );
+    }
+    return part;
+  });
 }
 
 interface RichContentRendererProps {
@@ -100,7 +108,7 @@ export default function RichContentRenderer({
             }}
           />
           {imgMatch[1] && imgMatch[1] !== 'gambar' && (
-            <figcaption className="text-[11px] text-gray-400 mt-1.5 italic">
+            <figcaption className="text-xs text-gray-400 mt-1.5 italic">
               {imgMatch[1]}
             </figcaption>
           )}

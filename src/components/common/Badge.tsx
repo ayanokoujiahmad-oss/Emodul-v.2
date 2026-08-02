@@ -20,7 +20,7 @@ interface BadgeProps {
 const sizeMap = {
   sm: {
     container: 'h-10 w-10',
-    label: 'text-[11px]',
+    label: 'text-xs',
     lock: 'h-3 w-3',
     lockContainer: 'h-4 w-4',
     tooltip: 'text-xs',
@@ -178,7 +178,7 @@ export default function Badge({ badge, unlocked, size = 'md' }: BadgeProps) {
             <p className="font-semibold text-primary-700">{badge.name}</p>
             <p className="mt-0.5 text-primary-400">{badge.description}</p>
             {!unlocked && (
-              <p className="mt-1 inline-flex items-center gap-1 text-[10px] italic text-primary-300">
+              <p className="mt-1 inline-flex items-center gap-1 text-xs italic text-primary-300">
                 <Lock className="h-3 w-3" />
                 {badge.requirement}
               </p>

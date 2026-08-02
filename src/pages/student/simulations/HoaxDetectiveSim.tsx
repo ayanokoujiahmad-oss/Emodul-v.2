@@ -227,7 +227,7 @@ export default function HoaxDetectiveSim({ onComplete }: HoaxDetectiveSimProps) 
  <span className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
  <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
  </div>
- <div className="flex-1 flex items-center gap-1.5 bg-white rounded-full px-3 py-1 border border-gray-200 text-[10px] text-gray-500 font-medium truncate">
+ <div className="flex-1 flex items-center gap-1.5 bg-white rounded-full px-3 py-1 border border-gray-200 text-xs text-gray-500 font-medium truncate">
  {currentArticle.sourceVerified ? (
  <BadgeCheck className="h-3.5 w-3.5 text-emerald-500" />
  ) : (
@@ -248,10 +248,10 @@ export default function HoaxDetectiveSim({ onComplete }: HoaxDetectiveSimProps) 
  className="space-y-5"
  >
  <div className="flex items-center justify-between">
- <span className="text-[10px] uppercase font-bold tracking-widest text-amber-500">
+ <span className="text-xs uppercase font-bold tracking-widest text-amber-500">
  Berita {currentIdx + 1} dari {ARTICLES.length}
  </span>
- <span className="text-[10px] font-bold text-gray-400">Geser & selidiki sebelum memutuskan </span>
+ <span className="text-xs font-bold text-gray-400">Geser & selidiki sebelum memutuskan </span>
  </div>
 
  {/* News Article Card — looks like a real news portal */}
@@ -269,7 +269,7 @@ export default function HoaxDetectiveSim({ onComplete }: HoaxDetectiveSimProps) 
  <span className="text-6xl drop-shadow-lg">{currentArticle.heroEmoji}</span>
  </div>
  )}
- <span className="absolute top-3 left-3 text-[9px] font-black uppercase tracking-wider bg-white/95 text-gray-800 px-2.5 py-1 rounded-full shadow-sm border border-gray-200">
+ <span className="absolute top-3 left-3 text-xs font-black uppercase tracking-wider bg-white/95 text-gray-800 px-2.5 py-1 rounded-full shadow-sm border border-gray-200">
  {currentArticle.category}
  </span>
  </div>
@@ -280,7 +280,7 @@ export default function HoaxDetectiveSim({ onComplete }: HoaxDetectiveSimProps) 
  </h4>
 
  {/* Byline */}
- <div className="flex items-center gap-2 flex-wrap text-[11px] text-gray-500">
+ <div className="flex items-center gap-2 flex-wrap text-xs text-gray-500">
  <span className="flex items-center gap-1 font-semibold text-gray-700">
  {currentArticle.author}
  {currentArticle.sourceVerified && (
@@ -301,7 +301,7 @@ export default function HoaxDetectiveSim({ onComplete }: HoaxDetectiveSimProps) 
  </p>
 
  {/* Engagement bar */}
- <div className="flex items-center justify-between pt-2 border-t border-gray-100 text-[11px] text-gray-500 font-semibold">
+ <div className="flex items-center justify-between pt-2 border-t border-gray-100 text-xs text-gray-500 font-semibold">
  <span className="flex items-center gap-1"><Eye className="w-3.5 h-3.5" /> {currentArticle.views}</span>
  <span className="flex items-center gap-1"><ThumbsUp className="w-3.5 h-3.5" /> {currentArticle.likes}</span>
  <span className="flex items-center gap-1"><MessageCircle className="w-3.5 h-3.5" /> komentar</span>
@@ -388,7 +388,7 @@ export default function HoaxDetectiveSim({ onComplete }: HoaxDetectiveSimProps) 
  className={`p-3 border rounded-2xl text-center bg-white transition-all ${btn.color} ${activeStyle}`}
  >
  <span className="font-bold text-sm block">{btn.label}</span>
- <span className="text-[9px] opacity-70 mt-0.5 block">{btn.desc}</span>
+ <span className="text-xs opacity-70 mt-0.5 block">{btn.desc}</span>
  </button>
  );
  })}

@@ -138,7 +138,7 @@ export default function Navbar({ pageTitle = 'Beranda' }: NavbarProps) {
 
             {/* Avatar + Name + Role */}
             <div className="flex items-center gap-2 rounded-xl border border-surface-200 bg-surface-50 px-3 py-1.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-500 text-[11px] font-bold text-white">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-500 text-xs font-bold text-white">
                 {initials}
               </span>
               <div className="flex flex-col">
@@ -149,7 +149,7 @@ export default function Navbar({ pageTitle = 'Beranda' }: NavbarProps) {
                   {displayName}
                 </span>
                 <span
-                  className={`inline-block w-fit rounded-md px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none ${
+                  className={`inline-block w-fit rounded-md px-1.5 py-0.5 text-xs font-semibold uppercase leading-none ${
                     isPenguji
                       ? 'bg-purple-50 text-purple-700 border border-purple-100'
                       : roleBadgeStyles[role]

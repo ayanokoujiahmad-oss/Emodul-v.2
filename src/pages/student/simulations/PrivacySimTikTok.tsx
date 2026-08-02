@@ -188,7 +188,7 @@ export default function PrivacySimTikTok({ onComplete }: PrivacySimTikTokProps) 
  return (
  <div className="w-full max-w-sm mx-auto bg-gradient-to-br from-violet-950 to-indigo-950 rounded-[40px] border-[10px] border-slate-800 p-4 shadow-2xl relative overflow-hidden h-[520px] sm:h-[620px] flex flex-col text-white">
  {/* Phone status bar */}
- <div className="flex justify-between items-center px-4 py-1 text-[10px] font-semibold opacity-75 select-none z-10 shrink-0">
+ <div className="flex justify-between items-center px-4 py-1 text-xs font-semibold opacity-75 select-none z-10 shrink-0">
  <span>20:26</span>
  <div className="w-12 h-4 bg-slate-800 rounded-full border border-slate-700/60" /> {/* Dynamic Island */}
  <span> 100%</span>
@@ -198,7 +198,7 @@ export default function PrivacySimTikTok({ onComplete }: PrivacySimTikTokProps) 
  <span className="font-display font-black tracking-wider text-sm text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-300">
  SiberTok
  </span>
- <span className="text-[10px] bg-white/10 px-2 py-0.5 rounded-full">
+ <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">
  Poin: {score}
  </span>
  </div>
@@ -219,7 +219,7 @@ export default function PrivacySimTikTok({ onComplete }: PrivacySimTikTokProps) 
  </div>
  <div>
  <p className="text-xs font-bold">@{currentPost.creator}</p>
- <p className="text-[9px] text-white/50">Diunggah 2 jam yang lalu</p>
+ <p className="text-xs text-white/50">Diunggah 2 jam yang lalu</p>
  </div>
  </div>
 
@@ -249,11 +249,11 @@ export default function PrivacySimTikTok({ onComplete }: PrivacySimTikTokProps) 
  </div>
  {/* Description & Caption Area */}
  <div className="mt-2 text-left space-y-1">
- <p className="text-[9px] text-pink-400 font-bold uppercase tracking-wider">Deskripsi Postingan:</p>
- <p className="text-[11px] text-slate-200 leading-normal font-medium max-h-[70px] overflow-y-auto pr-1">
+ <p className="text-xs text-pink-400 font-bold uppercase tracking-wider">Deskripsi Postingan:</p>
+ <p className="text-xs text-slate-200 leading-normal font-medium max-h-[70px] overflow-y-auto pr-1">
  {currentPost.description}
  </p>
- <p className="text-[10px] text-white/60 italic leading-snug pt-1 border-t border-white/10">
+ <p className="text-xs text-white/60 italic leading-snug pt-1 border-t border-white/10">
  "{currentPost.caption}"
  </p>
  </div>
@@ -263,11 +263,11 @@ export default function PrivacySimTikTok({ onComplete }: PrivacySimTikTokProps) 
  <div className="absolute right-6 top-1/2 -translate-y-12 flex flex-col items-center gap-4 text-white/80 select-none z-10">
  <div className="flex flex-col items-center">
  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><Heart className="w-5 h-5" /></div>
- <span className="text-[9px] mt-0.5">{currentPost.likes}</span>
+ <span className="text-xs mt-0.5">{currentPost.likes}</span>
  </div>
  <div className="flex flex-col items-center">
  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><MessageCircle className="w-5 h-5" /></div>
- <span className="text-[9px] mt-0.5">{currentPost.comments}</span>
+ <span className="text-xs mt-0.5">{currentPost.comments}</span>
  </div>
  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center"><Share2 className="w-5 h-5" /></div>
  </div>
@@ -293,7 +293,7 @@ export default function PrivacySimTikTok({ onComplete }: PrivacySimTikTokProps) 
  <p className="font-bold">
  {((choice === 'safe') === currentPost.isSafe)? 'Pilihan Tepat!': 'Ups, Kurang Tepat!'}
  </p>
- <p className="text-[10px] text-white/80 mt-0.5">
+ <p className="text-xs text-white/80 mt-0.5">
  {currentPost.explanation}
  </p>
  </div>
@@ -351,7 +351,7 @@ export default function PrivacySimTikTok({ onComplete }: PrivacySimTikTokProps) 
  Kamu berhasil memilah video dan postingan media sosial agar privasimu tetap terlindungi!
  </p>
  <div className="mt-4 inline-block bg-white/10 border border-white/20 px-5 py-2.5 rounded-xl">
- <span className="text-[9px] text-white/50 block font-bold">SKOR PRIVASI</span>
+ <span className="text-xs text-white/50 block font-bold">SKOR PRIVASI</span>
  <span className="text-xl font-black text-indigo-300 font-display">
  {score} / {maxScore}
  </span>

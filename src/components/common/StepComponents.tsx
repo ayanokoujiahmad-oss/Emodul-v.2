@@ -56,18 +56,18 @@ export function StepWrapper({ stepNumber, title, icon, children }: StepWrapperPr
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
-      className="rounded-3xl border border-primary-100/60 bg-white/80 p-5 shadow-card backdrop-blur-sm sm:p-7"
+      className="rounded-3xl border border-indigo-100/80 bg-white p-5 shadow-card sm:p-7"
     >
       {/* Header */}
-      <div className="mb-5 flex items-center gap-3">
-        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary-500 to-primary-400 text-white shadow-md">
+      <div className="mb-5 flex items-center gap-3.5 border-b border-slate-100 pb-4">
+        <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-600 to-indigo-500 text-white shadow-md">
           {icon}
         </div>
         <div>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-primary-300">
+          <p className="text-xs font-black uppercase tracking-wider text-indigo-600">
             Langkah {stepNumber}
           </p>
-          <h2 className="font-display text-lg font-bold text-primary-700">
+          <h2 className="font-display text-xl sm:text-2xl font-black text-slate-900 leading-tight">
             {title}
           </h2>
         </div>
@@ -118,7 +118,7 @@ export function ActivityHeader({ instruction, exampleInput, status = 'belum' }: 
     <div className="mb-4 space-y-3 border-b border-dashed border-primary-100/50 pb-4">
       {/* Status Bar */}
       <div className="flex items-center justify-between">
-        <span className="text-[10px] font-bold uppercase tracking-widest text-primary-300">
+        <span className="text-xs font-bold uppercase tracking-widest text-primary-300">
           Status Aktivitas
         </span>
         <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold border ${currentStatus.class}`}>
@@ -405,7 +405,7 @@ export function BersiapBelajarStep({
             <span className="text-xs font-bold text-indigo-800 uppercase tracking-wider">
               Komik Pengantar
             </span>
-            <span className="text-[10px] text-indigo-600 font-bold italic bg-indigo-50 px-2.5 py-1 rounded-full border border-indigo-100/60">
+            <span className="text-xs text-indigo-600 font-bold italic bg-indigo-50 px-2.5 py-1 rounded-full border border-indigo-100/60">
               💡 Ketuk gambar komik untuk memperbesar gambar agar lebih mudah dibaca!
             </span>
           </div>
@@ -705,7 +705,7 @@ function TrueFalseActivity({ question, correctAnswer }: { question: string; corr
         </button>
       </div>
       {isDone && (
-        <p className={`text-[10px] font-bold ${selected === correctAnswer ? 'text-success-600' : 'text-danger-600'}`}>
+        <p className={`text-xs font-bold ${selected === correctAnswer ? 'text-success-600' : 'text-danger-600'}`}>
           {selected === correctAnswer ? ' Hebat! Jawabanmu benar.' : ' Jawaban kurang tepat. Coba lagi ya!'}
         </p>
       )}
@@ -754,7 +754,7 @@ export function Activity1Table({ answers, onSave, readOnly }: {
 
       <div className="overflow-x-auto border border-primary-100 rounded-2xl shadow-sm bg-white">
       <table className="w-full text-xs text-left text-gray-500">
-        <thead className="text-[10px] text-white uppercase bg-gradient-to-r from-primary-500 to-primary-400">
+        <thead className="text-xs text-white uppercase bg-gradient-to-r from-primary-500 to-primary-400">
           <tr>
             <th className="px-4 py-2.5 font-bold">No</th>
             {columns.map((col, i) => (
@@ -765,14 +765,14 @@ export function Activity1Table({ answers, onSave, readOnly }: {
         <tbody>
           {/* Example row */}
           <tr className="italic text-primary-700 bg-primary-50/30 border-b">
-            <td className="px-4 py-2.5 font-semibold text-[11px]">Contoh</td>
+            <td className="px-4 py-2.5 font-semibold text-xs">Contoh</td>
             <td className="px-4 py-2.5">Menonton video pembelajaran</td>
             <td className="px-4 py-2.5">Gawai (HP/Tablet)</td>
             <td className="px-4 py-2.5">Membantu memahami pelajaran dengan lebih mudah</td>
           </tr>
           {rows.map((rowIdx) => (
             <tr key={rowIdx} className="bg-white border-b hover:bg-gray-50">
-              <td className="px-4 py-2.5 text-gray-700 font-semibold text-[11px]">{rowIdx}</td>
+              <td className="px-4 py-2.5 text-gray-700 font-semibold text-xs">{rowIdx}</td>
               {columns.map((col) => (
                 <td key={col.key} className="px-3 py-1.5">
                   <input
@@ -820,7 +820,7 @@ function TableFillActivity({
   return (
     <div className="my-4 overflow-x-auto border border-primary-100 rounded-2xl shadow-sm text-left">
       <table className="w-full text-xs text-left text-gray-500">
-        <thead className="text-[10px] text-white uppercase bg-gradient-to-r from-primary-500 to-primary-400">
+        <thead className="text-xs text-white uppercase bg-gradient-to-r from-primary-500 to-primary-400">
           <tr>
             {headers.map((h, i) => (
               <th key={i} scope="col" className="px-4 py-2.5 font-bold">{h}</th>
@@ -830,7 +830,7 @@ function TableFillActivity({
         <tbody>
           {rows.map((placeholder, ri) => (
             <tr key={ri} className="bg-white border-b hover:bg-gray-50">
-              <td className="px-4 py-2.5 text-gray-700 font-semibold text-[11px] whitespace-nowrap">Baris {ri + 1}</td>
+              <td className="px-4 py-2.5 text-gray-700 font-semibold text-xs whitespace-nowrap">Baris {ri + 1}</td>
               <td className="px-3 py-1.5 text-gray-700">
                 <input
                   type="text"
@@ -1015,7 +1015,7 @@ export function StudentRichContentRenderer({ content, onActivitySave, activityAn
           return (
             <div key={idx} className="my-4 overflow-x-auto border border-gray-200 rounded-2xl shadow-sm">
               <table className="w-full text-xs text-left text-gray-500">
-                <thead className="text-[10px] text-primary-700 uppercase bg-primary-50">
+                <thead className="text-xs text-primary-700 uppercase bg-primary-50">
                   <tr>
                     {headers.map((h, i) => (
                       <th key={i} scope="col" className="px-4 py-2.5 font-bold">{h}</th>
@@ -1087,7 +1087,7 @@ export function StudentRichContentRenderer({ content, onActivitySave, activityAn
                 loading="lazy"
               />
               {imgMatch[1] && imgMatch[1] !== 'gambar' && (
-                <p className="text-[11px] text-gray-400 mt-1.5 italic">
+                <p className="text-xs text-gray-400 mt-1.5 italic">
                   {imgMatch[1]}
                 </p>
               )}
@@ -1336,7 +1336,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
           <motion.p
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-[11px] font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
+            className="text-xs font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
           >
             <Sparkles className="h-4 w-4" /> Semua misi selesai! Kamu resmi menjadi Penjaga Rahasia Digital! 🔐
           </motion.p>
@@ -1365,7 +1365,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
             <button
               key={tab.id}
               onClick={() => goToTab(tab.id)}
-              className={`flex-1 min-w-[100px] sm:min-w-[120px] py-2 px-2.5 rounded-xl text-center text-[10px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
+              className={`flex-1 min-w-[100px] sm:min-w-[120px] py-2 px-2.5 rounded-xl text-center text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
                 ? 'bg-teal-600 text-white shadow-md'
                 : isDone
                   ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
@@ -1375,7 +1375,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               <span>{tab.icon}</span>
               <span>{tab.label}</span>
               {isDone && (
-                <span className={`ml-0.5 text-[10px] ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
+                <span className={`ml-0.5 text-xs ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
               )}
             </button>
           );
@@ -1408,7 +1408,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               <img src="/form_pribadi_chromebook.png" alt="Anak melihat form di Chromebook" className="object-contain max-h-72 w-full" loading="lazy" decoding="async" />
             </div>
             <div className="space-y-3">
-              <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest">
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                 Ketuk Data di Bawah untuk Tahu Mengapa Harus Hati-Hati:
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
@@ -1425,8 +1425,8 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
                         } ${t ? 'ring-2 ring-teal-500 scale-102 font-bold shadow-sm' : ''}`}
                     >
                       <div className="text-2xl mb-1">{e.icon}</div>
-                      <div className="text-[11px] font-semibold leading-tight">{e.name}</div>
-                      <div className="text-[9px] mt-1 font-bold uppercase tracking-wider opacity-85">
+                      <div className="text-xs font-semibold leading-tight">{e.name}</div>
+                      <div className="text-xs mt-1 font-bold uppercase tracking-wider opacity-85">
                         {e.category === 'Rahasia' ? 'Rahasia' : 'Hati-hati'}
                       </div>
                     </button>
@@ -1478,13 +1478,13 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="p-4 rounded-2xl border border-slate-200 bg-slate-50/50 flex flex-col justify-between text-left">
                 <div>
-                  <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Kalimat 1</span>
+                  <span className="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-2">Kalimat 1</span>
                   <p className="text-xs sm:text-sm font-semibold text-slate-800 italic">“Namaku Raka. Aku suka menggambar hewan.”</p>
                 </div>
               </div>
               <div className="p-4 rounded-2xl border border-slate-200 bg-slate-50/50 flex flex-col justify-between text-left">
                 <div>
-                  <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Kalimat 2</span>
+                  <span className="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-2">Kalimat 2</span>
                   <p className="text-xs sm:text-sm font-semibold text-slate-800 italic">“Namaku Raka Pratama. Aku kelas 5 SD Harapan. Rumahku di Jalan Melati Nomor 10. Nomor HP ibuku 08xxxxxxxx.”</p>
                 </div>
               </div>
@@ -1533,15 +1533,15 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               <p className="text-xs font-bold text-teal-850 flex items-center gap-1.5">Sebelum menulis informasi di internet, biasakan bertanya:</p>
               <ul className="space-y-2.5 text-xs text-teal-900 font-semibold pl-1 text-left">
                 <li className="flex items-center gap-2">
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-teal-200 text-teal-855 text-[10px] font-bold">1</span>
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-teal-200 text-teal-855 text-xs font-bold">1</span>
                   Apakah informasi ini perlu ditulis?
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-teal-200 text-teal-855 text-[10px] font-bold">2</span>
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-teal-200 text-teal-855 text-xs font-bold">2</span>
                   Apakah informasi ini aman dibagikan?
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-teal-200 text-teal-855 text-[10px] font-bold">3</span>
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-teal-200 text-teal-855 text-xs font-bold">3</span>
                   Apakah aku sudah meminta izin guru or orang tua?
                 </li>
               </ul>
@@ -1597,7 +1597,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               </p>
             </div>
             <div className="space-y-3 text-left">
-              <p className="text-[10px] sm:text-xs font-bold text-rose-500 uppercase tracking-widest">
+              <p className="text-xs font-bold text-rose-500 uppercase tracking-widest">
                 Beberapa risiko jika data pribadi dibagikan sembarangan:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -1612,7 +1612,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
                   <div key={t} className="p-3 bg-rose-50/20 rounded-xl border border-rose-100 flex items-start gap-2.5">
                     <div className="flex-1">
                       <h4 className="text-xs font-bold text-rose-800">{e.title}</h4>
-                      <p className="text-[10px] text-rose-700 mt-0.5 leading-relaxed font-semibold">{e.text}</p>
+                      <p className="text-xs text-rose-700 mt-0.5 leading-relaxed font-semibold">{e.text}</p>
                     </div>
                   </div>
                 ))}
@@ -1658,7 +1658,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
                       <span>{e.icon}</span>
                       <span>{e.title}</span>
                     </h4>
-                    <p className="text-[11px] text-slate-655 mt-0.5 leading-relaxed font-semibold">{e.desc}</p>
+                    <p className="text-xs text-slate-655 mt-0.5 leading-relaxed font-semibold">{e.desc}</p>
                   </div>
                 </div>
               ))}
@@ -1691,16 +1691,16 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
               <img src="/jejak_digital_kaki.png" alt="Jejak Kaki Digital" className="object-contain max-h-72 w-full" loading="lazy" decoding="async" />
             </div>
             <div className="space-y-3">
-              <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest">Dua Jenis Jejak Digital:</p>
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Dua Jenis Jejak Digital:</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 bg-teal-50/20 border border-teal-100 rounded-2xl space-y-2">
                   <h4 className="text-xs font-bold text-teal-800 flex items-center gap-1.5">
                     📣 <span>Jejak Digital Aktif</span>
                   </h4>
-                  <p className="text-[11px] text-slate-600 leading-relaxed font-semibold">
+                  <p className="text-xs text-slate-600 leading-relaxed font-semibold">
                     Jejak yang kita tinggalkan secara <strong>sadar dan sengaja</strong>.
                   </p>
-                  <ul className="text-[10px] text-slate-500 space-y-1 pl-1 list-disc list-inside font-semibold">
+                  <ul className="text-xs text-slate-500 space-y-1 pl-1 list-disc list-inside font-semibold">
                     <li>Mengirim pesan di WhatsApp grup kelas</li>
                     <li>Mengunggah foto atau video di media sosial</li>
                     <li>Menulis komentar di bawah video YouTube</li>
@@ -1711,10 +1711,10 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
                   <h4 className="text-xs font-bold text-amber-850 flex items-center gap-1.5">
                     🕵️‍♂️ <span>Jejak Digital Pasif</span>
                   </h4>
-                  <p className="text-[11px] text-slate-600 leading-relaxed font-semibold">
+                  <p className="text-xs text-slate-600 leading-relaxed font-semibold">
                     Jejak yang tertinggal <strong>tanpa kita sadari</strong> secara langsung.
                   </p>
-                  <ul className="text-[10px] text-slate-500 space-y-1 pl-1 list-disc list-inside font-semibold">
+                  <ul className="text-xs text-slate-500 space-y-1 pl-1 list-disc list-inside font-semibold">
                     <li>Situs web merekam alamat IP internet kita</li>
                     <li>Aplikasi merekam lokasi GPS di HP kita</li>
                     <li>Riwayat pencarian Google mengingat apa yang kita cari</li>
@@ -1725,10 +1725,10 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
             </div>
             <div className="p-4 rounded-2xl border border-rose-100 bg-rose-50/10 space-y-2">
               <h4 className="text-xs font-bold text-rose-800 flex items-center gap-1.5">⚠️ Mengapa Kita Harus Peduli?</h4>
-              <p className="text-[11px] leading-relaxed">
+              <p className="text-xs leading-relaxed">
                 Di dunia digital, apa yang sudah dibagikan <strong>sangat sulit untuk benar-benar dihilangkan</strong>:
               </p>
-              <ul className="text-[11px] space-y-2 list-none pl-1 font-semibold">
+              <ul className="text-xs space-y-2 list-none pl-1 font-semibold">
                 <li className="flex items-start gap-1.5">
                   <span className="text-rose-500">📌</span>
                   <span>
@@ -1751,7 +1751,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
             </div>
             <div className="rounded-2xl border border-teal-100 bg-teal-50/20 p-4 sm:p-5 space-y-3">
               <h4 className="text-xs font-bold text-teal-855 flex items-center gap-1.5">💡 Tips Menjaga Jejak Digital (Rumus T.H.I.N.K.)</h4>
-              <p className="text-[11px] text-teal-900 font-bold">Sebelum memposting atau mengirim data, tanyakan hal-hal ini:</p>
+              <p className="text-xs text-teal-900 font-bold">Sebelum memposting atau mengirim data, tanyakan hal-hal ini:</p>
               <div className="grid grid-cols-1 sm:grid-cols-5 gap-2">
                 {[
                   { letter: 'T', word: 'True', desc: 'Benarkah ini or cuma hoaks?' },
@@ -1762,8 +1762,8 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
                 ].map((e, t) => (
                   <div key={t} className="bg-white p-2.5 rounded-xl border border-teal-100 text-center flex flex-col justify-between font-bold">
                     <span className="text-lg font-black text-teal-650 block">{e.letter}</span>
-                    <span className="text-[10px] font-bold text-slate-800 block mt-0.5">{e.word}</span>
-                    <p className="text-[9px] text-slate-500 mt-1 leading-tight font-semibold">{e.desc}</p>
+                    <span className="text-xs font-bold text-slate-800 block mt-0.5">{e.word}</span>
+                    <p className="text-xs text-slate-500 mt-1 leading-tight font-semibold">{e.desc}</p>
                   </div>
                 ))}
               </div>
@@ -1779,7 +1779,7 @@ export function YukBelajarTopik3({ onActivitySave: _onActivitySave, activityAnsw
       <div className="mt-8 bg-gradient-to-r from-teal-500 to-emerald-500 text-white p-5 rounded-2xl shadow-sm flex items-center gap-4 text-left">
         <div>
           <h4 className="font-display font-black text-xs">Pesan Digi:</h4>
-          <p className="text-[10px] text-teal-50 leading-relaxed font-bold mt-1">
+          <p className="text-xs text-teal-50 leading-relaxed font-bold mt-1">
             "Kunci utama keselamatan digital adalah kewaspadaan. Jaga kata sandimu rapat-rapat, batasi informasi pribadi yang kamu bagikan, dan selalu tinggalkan jejak digital yang baik di mana pun kamu menjelajah!"
           </p>
         </div>
@@ -1803,12 +1803,12 @@ export function TautanBandingan() {
           🚪🔓
         </div>
         <div className="space-y-1">
-          <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100/50 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+          <span className="text-xs font-bold text-emerald-700 bg-emerald-100/50 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
             Tautan Aman & Resmi
           </span>
           <h4 className="font-bold text-slate-800 text-sm">Pintu Belajar & Informasi</h4>
         </div>
-        <div className="bg-white/80 border border-slate-100 rounded-xl py-2 px-3 font-mono text-[10px] text-emerald-650 w-full flex items-center justify-center gap-1.5 shadow-inner">
+        <div className="bg-white/80 border border-slate-100 rounded-xl py-2 px-3 font-mono text-xs text-emerald-650 w-full flex items-center justify-center gap-1.5 shadow-inner">
           <span className="text-emerald-500">🔒</span> https://classroom.google.com/tugas
         </div>
         <p className="text-xs text-slate-655 leading-relaxed font-semibold">
@@ -1820,12 +1820,12 @@ export function TautanBandingan() {
           🚪⚠️
         </div>
         <div className="space-y-1">
-          <span className="text-[10px] font-bold text-rose-700 bg-rose-100/50 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+          <span className="text-xs font-bold text-rose-700 bg-rose-100/50 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
             Tautan Palsu & Jebakan
           </span>
           <h4 className="font-bold text-slate-800 text-sm">Pintu Bahaya & Pencurian</h4>
         </div>
-        <div className="bg-white/80 border border-slate-100 rounded-xl py-2 px-3 font-mono text-[10px] text-rose-655 w-full flex items-center justify-center gap-1.5 shadow-inner">
+        <div className="bg-white/80 border border-slate-100 rounded-xl py-2 px-3 font-mono text-xs text-rose-655 w-full flex items-center justify-center gap-1.5 shadow-inner">
           <span className="text-rose-500">⚠️</span> http://hadiah-gratis-cepat.xyz/klaim
         </div>
         <p className="text-xs text-slate-655 leading-relaxed font-semibold">
@@ -1843,14 +1843,14 @@ export function JalurLapor() {
         <span className="text-2xl">🤝</span>
         <div>
           <h4 className="font-bold text-slate-800 text-xs sm:text-sm">Jalur Lapor Aman: Guru & Orang Tua</h4>
-          <p className="text-[10.5px] text-slate-500 font-semibold">
+          <p className="text-xs text-slate-500 font-semibold">
             Mereka adalah penyelamat utamamu di dunia digital, jangan pernah takut bercerita!
           </p>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-white border border-amber-100/70 rounded-xl p-4 space-y-2">
-          <h5 className="text-[11px] font-bold text-amber-900 flex items-center gap-1.5">
+          <h5 className="text-xs font-bold text-amber-900 flex items-center gap-1.5">
             💬 Contoh Kalimat Lapor yang Cerdas:
           </h5>
           <p className="text-xs text-slate-700 italic bg-slate-50/50 rounded-lg p-3 border border-slate-100 leading-relaxed font-semibold">
@@ -1858,10 +1858,10 @@ export function JalurLapor() {
           </p>
         </div>
         <div className="bg-white border border-amber-100/70 rounded-xl p-4 space-y-2 flex flex-col justify-center">
-          <h5 className="text-[11px] font-bold text-emerald-900 flex items-center gap-1.5">
+          <h5 className="text-xs font-bold text-emerald-900 flex items-center gap-1.5">
             🛡️ Mengapa Melapor itu Hebat?
           </h5>
-          <ul className="text-[10px] sm:text-[11px] text-slate-655 space-y-2 leading-relaxed font-semibold pl-1">
+          <ul className="text-xs text-slate-655 space-y-2 leading-relaxed font-semibold pl-1">
             <li className="flex items-start gap-2">
               <span className="text-emerald-500 font-bold">✓</span> Orang tua/guru bisa mengamankan perangkatmu dari virus.
             </li>
@@ -1995,7 +1995,7 @@ export function YukBelajarTopik4({
           <motion.p
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-[11px] font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
+            className="text-xs font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
           >
             <Sparkles className="h-4 w-4" /> Semua misi selesai! Kamu resmi menjadi Penjaga Gawai yang Waspada! 🛡️
           </motion.p>
@@ -2021,7 +2021,7 @@ export function YukBelajarTopik4({
             <button
               key={tab.id}
               onClick={() => goToTab(tab.id)}
-              className={`flex-1 min-w-[140px] sm:min-w-[160px] py-2 px-3 rounded-xl text-center text-[10px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
+              className={`flex-1 min-w-[140px] sm:min-w-[160px] py-2 px-3 rounded-xl text-center text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
                 ? 'bg-rose-600 text-white shadow-md'
                 : isDone
                   ? 'bg-emerald-50 text-emerald-700 border border-emerald-250'
@@ -2031,7 +2031,7 @@ export function YukBelajarTopik4({
               <span>{tab.icon}</span>
               <span>{tab.label}</span>
               {isDone && (
-                <span className={`ml-0.5 text-[10px] ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
+                <span className={`ml-0.5 text-xs ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
               )}
             </button>
           );
@@ -2078,15 +2078,15 @@ export function YukBelajarTopik4({
                 </p>
                 <ul className="space-y-2.5 text-xs text-rose-900 font-semibold pl-1">
                   <li className="flex items-center gap-2">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-rose-100 text-rose-800 text-[10px] font-bold">1</span>
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-rose-100 text-rose-800 text-xs font-bold">1</span>
                     "Apakah tempat ini aman?"
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-rose-100 text-rose-800 text-[10px] font-bold">2</span>
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-rose-100 text-rose-800 text-xs font-bold">2</span>
                     "Apakah tontonan ini sesuai untuk usiaku?"
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-rose-100 text-rose-800 text-[10px] font-bold">3</span>
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-rose-100 text-rose-800 text-xs font-bold">3</span>
                     "Apakah aku perlu meminta bantuan guru atau Ayah dan Ibu?"
                   </li>
                 </ul>
@@ -2243,8 +2243,8 @@ export function YukBelajarTopik4({
                     </div>
                     <div className="flex-1 border-t md:border-t-0 md:border-l border-slate-200/60 pt-3 md:pt-0 md:pl-4 space-y-1">
                       <h4 className="text-xs font-bold text-slate-800">{step.title}</h4>
-                      <p className="text-[11px] text-slate-600 leading-relaxed font-semibold">{step.action}</p>
-                      <div className="bg-white/80 p-2 border border-slate-100 rounded-lg text-[10px] text-slate-500 italic mt-1">
+                      <p className="text-xs text-slate-600 leading-relaxed font-semibold">{step.action}</p>
+                      <div className="bg-white/80 p-2 border border-slate-100 rounded-lg text-xs text-slate-500 italic mt-1">
                         <strong> Contoh Tindakan Penjelajah Cerdas:</strong> {step.example}
                       </div>
                     </div>
@@ -2260,7 +2260,7 @@ export function YukBelajarTopik4({
                 </div>
                 <div className="overflow-x-auto border border-slate-200 rounded-2xl shadow-sm">
                   <table className="w-full text-xs text-left text-slate-500">
-                    <thead className="text-[10px] text-white uppercase bg-gradient-to-r from-rose-500 to-rose-400">
+                    <thead className="text-xs text-white uppercase bg-gradient-to-r from-rose-500 to-rose-400">
                       <tr>
                         <th scope="col" className="px-4 py-2.5 font-bold w-28">Langkah 4P</th>
                         <th scope="col" className="px-4 py-2.5 font-bold">Tindakan Penjelajah Cerdas</th>
@@ -2274,7 +2274,7 @@ export function YukBelajarTopik4({
                         { step: ' Putuskan', answer: 'Aku tidak akan mengeklik link itu. Aku hapus pesannya dan kublokir nomor pengirimnya.' }
                       ].map((item, t) => (
                         <tr key={t} className="bg-white border-b hover:bg-slate-50/50">
-                          <td className="px-4 py-3 text-rose-800 font-bold text-[11px] whitespace-nowrap">{item.step}</td>
+                          <td className="px-4 py-3 text-rose-800 font-bold text-xs whitespace-nowrap">{item.step}</td>
                           <td className="px-4 py-3 text-slate-700 leading-relaxed font-medium">{item.answer}</td>
                         </tr>
                       ))}
@@ -2325,7 +2325,7 @@ export function YukBelajarTopik4({
                     <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-rose-100 text-rose-700 text-xs font-bold flex-shrink-0">{item.num}</span>
                     <div>
                       <h4 className="text-xs font-bold text-rose-900 leading-none">{item.title}</h4>
-                      <p className="text-[10px] text-rose-750 mt-1 leading-normal font-semibold">{item.text}</p>
+                      <p className="text-xs text-rose-750 mt-1 leading-normal font-semibold">{item.text}</p>
                     </div>
                   </div>
                 ))}
@@ -2489,7 +2489,7 @@ export function YukBelajarTopik5({
           <motion.p
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-[11px] font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
+            className="text-xs font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
           >
             <Sparkles className="h-4 w-4" /> Semua misi selesai! Kamu resmi menjadi Teman Digital yang Santun! 💬
           </motion.p>
@@ -2513,7 +2513,7 @@ export function YukBelajarTopik5({
             <button
               key={tab.id}
               onClick={() => goToTab(tab.id)}
-              className={`flex-1 min-w-[100px] sm:min-w-[120px] py-2 px-2.5 rounded-xl text-center text-[10px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
+              className={`flex-1 min-w-[100px] sm:min-w-[120px] py-2 px-2.5 rounded-xl text-center text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
                 ? 'bg-sky-600 text-white shadow-md'
                 : isDone
                   ? 'bg-emerald-50 text-emerald-700 border border-emerald-250'
@@ -2523,7 +2523,7 @@ export function YukBelajarTopik5({
               <span>{tab.icon}</span>
               <span>{tab.label}</span>
               {isDone && (
-                <span className={`ml-0.5 text-[10px] ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
+                <span className={`ml-0.5 text-xs ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
               )}
             </button>
           );
@@ -2559,23 +2559,23 @@ export function YukBelajarTopik5({
                 </div>
                 <div className="lg:col-span-5 flex justify-center w-full">
                   <div className="flex flex-col border border-slate-200 rounded-2xl bg-slate-50 shadow-sm overflow-hidden w-full max-w-sm">
-                    <div className="bg-sky-600 text-white px-3 py-2 text-[11px] font-bold flex items-center justify-between">
+                    <div className="bg-sky-600 text-white px-3 py-2 text-xs font-bold flex items-center justify-between">
                       <span className="flex items-center gap-1">💬 Kesalahpahaman dalam Chatting</span>
                     </div>
                     <div className="p-3.5 space-y-3.5 bg-slate-50/50">
                       <div className="flex flex-col items-start space-y-1">
-                        <span className="text-[9px] font-extrabold text-slate-400 uppercase">Anton (Teks saja, tanpa nada):</span>
+                        <span className="text-xs font-extrabold text-slate-400 uppercase">Anton (Teks saja, tanpa nada):</span>
                         <div className="bg-white text-slate-800 px-3 py-2 rounded-2xl rounded-tl-none text-xs font-medium border border-slate-100 shadow-xs max-w-[85%]">
                           "Tugas kelompok dikumpul besok!"
                         </div>
                       </div>
                       <div className="flex flex-col items-end space-y-1">
-                        <span className="text-[9px] font-extrabold text-slate-400 uppercase">Budi (Membaca dengan salah paham):</span>
+                        <span className="text-xs font-extrabold text-slate-400 uppercase">Budi (Membaca dengan salah paham):</span>
                         <div className="bg-rose-100 text-rose-900 px-3 py-2 rounded-2xl rounded-tr-none text-xs font-medium shadow-xs max-w-[85%] text-left">
                           "Kenapa kamu memerintah kasar begitu? Aku juga tahu kok!"
                         </div>
                       </div>
-                      <div className="p-2.5 bg-amber-50 rounded-xl border border-amber-100 text-[10px] text-amber-800 leading-relaxed font-semibold">
+                      <div className="p-2.5 bg-amber-50 rounded-xl border border-amber-100 text-xs text-amber-800 leading-relaxed font-semibold">
                         💡 <strong>Mengapa ini terjadi?</strong> Karena tulisan tidak memiliki nada suara. Pesan Anton yang sebenarnya biasa saja, dibaca Budi seolah-olah bernada marah atau membentak.
                       </div>
                     </div>
@@ -2588,12 +2588,12 @@ export function YukBelajarTopik5({
                   <div className="p-4 rounded-xl border border-red-100 bg-red-50/20 text-left">
                     <p className="text-xs font-bold text-red-800 mb-1 flex items-center gap-1.5">Kurang Tepat:</p>
                     <p className="text-xs text-red-900 font-mono bg-white p-2.5 rounded-lg border border-red-200">"Kamu lama banget balasnya!"</p>
-                    <p className="text-[10px] text-red-700 mt-2">Efek: Pembaca merasa dituduh, diserang, dan tegang.</p>
+                    <p className="text-xs text-red-700 mt-2">Efek: Pembaca merasa dituduh, diserang, dan tegang.</p>
                   </div>
                   <div className="p-4 rounded-xl border border-emerald-100 bg-emerald-50/20 text-left">
                     <p className="text-xs font-bold text-emerald-800 mb-1 flex items-center gap-1.5">Lebih Santun:</p>
                     <p className="text-xs text-emerald-900 font-mono bg-white p-2.5 rounded-lg border border-emerald-200">"Kamu sudah sempat membaca pesanku? Aku menunggu jawabanmu, ya."</p>
-                    <p className="text-[10px] text-emerald-700 mt-2">Efek: Terasa menghargai kesibukan teman dan sopan didengar.</p>
+                    <p className="text-xs text-emerald-700 mt-2">Efek: Terasa menghargai kesibukan teman dan sopan didengar.</p>
                   </div>
                 </div>
               </div>
@@ -2623,27 +2623,27 @@ export function YukBelajarTopik5({
                 </div>
                 <div className="lg:col-span-5 flex justify-center w-full">
                   <div className="flex flex-col border border-slate-200 rounded-2xl bg-slate-50 shadow-sm overflow-hidden w-full max-w-sm">
-                    <div className="bg-blue-900 text-white px-3 py-2 text-[11px] font-bold flex items-center justify-between">
+                    <div className="bg-blue-900 text-white px-3 py-2 text-xs font-bold flex items-center justify-between">
                       <span className="flex items-center gap-1">👣 Ilustrasi: Jejak Digital Permanen</span>
                     </div>
                     <div className="p-3.5 space-y-3 bg-slate-50/50">
                       <div className="border border-slate-100 bg-white rounded-xl p-2.5 shadow-xs">
                         <div className="flex items-center gap-2 mb-1.5 pb-1 border-b border-slate-100">
-                          <span className="w-5 h-5 rounded-full bg-slate-100 text-[10px] font-bold flex items-center justify-center">👤</span>
-                          <span className="text-[10px] font-bold text-slate-600">Komentar Kasar (2 Tahun Lalu)</span>
-                          <span className="text-[8px] text-red-500 font-bold ml-auto bg-red-50 px-1.5 py-0.5 rounded-full">Permanen</span>
+                          <span className="w-5 h-5 rounded-full bg-slate-100 text-xs font-bold flex items-center justify-center">👤</span>
+                          <span className="text-xs font-bold text-slate-600">Komentar Kasar (2 Tahun Lalu)</span>
+                          <span className="text-xs text-red-500 font-bold ml-auto bg-red-50 px-1.5 py-0.5 rounded-full">Permanen</span>
                         </div>
                         <p className="text-xs font-mono text-red-650 italic">"Gambarmu payah sekali! Hapus aja!"</p>
                       </div>
-                      <div className="flex items-center justify-center text-[10px] text-slate-400 font-bold gap-1 my-1">
+                      <div className="flex items-center justify-center text-xs text-slate-400 font-bold gap-1 my-1">
                         <span>⬇️ Riwayat Terus Tersimpan di Internet ⬇️</span>
                       </div>
                       <div className="border border-amber-250 bg-amber-50/50 rounded-xl p-2.5 shadow-xs">
                         <div className="flex items-center gap-2 mb-1">
-                          <span className="text-[10px] font-bold text-amber-900">Pendaftaran Sekolah Baru / Beasiswa</span>
-                          <span className="text-[9px] text-amber-700 font-extrabold ml-auto bg-amber-100 px-1.5 py-0.5 rounded-full">Diperiksa Guru</span>
+                          <span className="text-xs font-bold text-amber-900">Pendaftaran Sekolah Baru / Beasiswa</span>
+                          <span className="text-xs text-amber-700 font-extrabold ml-auto bg-amber-100 px-1.5 py-0.5 rounded-full">Diperiksa Guru</span>
                         </div>
-                        <p className="text-[10px] text-amber-800 leading-normal font-semibold">
+                        <p className="text-xs text-amber-800 leading-normal font-semibold">
                           ⚠️ Jejak digital buruk di masa lalu dapat ditemukan dan memengaruhi masa depanmu! Berpikirlah sebelum mengetik.
                         </p>
                       </div>
@@ -2663,13 +2663,13 @@ export function YukBelajarTopik5({
                     'Berpikir matang sebelum mengirim pesan',
                   ].map((text, idx) => (
                     <div key={idx} className="flex items-center gap-2 bg-white p-2.5 rounded-xl border border-sky-100/50 shadow-sm">
-                      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-sky-100 text-sky-700 text-[10px] font-bold">{idx + 1}</span>
+                      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-sky-100 text-sky-700 text-xs font-bold">{idx + 1}</span>
                       <span className="text-xs text-sky-900 font-medium">{text}</span>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-[10px] sm:text-xs text-slate-500 italic text-center">
+              <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-500 italic text-center">
                 Keterampilan kewargaan digital membantu kita membuat pilihan yang cerdas, berpikir kritis, dan membangun kebiasaan sehat saat menggunakan teknologi.
               </div>
               <div className="space-y-3 mt-6 border-t border-slate-100 pt-5">
@@ -2695,14 +2695,14 @@ export function YukBelajarTopik5({
                             <span className="text-xl">{card.icon}</span>
                             <span className="text-xs font-bold text-sky-955">{card.title}</span>
                           </div>
-                          <span className="text-[10px] font-bold text-sky-600">{isRevealed ? 'Tutup' : 'Baca Detail'}</span>
+                          <span className="text-xs font-bold text-sky-600">{isRevealed ? 'Tutup' : 'Baca Detail'}</span>
                         </div>
-                        <p className="text-[10px] text-slate-500 mt-1 font-semibold">{card.tagline}</p>
+                        <p className="text-xs text-slate-500 mt-1 font-semibold">{card.tagline}</p>
                         {isRevealed && (
                           <motion.p
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
-                            className="text-[11px] text-slate-655 mt-3 leading-relaxed border-t border-sky-100/50 pt-2 font-medium"
+                            className="text-xs text-slate-655 mt-3 leading-relaxed border-t border-sky-100/50 pt-2 font-medium"
                           >
                             {card.desc}
                           </motion.p>
@@ -2733,7 +2733,7 @@ export function YukBelajarTopik5({
               </div>
               <div className="space-y-3 mt-4">
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-wider"> Simulator Balasan Pesan</p>
-                <p className="text-[11px] text-slate-500 mb-2">
+                <p className="text-xs text-slate-500 mb-2">
                   Gunakan tombol navigasi di bawah kartu untuk melihat simulasi contoh komentar dari setiap teman. Bandingkan komentar yang kurang santun dengan yang lebih santun.
                 </p>
                 <div className="relative border border-slate-200 rounded-3xl bg-slate-50 p-4 sm:p-5 space-y-4 max-w-lg mx-auto shadow-sm">
@@ -2746,7 +2746,7 @@ export function YukBelajarTopik5({
                         <span className="text-xs font-extrabold text-slate-700 block">
                           {commentsData[activeCommentIdx].character}
                         </span>
-                        <span className="text-[9px] text-slate-450 font-bold block mt-0.5">
+                        <span className="text-xs text-slate-450 font-bold block mt-0.5">
                           Kasus {activeCommentIdx + 1} dari {commentsData.length}
                         </span>
                       </div>
@@ -2780,24 +2780,24 @@ export function YukBelajarTopik5({
                       className="space-y-4 pt-1"
                     >
                       <div className="flex flex-col items-start space-y-1.5">
-                        <span className="text-[10px] font-bold text-red-500 flex items-center gap-1">
+                        <span className="text-xs font-bold text-red-500 flex items-center gap-1">
                           ⚠️ Komentar Kurang Santun:
                         </span>
                         <div className="bg-red-100 text-red-900 px-4 py-2.5 rounded-2xl rounded-tl-none max-w-xs text-xs font-semibold relative shadow-xs">
                           "{commentsData[activeCommentIdx].kurang}"
                         </div>
-                        <span className="text-[10px] text-red-700 italic font-bold">
+                        <span className="text-xs text-red-700 italic font-bold">
                           Reaksi {commentsData[activeCommentIdx].character}: {commentsData[activeCommentIdx].reactionKurang}
                         </span>
                       </div>
                       <div className="flex flex-col items-end space-y-1.5">
-                        <span className="text-[10px] font-bold text-emerald-600 flex items-center gap-1">
+                        <span className="text-xs font-bold text-emerald-600 flex items-center gap-1">
                           ✨ Komentar Lebih Santun:
                         </span>
                         <div className="bg-emerald-100 text-emerald-900 px-4 py-2.5 rounded-2xl rounded-tr-none max-w-xs text-xs font-semibold relative shadow-xs text-left">
                           "{commentsData[activeCommentIdx].sopan}"
                         </div>
-                        <span className="text-[10px] text-emerald-700 italic font-bold">
+                        <span className="text-xs text-emerald-700 italic font-bold">
                           Reaksi {commentsData[activeCommentIdx].character}: {commentsData[activeCommentIdx].reactionSopan}
                         </span>
                       </div>
@@ -2821,9 +2821,9 @@ export function YukBelajarTopik5({
               <div className="rounded-xl border border-sky-100 bg-sky-50/15 p-4 mt-4 space-y-2">
                 <p className="text-xs font-bold text-sky-900"> Sebelum menulis komentar, coba tanyakan pada dirimu sendiri:</p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                  <div className="bg-white p-2.5 rounded-lg border border-sky-100 text-center text-[10px] font-semibold text-slate-700">Apakah komentarku sopan?</div>
-                  <div className="bg-white p-2.5 rounded-lg border border-sky-100 text-center text-[10px] font-semibold text-slate-700">Apakah komentarku membantu?</div>
-                  <div className="bg-white p-2.5 rounded-lg border border-sky-100 text-center text-[10px] font-semibold text-slate-700">Apakah komentarku membuat teman merasa dihargai?</div>
+                  <div className="bg-white p-2.5 rounded-lg border border-sky-100 text-center text-xs font-semibold text-slate-700">Apakah komentarku sopan?</div>
+                  <div className="bg-white p-2.5 rounded-lg border border-sky-100 text-center text-xs font-semibold text-slate-700">Apakah komentarku membantu?</div>
+                  <div className="bg-white p-2.5 rounded-lg border border-sky-100 text-center text-xs font-semibold text-slate-700">Apakah komentarku membuat teman merasa dihargai?</div>
                 </div>
               </div>
             </div>
@@ -2842,7 +2842,7 @@ export function YukBelajarTopik5({
               </div>
               <div className="space-y-3 my-4">
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-wider"> Visualisasi Teks & Nada Bicara:</p>
-                <p className="text-[11px] text-slate-500">Ketuk tombol untuk membandingkan kedua nada. Geser ke bawah untuk melihat semua contoh.</p>
+                <p className="text-xs text-slate-500">Ketuk tombol untuk membandingkan kedua nada. Geser ke bawah untuk melihat semua contoh.</p>
                 <div className="flex justify-center gap-2 mb-2">
                   <button
                     onClick={() => setChatTone('kasar')}
@@ -2867,13 +2867,13 @@ export function YukBelajarTopik5({
                     { situasi: 'Memberi tanggapan saat teman salah', kasar: 'SALAH SEMUA!! GITU AJA GAK BISA', sopan: 'Ada sedikit yang keliru. Mau kubantu memperbaikinya?' },
                   ].map((item, idx) => (
                     <div key={idx} className="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
-                      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{item.situasi}</p>
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">{item.situasi}</p>
                       {chatTone === 'kasar' ? (
                         <div className="space-y-1.5">
                           <div className="bg-red-500 text-white px-4 py-2.5 rounded-2xl rounded-tl-none text-xs font-mono font-bold tracking-wide shadow-sm inline-block">
                             "{item.kasar}"
                           </div>
-                          <p className="text-[10px] text-red-600 font-bold bg-red-50 px-2.5 py-1 rounded-lg block w-max">
+                          <p className="text-xs text-red-600 font-bold bg-red-50 px-2.5 py-1 rounded-lg block w-max">
                             Terasa seperti membentak, marah, or mendikte!
                           </p>
                         </div>
@@ -2882,7 +2882,7 @@ export function YukBelajarTopik5({
                           <div className="bg-sky-500 text-white px-4 py-2.5 rounded-2xl rounded-tr-none text-xs font-medium shadow-sm inline-block">
                             "{item.sopan}"
                           </div>
-                          <p className="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-2.5 py-1 rounded-lg block w-max">
+                          <p className="text-xs text-emerald-600 font-bold bg-emerald-50 px-2.5 py-1 rounded-lg block w-max">
                             Terasa ramah, sabar, dan penuh penghargaan.
                           </p>
                         </div>
@@ -2893,7 +2893,7 @@ export function YukBelajarTopik5({
               </div>
               <div className="p-4 bg-sky-50 rounded-xl border border-sky-100 text-xs text-sky-950 space-y-2 font-medium">
                 <p> Mengapa penggunaan huruf besar/tanda seru berlebihan perlu dihindari?</p>
-                <ul className="list-disc pl-5 text-[11px] text-slate-600 space-y-1">
+                <ul className="list-disc pl-5 text-xs text-slate-600 space-y-1">
                   <li><strong>Huruf kapital semua (ALL CAPS)</strong> diartikan sebagai teriakan di dunia internet.</li>
                   <li><strong>Tanda seru (!) berlebihan</strong> menambahkan efek kemarahan or paksaan.</li>
                   <li><strong>Emoji</strong> harus digunakan dengan tepat sesuai kondisi hati lawan bicara. Mengirim emoji tertawa saat teman sedang sedih bisa dianggap merendahkan or meremehkan.</li>
@@ -2927,7 +2927,7 @@ export function YukBelajarTopik5({
                     >
                       <span className="text-xs font-bold text-sky-900">{q.title}</span>
                       {isRevealed && (
-                        <p className="text-[10px] text-slate-600 mt-2 border-t border-sky-100/50 pt-2 font-semibold leading-relaxed">
+                        <p className="text-xs text-slate-600 mt-2 border-t border-sky-100/50 pt-2 font-semibold leading-relaxed">
                           {q.desc}
                         </p>
                       )}
@@ -2939,7 +2939,7 @@ export function YukBelajarTopik5({
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-wider"> Contoh Kasus Penggunaan Kalimat:</p>
                 <div className="overflow-x-auto border border-slate-200 rounded-2xl shadow-sm">
                   <table className="w-full text-xs text-left text-slate-500">
-                    <thead className="text-[10px] text-white uppercase bg-gradient-to-r from-sky-500 to-sky-400">
+                    <thead className="text-xs text-white uppercase bg-gradient-to-r from-sky-500 to-sky-400">
                       <tr>
                         <th className="px-4 py-2.5 font-bold">Situasi</th>
                         <th className="px-4 py-2.5 font-bold">Pesan Kurang Tepat</th>
@@ -2953,7 +2953,7 @@ export function YukBelajarTopik5({
                         { sit: 'Teman mengunggah gambar', bad: '“Gambarmu jelek.”', good: '“Gambarmu sudah menarik. Mungkin warnanya bisa dibuat lebih rapi.”' },
                       ].map((item, t) => (
                         <tr key={t} className="bg-white border-b hover:bg-slate-50/50">
-                          <td className="px-4 py-3 text-slate-900 font-bold text-[11px]">{item.sit}</td>
+                          <td className="px-4 py-3 text-slate-900 font-bold text-xs">{item.sit}</td>
                           <td className="px-4 py-3 text-red-600 font-mono font-medium">{item.bad}</td>
                           <td className="px-4 py-3 text-emerald-700 font-medium">{item.good}</td>
                         </tr>
@@ -2971,7 +2971,7 @@ export function YukBelajarTopik5({
       <div className="mt-6 rounded-2xl border border-amber-100 bg-amber-50/35 p-4 shadow-sm text-left flex items-start gap-3">
         <div>
           <h4 className="text-xs font-bold text-amber-900">Pesan Digi:</h4>
-          <p className="text-[11px] sm:text-xs text-amber-800 italic mt-0.5 leading-relaxed">
+          <p className="text-xs text-amber-800 italic mt-0.5 leading-relaxed">
             “Di dunia digital, kata-kata juga bisa membuat orang lain senang atau sedih. Jadi, sebelum mengirim pesan, pilih kata yang baik, sopan, dan tidak menyakiti.”
           </p>
         </div>
@@ -3206,7 +3206,7 @@ export function YukBelajarTopik6({
           <motion.p
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-[11px] font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
+            className="text-xs font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
           >
             <Sparkles className="h-4 w-4" /> Semua misi selesai! Kamu resmi menjadi Pahlawan Siber Anti-Buli! 🏆
           </motion.p>
@@ -3232,7 +3232,7 @@ export function YukBelajarTopik6({
             <button
               key={tab.id}
               onClick={() => goToTab(tab.id)}
-              className={`flex-1 min-w-[100px] sm:min-w-[120px] py-2 px-2.5 rounded-xl text-center text-[10px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
+              className={`flex-1 min-w-[100px] sm:min-w-[120px] py-2 px-2.5 rounded-xl text-center text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
                 ? 'bg-pink-600 text-white shadow-md'
                 : isDone
                   ? 'bg-emerald-50 text-emerald-700 border border-emerald-250'
@@ -3242,7 +3242,7 @@ export function YukBelajarTopik6({
               <span>{tab.icon}</span>
               <span>{tab.label}</span>
               {isDone && (
-                <span className={`ml-0.5 text-[10px] ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
+                <span className={`ml-0.5 text-xs ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
               )}
             </button>
           );
@@ -3305,7 +3305,7 @@ export function YukBelajarTopik6({
                         {isRevealed && (
                           <div className="mt-3 border-t border-slate-200/50 pt-3 space-y-2">
                             <p className="text-xs font-mono bg-white p-2 rounded border border-slate-100 italic">{item.pesan}</p>
-                            <p className="text-[11px] font-semibold text-slate-600">Dampak: {item.reaksi}</p>
+                            <p className="text-xs font-semibold text-slate-600">Dampak: {item.reaksi}</p>
                           </div>
                         )}
                       </button>
@@ -3349,7 +3349,7 @@ export function YukBelajarTopik6({
                       >
                         <span className="text-xs font-bold text-pink-900"> {monster.nama}</span>
                         {isRevealed && (
-                          <p className="text-[10px] text-slate-655 mt-2 border-t border-pink-100/50 pt-2 font-medium leading-relaxed">
+                          <p className="text-xs text-slate-655 mt-2 border-t border-pink-100/50 pt-2 font-medium leading-relaxed">
                             {monster.bisa}
                           </p>
                         )}
@@ -3400,7 +3400,7 @@ export function YukBelajarTopik6({
                       <span className="text-2xl shrink-0">{dampak.icon}</span>
                       <div>
                         <h5 className="text-xs font-bold text-rose-900">{dampak.title}</h5>
-                        <p className="text-[10px] text-slate-550 mt-1 leading-relaxed font-semibold">{dampak.desc}</p>
+                        <p className="text-xs text-slate-550 mt-1 leading-relaxed font-semibold">{dampak.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -3431,7 +3431,7 @@ export function YukBelajarTopik6({
                 ].map((item, idx) => (
                   <div key={idx} className={`p-4 rounded-xl border flex flex-col justify-between ${item.color} text-left`}>
                     <span className="text-xs font-bold mb-2">{item.title}</span>
-                    <p className="text-[10px] leading-relaxed font-semibold">{item.desc}</p>
+                    <p className="text-xs leading-relaxed font-semibold">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -3467,14 +3467,14 @@ export function YukBelajarTopik6({
                         <div className="flex justify-between items-center w-full">
                           <div>
                             <span className="text-xs font-bold text-sky-900 block">{jurus.jurus}</span>
-                            <span className="text-[10px] text-slate-555 font-semibold mt-0.5 block">{jurus.misi}</span>
+                            <span className="text-xs text-slate-555 font-semibold mt-0.5 block">{jurus.misi}</span>
                           </div>
                           <span className="text-xs">
                             {isRevealed ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                           </span>
                         </div>
                         {isRevealed && (
-                          <p className="text-[10px] text-slate-655 mt-3 border-t border-sky-100/50 pt-2 font-semibold leading-relaxed">
+                          <p className="text-xs text-slate-655 mt-3 border-t border-sky-100/50 pt-2 font-semibold leading-relaxed">
                             {jurus.penjelasan}
                           </p>
                         )}
@@ -3500,14 +3500,14 @@ export function YukBelajarTopik6({
                         <div className="flex justify-between items-center w-full">
                           <div>
                             <span className="text-xs font-bold text-pink-900 block">{jurus.jurus}</span>
-                            <span className="text-[10px] text-slate-555 font-semibold mt-0.5 block">{jurus.misi}</span>
+                            <span className="text-xs text-slate-555 font-semibold mt-0.5 block">{jurus.misi}</span>
                           </div>
                           <span className="text-xs">
                             {isRevealed ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                           </span>
                         </div>
                         {isRevealed && (
-                          <p className="text-[10px] text-slate-655 mt-3 border-t border-pink-100/50 pt-2 font-semibold leading-relaxed">
+                          <p className="text-xs text-slate-655 mt-3 border-t border-pink-100/50 pt-2 font-semibold leading-relaxed">
                             {jurus.penjelasan}
                           </p>
                         )}
@@ -3532,8 +3532,8 @@ export function YukBelajarTopik6({
                   <div className="p-4 rounded-2xl border border-pink-200 bg-gradient-to-br from-pink-50/30 to-rose-50/20 flex flex-col justify-between text-left">
                     <div>
                       <div className="w-9 h-9 rounded-xl bg-pink-100 flex items-center justify-center text-lg mb-2">🏫</div>
-                      <h5 className="text-[11px] font-black text-pink-900 leading-tight">TPPK (Tim Pencegahan & Penanganan Kekerasan) Sekolah</h5>
-                      <p className="text-[10px] text-pink-850 font-semibold mt-1.5 leading-relaxed">
+                      <h5 className="text-xs font-black text-pink-900 leading-tight">TPPK (Tim Pencegahan & Penanganan Kekerasan) Sekolah</h5>
+                      <p className="text-xs text-pink-850 font-semibold mt-1.5 leading-relaxed">
                         Tim resmi di sekolah yang dibentuk untuk mencegah dan menangani kekerasan serta perundungan. TPPK bertugas memberikan perlindungan, menerima pengaduan, dan menindaklanjuti kasus dengan aman. Kamu bisa melapor langsung ke Guru Wali Kelas, Guru BK, atau staf sekolah anggota TPPK secara rahasia dan terlindungi.
                       </p>
                     </div>
@@ -3548,12 +3548,12 @@ export function YukBelajarTopik6({
                   >
                     <div>
                       <div className="w-9 h-9 rounded-xl bg-green-100 flex items-center justify-center text-lg mb-2 group-hover:scale-110 transition-transform">💬</div>
-                      <h5 className="text-[11px] font-black text-green-900 leading-tight">WhatsApp Aduan Konten KOMDIGI</h5>
-                      <p className="text-[10px] text-green-700 font-semibold mt-1.5 leading-relaxed">
+                      <h5 className="text-xs font-black text-green-900 leading-tight">WhatsApp Aduan Konten KOMDIGI</h5>
+                      <p className="text-xs text-green-700 font-semibold mt-1.5 leading-relaxed">
                         Laporkan konten internet negatif, pesan ancaman, pornografi, atau judi online secara langsung melalui nomor resmi WhatsApp pemerintah:
                       </p>
                     </div>
-                    <span className="text-[10px] text-green-600 font-mono font-bold mt-2 inline-block">+62 811 9224 545</span>
+                    <span className="text-xs text-green-600 font-mono font-bold mt-2 inline-block">+62 811 9224 545</span>
                   </a>
 
                   {/* Web Aduan Konten */}
@@ -3565,12 +3565,12 @@ export function YukBelajarTopik6({
                   >
                     <div>
                       <div className="w-9 h-9 rounded-xl bg-indigo-100 flex items-center justify-center text-lg mb-2 group-hover:scale-110 transition-transform">🌐</div>
-                      <h5 className="text-[11px] font-black text-indigo-900 leading-tight">Situs Web Aduan Konten KOMDIGI</h5>
-                      <p className="text-[10px] text-indigo-700 font-semibold mt-1.5 leading-relaxed">
+                      <h5 className="text-xs font-black text-indigo-900 leading-tight">Situs Web Aduan Konten KOMDIGI</h5>
+                      <p className="text-xs text-indigo-700 font-semibold mt-1.5 leading-relaxed">
                         Situs resmi Kementerian Komunikasi dan Digital RI untuk melaporkan berbagai materi siber negatif atau berbahaya.
                       </p>
                     </div>
-                    <span className="text-[10px] text-indigo-600 font-semibold mt-2 inline-block">aduankonten.id</span>
+                    <span className="text-xs text-indigo-600 font-semibold mt-2 inline-block">aduankonten.id</span>
                   </a>
 
                   {/* KPAI */}
@@ -3582,16 +3582,16 @@ export function YukBelajarTopik6({
                   >
                     <div>
                       <div className="w-9 h-9 rounded-xl bg-amber-100 flex items-center justify-center text-lg mb-2 group-hover:scale-110 transition-transform">🏛️</div>
-                      <h5 className="text-[11px] font-black text-amber-900 leading-tight">Pengaduan Online KPAI</h5>
-                      <p className="text-[10px] text-amber-700 font-semibold mt-1.5 leading-relaxed">
+                      <h5 className="text-xs font-black text-amber-900 leading-tight">Pengaduan Online KPAI</h5>
+                      <p className="text-xs text-amber-700 font-semibold mt-1.5 leading-relaxed">
                         Saluran Komisi Perlindungan Anak Indonesia untuk mengadukan segala jenis pelanggaran hak anak, perundungan parah, atau kekerasan di dunia maya maupun nyata.
                       </p>
                     </div>
-                    <span className="text-[10px] text-amber-600 font-semibold mt-2 inline-block">pengaduan.kpai.go.id</span>
+                    <span className="text-xs text-amber-600 font-semibold mt-2 inline-block">pengaduan.kpai.go.id</span>
                   </a>
                 </div>
 
-                <p className="text-[10px] text-slate-500 font-bold text-center italic mt-2">
+                <p className="text-xs text-slate-500 font-bold text-center italic mt-2">
                   💡 Melapor bukan berarti mengadu — itu artinya kamu melindungi diri sendiri dan melindungi teman-temanmu agar tetap aman!
                 </p>
               </div>
@@ -3644,7 +3644,7 @@ export function YukBelajarTopik6({
                             }`}
                         >
                           Tindakan Jahat:
-                          <p className="text-[10px] font-sans font-semibold mt-1 italic text-slate-600">{scenario.jahat}</p>
+                          <p className="text-xs font-sans font-semibold mt-1 italic text-slate-600">{scenario.jahat}</p>
                         </button>
                         <button
                           onClick={() => setSimAnswers({ ...simAnswers, [idx]: 'pahlawan' })}
@@ -3654,12 +3654,12 @@ export function YukBelajarTopik6({
                             }`}
                         >
                           Tindakan Pahlawan:
-                          <p className="text-[10px] font-semibold mt-1 italic text-slate-600">{scenario.pahlawan}</p>
+                          <p className="text-xs font-semibold mt-1 italic text-slate-600">{scenario.pahlawan}</p>
                         </button>
                       </div>
                       {answer && (
                         <div
-                          className={`p-3 rounded-xl text-[10px] font-semibold border leading-relaxed ${answer === 'pahlawan'
+                          className={`p-3 rounded-xl text-xs font-semibold border leading-relaxed ${answer === 'pahlawan'
                             ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
                             : 'bg-red-50 border-red-200 text-red-800'
                             }`}
@@ -3707,11 +3707,11 @@ export function YukBelajarTopik6({
                   className="w-full px-4 py-3 rounded-xl text-xs border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-300 transition-all font-medium leading-relaxed bg-white"
                 />
                 {reflectionSaving ? (
-                  <p className="text-[10px] text-pink-500 italic flex items-center gap-1">
+                  <p className="text-xs text-pink-500 italic flex items-center gap-1">
                     <span>🔄</span> Menyimpan draf refleksi...
                   </p>
                 ) : reflection.trim() === '' ? null : (
-                  <p className="text-[10px] text-emerald-600 font-bold flex items-center gap-1">
+                  <p className="text-xs text-emerald-600 font-bold flex items-center gap-1">
                     <span>✅</span> Draf refleksi tersimpan otomatis!
                   </p>
                 )}
@@ -3725,7 +3725,7 @@ export function YukBelajarTopik6({
       <div className="mt-6 rounded-2xl border border-amber-100 bg-amber-50/35 p-4 shadow-sm text-left flex items-start gap-3">
         <div>
           <h4 className="text-xs font-bold text-amber-900">Pesan Digi:</h4>
-          <p className="text-[11px] sm:text-xs text-amber-800 italic mt-0.5 leading-relaxed">
+          <p className="text-xs text-amber-800 italic mt-0.5 leading-relaxed">
             “Di dunia digital, kata-kata juga bisa membuat orang lain senang atau sedih. Jadi, sebelum mengirim pesan, pilih kata yang baik, sopan, dan tidak menyakiti.”
           </p>
         </div>
@@ -3887,7 +3887,7 @@ export function JanjiJariKelingkingDigital({
             <h3 className="text-base sm:text-lg font-bold tracking-wider text-amber-900">
               PIAGAM KOMITMEN SAHABAT DIGITAL CERDAS
             </h3>
-            <p className="text-[9px] sm:text-[10px] text-amber-700 font-mono tracking-widest uppercase font-bold">
+            <p className="text-xs text-amber-700 font-mono tracking-widest uppercase font-bold">
               DEKLARASI ETIKA DIGITAL & JANJI JARI KELINGKING
             </p>
           </div>
@@ -3901,10 +3901,10 @@ export function JanjiJariKelingkingDigital({
 
           {/* 5 Kode Etik Panca Mabar */}
           <div className="bg-white/90 rounded-2xl p-4 text-left border border-amber-100 space-y-2.5 max-w-lg mx-auto shadow-inner">
-            <p className="text-[10px] sm:text-[11px] font-bold text-amber-900 border-b border-amber-100 pb-1 flex items-center gap-1.5">
+            <p className="text-xs font-bold text-amber-900 border-b border-amber-100 pb-1 flex items-center gap-1.5">
               📜 LIMA KODE ETIK PANCA MABAR AMAN:
             </p>
-            <ol className="list-decimal list-inside text-[9px] sm:text-[10px] text-slate-700 space-y-1.5 leading-relaxed font-medium">
+            <ol className="list-decimal list-inside text-xs text-slate-700 space-y-1.5 leading-relaxed font-medium">
               <li><strong>Komunikasi Tanpa Toxic</strong>: Selalu menggunakan bahasa sopan dan positif di chat & suara. [✓]</li>
               <li><strong>Anti Perundungan</strong>: Suportif, tidak mengejek pemula, dan tidak memprovokasi teman. [✓]</li>
               <li><strong>Menjaga Privasi</strong>: Melindungi sandi, nomor HP, dan data pribadi sendiri & orang lain. [✓]</li>
@@ -3913,20 +3913,20 @@ export function JanjiJariKelingkingDigital({
             </ol>
           </div>
 
-          <p className="text-[11px] sm:text-xs text-slate-700 italic leading-relaxed px-4 max-w-md mx-auto">
+          <p className="text-xs text-slate-700 italic leading-relaxed px-4 max-w-md mx-auto">
             "Saya berjanji mulai hari ini akan menjaga jari kelingking digital saya untuk selalu menjadi warga digital yang cerdas, sopan, jujur, dan bertanggung jawab!"
           </p>
 
           {/* Signature section */}
           <div className="flex justify-around items-center pt-4 border-t border-amber-200 max-w-lg mx-auto text-left">
             <div className="space-y-1 text-center">
-              <p className="text-[8px] sm:text-[9px] text-slate-400 font-mono">Ditandatangani secara digital pada:</p>
-              <p className="text-[9px] sm:text-[10px] font-bold text-slate-650 font-mono">
+              <p className="text-xs text-slate-400 font-mono">Ditandatangani secara digital pada:</p>
+              <p className="text-xs font-bold text-slate-650 font-mono">
                 {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}
               </p>
             </div>
             <div className="space-y-1 text-center flex flex-col items-center">
-              <p className="text-[8px] sm:text-[9px] text-slate-400 font-mono">Tanda Tangan Murid:</p>
+              <p className="text-xs text-slate-400 font-mono">Tanda Tangan Murid:</p>
               {sigImage && (
                 <img
                   src={sigImage}
@@ -3934,7 +3934,7 @@ export function JanjiJariKelingkingDigital({
                   className="max-h-12 object-contain mix-blend-multiply"
                 />
               )}
-              <p className="text-[9px] font-serif font-black italic text-pink-500 tracking-wider">
+              <p className="text-xs font-serif font-black italic text-pink-500 tracking-wider">
                 {pledgeName}
               </p>
             </div>
@@ -3961,7 +3961,7 @@ export function JanjiJariKelingkingDigital({
                   onSave('digital-pledge-signed', null);
                 }
               }}
-              className="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-500 rounded-xl text-[9px] font-bold transition-colors"
+              className="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-500 rounded-xl text-xs font-bold transition-colors"
             >
               Ubah Nama / Reset
             </button>
@@ -3984,7 +3984,7 @@ export function JanjiJariKelingkingDigital({
           {/* Step 1: Checkbox */}
           <div className="space-y-3 text-xs text-slate-700">
             <p className="font-bold text-slate-800 flex items-center gap-1.5">
-              <span className="w-5 h-5 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center font-black text-[10px]">1</span>
+              <span className="w-5 h-5 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center font-black text-xs">1</span>
               Ceklis 5 Kode Etik Panca Mabar Aman di bawah:
             </p>
             <div className="space-y-2">
@@ -4006,7 +4006,7 @@ export function JanjiJariKelingkingDigital({
                     }}
                     className="mt-0.5 h-4.5 w-4.5 text-pink-600 border-slate-300 rounded focus:ring-pink-500"
                   />
-                  <span className="font-semibold text-[11px] leading-relaxed text-slate-700">{idx + 1}. {text}</span>
+                  <span className="font-semibold text-xs leading-relaxed text-slate-700">{idx + 1}. {text}</span>
                 </label>
               ))}
             </div>
@@ -4015,7 +4015,7 @@ export function JanjiJariKelingkingDigital({
           {/* Step 2: Name Input */}
           <div className="space-y-2">
             <p className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
-              <span className="w-5 h-5 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center font-black text-[10px]">2</span>
+              <span className="w-5 h-5 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center font-black text-xs">2</span>
               Masukkan Nama Lengkapmu:
             </p>
             <input
@@ -4032,13 +4032,13 @@ export function JanjiJariKelingkingDigital({
           <div className="space-y-2">
             <div className="flex justify-between items-center">
               <p className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
-                <span className="w-5 h-5 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center font-black text-[10px]">3</span>
+                <span className="w-5 h-5 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center font-black text-xs">3</span>
                 Gambar Tanda Tanganmu secara Manual di bawah:
               </p>
               <button
                 type="button"
                 onClick={clearCanvas}
-                className="text-[10px] text-pink-500 font-bold hover:underline"
+                className="text-xs text-pink-500 font-bold hover:underline"
               >
                 Clear / Bersihkan Tanda Tangan
               </button>
@@ -4191,16 +4191,16 @@ export function YukBelajarTopik1({
 
   const haks = [
     { title: '🎁 Hak Mendapatkan Info Menarik', desc: 'Kamu berhak mencari dan membaca info seru untuk belajar atau melakukan hobimu di internet.' },
-    { title: '🛡️ Hak untuk Merasa Aman', desc: 'Kamu berhak merasa nyaman saat online. Tidak boleh ada yang mengganggu, menakut-nakuti, atau menipumu!' },
+    { title: '🛡️ Hak untuk Merasa Aman', desc: 'Kamu berhak merasa nyaman saat daring. Tidak boleh ada yang mengganggu, menakut-nakuti, atau menipumu.' },
     { title: '💬 Hak Berkreasi & Berpendapat', desc: 'Kamu bebas menggambar, menulis cerita, atau membagikan ide baikmu secara online.' },
-    { title: '🔒 Hak Menjaga Rahasia Pribadi', desc: 'Kamu berhak menyembunyikan info pribadimu (seperti alamat atau nomor HP) agar tidak disalahgunakan orang lain.' },
+    { title: '🔒 Hak Menjaga Rahasia Pribadi', desc: 'Kamu berhak menyembunyikan info pribadimu (seperti alamat atau nomor gawai) agar tidak disalahgunakan orang lain.' },
   ];
 
   const tanggungJawabs = [
     { title: '🤝 Menghormati Teman Online', desc: 'Sama seperti di sekolah, kita harus selalu sopan di internet. Jangan mengejek, membuli, atau membuat teman sedih.' },
     { title: '🔑 Menjaga Rahasia Teman', desc: 'Jangan pernah membagikan foto, nama, atau cerita pribadi temanmu ke internet tanpa izin mereka.' },
-    { title: '🤔 Berpikir Sebelum Klik', desc: 'Apapun yang kamu kirim di internet akan meninggalkan jejak yang susah dihapus. Jadi, pastikan kirimanmu selalu baik, ya!' },
-    { title: '📢 Berani Bilang dan Melapor', desc: 'Kalau kamu melihat video seram atau ada orang asing mencurigakan, segera beritahu guru atau orang tua mu. Jangan dipendam sendiri!' },
+    { title: '🤔 Berpikir Sebelum Klik', desc: 'Apa pun yang kamu kirim di internet akan meninggalkan jejak yang susah dihapus. Jadi, pastikan kirimanmu selalu baik, ya.' },
+    { title: '📢 Berani Bilang dan Melapor', desc: 'Kalau kamu melihat video seram atau ada orang asing mencurigakan, segera beri tahu guru atau orang tuamu. Jangan dipendam sendiri.' },
   ];
 
   const devices = [
@@ -4213,21 +4213,21 @@ export function YukBelajarTopik1({
 
   const activities = [
     { act: 'Mencari resep kue atau masakan bersama Ibu ', cat: 'Mencari Informasi', icon: '🔎', desc: 'Bisa mencari informasi apa saja dengan cepat di internet untuk membantu kegiatan sehari-hari.' },
-    { act: 'Panggilan video (video call) dengan keluarga yang jauh ', cat: 'Berkomunikasi', icon: '📹', desc: 'Bisa melepas rindu dengan keluarga atau teman yang tinggal jauh secara tatap muka virtual.' },
+    { act: 'Panggilan video dengan keluarga yang jauh ', cat: 'Berkomunikasi', icon: '📹', desc: 'Bisa melepas rindu dengan keluarga atau teman yang tinggal jauh secara tatap muka virtual.' },
     { act: 'Mengerjakan tugas kelompok bersama teman di Google Docs ', cat: 'Bekerja Sama', icon: '🤝', desc: 'Bisa belajar dan membuat tugas sekolah bersama-sama walaupun masing-masing berada di rumah.' },
     { act: 'Membaca artikel bintang-bintang di luar angkasa ', cat: 'Belajar', icon: '📚', desc: 'Bisa menambah pengetahuan tentang sains, sejarah, atau hobi menarik lewat situs pendidikan.' },
     { act: 'Menggambar poster digital di Chromebook ', cat: 'Membuat Karya', icon: '🎨', desc: 'Bisa menyalurkan kreativitas seni, menggambar, atau menulis cerita menggunakan aplikasi digital.' }
   ];
 
   const risks = [
-    { title: '🛑 Penyebaran Data Pribadi', example: 'Ada game online atau orang asing yang meminta nama lengkap, alamat rumah, atau kata sandi HP-mu.', action: 'Langsung tutup gamenya! Jangan pernah memberikan data rahasiamu kepada siapa pun di internet.' },
-    { title: '🎣 Tautan Palsu (Phishing)', example: 'Dapat pesan: "Selamat! Kamu menang HP gratis. Klik link ini untuk mengambil!"', action: 'Jangan diklik! Pesan itu bohong dan bisa mencuri datamu atau merusak HP-mu.' },
+    { title: '🛑 Penyebaran Data Pribadi', example: 'Ada gim daring atau orang asing yang meminta nama lengkap, alamat rumah, atau kata sandi gawai-mu.', action: 'Langsung tutup gimnya! Jangan pernah memberikan data rahasiamu kepada siapa pun di internet.' },
+    { title: '🎣 Tautan Palsu (Phishing)', example: 'Dapat pesan: "Selamat! Kamu menang gawai gratis. Klik tautan ini untuk mengambil!"', action: 'Jangan diklik! Pesan itu bohong dan bisa mencuri datamu atau merusak gawai-mu.' },
     { title: '🔞 Konten Tidak Sesuai Usia', example: 'Muncul video kasar, seram, atau tidak sopan secara tiba-tiba di layarmu.', action: 'Segera matikan layar! Laporkan ke guru atau orang tua agar dibantu menyaring konten aman.' },
     { title: '💔 Komentar Jahat (Bullying)', example: 'Teman sekelas diejek di grup WhatsApp, atau ada yang berkata kasar saat bermain game.', action: 'Jangan ikut mengejek! Tetaplah sopan, dukung temanmu, dan laporkan kejadiannya ke gurumu.' },
     { title: '📰 Berita Bohong (Hoaks)', example: 'Mendapat pesan heboh: "Besok sekolah libur karena ada meteor jatuh!"', action: 'Jangan langsung disebarkan! Cek kebenarannya dengan bertanya kepada orang tua atau gurumu.' },
-    { title: '👀 Lupa Waktu & Leher Pegal', example: 'Bermain game sampai 3 jam tanpa henti hingga mata merah dan leher terasa sakit.', action: 'Gunakan aturan 20-20-20. Setiap 20 menit menatap layar, istirahatkan mata dengan melihat benda jauh selama 20 detik.' },
+    { title: '👀 Lupa Waktu & Leher Pegal', example: 'Bermain gim sampai 3 jam tanpa henti hingga mata merah dan leher terasa sakit.', action: 'Gunakan aturan 20-20-20. Setiap 20 menit menatap layar, istirahatkan mata dengan melihat benda jauh selama 20 detik.' },
     { title: '📝 Mengakui Karya Orang Lain', example: 'Mengambil gambar dari Google lalu mengakuinya sebagai buatanmu sendiri.', action: 'Selalu jujur! Cantumkan link sumbernya jika meminjam gambar orang lain.' },
-    { title: '⏰ Lupa Tugas Utama', example: 'Asyik menonton YouTube sampai lupa mengerjakan PR sekolah.', action: 'Atur alarm waktu bermain gawai. Ingat, belajar dan istirahat adalah yang paling utama!' }
+    { title: '⏰ Lupa Tugas Utama', example: 'Asyik menonton YouTube sampai lupa mengerjakan PR sekolah.', action: 'Atur alarm waktu bermain gawai. Ingat, belajar dan istirahat adalah yang paling utama.' }
   ];
 
   return (
@@ -4255,7 +4255,7 @@ export function YukBelajarTopik1({
           <motion.p
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-[11px] font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
+            className="text-xs font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
           >
             <Sparkles className="h-4 w-4" /> Semua misi selesai! Kamu resmi menjadi Penjelajah Digital Cerdas! 🚀
           </motion.p>
@@ -4263,7 +4263,7 @@ export function YukBelajarTopik1({
       </div>
 
       {/* Navigation tabs */}
-      <div className="flex flex-wrap gap-2 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6 w-full">
         {tabs.map((tab) => {
           const isActive = activeTab === tab.id;
           const isDone = tabDone[tab.id];
@@ -4271,17 +4271,19 @@ export function YukBelajarTopik1({
             <button
               key={tab.id}
               onClick={() => goToTab(tab.id)}
-              className={`relative flex items-center gap-1.5 px-4 py-2.5 rounded-2xl text-xs font-extrabold transition-all duration-300 ${isActive
-                ? 'bg-gradient-to-r from-indigo-500 to-primary-500 text-white shadow-md transform scale-105'
+              className={`relative flex items-center justify-between gap-2 px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-2xl text-xs sm:text-sm font-extrabold transition-all duration-300 cursor-pointer w-full text-left border min-h-[54px] ${isActive
+                ? 'bg-gradient-to-r from-indigo-500 to-primary-500 text-white border-indigo-600 shadow-md transform scale-[1.02]'
                 : isDone
-                  ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
-                  : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100'
+                  ? 'bg-emerald-100 text-emerald-950 border-emerald-300 font-black hover:bg-emerald-200'
+                  : 'bg-slate-100 text-slate-900 border-slate-200 hover:bg-indigo-100 hover:text-indigo-950 hover:border-indigo-300'
                 }`}
             >
-              <span>{tab.icon}</span>
-              <span>{tab.label}</span>
+              <div className="flex items-center gap-2 min-w-0">
+                <span className="text-base sm:text-lg shrink-0">{tab.icon}</span>
+                <span className="leading-snug font-black whitespace-normal">{tab.label}</span>
+              </div>
               {isDone && (
-                <span className={`ml-0.5 text-[10px] ${isActive ? 'text-white' : 'text-emerald-500'}`}>✓</span>
+                <span className={`shrink-0 text-xs font-black px-2 py-0.5 rounded-full ${isActive ? 'bg-white/25 text-white' : 'bg-emerald-200 text-emerald-900'}`}>✓</span>
               )}
             </button>
           );
@@ -4300,7 +4302,7 @@ export function YukBelajarTopik1({
             <div className="bg-gradient-to-r from-indigo-50 to-primary-50 rounded-3xl p-6 sm:p-8 border border-indigo-100 shadow-sm">
               <h3 className="font-display font-black text-indigo-900 text-lg sm:text-xl mb-3">💻 Ayo, Temukan Gawai di Sekitarmu!</h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                Coba tengok sekelilingmu saat ini! Apakah kamu melihat handphone (HP), komputer, laptop, Chromebook, TV pintar, jam tangan pintar, atau proyektor? Benda-benda canggih ini disebut <strong>perangkat digital</strong> atau gawai!
+                Coba lihat benda-benda di sekitarmu saat ini. Apakah kamu melihat gawai seperti ponsel, komputer, laptop, Chromebook, televisi pintar, jam tangan pintar, kamera, atau proyektor? Benda-benda canggih ini disebut <strong>perangkat digital</strong>.
               </p>
             </div>
 
@@ -4317,13 +4319,13 @@ export function YukBelajarTopik1({
                 <div className="bg-white p-6 rounded-3xl border border-gray-150 shadow-sm space-y-2">
                   <span className="text-xs font-black text-indigo-600 uppercase tracking-wider">Apa itu Perangkat Digital?</span>
                   <p className="text-xs sm:text-sm text-gray-650 leading-relaxed">
-                    Perangkat digital adalah alat elektronik canggih yang bisa membantu kita belajar, bermain, dan mencari tahu banyak hal menarik. Hebatnya lagi, sebagian besar alat ini bisa terhubung ke internet!
+                    Perangkat digital adalah alat elektronik canggih yang bisa membantu kita belajar, bermain, dan mencari tahu banyak hal menarik. Hebatnya lagi, sebagian besar alat ini dapat terhubung ke internet.
                   </p>
                 </div>
                 <div className="bg-amber-50/60 p-6 rounded-3xl border border-amber-100 flex items-start gap-3">
                   <div className="text-2xl">✨</div>
                   <p className="text-xs sm:text-sm text-amber-900 leading-relaxed font-bold">
-                    Ketika kita menggunakan perangkat digital untuk belajar, berkomunikasi, mencari informasi, bermain game, atau membuat poster, itu artinya kita sedang masuk dan hidup di dalam <strong>Dunia Digital</strong>!
+                    Ketika kita menggunakan perangkat digital untuk belajar, berkomunikasi, mencari informasi, bermain gim, atau membuat poster, itu artinya kita sedang masuk dan beraktivitas di dalam <strong>dunia digital</strong>.
                   </p>
                 </div>
               </div>
@@ -4374,7 +4376,7 @@ export function YukBelajarTopik1({
             <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm">
               <h3 className="font-display font-black text-purple-900 text-lg sm:text-xl mb-3">⚖️ Hak dan Tanggung Jawabmu di Dunia Digital</h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                Saat kamu masuk ke dunia digital, kamu memiliki <strong>Hak</strong> (hal-hal baik yang boleh kamu dapatkan) dan <strong>Tanggung Jawab</strong> (tugas penting yang harus kamu lakukan). Keduanya seperti dua sisi mata uang logam—tidak bisa dipisahkan!
+                Saat kamu masuk ke dunia digital, kamu memiliki <strong>Hak</strong> (hal-hal yang boleh kamu dapatkan) dan <strong>Tanggung Jawab</strong> (hal-hal yang harus kamu lakukan). Seperti dua sisi mata uang, hak dan tanggung jawab tidak dapat dipisahkan.
               </p>
             </div>
 
@@ -4468,7 +4470,7 @@ export function YukBelajarTopik1({
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-3xl p-6 sm:p-8 border border-blue-100 shadow-sm">
               <h3 className="font-display font-black text-blue-900 text-lg sm:text-xl mb-3">🌐 Jalan Tol Ajaib: Apa Itu Internet?</h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                Pernahkah kamu penasaran, <em>"Kok bisa ya video atau stiker dari tempat jauh muncul di layarku dalam waktu satu detik?"</em> Jawabannya adalah karena bantuan <strong>Internet</strong>! Internet itu seperti jalan tol raksasa yang tidak kelihatan, yang menghubungkan HP, laptop, dan komputer di seluruh dunia agar bisa saling berbagi informasi dengan sangat cepat.
+                Pernahkah kamu penasaran, <em>"Kok bisa ya video atau stiker dari tempat jauh muncul di layarku dalam waktu satu detik?"</em> Jawabannya adalah karena bantuan <strong>internet</strong>. Internet itu seperti jalan tol tak kasat mata yang sangat luas dan saling terhubung di seluruh dunia, yang menghubungkan gawai, laptop, dan komputer di seluruh dunia agar bisa saling berbagi informasi dengan sangat cepat.
               </p>
             </div>
 
@@ -4485,7 +4487,7 @@ export function YukBelajarTopik1({
                 <div className="bg-white p-6 rounded-3xl border border-gray-150 shadow-sm space-y-4">
                   <span className="text-xs font-black text-blue-600 uppercase tracking-wider block border-b border-gray-100 pb-2">🚀 Cara Kerja Internet yang Ajaib:</span>
                   <ol className="text-xs sm:text-sm text-gray-650 list-decimal pl-5 space-y-2.5">
-                    <li>Kamu menyalakan gawai (HP atau Chromebook).</li>
+                    <li>Kamu menyalakan perangkat digital (gawai atau laptop).</li>
                     <li>Kamu menyambungkannya ke Wi-Fi atau paket data. Ini seperti membuka gerbang jalan tol internet.</li>
                     <li>Kamu membuka aplikasi penjelajah web (browser), seperti Google Chrome.</li>
                     <li>Kamu mengetik apa yang ingin kamu cari.</li>
@@ -4521,7 +4523,7 @@ export function YukBelajarTopik1({
               {tabBAnswer && (
                 <div className="mt-4 text-center animate-fade-in">
                   {tabBSuccess ? (
-                    <p className="text-xs sm:text-sm font-black text-emerald-700">🎉 Benar! Google Chrome adalah browser (pintu gerbang) untuk menjelajah internet!</p>
+                    <p className="text-xs sm:text-sm font-black text-emerald-700">🎉 Benar! Google Chrome adalah peramban (pintu gerbang) untuk menjelajah internet.</p>
                   ) : (
                     <p className="text-xs sm:text-sm font-black text-red-755">❌ Kurang tepat! Coba ingat-ingat, aplikasi apa yang kita pakai untuk membuka website?</p>
                   )}
@@ -4543,7 +4545,7 @@ export function YukBelajarTopik1({
             <div className="bg-gradient-to-r from-emerald-50 to-orange-50 rounded-3xl p-6 sm:p-8 border border-emerald-100 shadow-sm">
               <h3 className="font-display font-black text-emerald-950 text-lg sm:text-xl mb-3">🪙 Dua Sisi Koin: Manfaat & Risiko Dunia Digital</h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                Dunia digital itu seperti pisau dapur. Kalau digunakan dengan benar, pisau bisa membantu kita memotong buah yang manis. Tapi kalau dipakai sembarangan, pisau bisa melukai jari kita! Sama seperti internet, ada manfaat (sisi baik) dan risiko (sisi bahaya) yang harus kita ketahui.
+                Dunia digital itu seperti pisau dapur. Kalau digunakan dengan benar, pisau bisa membantu kita memotong buah yang manis. Tapi kalau dipakai sembarangan, pisau bisa melukai jari kita. Sama seperti internet, ada manfaat (sisi baik) dan risiko (sisi bahaya) yang harus kita ketahui.
               </p>
             </div>
 
@@ -4564,7 +4566,7 @@ export function YukBelajarTopik1({
                   <div className="bg-emerald-50/60 p-6 rounded-3xl border border-emerald-150 shadow-sm space-y-2">
                     <span className="text-xs font-black text-emerald-700 uppercase tracking-wider block">🔑 Ingat Kuncinya:</span>
                     <p className="text-xs sm:text-sm text-emerald-900 leading-relaxed font-bold">
-                      Teknologi digital akan sangat bermanfaat jika digunakan sesuai tujuan. Saat waktunya belajar, gunakan gawai untuk belajar. Saat waktunya tidur, matikan gawai agar tubuh dan matamu bisa beristirahat total!
+                      Teknologi digital akan sangat bermanfaat jika digunakan sesuai tujuan. Saat waktunya belajar, gunakan gawai untuk belajar. Saat waktunya tidur, matikan gawai agar tubuh dan matamu bisa beristirahat total.
                     </p>
                   </div>
                 </div>
@@ -4588,7 +4590,7 @@ export function YukBelajarTopik1({
                           <span className="text-lg">{item.icon}</span>
                           <span>{item.act}</span>
                         </span>
-                        <span className="text-[10px] sm:text-xs bg-emerald-100 text-emerald-800 font-black px-3 py-1 rounded-full shrink-0">
+                        <span className="text-xs bg-emerald-100 text-emerald-800 font-black px-3 py-1 rounded-full shrink-0">
                           {item.cat}
                         </span>
                       </div>
@@ -4627,7 +4629,7 @@ export function YukBelajarTopik1({
                   <div className="bg-white p-6 rounded-3xl border border-gray-150 shadow-sm space-y-2">
                     <span className="text-xs font-black text-red-650 uppercase tracking-wider block">🛡️ Kunci Penjelajah Hebat:</span>
                     <p className="text-xs sm:text-sm text-gray-650 leading-relaxed">
-                      Pengguna digital yang cerdas adalah mereka yang tahu cara memanfaatkan teknologi dengan aman, sopan, dan bertanggung jawab. Selalu berhenti dan berpikir sejenak sebelum kamu menekan layar (klik) atau mengirim sesuatu di internet!
+                      Pengguna digital yang cerdas adalah mereka yang tahu cara memanfaatkan teknologi dengan aman, sopan, dan bertanggung jawab. Selalu berhenti dan berpikir sejenak sebelum kamu menekan layar atau mengirim sesuatu di internet.
                     </p>
                   </div>
                 </div>
@@ -4714,7 +4716,7 @@ export function YukBelajarTopik1({
             {/* Screentime Table Card */}
             <div className="bg-white p-6 sm:p-8 rounded-3xl border border-gray-150 shadow-sm space-y-4">
               <h4 className="font-display font-black text-gray-800 text-sm sm:text-base flex items-center gap-2">
-                <span>📊</span> Durasi Menatap Layar (Screentime) Sehat
+                <span>📊</span> Durasi Menatap Layar (Durasi Layar) Sehat
               </h4>
               <div className="overflow-x-auto rounded-2xl border border-gray-100">
                 <table className="min-w-full divide-y divide-gray-200 text-left text-xs sm:text-sm font-semibold">
@@ -4909,7 +4911,7 @@ export function YukBelajarTopik2({
     { name: 'Televisi & Berita Resmi ', desc: 'Menyiarkan liputan jurnalis profesional yang memverifikasi fakta dan meminta keterangan narasumber tepercaya.' },
     { name: 'Internet & Website Edukasi ', desc: 'Menyediakan miliaran data instan. Kamu harus menyaring dan memilih website bereputasi baik seperti situs sekolah atau portal sains resmi.' },
     { name: 'Media Sosial ', desc: 'Tempat berkumpulnya postingan, video viral, atau opini publik. Sangat rahasia dan berisiko jika tidak hati-hati, karena siapa saja bisa mengunggah apa saja!' },
-    { name: 'Pesan Teman & Grup Chat ', desc: 'Pesan WhatsApp, Discord, atau obrolan game. Paling sering menjadi tempat penyebaran pesan berantai yang belum terbukti kebenarannya.' }
+    { name: 'Pesan Teman & Grup Chat', desc: 'Pesan WhatsApp, Discord, atau obrolan game. Paling sering menjadi tempat penyebaran pesan berantai yang belum terbukti kebenarannya.' }
   ];
 
   const checklistQuestions = [
@@ -4921,7 +4923,7 @@ export function YukBelajarTopik2({
   ];
 
   return (
-    <StepWrapper stepNumber={6} title="Yuk, Belajar Bersama!" icon={<BookOpen className="h-5 w-5" />}>
+    <StepWrapper stepNumber={6} title="Yuk, Belajar Bersama" icon={<BookOpen className="h-5 w-5" />}>
       {/* Petualangan Progress Tracker */}
       <div className="mb-5 rounded-2xl border border-amber-100 bg-gradient-to-r from-amber-50 to-orange-50 p-4">
         <div className="flex items-center justify-between mb-2">
@@ -4945,7 +4947,7 @@ export function YukBelajarTopik2({
       {/* Welcome & Intro Card */}
       <div className="bg-gradient-to-br from-amber-500/10 via-orange-500/5 to-transparent rounded-3xl p-6 border border-amber-500/20 mb-6 relative overflow-hidden shadow-sm">
         <div className="relative z-10 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 border border-amber-500/25 rounded-full text-amber-800 text-[10px] font-extrabold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 border border-amber-500/25 rounded-full text-amber-800 text-xs font-extrabold uppercase tracking-wider">
             <span>🕵️ Misi Detektif Digital</span>
           </div>
           <h2 className="font-display font-black text-amber-900 text-base sm:text-lg leading-snug">
@@ -4956,17 +4958,17 @@ export function YukBelajarTopik2({
               Setiap hari, kita menerima banyak sekali pesan, berita, dan video di HP kita. Informasi sangat berguna untuk belajar dan tahu berita terbaru.
             </div>
             <div className="bg-white/80 p-4 rounded-2xl border border-amber-100 shadow-2xs">
-              Tapi ingat! <strong>Tidak semua yang ada di internet itu benar.</strong> Ada kabar bohong yang dibuat untuk menipu kita. Yuk, belajar membedakannya!
+              Namun, ingat: <strong>tidak semua yang ada di internet itu benar.</strong> Ada kabar bohong yang dibuat untuk menipu kita. Yuk, belajar membedakannya.
             </div>
           </div>
           <div className="p-4 bg-amber-500/10 rounded-2xl border border-amber-500/10 text-sm font-bold text-amber-950 text-center">
-            Misi kita: Belajar membedakan berita BENAR (Fakta) dan berita BOHONG (Hoaks)!
+            Misi kita: Belajar membedakan berita BENAR (Fakta) dan berita BOHONG (Hoaks).
           </div>
         </div>
       </div>
 
       {/* Tab Navigation */}
-      <div className="flex flex-wrap gap-2.5 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6 w-full">
         {tabs.map((tab) => {
           const isActive = activeTab === tab.id;
           const isDone = tabDone[tab.id];
@@ -4974,17 +4976,21 @@ export function YukBelajarTopik2({
             <button
               key={tab.id}
               onClick={() => goToTab(tab.id)}
-              className={`relative flex items-center gap-2 px-4 py-3 rounded-2xl text-xs sm:text-sm font-extrabold transition-all duration-300 cursor-pointer ${isActive
-                ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-md transform scale-105'
+              className={`relative flex items-center justify-between gap-2.5 px-4 py-3.5 rounded-2xl text-sm sm:text-base font-black transition-all duration-300 cursor-pointer w-full text-left border-2 min-h-[58px] ${isActive
+                ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white border-amber-600 shadow-md transform scale-[1.02]'
                 : isDone
-                  ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
-                  : 'bg-amber-55/60 text-amber-800 hover:bg-amber-100 border border-amber-200/50'
+                  ? 'bg-emerald-100 text-emerald-950 border-emerald-400 font-black hover:bg-emerald-200'
+                  : 'bg-amber-50/90 text-amber-950 border-amber-300 font-black hover:bg-amber-100 hover:border-amber-400'
                 }`}
             >
-              <span>{tab.icon}</span>
-              <span>{tab.label}</span>
+              <div className="flex items-center gap-2.5 min-w-0">
+                <span className="text-lg sm:text-xl shrink-0">{tab.icon}</span>
+                <span className={`leading-snug font-black whitespace-normal ${isActive ? 'text-white' : isDone ? 'text-emerald-950' : 'text-amber-950'}`}>
+                  {tab.label}
+                </span>
+              </div>
               {isDone && (
-                <span className={`ml-1 text-[11px] font-black ${isActive ? 'text-white' : 'text-emerald-600'}`}>✓</span>
+                <span className={`shrink-0 text-xs font-black px-2 py-1 rounded-full ${isActive ? 'bg-white/30 text-white' : 'bg-emerald-200 text-emerald-950 border border-emerald-300'}`}>✓</span>
               )}
             </button>
           );
@@ -5006,26 +5012,26 @@ export function YukBelajarTopik2({
                 🍬 Cerita Detektif: Misteri "Hujan Permen"
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed font-medium">
-                Suatu sore, sebuah pesan heboh menyebar di grup chat warga Kota Pelangi. Pesannya memakai huruf besar (kapital) semua dan banyak tanda seru. Bunyinya seperti ini:
+                Suatu sore, sebuah pesan heboh menyebar di grup <em className="italic">chat</em> warga Kota Pelangi. Pesannya memakai huruf besar (kapital) semua dan banyak tanda seru. Bunyinya seperti ini:
               </p>
 
               {/* Styled WhatsApp Chat Bubble */}
               <div className="bg-[#efeae2] p-4 rounded-3xl border border-[#e1d9d1] relative overflow-hidden shadow-inner max-w-lg mx-auto my-3">
                 <div className="bg-white/95 rounded-2xl p-4 shadow-sm border border-emerald-150 relative max-w-sm ml-auto text-left">
-                  <div className="flex items-center gap-1 text-[9.5px] text-gray-400 font-bold mb-1.5 border-b border-gray-100 pb-1 italic">
+                  <div className="flex items-center gap-1 text-xs text-gray-400 font-bold mb-1.5 border-b border-gray-100 pb-1 italic">
                     🔄 Diteruskan berkali-kali
                   </div>
                   <p className="text-xs sm:text-sm font-black text-red-600 leading-relaxed uppercase tracking-wide">
                     "PENGUMUMAN PENTING!!! Besok pagi pukul 08.00 WIB, helikopter dari pabrik permen akan membagikan 1 ton cokelat gratis dari atas langit Kota Pelangi! Siapkan ember dan payung terbalik kalian! Sebarkan pesan ini ke 20 orang temanmu agar helikopternya jadi datang!!!"
                   </p>
-                  <div className="text-right text-[9px] text-gray-450 mt-1.5 font-bold">
+                  <div className="text-right text-xs text-gray-450 mt-1.5 font-bold">
                     16:40
                   </div>
                 </div>
               </div>
 
               <p className="text-sm text-gray-700 leading-relaxed font-medium">
-                Membaca pesan itu, banyak anak girang sekali! Budi langsung menyiapkan dua ember besar. Siska sibuk mencari payung terbaliknya. Mereka juga langsung menyebarkan pesan itu ke semua grup teman bermain mereka.
+                Membaca pesan itu, banyak anak girang sekali. Budi langsung menyiapkan dua ember besar. Siska sibuk mencari payung terbaliknya. Mereka juga langsung menyebarkan pesan itu ke semua grup teman bermain mereka.
               </p>
             </div>
 
@@ -5037,7 +5043,7 @@ export function YukBelajarTopik2({
                   alt="Misteri Hujan Permen"
                   className="rounded-2xl shadow-sm border border-amber-100 max-h-72 mx-auto object-contain transition-transform duration-300 hover:scale-105"
                 />
-                <p className="text-[10px] text-center text-gray-450 mt-2 italic font-bold">
+                <p className="text-xs text-center text-gray-450 mt-2 italic font-bold">
                   Budi dan Siska menunggu di lapangan dengan ember kosong
                 </p>
               </div>
@@ -5048,7 +5054,7 @@ export function YukBelajarTopik2({
                     Budi dan anak-anak lain sudah berdiri di lapangan sejak pagi. Mereka menunggu dari jam 8 sampai jam 10 siang.
                   </p>
                   <div className="font-bold text-red-800 bg-red-50 p-4 rounded-2xl border border-red-100 leading-relaxed">
-                    Ternyata helikopter itu tidak pernah datang! Yang turun dari langit malah rintik air hujan sungguhan yang membuat mereka basah kuyup. 🌧️
+                    Ternyata helikopter itu tidak pernah datang. Yang turun dari langit malah rintik air hujan sungguhan yang membuat meeka basah kuyup. 🌧️
                   </div>
                   <p>
                     Budi pulang dengan cemberut. Ibunya tersenyum dan berkata: <span className="italic text-gray-800 font-semibold">"Budi, sebelum repot-repot membawa ember, apakah kamu sudah mengecek siapa pengirim pesannya? Apakah ada pengumuman resmi? Itu namanya berita bohong (hoaks), Nak."</span> Budi menyesal karena langsung percaya begitu saja.
@@ -5087,11 +5093,11 @@ export function YukBelajarTopik2({
                 <div className="mt-5">
                   {tabASuccess ? (
                     <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-emerald-100 border border-emerald-250 rounded-full text-emerald-800 text-xs sm:text-sm font-black shadow-2xs">
-                      <span>🎉 Hebat! Kamu benar. Budi tersadar untuk tidak mudah percaya pesan yang tidak jelas asalnya.</span>
+                      <span>🎉 Hebat. Kamu benar. Budi tersadar untuk tidak mudah percaya pesan yang tidak jelas asalnya.</span>
                     </div>
                   ) : (
                     <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-red-100 border border-red-255 rounded-full text-red-800 text-xs sm:text-sm font-black shadow-2xs">
-                      <span>❌ Jawaban kurang tepat. Yuk, coba baca kembali cerita penyesalan Budi di atas!</span>
+                      <span>❌ Jawaban kurang tepat. Yuk, coba baca kembali cerita penyesalan Budi di atas.</span>
                     </div>
                   )}
                 </div>
@@ -5114,12 +5120,12 @@ export function YukBelajarTopik2({
                 📢 A. Informasi Ada di Sekitar Kita
               </h3>
               <p className="font-bold text-amber-700 text-base">
-                Pelajaran penting: Jangan mudah terpancing! 💡
+                Pelajaran penting: Jangan mudah terpancing. 💡
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-white p-4 rounded-2xl border border-amber-100 shadow-2xs">
                   <span className="font-bold text-amber-850 block mb-1">🎁 Banyak Manfaat</span>
-                  Informasi membantu kita mengetahui jadwal sekolah, berita terbaru, atau cara mengerjakan tugas. Informasi membuat kita tambah pintar!
+                  Informasi membantu kita mengetahui jadwal sekolah, berita terbaru, atau cara mengerjakan tugas. Informasi membuat kita tambah pintar.
                 </div>
                 <div className="bg-white p-4 rounded-2xl border border-amber-100 shadow-2xs">
                   <span className="font-bold text-amber-850 block mb-1">⚠️ Wajib Berhati-hati</span>
@@ -5179,7 +5185,7 @@ export function YukBelajarTopik2({
                   >
                     <div className="flex items-center justify-between gap-2.5">
                       <h5 className="font-display font-bold text-gray-800 text-xs sm:text-sm">{source.name}</h5>
-                      <span className="text-[10px] text-amber-500">{activeSource === idx ? '▲' : '▼'}</span>
+                      <span className="text-xs text-amber-500">{activeSource === idx ? '▲' : '▼'}</span>
                     </div>
                     <AnimatePresence>
                       {activeSource === idx && (
@@ -5187,7 +5193,7 @@ export function YukBelajarTopik2({
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: 'auto', opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
-                          className="text-[11px] sm:text-xs leading-relaxed text-gray-600 mt-2.5 pt-2.5 border-t border-amber-100"
+                          className="text-xs leading-relaxed text-gray-600 mt-2.5 pt-2.5 border-t border-amber-100"
                         >
                           {source.desc}
                         </motion.p>
@@ -5226,7 +5232,7 @@ export function YukBelajarTopik2({
                   alt="Fakta Opini Hoaks"
                   className="rounded-2xl shadow-sm border border-amber-100 max-h-72 mx-auto object-contain transition-transform duration-300 hover:scale-105"
                 />
-                <p className="text-[10px] text-center text-gray-400 mt-2 italic font-bold">
+                <p className="text-xs text-center text-gray-400 mt-2 italic font-bold">
                   Bandingkan kebenaran informasi sebelum percaya
                 </p>
               </div>
@@ -5242,7 +5248,7 @@ export function YukBelajarTopik2({
             <div className="grid grid-cols-1 gap-6">
               {/* Fakta Card */}
               <div className="bg-emerald-50/30 rounded-3xl border border-emerald-500/20 p-5 sm:p-6 space-y-4 shadow-2xs">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100 border border-emerald-200 rounded-full text-emerald-800 text-[10px] font-black uppercase">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100 border border-emerald-200 rounded-full text-emerald-800 text-xs font-black uppercase">
                   <span>🟢 Jenis 1: FAKTA</span>
                 </div>
                 <h4 className="font-display font-black text-emerald-900 text-sm sm:text-base">FAKTA (Kenyataan Sebenarnya)</h4>
@@ -5268,7 +5274,7 @@ export function YukBelajarTopik2({
 
               {/* Opini Card */}
               <div className="bg-sky-50/30 rounded-3xl border border-sky-500/20 p-5 sm:p-6 space-y-4 shadow-2xs">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-sky-100 border border-sky-200 rounded-full text-sky-850 text-[10px] font-black uppercase">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-sky-100 border border-sky-200 rounded-full text-sky-850 text-xs font-black uppercase">
                   <span>🔵 Jenis 2: OPINI</span>
                 </div>
                 <h4 className="font-display font-black text-sky-900 text-sm sm:text-base">OPINI (Pendapat atau Perasaan)</h4>
@@ -5293,12 +5299,12 @@ export function YukBelajarTopik2({
 
               {/* Hoaks Card */}
               <div className="bg-rose-50/30 rounded-3xl border border-rose-500/20 p-5 sm:p-6 space-y-4 shadow-2xs">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-rose-100 border border-rose-200 rounded-full text-rose-800 text-[10px] font-black uppercase">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-rose-100 border border-rose-200 rounded-full text-rose-800 text-xs font-black uppercase">
                   <span>🔴 Jenis 3: HOAKS</span>
                 </div>
                 <h4 className="font-display font-black text-rose-900 text-sm sm:text-base">HOAKS (Berita Bohong)</h4>
                 <p className="text-xs sm:text-sm leading-relaxed text-gray-700 font-medium">
-                  Ini adalah musuh utama detektif siber! Hoaks adalah berita palsu yang sengaja dibuat agar terlihat seperti fakta asli untuk menipu orang.
+                  Ini adalah musuh utama detektif siber. Hoaks adalah berita palsu yang sengaja dibuat agar terlihat seperti fakta asli untuk menipu orang.
                 </p>
                 <div className="bg-white p-4 rounded-2xl border border-rose-100/50 space-y-2">
                   <span className="text-xs font-bold text-rose-800 uppercase tracking-wider block">⭐ Mengapa orang membuat hoaks?</span>
@@ -5318,14 +5324,14 @@ export function YukBelajarTopik2({
             {/* Classification Game */}
             <div className="bg-white p-6 rounded-3xl border border-gray-150 shadow-sm mt-6">
               <h4 className="font-display font-extrabold text-gray-800 text-sm sm:text-base mb-3">
-                🎮 Misi Detektif: Tebak Jenis Informasi!
+                🎮 Misi Detektif: Tebak Jenis Informasi
               </h4>
 
               <div className="space-y-4">
                 {[
                   { id: 's1', text: '“Bapak Ir. Soekarno adalah Presiden Pertama Republik Indonesia.”', correct: 'Fakta', desc: 'Tepat! Ini adalah fakta sejarah resmi yang tercatat.' },
-                  { id: 's2', text: '“Menurutku, pelajaran Matematika adalah pelajaran yang paling menyenangkan dan mudah di dunia!”', correct: 'Opini', desc: 'Benar! Ini opini karena merupakan perasaan pribadi yang bisa berbeda.' },
-                  { id: 's3', text: '“Gempa bumi baru saja menghancurkan jalan raya di Jakarta pagi ini! Sebarkan!” (Padahal fotonya kejadian 5 tahun lalu di negara lain)', correct: 'Hoaks', desc: 'Hebat! Ini hoaks karena memakai foto lama untuk menipu.' }
+                  { id: 's2', text: '“Menurutku, pelajaran Matematika adalah pelajaran yang paling menyenangkan dan mudah di dunia.”', correct: 'Opini', desc: 'Benar! Ini opini karena merupakan perasaan pribadi yang bisa berbeda.' },
+                  { id: 's3', text: '“Gempa bumi baru saja menghancurkan jalan raya di Jakarta pagi ini! Sebarkan!” (Padahal fotonya kejadian 5 tahun lalu di negara lain)', correct: 'Hoaks', desc: 'Hebat. Ini hoaks karena memakai foto lama untuk menipu.' }
                 ].map((stmt) => {
                   const chosen = matchingAnswers[stmt.id];
                   const isCorrect = chosen === stmt.correct;
@@ -5356,7 +5362,7 @@ export function YukBelajarTopik2({
 
                       {chosen && (
                         <p className={`text-xs font-bold ${isCorrect ? 'text-emerald-700' : 'text-red-750'}`}>
-                          {isCorrect ? `✔️ ${stmt.desc}` : '❌ Jawaban kurang tepat! Yuk, pikirkan lagi ciri informasinya.'}
+                          {isCorrect ? `✔️ ${stmt.desc}` : '❌ Jawaban kurang tepat. Yuk, pikirkan lagi ciri informasinya.'}
                         </p>
                       )}
                     </div>
@@ -5366,7 +5372,7 @@ export function YukBelajarTopik2({
 
               {matchingFinished && (
                 <div className="mt-5 p-4 bg-emerald-50 border border-emerald-250 rounded-2xl text-center">
-                  <p className="text-xs sm:text-sm font-bold text-emerald-800">🎉 Luar biasa! Kamu berhasil menjawab semua dengan tepat!</p>
+                  <p className="text-xs sm:text-sm font-bold text-emerald-800">🎉 Luar biasa. Kamu berhasil menjawab semua dengan tepat.</p>
                 </div>
               )}
             </div>
@@ -5399,7 +5405,7 @@ export function YukBelajarTopik2({
                   alt="Cara Memeriksa Informasi"
                   className="rounded-2xl shadow-sm border border-amber-100 max-h-72 mx-auto object-contain transition-transform duration-300 hover:scale-105"
                 />
-                <p className="text-[10px] text-center text-gray-400 mt-2 italic font-bold">
+                <p className="text-xs text-center text-gray-400 mt-2 italic font-bold">
                   Gunakan 5 Jurus Cek Fakta
                 </p>
               </div>
@@ -5426,7 +5432,7 @@ export function YukBelajarTopik2({
                 </h4>
                 <p className="font-bold text-amber-600 text-xs sm:text-sm">Siapa yang mengirim pesan ini?</p>
                 <p className="text-xs sm:text-sm text-gray-650 leading-relaxed font-semibold">
-                  Jika dikirim oleh guru atau orang tua secara resmi, beritanya tepercaya. Tapi jika dikirim oleh nomor tidak dikenal secara berantai, kamu harus curiga!
+                  Jika dikirim oleh guru atau orang tua secara resmi, beritanya tepercaya. Tapi jika dikirim oleh nomor tidak dikenal secara berantai, kamu harus curiga.
                 </p>
               </div>
 
@@ -5438,7 +5444,7 @@ export function YukBelajarTopik2({
                 </h4>
                 <p className="font-bold text-amber-600 text-xs sm:text-sm">Apakah kamu membaca isinya dengan lengkap?</p>
                 <p className="text-xs sm:text-sm text-gray-650 leading-relaxed font-semibold">
-                  Jangan pernah menyebarkan berita hanya dengan membaca judulnya! Pembuat hoaks suka membuat judul heboh agar orang marah atau penasaran.
+                  Jangan pernah menyebarkan berita hanya dengan membaca judulnya. Pembuat hoaks suka membuat judul heboh agar orang marah atau penasaran.
                 </p>
               </div>
 
@@ -5450,7 +5456,7 @@ export function YukBelajarTopik2({
                 </h4>
                 <p className="font-bold text-amber-600 text-xs sm:text-sm">Kapan berita ini dibuat?</p>
                 <p className="text-xs sm:text-sm text-gray-650 leading-relaxed font-semibold">
-                  Ada video badai banjir dari tahun 2018 disebarkan kembali hari ini agar orang panik. Selalu perhatikan tanggal terbit beritanya ya!
+                  Ada video badai banjir dari tahun 2018 disebarkan kembali hari ini agar orang panik. Selalu perhatikan tanggal terbit beritanya ya.
                 </p>
               </div>
 
@@ -5462,7 +5468,7 @@ export function YukBelajarTopik2({
                 </h4>
                 <p className="font-bold text-amber-600 text-xs sm:text-sm">Apakah berita resmi lain juga membahasnya?</p>
                 <p className="text-xs sm:text-sm text-gray-650 leading-relaxed font-semibold">
-                  Coba cari berita tersebut di Google (didampingi orang tua) atau cek di berita TV. Jika tidak ada berita resmi yang membahas, berarti berita itu palsu!
+                  Coba cari berita tersebut di Google (didampingi orang tua) atau cek di berita TV. Jika tidak ada berita resmi yang membahas, berarti berita itu palsu.
                 </p>
               </div>
 
@@ -5487,8 +5493,8 @@ export function YukBelajarTopik2({
         <div className="text-2xl shrink-0">🤖</div>
         <div>
           <h4 className="font-display font-black text-xs sm:text-sm">Pesan Penting Digi:</h4>
-          <p className="text-[11px] sm:text-xs text-amber-50 leading-relaxed font-bold mt-1">
-            "Ingat kawan, menjadi detektif fakta yang cerdas berarti selalu berhenti dan berpikir sejenak sebelum menyebarkan pesan. Lindungi diri kita dengan membagikan berita yang benar!"
+          <p className="text-xs text-amber-50 leading-relaxed font-bold mt-1">
+            "Ingat kawan, menjadi detektif fakta yang cerdas berarti selalu berhenti dan berpikir sejenak sebelum menyebarkan pesan. Lindungi diri kita dengan membagikan berita yang benar."
           </p>
         </div>
       </div>
@@ -5732,7 +5738,7 @@ export function YukBelajarTopik7({
           <motion.p
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-[11px] font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
+            className="text-xs font-bold text-emerald-600 mt-2 text-center flex items-center justify-center gap-1.5"
           >
             <Sparkles className="h-4 w-4" /> Semua misi selesai! Kamu resmi menjadi Penjaga Karya Digital! 🏆
           </motion.p>
@@ -5748,7 +5754,7 @@ export function YukBelajarTopik7({
             <button
               key={tab.id}
               onClick={() => goToTab(tab.id)}
-              className={`flex-1 min-w-[100px] sm:min-w-[120px] py-2 px-2.5 rounded-xl text-center text-[10px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
+              className={`flex-1 min-w-[100px] sm:min-w-[120px] py-2 px-2.5 rounded-xl text-center text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${isActive
                 ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-md transform scale-105'
                 : isDone
                   ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
@@ -5758,7 +5764,7 @@ export function YukBelajarTopik7({
               <span>{tab.icon}</span>
               <span>{tab.label}</span>
               {isDone && (
-                <span className={`ml-0.5 text-[10px] ${isActive ? 'text-white' : 'text-emerald-550'}`}>✓</span>
+                <span className={`ml-0.5 text-xs ${isActive ? 'text-white' : 'text-emerald-550'}`}>✓</span>
               )}
             </button>
           );
@@ -5824,7 +5830,7 @@ export function YukBelajarTopik7({
                       <div className="text-3xl mb-2">{item.icon}</div>
                       <h5 className="font-display font-bold text-gray-800 text-xs mb-1">{item.title}</h5>
                     </div>
-                    <p className="text-[10px] text-gray-500 leading-relaxed mt-2 bg-slate-50 p-2 rounded-lg">{item.desc}</p>
+                    <p className="text-xs text-gray-500 leading-relaxed mt-2 bg-slate-50 p-2 rounded-lg">{item.desc}</p>
                   </motion.div>
                 ))}
               </div>
@@ -5904,7 +5910,7 @@ export function YukBelajarTopik7({
                         <button
                           type="button"
                           onClick={() => handlePlagiatChoice(e.id, true)}
-                          className={`px-4 py-1.5 rounded-lg text-[10px] font-black border transition-all ${plagiatAnswers[e.id] === true
+                          className={`px-4 py-1.5 rounded-lg text-xs font-black border transition-all ${plagiatAnswers[e.id] === true
                             ? 'bg-emerald-500 border-emerald-500 text-white'
                             : 'bg-white border-slate-200 text-emerald-600 hover:bg-emerald-50'
                             }`}
@@ -5914,7 +5920,7 @@ export function YukBelajarTopik7({
                         <button
                           type="button"
                           onClick={() => handlePlagiatChoice(e.id, false)}
-                          className={`px-4 py-1.5 rounded-lg text-[10px] font-black border transition-all ${plagiatAnswers[e.id] === false
+                          className={`px-4 py-1.5 rounded-lg text-xs font-black border transition-all ${plagiatAnswers[e.id] === false
                             ? 'bg-red-500 border-red-500 text-white'
                             : 'bg-white border-slate-200 text-red-600 hover:bg-red-50'
                             }`}
@@ -5923,7 +5929,7 @@ export function YukBelajarTopik7({
                         </button>
                       </div>
                       {hasAnswered && (
-                        <p className={`text-[10px] mt-2 font-bold ${isCorrect ? 'text-emerald-700' : 'text-red-700'}`}>
+                        <p className={`text-xs mt-2 font-bold ${isCorrect ? 'text-emerald-700' : 'text-red-700'}`}>
                           {isCorrect ? `✓ ${e.explanation}` : `✗ Kurang tepat, coba pikirkan lagi!`}
                         </p>
                       )}
@@ -5939,7 +5945,7 @@ export function YukBelajarTopik7({
                   className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-center"
                 >
                   <h5 className="font-display font-black text-emerald-800 text-xs">Selamat! Kamu Lulus Ujian Anti-Plagiat!</h5>
-                  <p className="text-[10px] text-emerald-600 mt-1 font-semibold">Kamu tahu mana tindakan yang jujur dan menghargai karya orang lain.</p>
+                  <p className="text-xs text-emerald-600 mt-1 font-semibold">Kamu tahu mana tindakan yang jujur dan menghargai karya orang lain.</p>
                 </motion.div>
               )}
             </div>
@@ -5983,14 +5989,14 @@ export function YukBelajarTopik7({
             </div>
             <div className="bg-indigo-900 text-white p-5 rounded-2xl shadow-md border border-indigo-950 text-left">
               <h4 className="font-display font-black text-center text-sm mb-1">Lengkapi Ikrar Hak Cipta Cilik</h4>
-              <p className="text-[10px] text-indigo-200 text-center mb-4">Pilih kata yang tepat untuk melengkapi ikrar kejujuran digitalmu!</p>
+              <p className="text-xs text-indigo-200 text-center mb-4">Pilih kata yang tepat untuk melengkapi ikrar kejujuran digitalmu!</p>
               <div className="bg-indigo-950 p-4 rounded-xl border border-indigo-800 text-center space-y-4">
                 <p className="text-xs leading-loose font-bold tracking-wide">
                   “Kalau bukan{' '}
                   <select
                     value={ikrar1}
                     onChange={(e) => handleIkrarSelect(1, e.target.value)}
-                    className="bg-indigo-800 border border-indigo-600 rounded px-2 py-0.5 text-white font-black text-[11px] focus:outline-none focus:ring-1 focus:ring-amber-400"
+                    className="bg-indigo-800 border border-indigo-600 rounded px-2 py-0.5 text-white font-black text-xs focus:outline-none focus:ring-1 focus:ring-amber-400"
                   >
                     <option value="">(pilih)</option>
                     <option value="bukuku">bukuku</option>
@@ -6001,7 +6007,7 @@ export function YukBelajarTopik7({
                   <select
                     value={ikrar2}
                     onChange={(e) => handleIkrarSelect(2, e.target.value)}
-                    className="bg-indigo-800 border border-indigo-600 rounded px-2 py-0.5 text-white font-black text-[11px] focus:outline-none focus:ring-1 focus:ring-amber-400"
+                    className="bg-indigo-800 border border-indigo-600 rounded px-2 py-0.5 text-white font-black text-xs focus:outline-none focus:ring-1 focus:ring-amber-400"
                   >
                     <option value="">(pilih)</option>
                     <option value="pikiranku">pikiranku</option>
@@ -6012,7 +6018,7 @@ export function YukBelajarTopik7({
                   <select
                     value={ikrar3}
                     onChange={(e) => handleIkrarSelect(3, e.target.value)}
-                    className="bg-indigo-800 border border-indigo-600 rounded px-2 py-0.5 text-white font-black text-[11px] focus:outline-none focus:ring-1 focus:ring-amber-400"
+                    className="bg-indigo-800 border border-indigo-600 rounded px-2 py-0.5 text-white font-black text-xs focus:outline-none focus:ring-1 focus:ring-amber-400"
                   >
                     <option value="">(pilih)</option>
                     <option value="mengambil">mengambil</option>
@@ -6087,7 +6093,7 @@ export function YukBelajarTopik7({
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: 'auto', opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        className="text-[10px] leading-relaxed text-gray-700 mt-2 pt-2 border-t border-black/5 font-medium"
+                        className="text-xs leading-relaxed text-gray-700 mt-2 pt-2 border-t border-black/5 font-medium"
                       >
                         {e.desc}
                       </motion.p>
@@ -6160,7 +6166,7 @@ export function YukBelajarTopik7({
               <div className="space-y-6 animate-pop-in text-left">
                 <div className="bg-orange-50 p-5 rounded-2xl border border-orange-100">
                   <h4 className="font-display font-extrabold text-gray-800 text-sm mb-1 text-center">Game: Susun Sumber Kreatif</h4>
-                  <p className="text-[10px] text-slate-500 text-center mb-4">Ada foto Planet Mars buatan NASA yang kamu temukan di situs www.nasa.gov. Pilih opsi di bawah agar susunannya menjadi sumber yang benar!</p>
+                  <p className="text-xs text-slate-500 text-center mb-4">Ada foto Planet Mars buatan NASA yang kamu temukan di situs www.nasa.gov. Pilih opsi di bawah agar susunannya menjadi sumber yang benar!</p>
 
                   <div className="flex flex-col md:flex-row gap-4 bg-white p-4 rounded-xl border border-orange-150 shadow-sm mb-4">
                     <div className="w-full md:w-1/3 shrink-0">
@@ -6169,7 +6175,7 @@ export function YukBelajarTopik7({
                         alt="Foto Planet Mars oleh NASA"
                         className="w-full h-32 object-cover rounded-xl border border-slate-200 shadow-sm"
                       />
-                      <div className="text-[9px] text-slate-500 mt-1 text-center font-medium">Foto Planet Mars (Sumber: NASA)</div>
+                      <div className="text-xs text-slate-500 mt-1 text-center font-medium">Foto Planet Mars (Sumber: NASA)</div>
                     </div>
                     <div className="w-full md:w-2/3 flex flex-col justify-center">
                       <p className="text-xs text-slate-700 leading-relaxed font-semibold">🚀 Misi Detektif Karya:</p>
@@ -6182,7 +6188,7 @@ export function YukBelajarTopik7({
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
                     <div>
-                      <label className="text-[10px] font-bold text-gray-500 block mb-1">1. Siapa Pembuatnya?</label>
+                      <label className="text-xs font-bold text-gray-500 block mb-1">1. Siapa Pembuatnya?</label>
                       <select
                         value={whoInput}
                         onChange={(e) => handleBuilderSelect('who', e.target.value)}
@@ -6195,7 +6201,7 @@ export function YukBelajarTopik7({
                       </select>
                     </div>
                     <div>
-                      <label className="text-[10px] font-bold text-gray-500 block mb-1">2. Apa Judul Karyanya?</label>
+                      <label className="text-xs font-bold text-gray-500 block mb-1">2. Apa Judul Karyanya?</label>
                       <select
                         value={whatInput}
                         onChange={(e) => handleBuilderSelect('what', e.target.value)}
@@ -6208,7 +6214,7 @@ export function YukBelajarTopik7({
                       </select>
                     </div>
                     <div>
-                      <label className="text-[10px] font-bold text-gray-500 block mb-1">3. Di mana Ditemukan?</label>
+                      <label className="text-xs font-bold text-gray-500 block mb-1">3. Di mana Ditemukan?</label>
                       <select
                         value={whereInput}
                         onChange={(e) => handleBuilderSelect('where', e.target.value)}
@@ -6224,7 +6230,7 @@ export function YukBelajarTopik7({
 
                   <div className="bg-white p-4 rounded-xl border border-orange-200">
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-3 pb-2 border-b border-orange-100">
-                      <span className="text-[9px] text-gray-400 font-bold uppercase tracking-wider">Hasil Referensi Kamu (Format Sederhana):</span>
+                      <span className="text-xs text-gray-400 font-bold uppercase tracking-wider">Hasil Referensi Kamu (Format Sederhana):</span>
                     </div>
 
                     <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-150 text-slate-850 select-all">
@@ -6250,7 +6256,7 @@ export function YukBelajarTopik7({
                       <motion.div
                         initial={{ scale: 0.95, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        className="mt-3 p-2.5 bg-emerald-500 text-white font-bold rounded-xl text-center text-[10.5px]"
+                        className="mt-3 p-2.5 bg-emerald-500 text-white font-bold rounded-xl text-center text-xs"
                       >
                         Sempurna! Kamu sudah berhasil menyusun sumber dengan benar!
                       </motion.div>
@@ -6263,13 +6269,13 @@ export function YukBelajarTopik7({
             <div className="bg-white p-5 rounded-2xl border border-gray-150 shadow-sm animate-pop-in space-y-4 text-left">
               <div className="border-b border-slate-100 pb-2">
                 <h4 className="font-display font-extrabold text-gray-800 text-xs">Berlatih Menghargai Karyamu Sendiri (Pembuat Karya Cilik)</h4>
-                <p className="text-[10px] text-gray-550 mt-1">Coba buat Kartu Hak Cipta untuk karyamu sendiri! Tulis identitas karyamu di bawah untuk merancang sertifikat kepemilikan digitalmu:</p>
+                <p className="text-xs text-gray-550 mt-1">Coba buat Kartu Hak Cipta untuk karyamu sendiri! Tulis identitas karyamu di bawah untuk merancang sertifikat kepemilikan digitalmu:</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-3">
                   <div>
-                    <label className="text-[9px] font-bold text-gray-500 block mb-1">1. Nama Pencipta (Namamu)</label>
+                    <label className="text-xs font-bold text-gray-500 block mb-1">1. Nama Pencipta (Namamu)</label>
                     <input
                       type="text"
                       value={creatorName}
@@ -6279,7 +6285,7 @@ export function YukBelajarTopik7({
                     />
                   </div>
                   <div>
-                    <label className="text-[9px] font-bold text-gray-500 block mb-1">2. Jenis Karya Digital</label>
+                    <label className="text-xs font-bold text-gray-500 block mb-1">2. Jenis Karya Digital</label>
                     <select
                       value={karyaType}
                       onChange={(e) => setKaryaType(e.target.value)}
@@ -6293,7 +6299,7 @@ export function YukBelajarTopik7({
                     </select>
                   </div>
                   <div>
-                    <label className="text-[9px] font-bold text-gray-500 block mb-1">3. Judul Karyamu</label>
+                    <label className="text-xs font-bold text-gray-500 block mb-1">3. Judul Karyamu</label>
                     <input
                       type="text"
                       value={karyaTitle}
@@ -6303,12 +6309,12 @@ export function YukBelajarTopik7({
                     />
                   </div>
                   <div>
-                    <label className="text-[9px] font-bold text-gray-500 block mb-1">4. Lisensi Karya</label>
+                    <label className="text-xs font-bold text-gray-500 block mb-1">4. Lisensi Karya</label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
                         type="button"
                         onClick={() => setKaryaLicense('cc-by')}
-                        className={`px-2 py-1.5 rounded-xl border text-[10px] font-bold transition-all ${karyaLicense === 'cc-by'
+                        className={`px-2 py-1.5 rounded-xl border text-xs font-bold transition-all ${karyaLicense === 'cc-by'
                           ? 'bg-orange-500 border-orange-500 text-white shadow-sm'
                           : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100'
                           }`}
@@ -6318,7 +6324,7 @@ export function YukBelajarTopik7({
                       <button
                         type="button"
                         onClick={() => setKaryaLicense('c-all')}
-                        className={`px-2 py-1.5 rounded-xl border text-[10px] font-bold transition-all ${karyaLicense === 'c-all'
+                        className={`px-2 py-1.5 rounded-xl border text-xs font-bold transition-all ${karyaLicense === 'c-all'
                           ? 'bg-orange-500 border-orange-500 text-white shadow-sm'
                           : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100'
                           }`}
@@ -6335,18 +6341,18 @@ export function YukBelajarTopik7({
                       <div className="absolute -right-10 -top-10 w-28 h-28 bg-indigo-500/20 rounded-full blur-2xl" />
                       <div className="flex justify-between items-start">
                         <div>
-                          <span className="text-[7px] tracking-widest text-indigo-300 uppercase font-black">Sertifikat Karya Digital</span>
+                          <span className="text-xs tracking-widest text-indigo-300 uppercase font-black">Sertifikat Karya Digital</span>
                           <h5 className="font-display font-black text-xs mt-0.5 leading-none">HAK CIPTA CILIK</h5>
                         </div>
                         <span className="text-xl">{karyaType.split(' ').pop()}</span>
                       </div>
                       <div className="my-2.5">
-                        <p className="text-[8px] text-indigo-300 leading-none">Judul Karya:</p>
+                        <p className="text-xs text-indigo-300 leading-none">Judul Karya:</p>
                         <p className="text-xs font-black italic tracking-wide truncate mt-0.5">"{karyaTitle || 'Tanpa Judul'}"</p>
-                        <p className="text-[8px] text-indigo-300 mt-1.5 leading-none">Dibuat Oleh:</p>
-                        <p className="text-[11px] font-bold truncate mt-0.5">{creatorName}</p>
+                        <p className="text-xs text-indigo-300 mt-1.5 leading-none">Dibuat Oleh:</p>
+                        <p className="text-xs font-bold truncate mt-0.5">{creatorName}</p>
                       </div>
-                      <div className="flex justify-between items-center border-t border-white/10 pt-2 text-[7px]">
+                      <div className="flex justify-between items-center border-t border-white/10 pt-2 text-xs">
                         <div>
                           <span>Tahun Cipta: <b>2026</b></span>
                         </div>
@@ -6362,7 +6368,7 @@ export function YukBelajarTopik7({
                   ) : (
                     <div className="text-center p-4">
                       <span className="text-3xl block mb-2 opacity-60">🛡️</span>
-                      <p className="text-[10px] text-slate-400 font-bold">Masukkan namamu untuk mencetak Kartu Hak Cipta karyamu sendiri!</p>
+                      <p className="text-xs text-slate-400 font-bold">Masukkan namamu untuk mencetak Kartu Hak Cipta karyamu sendiri!</p>
                     </div>
                   )}
 
@@ -6378,7 +6384,7 @@ export function YukBelajarTopik7({
                         setClaimSuccess(true);
                         setTimeout(() => setClaimSuccess(false), 4000);
                       }}
-                      className="mt-4 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white text-[10px] font-black px-4 py-2 rounded-xl shadow-md transition-all transform hover:scale-102 flex items-center gap-1.5"
+                      className="mt-4 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white text-xs font-black px-4 py-2 rounded-xl shadow-md transition-all transform hover:scale-102 flex items-center gap-1.5"
                     >
                       🏆 Klaim & Verifikasi Hak Cipta Karya!
                     </button>
@@ -6391,7 +6397,7 @@ export function YukBelajarTopik7({
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
-                  className="w-full p-3 bg-emerald-500 text-white rounded-xl text-center text-[10px] font-bold shadow-md"
+                  className="w-full p-3 bg-emerald-500 text-white rounded-xl text-center text-xs font-bold shadow-md"
                 >
                   🎉 Selamat! Karya "{karyaTitle}" secara resmi ditandai sebagai Hak Cipta milik {creatorName} (2026). Gunakan sertifikat ini untuk menghargai usaha kreatifmu!
                 </motion.div>
@@ -6399,8 +6405,8 @@ export function YukBelajarTopik7({
 
               {creatorName && (
                 <div className="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1.5 text-left w-full">
-                  <p className="text-[9px] uppercase font-bold text-slate-500">Format Kredit Untuk Karyamu:</p>
-                  <div className="text-[10px] font-mono text-slate-700 space-y-1">
+                  <p className="text-xs uppercase font-bold text-slate-500">Format Kredit Untuk Karyamu:</p>
+                  <div className="text-xs font-mono text-slate-700 space-y-1">
                     <p><strong>Gaya Sederhana:</strong> {karyaType.split(' ')[0]} oleh {creatorName}, 2026.</p>
                     <p><strong>Gaya Standar Nasional:</strong> Gambar 1. {karyaTitle} (Sumber: {creatorName}, 2026)</p>
                   </div>
@@ -6414,7 +6420,7 @@ export function YukBelajarTopik7({
       <div className="mt-8 bg-gradient-to-r from-orange-400 to-amber-500 text-white p-5 rounded-2xl shadow-sm flex items-center gap-4 text-left">
         <div>
           <h4 className="font-display font-black text-xs">Pesan Digi:</h4>
-          <p className="text-[10px] text-orange-50 leading-relaxed font-bold mt-1">
+          <p className="text-xs text-orange-50 leading-relaxed font-bold mt-1">
             "Internet adalah perpustakaan ilmu yang sangat luas. Jadilah pengunjung yang baik. Jangan asal mengambil! Jadilah pengguna digital yang jujur: banggalah membuat karyamu sendiri, selalu tuliskan sumber saat meminjam, dan hargailah karya ciptaan orang lain."
           </p>
         </div>
@@ -6565,7 +6571,7 @@ export function AyoMemahamiStep({
                           onClick={() => handleMCSelect(q.id, oi)}
                           className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left text-xs font-bold transition-all ${optClass}`}
                         >
-                          <span className={`flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-lg text-[10px] font-black ${selected === oi ? 'bg-primary-500 text-white' : 'bg-slate-100 text-slate-500'
+                          <span className={`flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-lg text-xs font-black ${selected === oi ? 'bg-primary-500 text-white' : 'bg-slate-100 text-slate-500'
                             }`}>
                             {String.fromCharCode(65 + oi)}
                           </span>
@@ -6596,7 +6602,7 @@ export function AyoMemahamiStep({
                       {qi + 1}. {q.question}
                     </p>
                     {q.maxScore && (
-                      <span className="text-[10px] bg-slate-100 border border-slate-200 text-slate-600 font-extrabold px-2.5 py-0.5 rounded-full shrink-0">
+                      <span className="text-xs bg-slate-100 border border-slate-200 text-slate-600 font-extrabold px-2.5 py-0.5 rounded-full shrink-0">
                         Maks {q.maxScore} Poin
                       </span>
                     )}
@@ -6624,12 +6630,12 @@ export function AyoMemahamiStep({
                     />
                     <div className="absolute right-3 bottom-3 flex items-center gap-1">
                       {saveState === 'saving' && (
-                        <span className="text-[10px] text-slate-400 flex items-center gap-1 font-bold">
+                        <span className="text-xs text-slate-400 flex items-center gap-1 font-bold">
                           <Loader2 className="h-3 w-3 animate-spin" /> Menyimpan...
                         </span>
                       )}
                       {saveState === 'saved' && (
-                        <span className="text-[10px] text-success-500 flex items-center gap-1 font-bold">
+                        <span className="text-xs text-success-500 flex items-center gap-1 font-bold">
                           <Check className="h-3 w-3" /> Tersimpan
                         </span>
                       )}
@@ -6722,12 +6728,12 @@ export function AyoMengamatiStep({
                 />
                 <div className="absolute right-3 bottom-3 flex items-center gap-1">
                   {saveState === 'saving' && (
-                    <span className="text-[10px] text-slate-400 flex items-center gap-1 font-bold">
+                    <span className="text-xs text-slate-400 flex items-center gap-1 font-bold">
                       <Loader2 className="h-3 w-3 animate-spin" /> Menyimpan...
                     </span>
                   )}
                   {saveState === 'saved' && (
-                    <span className="text-[10px] text-success-500 flex items-center gap-1 font-bold">
+                    <span className="text-xs text-success-500 flex items-center gap-1 font-bold">
                       <Check className="h-3 w-3" /> Tersimpan
                     </span>
                   )}
@@ -6771,7 +6777,7 @@ export function AyoBereksplorasiStep({
         </div>
 
         <div>
-          <span className="text-[10px] font-black uppercase tracking-wider bg-primary-100 text-primary-700 px-3 py-1 rounded-full border border-primary-200">
+          <span className="text-xs font-black uppercase tracking-wider bg-primary-100 text-primary-700 px-3 py-1 rounded-full border border-primary-200">
             Game Simulasi: {simulation.type.toUpperCase()}
           </span>
           <h3 className="font-display font-black text-primary-800 text-base mt-3">
@@ -6960,7 +6966,7 @@ export function UjiPemahamanStep({
                           onClick={() => handleMCSelect(q.id, oi)}
                           className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left text-xs font-bold transition-all ${optClass}`}
                         >
-                          <span className={`flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-lg text-[10px] font-black ${selected === oi ? 'bg-primary-500 text-white' : 'bg-slate-100 text-slate-500'
+                          <span className={`flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-lg text-xs font-black ${selected === oi ? 'bg-primary-500 text-white' : 'bg-slate-100 text-slate-500'
                             }`}>
                             {String.fromCharCode(65 + oi)}
                           </span>
@@ -6990,7 +6996,7 @@ export function UjiPemahamanStep({
                       {qi + 1}. {q.question}
                     </p>
                     {q.maxScore && (
-                      <span className="text-[10px] bg-slate-100 border border-slate-200 text-slate-600 font-extrabold px-2.5 py-0.5 rounded-full shrink-0">
+                      <span className="text-xs bg-slate-100 border border-slate-200 text-slate-600 font-extrabold px-2.5 py-0.5 rounded-full shrink-0">
                         Maks {q.maxScore} Poin
                       </span>
                     )}
@@ -7116,12 +7122,12 @@ export function RefleksiStep({
           />
           <div className="absolute right-3 bottom-3 flex items-center gap-1">
             {saveState === 'saving' && (
-              <span className="text-[10px] text-slate-400 flex items-center gap-1 font-bold">
+              <span className="text-xs text-slate-400 flex items-center gap-1 font-bold">
                 <Loader2 className="h-3 w-3 animate-spin" /> Menyimpan...
               </span>
             )}
             {saveState === 'saved' && (
-              <span className="text-[10px] text-success-500 flex items-center gap-1 font-bold">
+              <span className="text-xs text-success-500 flex items-center gap-1 font-bold">
                 <Check className="h-3 w-3" /> Tersimpan
               </span>
             )}
@@ -7322,29 +7328,29 @@ export function Aktivitas2RisikoGamified({
             >
               <div className="w-full md:w-1/6 flex flex-col items-center justify-center bg-white p-2 rounded-xl border border-slate-100 shadow-sm shrink-0">
                 {mission.icon}
-                <span className="text-[9px] font-black text-indigo-600 mt-1 text-center uppercase tracking-wider block">
+                <span className="text-xs font-black text-indigo-600 mt-1 text-center uppercase tracking-wider block">
                   {mission.title}
                 </span>
               </div>
 
               <div className="flex-1 space-y-3">
-                <p className="text-[11px] font-bold text-gray-800 leading-relaxed bg-slate-50 border border-slate-100 p-2.5 rounded-xl">
+                <p className="text-xs font-bold text-gray-800 leading-relaxed bg-slate-50 border border-slate-100 p-2.5 rounded-xl">
                   {idx + 1}. "{mission.scenario}"
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="space-y-1">
-                    <label className="text-[9px] font-black text-red-600 uppercase tracking-wider block">
+                    <label className="text-xs font-black text-red-600 uppercase tracking-wider block">
                       ⚠️ Risiko Digital
                     </label>
                     {readOnly ? (
-                      <div className={`p-2.5 rounded-xl border text-[10px] font-bold ${selectedRisiko === mission.correctRisiko
+                      <div className={`p-2.5 rounded-xl border text-xs font-bold ${selectedRisiko === mission.correctRisiko
                         ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
                         : 'bg-red-50 border-red-200 text-red-800'
                         }`}>
                         {selectedRisiko || 'Tidak dijawab'}
                         {selectedRisiko !== mission.correctRisiko && (
-                          <div className="mt-1 pt-1 border-t border-red-100 text-[9px] font-medium text-slate-500">
+                          <div className="mt-1 pt-1 border-t border-red-100 text-xs font-medium text-slate-500">
                             Kunci Jawaban: {mission.correctRisiko}
                           </div>
                         )}
@@ -7353,7 +7359,7 @@ export function Aktivitas2RisikoGamified({
                       <select
                         value={selectedRisiko}
                         onChange={(e) => handleSelectField(mission.id, 'risiko', e.target.value)}
-                        className={`w-full rounded-xl border text-[11px] px-2 py-2 bg-white text-gray-800 focus:outline-none focus:ring-1 focus:ring-indigo-400 font-semibold cursor-pointer appearance-none ${selectedRisiko ? 'border-indigo-350 bg-indigo-50/10' : 'border-slate-200'
+                        className={`w-full rounded-xl border text-xs px-2 py-2 bg-white text-gray-800 focus:outline-none focus:ring-1 focus:ring-indigo-400 font-semibold cursor-pointer appearance-none ${selectedRisiko ? 'border-indigo-350 bg-indigo-50/10' : 'border-slate-200'
                           }`}
                       >
                         <option value="">-- Pilih Risiko --</option>
@@ -7367,17 +7373,17 @@ export function Aktivitas2RisikoGamified({
                   </div>
 
                   <div className="space-y-1">
-                    <label className="text-[9px] font-black text-emerald-700 uppercase tracking-wider block">
+                    <label className="text-xs font-black text-emerald-700 uppercase tracking-wider block">
                       🛡️ Tindakan Cerdas
                     </label>
                     {readOnly ? (
-                      <div className={`p-2.5 rounded-xl border text-[10px] font-bold ${selectedTindakan === mission.correctTindakan
+                      <div className={`p-2.5 rounded-xl border text-xs font-bold ${selectedTindakan === mission.correctTindakan
                         ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
                         : 'bg-red-50 border-red-200 text-red-800'
                         }`}>
                         {selectedTindakan || 'Tidak dijawab'}
                         {selectedTindakan !== mission.correctTindakan && (
-                          <div className="mt-1 pt-1 border-t border-red-100 text-[9px] font-medium text-slate-500">
+                          <div className="mt-1 pt-1 border-t border-red-100 text-xs font-medium text-slate-500">
                             Kunci Jawaban: {mission.correctTindakan}
                           </div>
                         )}
@@ -7386,7 +7392,7 @@ export function Aktivitas2RisikoGamified({
                       <select
                         value={selectedTindakan}
                         onChange={(e) => handleSelectField(mission.id, 'tindakan', e.target.value)}
-                        className={`w-full rounded-xl border text-[11px] px-2 py-2 bg-white text-gray-800 focus:outline-none focus:ring-1 focus:ring-indigo-400 font-semibold cursor-pointer appearance-none ${selectedTindakan ? 'border-indigo-350 bg-indigo-50/10' : 'border-slate-200'
+                        className={`w-full rounded-xl border text-xs px-2 py-2 bg-white text-gray-800 focus:outline-none focus:ring-1 focus:ring-indigo-400 font-semibold cursor-pointer appearance-none ${selectedTindakan ? 'border-indigo-350 bg-indigo-50/10' : 'border-slate-200'
                           }`}
                       >
                         <option value="">-- Pilih Tindakan --</option>
@@ -7610,10 +7616,10 @@ export function Aktivitas3TtsGamified({
                   return (
                     <div
                       key={c}
-                      className={`relative w-6 h-6 sm:w-8 sm:h-8 rounded flex items-center justify-center text-[10px] sm:text-xs font-black border transition-all select-none ${cellClass}`}
+                      className={`relative w-6 h-6 sm:w-8 sm:h-8 rounded flex items-center justify-center text-xs font-black border transition-all select-none ${cellClass}`}
                     >
                       {label && (
-                        <span className="absolute top-0.5 left-0.5 text-[6px] font-black text-indigo-500 leading-none">
+                        <span className="absolute top-0.5 left-0.5 text-xs font-black text-indigo-500 leading-none">
                           {label}
                         </span>
                       )}
@@ -7629,7 +7635,7 @@ export function Aktivitas3TtsGamified({
         {/* Sidebar Clues text entry */}
         <div className="w-full lg:w-2/5 space-y-3">
           <div className="space-y-2">
-            <h4 className="text-[9px] font-black text-indigo-600 uppercase tracking-widest border-b border-indigo-100 pb-1">
+            <h4 className="text-xs font-black text-indigo-600 uppercase tracking-widest border-b border-indigo-100 pb-1">
               ✍️ JAWAB PERTANYAAN DI SINI
             </h4>
             <div className="space-y-3 max-h-[350px] overflow-y-auto pr-1">
@@ -7638,25 +7644,25 @@ export function Aktivitas3TtsGamified({
                 const isCorrect = val.toUpperCase() === word.text.toUpperCase();
                 return (
                   <div key={word.id} className="space-y-1">
-                    <div className="flex justify-between items-center text-[10px]">
+                    <div className="flex justify-between items-center text-xs">
                       <span className="font-bold text-gray-800 flex items-center gap-1">
                         <span className="text-indigo-600 font-extrabold">{word.number}.</span>
                         <span>{word.dir === 'Across' ? 'Mendatar ➡️' : 'Menurun ⬇️'}</span>
-                        <span className="text-[9px] text-gray-400 font-medium">({word.text.length} huruf)</span>
+                        <span className="text-xs text-gray-400 font-medium">({word.text.length} huruf)</span>
                       </span>
                       {isTtsChecked ? (
-                        <span className={`text-[9px] font-black uppercase ${isCorrect ? 'text-emerald-600' : 'text-rose-500'}`}>
+                        <span className={`text-xs font-black uppercase ${isCorrect ? 'text-emerald-600' : 'text-rose-500'}`}>
                           {isCorrect ? 'Benar ✓' : 'Salah ✗'}
                         </span>
                       ) : (
                         val && (
-                          <span className="text-[9px] text-slate-400 font-medium">
+                          <span className="text-xs text-slate-400 font-medium">
                             Ketik jawaban...
                           </span>
                         )
                       )}
                     </div>
-                    <p className="text-[10px] text-gray-550 leading-normal">
+                    <p className="text-xs text-gray-550 leading-normal">
                       {word.clue}
                     </p>
                     <div className="flex gap-2 items-center">
@@ -7667,7 +7673,7 @@ export function Aktivitas3TtsGamified({
                         maxLength={word.text.length}
                         onChange={(e) => handleClueChange(word.number, e.target.value)}
                         placeholder={`Ketik ${word.text.length} huruf...`}
-                        className={`flex-1 rounded-xl border text-[11px] px-2.5 py-1.5 font-bold uppercase transition-all ${isTtsChecked
+                        className={`flex-1 rounded-xl border text-xs px-2.5 py-1.5 font-bold uppercase transition-all ${isTtsChecked
                           ? isCorrect
                             ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
                             : 'bg-red-50 border-red-200 text-red-800'
@@ -7683,7 +7689,7 @@ export function Aktivitas3TtsGamified({
                           type="button"
                           onClick={() => handleUseHint(word.number)}
                           disabled={!!hintsUsed[word.number]}
-                          className={`px-2 py-1.5 rounded-lg text-[9px] font-extrabold flex items-center gap-1 border transition-all shrink-0 ${hintsUsed[word.number]
+                          className={`px-2 py-1.5 rounded-lg text-xs font-extrabold flex items-center gap-1 border transition-all shrink-0 ${hintsUsed[word.number]
                             ? 'bg-slate-50 border-slate-200 text-slate-400 cursor-not-allowed'
                             : 'bg-amber-50 border-amber-200 text-amber-700 hover:bg-amber-100 shadow-2xs'
                             }`}
@@ -7694,7 +7700,7 @@ export function Aktivitas3TtsGamified({
                       )}
                     </div>
                     {isTtsChecked && !isCorrect && (
-                      <p className="text-[9px] text-rose-500 font-bold">
+                      <p className="text-xs text-rose-500 font-bold">
                         Kunci Jawaban: {word.text}
                       </p>
                     )}
@@ -7975,21 +7981,21 @@ export function KartuPenggunaDigitalCerdas({
         <div className="text-center space-y-2">
           <div className="inline-flex items-center gap-1.5 bg-indigo-100 border border-indigo-200 px-4 py-1 rounded-full">
             <BadgeCheck className="h-3.5 w-3.5 text-indigo-600" />
-            <span className="text-[9px] font-black uppercase tracking-[0.15em] text-indigo-600">
+            <span className="text-xs font-black uppercase tracking-[0.15em] text-indigo-600">
               Kartu Komitmen Warga Digital
             </span>
           </div>
           <h3 className="font-display font-black text-lg sm:text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 pt-1 leading-tight">
             Ikrar Penjelajah Digital Cerdas
           </h3>
-          <p className="text-[9px] text-gray-400 font-medium max-w-xs mx-auto leading-relaxed">
+          <p className="text-xs text-gray-400 font-medium max-w-xs mx-auto leading-relaxed">
             Dengan ini aku menyatakan komitmenku sebagai warga digital yang cerdas, aman, dan bertanggung jawab.
           </p>
         </div>
 
         {/* Name Input */}
         <div className="space-y-1.5">
-          <label className="text-[10px] font-bold text-gray-400 uppercase tracking-wider flex items-center gap-1">
+          <label className="text-xs font-bold text-gray-400 uppercase tracking-wider flex items-center gap-1">
             <Star className="h-3 w-3 text-amber-400 fill-amber-400" />
             Nama Lengkap Penjelajah Digital:
           </label>
@@ -8007,7 +8013,7 @@ export function KartuPenggunaDigitalCerdas({
         <div className="space-y-5">
           {/* "Aku akan..." */}
           <div className="space-y-2.5">
-            <label className="text-[10px] font-bold text-emerald-600 uppercase tracking-wider flex items-center gap-1">
+            <label className="text-xs font-bold text-emerald-600 uppercase tracking-wider flex items-center gap-1">
               <Shield className="h-3 w-3" />
               Komitmen Positif (Aku Akan...):
             </label>
@@ -8033,7 +8039,7 @@ export function KartuPenggunaDigitalCerdas({
                     >
                       {isChecked && <Check className="h-3 w-3 stroke-[3]" />}
                     </div>
-                    <span className="text-[12px] leading-snug font-semibold">
+                    <span className="text-xs leading-snug font-semibold">
                       <span className="mr-1.5">{item.icon}</span>
                       {item.text}
                     </span>
@@ -8045,7 +8051,7 @@ export function KartuPenggunaDigitalCerdas({
 
           {/* "Aku tidak akan..." */}
           <div className="space-y-2.5">
-            <label className="text-[10px] font-bold text-rose-500 uppercase tracking-wider flex items-center gap-1">
+            <label className="text-xs font-bold text-rose-500 uppercase tracking-wider flex items-center gap-1">
               <ShieldAlert className="h-3 w-3" />
               Batasan Diri (Aku Tidak Akan...):
             </label>
@@ -8071,7 +8077,7 @@ export function KartuPenggunaDigitalCerdas({
                     >
                       {isChecked && <Check className="h-3 w-3 stroke-[3]" />}
                     </div>
-                    <span className="text-[12px] leading-snug font-semibold">
+                    <span className="text-xs leading-snug font-semibold">
                       <span className="mr-1.5">{item.icon}</span>
                       {item.text}
                     </span>
@@ -8084,7 +8090,7 @@ export function KartuPenggunaDigitalCerdas({
 
         {/* Signature Area */}
         <div className="pt-3 border-t-2 border-dashed border-indigo-100 space-y-3">
-          <label className="text-[10px] font-bold text-gray-400 uppercase tracking-wider flex items-center gap-1">
+          <label className="text-xs font-bold text-gray-400 uppercase tracking-wider flex items-center gap-1">
             <PenLine className="h-3 w-3" />
             Tanda Tangan Digital:
           </label>
@@ -8131,7 +8137,7 @@ export function KartuPenggunaDigitalCerdas({
               <button
                 type="button"
                 onClick={clearSignature}
-                className="flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-[10px] font-bold text-slate-500 hover:bg-slate-50 hover:text-slate-700 transition-all"
+                className="flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs font-bold text-slate-500 hover:bg-slate-50 hover:text-slate-700 transition-all"
               >
                 <Eraser className="h-3 w-3" />
                 Hapus & Ulangi
@@ -8141,7 +8147,7 @@ export function KartuPenggunaDigitalCerdas({
 
           {/* Signature preview when readOnly and signed */}
           {readOnly && savedSignature && (
-            <div className="flex items-center justify-end gap-1 text-[10px] font-bold text-success-600">
+            <div className="flex items-center justify-end gap-1 text-xs font-bold text-success-600">
               <Check className="h-3 w-3" />
               Tertanda tangani
             </div>
@@ -8170,7 +8176,7 @@ export function KartuPenggunaDigitalCerdas({
                   <div className="flex justify-center">
                     <div className="inline-flex items-center gap-2 bg-indigo-100 border-2 border-indigo-200 px-4 py-1 rounded-full">
                       <BadgeCheck className="h-3.5 w-3.5 text-indigo-600" />
-                      <span className="text-[8px] font-black uppercase tracking-[0.15em] text-indigo-600">Sertifikat Resmi</span>
+                      <span className="text-xs font-black uppercase tracking-[0.15em] text-indigo-600">Sertifikat Resmi</span>
                     </div>
                   </div>
 
@@ -8184,11 +8190,11 @@ export function KartuPenggunaDigitalCerdas({
 
                   {/* Body */}
                   <div className="space-y-1.5">
-                    <p className="text-slate-500 font-medium text-[11px]">Dengan ini dinyatakan bahwa:</p>
+                    <p className="text-slate-500 font-medium text-xs">Dengan ini dinyatakan bahwa:</p>
                     <p className="font-display font-black text-lg sm:text-xl text-indigo-700 py-1.5 px-3 bg-indigo-50/50 rounded-xl border border-indigo-100 inline-block">
                       {nama}
                     </p>
-                    <p className="text-slate-600 font-medium text-[11px] leading-relaxed">
+                    <p className="text-slate-600 font-medium text-xs leading-relaxed">
                       telah resmi terdaftar sebagai <strong className="text-indigo-700">Penjelajah Digital Cerdas</strong>
                       {' '}dengan komitmen penuh untuk menjadi warga digital yang aman, bijak, dan bertanggung jawab.
                     </p>
@@ -8197,10 +8203,10 @@ export function KartuPenggunaDigitalCerdas({
                   {/* Signature & Date */}
                   <div className="flex justify-between items-end pt-2 gap-4">
                     <div className="flex-1 text-center">
-                      <p className="text-[9px] text-slate-400 font-bold mb-6 border-b border-dashed border-slate-300 pb-1">
+                      <p className="text-xs text-slate-400 font-bold mb-6 border-b border-dashed border-slate-300 pb-1">
                         {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}
                       </p>
-                      <p className="text-[8px] text-slate-400 uppercase tracking-wider font-bold">Tanggal</p>
+                      <p className="text-xs text-slate-400 uppercase tracking-wider font-bold">Tanggal</p>
                     </div>
                     <div className="flex-1 text-center">
                       {savedSignature && (
@@ -8210,7 +8216,7 @@ export function KartuPenggunaDigitalCerdas({
                             alt="Tanda tangan"
                             className="h-14 object-contain opacity-90"
                           />
-                          <p className="text-[8px] text-slate-400 uppercase tracking-wider font-bold mt-0.5">Tanda Tangan Digital</p>
+                          <p className="text-xs text-slate-400 uppercase tracking-wider font-bold mt-0.5">Tanda Tangan Digital</p>
                         </div>
                       )}
                     </div>
@@ -8220,7 +8226,7 @@ export function KartuPenggunaDigitalCerdas({
                   <div className="absolute -bottom-2 -right-2 w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-emerald-400 to-green-600 text-white flex items-center justify-center shadow-lg border-[3px] border-white opacity-90 rotate-12">
                     <div className="text-center -rotate-12">
                       <BadgeCheck className="h-5 w-5 sm:h-6 sm:w-6 mx-auto" />
-                      <span className="text-[7px] sm:text-[8px] font-black leading-tight block mt-0.5">TERDAFTAR<br />RESMI</span>
+                      <span className="text-xs sm:text-xs font-black leading-tight block mt-0.5">TERDAFTAR<br />RESMI</span>
                     </div>
                   </div>
                 </div>
@@ -8233,7 +8239,7 @@ export function KartuPenggunaDigitalCerdas({
                     <Star key={i} className="h-3.5 w-3.5 text-amber-400 fill-amber-400" />
                   ))}
                 </div>
-                <p className="text-[11px] font-extrabold text-amber-800 leading-relaxed">
+                <p className="text-xs font-extrabold text-amber-800 leading-relaxed">
                   🎉 Selamat, <strong className="text-indigo-700">{nama}</strong>! Komitmenmu adalah langkah pertama untuk menjadikan dunia digital tempat yang aman dan positif!
                 </p>
               </div>
@@ -8271,7 +8277,7 @@ export function KartuPenggunaDigitalCerdas({
 
           {/* Progress indicator when not yet saved */}
           {!isSaved && !readOnly && (
-            <div className="mt-3 flex flex-wrap items-center justify-center gap-3 text-[9px] font-bold text-slate-400">
+            <div className="mt-3 flex flex-wrap items-center justify-center gap-3 text-xs font-bold text-slate-400">
               <span className={`flex items-center gap-1 ${nama.trim() ? 'text-emerald-500' : ''}`}>
                 <div className={`w-1.5 h-1.5 rounded-full ${nama.trim() ? 'bg-emerald-500' : 'bg-slate-300'}`} />
                 Nama
@@ -8330,7 +8336,7 @@ export function KartuPenggunaDigitalCerdas({
                   <div className="flex justify-center">
                     <div className="inline-flex items-center gap-2 bg-indigo-100 border-2 border-indigo-200 px-5 py-1.5 rounded-full">
                       <BadgeCheck className="h-4 w-4 text-indigo-600" />
-                      <span className="text-[9px] font-black uppercase tracking-[0.15em] text-indigo-600">Sertifikat Resmi</span>
+                      <span className="text-xs font-black uppercase tracking-[0.15em] text-indigo-600">Sertifikat Resmi</span>
                     </div>
                   </div>
 
@@ -8344,7 +8350,7 @@ export function KartuPenggunaDigitalCerdas({
 
                   {/* Body text */}
                   <div className="space-y-2 text-sm">
-                    <p className="text-slate-600 leading-relaxed font-medium text-[12px]">
+                    <p className="text-slate-600 leading-relaxed font-medium text-xs">
                       Dengan ini dinyatakan bahwa:
                     </p>
                     <motion.h3
@@ -8355,7 +8361,7 @@ export function KartuPenggunaDigitalCerdas({
                     >
                       {nama}
                     </motion.h3>
-                    <p className="text-slate-600 leading-relaxed font-medium text-[12px]">
+                    <p className="text-slate-600 leading-relaxed font-medium text-xs">
                       telah resmi terdaftar sebagai <strong className="text-indigo-700">Penjelajah Digital Cerdas</strong>
                       dengan komitmen penuh untuk menjadi warga digital yang aman, bijak, dan bertanggung jawab.
                     </p>
@@ -8364,10 +8370,10 @@ export function KartuPenggunaDigitalCerdas({
                   {/* Signature & Date */}
                   <div className="flex justify-between items-end pt-3 gap-6">
                     <div className="flex-1 text-center">
-                      <p className="text-[10px] text-slate-400 font-bold mb-10 border-b border-dashed border-slate-300 pb-1">
+                      <p className="text-xs text-slate-400 font-bold mb-10 border-b border-dashed border-slate-300 pb-1">
                         {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}
                       </p>
-                      <p className="text-[9px] text-slate-400 uppercase tracking-wider font-bold">Tanggal</p>
+                      <p className="text-xs text-slate-400 uppercase tracking-wider font-bold">Tanggal</p>
                     </div>
                     <div className="flex-1 text-center">
                       {savedSignature && (
@@ -8382,7 +8388,7 @@ export function KartuPenggunaDigitalCerdas({
                             alt="Tanda tangan"
                             className="h-20 object-contain opacity-90"
                           />
-                          <p className="text-[9px] text-slate-400 uppercase tracking-wider font-bold mt-1">
+                          <p className="text-xs text-slate-400 uppercase tracking-wider font-bold mt-1">
                             Tanda Tangan Digital
                           </p>
                         </motion.div>
@@ -8399,7 +8405,7 @@ export function KartuPenggunaDigitalCerdas({
                   >
                     <div className="text-center -rotate-12">
                       <BadgeCheck className="h-6 w-6 sm:h-7 sm:w-7 mx-auto" />
-                      <span className="text-[8px] sm:text-[9px] font-black leading-tight block mt-0.5">TERDAFTAR<br />RESMI</span>
+                      <span className="text-xs font-black leading-tight block mt-0.5">TERDAFTAR<br />RESMI</span>
                     </div>
                   </motion.div>
                 </div>
@@ -8621,7 +8627,7 @@ export function AyoMengamatiTopik2Gamified({
               <h3 className="font-display font-black text-gray-800 text-sm">
                 Aktivitas 1: Detektif Pesan Masuk
               </h3>
-              <p className="text-[11px] text-gray-500 leading-normal font-semibold">
+              <p className="text-xs text-gray-500 leading-normal font-semibold">
                 Periksalah kelima pesan yang masuk ke dalam HP simulator di bawah ini.
               </p>
             </div>
@@ -8629,14 +8635,14 @@ export function AyoMengamatiTopik2Gamified({
         </div>
 
         <div className="bg-white border border-slate-150 rounded-2xl p-3 shadow-2xs min-w-[200px] space-y-1.5 self-start">
-          <div className="flex justify-between items-center text-[10px] font-bold">
+          <div className="flex justify-between items-center text-xs font-bold">
             <span className="text-slate-500">Pangkat Detektif:</span>
             <span className="text-amber-600 font-extrabold uppercase">{rank.label}</span>
           </div>
           <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
             <div className={`h-full transition-all duration-500 ${rank.color}`} style={{ width: `${rank.percent}%` }}></div>
           </div>
-          <div className="flex justify-between text-[9px] font-bold text-slate-400">
+          <div className="flex justify-between text-xs font-bold text-slate-400">
             <span>Progress: {totalAnswered}/5 Analisis</span>
             <span>{Math.round(rank.percent)}%</span>
           </div>
@@ -8653,8 +8659,8 @@ export function AyoMengamatiTopik2Gamified({
               </div>
             </div>
 
-            <div className="h-11 bg-[#111b21] text-[10px] text-slate-400 px-6 pt-4 flex justify-between items-center z-10">
-              <span className="font-bold text-[9.5px] text-slate-350">09:41</span>
+            <div className="h-11 bg-[#111b21] text-xs text-slate-400 px-6 pt-4 flex justify-between items-center z-10">
+              <span className="font-bold text-xs text-slate-350">09:41</span>
               <div className="flex items-center gap-1.5">
                 <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M3 18h2v2H3zm4-4h2v6H7zm4-4h2v10h-2zm4-4h2v14h-2zm4-4h2v18h-2z" />
@@ -8701,17 +8707,17 @@ export function AyoMengamatiTopik2Gamified({
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex justify-between items-baseline mb-0.5">
-                              <span className="text-[10px] font-black text-slate-100 group-hover:text-amber-400 truncate flex items-center gap-1.5">
+                              <span className="text-xs font-black text-slate-100 group-hover:text-amber-400 truncate flex items-center gap-1.5">
                                 {m.sender}
                                 {m.isExample && (
-                                  <span className="text-[7.5px] bg-amber-500/20 text-amber-400 border border-amber-500/40 px-1 py-0.25 rounded font-black tracking-wide uppercase">
+                                  <span className="text-xs bg-amber-500/20 text-amber-400 border border-amber-500/40 px-1 py-0.25 rounded font-black tracking-wide uppercase">
                                     Contoh
                                   </span>
                                 )}
                               </span>
-                              <span className="text-[8px] text-slate-400">{m.time}</span>
+                              <span className="text-xs text-slate-400">{m.time}</span>
                             </div>
-                            <p className="text-[9px] text-slate-400 truncate font-semibold leading-relaxed">{m.text}</p>
+                            <p className="text-xs text-slate-400 truncate font-semibold leading-relaxed">{m.text}</p>
                           </div>
                           <div className="flex items-center pl-1">
                             {isSubmitted ? (
@@ -8747,12 +8753,12 @@ export function AyoMengamatiTopik2Gamified({
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                       </svg>
                     </button>
-                    <div className={`h-8 w-8 rounded-full bg-gradient-to-br ${currentMsg?.avatarGradient} text-white flex items-center justify-center font-bold text-[10.5px] shadow-sm`}>
+                    <div className={`h-8 w-8 rounded-full bg-gradient-to-br ${currentMsg?.avatarGradient} text-white flex items-center justify-center font-bold text-xs shadow-sm`}>
                       {currentMsg?.avatar}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-[10px] font-black leading-tight text-slate-100 truncate">{currentMsg?.sender}</p>
-                      <p className="text-[7.5px] text-emerald-400 font-bold flex items-center gap-1">
+                      <p className="text-xs font-black leading-tight text-slate-100 truncate">{currentMsg?.sender}</p>
+                      <p className="text-xs text-emerald-400 font-bold flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-ping"></span> online
                       </p>
                     </div>
@@ -8761,29 +8767,29 @@ export function AyoMengamatiTopik2Gamified({
                   <div className="flex-1 p-3 overflow-y-auto flex flex-col gap-3.5 bg-[#efeae2]">
                     <div className="max-w-[85%] bg-white rounded-2xl rounded-tl-none p-3 shadow-xs text-left relative border border-slate-200/50">
                       <div className="absolute -left-1.5 top-0 w-2.5 h-3 bg-white border-l border-t border-slate-200/50" style={{ clipPath: 'polygon(100% 0, 0 0, 100% 100%)' }}></div>
-                      <p className="text-[9.5px] leading-relaxed text-gray-800 font-medium pb-2">{currentMsg?.text}</p>
-                      <span className="text-[7px] text-gray-400 absolute bottom-1 right-2.5 font-bold">{currentMsg?.time}</span>
+                      <p className="text-xs leading-relaxed text-gray-800 font-medium pb-2">{currentMsg?.text}</p>
+                      <span className="text-xs text-gray-400 absolute bottom-1 right-2.5 font-bold">{currentMsg?.time}</span>
                     </div>
 
                     {isMsgAnswered(currentMsg!) && (
                       <div className="max-w-[85%] bg-[#d9fdd3] text-slate-800 rounded-2xl rounded-tr-none p-3 shadow-xs text-left self-end ml-auto relative border border-[#c1e9bb] animate-fade-in flex flex-col gap-1">
                         <div className="absolute -right-1.5 top-0 w-2.5 h-3 bg-[#d9fdd3] border-r border-t border-[#c1e9bb]" style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }}></div>
-                        <div className="flex items-center gap-1 text-[8px] font-black text-[#1b8a13] uppercase tracking-wide">
+                        <div className="flex items-center gap-1 text-xs font-black text-[#1b8a13] uppercase tracking-wide">
                           <span>🕵️‍♂️ LAPORAN DETEKTIF</span>
                         </div>
-                        <div className="text-[9px] space-y-1.5 leading-relaxed font-semibold">
+                        <div className="text-xs space-y-1.5 leading-relaxed font-semibold">
                           <p>
-                            <span className="text-slate-500 font-bold block text-[8px] uppercase tracking-wide">Kesimpulan:</span>
+                            <span className="text-slate-500 font-bold block text-xs uppercase tracking-wide">Kesimpulan:</span>
                             <span className="font-extrabold text-[#111b21] bg-white/60 px-1.5 py-0.5 rounded border border-[#b5deb1] inline-block mt-0.5">
                               {getVal(currentMsg!.id) === 'benar' ? '✅ BENAR (Valid)' : '❓ MERAGUKAN'}
                             </span>
                           </p>
                           <p>
-                            <span className="text-slate-500 font-bold block text-[8px] uppercase tracking-wide">Alasan:</span>
+                            <span className="text-slate-500 font-bold block text-xs uppercase tracking-wide">Alasan:</span>
                             <span className="text-slate-800 line-clamp-3 block">{getVal(currentMsg!.id + '_alasan')}</span>
                           </p>
                           <p>
-                            <span className="text-slate-500 font-bold block text-[8px] uppercase tracking-wide">Tindak Lanjut:</span>
+                            <span className="text-slate-500 font-bold block text-xs uppercase tracking-wide">Tindak Lanjut:</span>
                             <span className="text-slate-800 line-clamp-3 block">{getVal(currentMsg!.id + '_tindakLanjut')}</span>
                           </p>
                         </div>
@@ -8797,21 +8803,21 @@ export function AyoMengamatiTopik2Gamified({
                         }`}>
                         <span className="text-sm">🕵️‍♂️</span>
                         <div className="space-y-0.5">
-                          <p className="text-[9.5px] font-extrabold flex items-center gap-1">
+                          <p className="text-xs font-extrabold flex items-center gap-1">
                             {getVal(currentMsg!.id) === currentMsg!.correct ? (
                               <span className="text-emerald-700">Analisis Tepat! ✔️</span>
                             ) : (
                               <span className="text-rose-700">Analisis Kurang Tepat! ❌</span>
                             )}
                           </p>
-                          <p className="text-[8.5px] leading-relaxed font-semibold">{currentMsg?.explanation}</p>
+                          <p className="text-xs leading-relaxed font-semibold">{currentMsg?.explanation}</p>
                         </div>
                       </div>
                     )}
                   </div>
 
                   <div className="p-2 bg-[#f0f2f5] border-t border-slate-200 flex items-center gap-2 select-none">
-                    <div className="flex-1 bg-white rounded-full px-3 py-1.5 text-[8.5px] text-slate-400 font-semibold flex items-center gap-1.5 shadow-2xs">
+                    <div className="flex-1 bg-white rounded-full px-3 py-1.5 text-xs text-slate-400 font-semibold flex items-center gap-1.5 shadow-2xs">
                       <svg className="h-3.5 w-3.5 opacity-40 text-slate-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
@@ -8844,7 +8850,7 @@ export function AyoMengamatiTopik2Gamified({
                 Pilih salah satu baris pesan pada simulator HP di sebelah kiri untuk menganalisis kesimpulan, menulis alasan, dan merancang tindak lanjutmu.
               </p>
 
-              <div className="text-[10px] text-amber-700 bg-amber-100/60 border border-amber-250 px-4 py-1.5 rounded-full font-black tracking-wide">
+              <div className="text-xs text-amber-700 bg-amber-100/60 border border-amber-250 px-4 py-1.5 rounded-full font-black tracking-wide">
                 📁 Telah Menganalisis: {totalAnswered} dari 5 Pesan
               </div>
 
@@ -8869,7 +8875,7 @@ export function AyoMengamatiTopik2Gamified({
                   <p className="text-xs font-black text-emerald-800 flex items-center justify-center gap-1">
                     🎉 Jawaban Berhasil Dikunci!
                   </p>
-                  <p className="text-[10px] text-emerald-600 font-bold leading-normal">
+                  <p className="text-xs text-emerald-600 font-bold leading-normal">
                     Skor Analisis: {messages.filter(m => getVal(m.id) === m.correct).length * 20}% ({messages.filter(m => getVal(m.id) === m.correct).length} dari 5 pesan dianalisis dengan benar).
                   </p>
                 </div>
@@ -8879,13 +8885,13 @@ export function AyoMengamatiTopik2Gamified({
             <div className="space-y-5 text-left">
               <div className="flex justify-between items-center border-b border-slate-150 pb-3 gap-2">
                 <div>
-                  <span className="text-[8.5px] font-black uppercase text-amber-600 tracking-widest block mb-0.5">
+                  <span className="text-xs font-black uppercase text-amber-600 tracking-widest block mb-0.5">
                     Form Lembar Kerja Detektif
                   </span>
                   <h4 className="font-display font-black text-gray-800 text-sm flex items-center gap-1.5">
                     {currentMsg?.sender}
                     {currentMsg?.isExample && (
-                      <span className="text-[7.5px] bg-amber-100 text-amber-800 border border-amber-250 px-1.5 py-0.5 rounded font-black tracking-wide uppercase">
+                      <span className="text-xs bg-amber-100 text-amber-800 border border-amber-250 px-1.5 py-0.5 rounded font-black tracking-wide uppercase">
                         Contoh
                       </span>
                     )}
@@ -8894,23 +8900,23 @@ export function AyoMengamatiTopik2Gamified({
                 <button
                   type="button"
                   onClick={() => setSelectedMsgId(null)}
-                  className="text-[10px] font-black text-slate-500 hover:text-slate-700 bg-white border border-slate-200 px-3.5 py-2 rounded-xl shadow-2xs hover:bg-slate-50 transition-all cursor-pointer flex-shrink-0"
+                  className="text-xs font-black text-slate-500 hover:text-slate-700 bg-white border border-slate-200 px-3.5 py-2 rounded-xl shadow-2xs hover:bg-slate-50 transition-all cursor-pointer flex-shrink-0"
                 >
                   Kembali ke Menu Utama
                 </button>
               </div>
 
               <div className="bg-white p-3.5 rounded-xl border border-slate-150 shadow-2xs space-y-1">
-                <span className="text-[8.5px] font-bold text-slate-400 block uppercase tracking-wide">Isi Pesan Masuk:</span>
-                <p className="text-[11.5px] italic text-slate-700 leading-relaxed font-semibold">"{currentMsg?.text}"</p>
+                <span className="text-xs font-bold text-slate-400 block uppercase tracking-wide">Isi Pesan Masuk:</span>
+                <p className="text-xs italic text-slate-700 leading-relaxed font-semibold">"{currentMsg?.text}"</p>
               </div>
 
               {currentMsg?.isExample && (
                 <div className="bg-amber-50 border border-amber-200 text-amber-900 px-3.5 py-3 rounded-2xl text-xs flex gap-2.5 font-medium shadow-2xs">
                   <span className="text-lg">🕵️‍♂️</span>
                   <div className="space-y-0.5">
-                    <p className="font-black text-amber-950 uppercase tracking-wide text-[9.5px]">Contoh Analisis Terisi</p>
-                    <p className="text-[10.5px] text-amber-800 leading-normal font-semibold">
+                    <p className="font-black text-amber-950 uppercase tracking-wide text-xs">Contoh Analisis Terisi</p>
+                    <p className="text-xs text-amber-800 leading-normal font-semibold">
                       Ini adalah contoh cara menganalisis pesan dan mengisi jawaban yang benar. Silakan dibaca untuk panduan mengerjakannya!
                     </p>
                   </div>
@@ -8918,7 +8924,7 @@ export function AyoMengamatiTopik2Gamified({
               )}
 
               <div className="space-y-2">
-                <label className="text-[10px] font-black text-slate-500 uppercase tracking-wider block">
+                <label className="text-xs font-black text-slate-500 uppercase tracking-wider block">
                   1. Bagaimana kesimpulanmu terhadap pesan di atas?
                 </label>
                 <div className="grid grid-cols-2 gap-4">
@@ -8940,7 +8946,7 @@ export function AyoMengamatiTopik2Gamified({
                         type="button"
                         disabled={isSubmitted || currentMsg?.isExample}
                         onClick={() => handleSelectType(currentMsg!.id, type)}
-                        className={`py-3 rounded-xl border text-[10.5px] font-black transition-all uppercase tracking-wider cursor-pointer ${btnClass}`}
+                        className={`py-3 rounded-xl border text-xs font-black transition-all uppercase tracking-wider cursor-pointer ${btnClass}`}
                       >
                         {type === 'benar' ? '✔ Benar (Valid)' : '❓ Meragukan (Hoaks?)'}
                       </button>
@@ -8950,7 +8956,7 @@ export function AyoMengamatiTopik2Gamified({
               </div>
 
               <div className="space-y-2.5">
-                <label className="text-[10.5px] font-black text-slate-500 uppercase tracking-wider block">
+                <label className="text-xs font-black text-slate-500 uppercase tracking-wider block">
                   2. Alasan mengapa pesan tersebut kamu anggap Benar atau Meragukan:
                 </label>
                 {currentMsg?.alasanChoices ? (
@@ -8996,7 +9002,7 @@ export function AyoMengamatiTopik2Gamified({
               </div>
 
               <div className="space-y-2.5">
-                <label className="text-[10.5px] font-black text-slate-500 uppercase tracking-wider block">
+                <label className="text-xs font-black text-slate-500 uppercase tracking-wider block">
                   3. Apa tindak lanjut yang harus kamu lakukan?
                 </label>
                 {currentMsg?.tindakLanjutChoices ? (
@@ -9188,7 +9194,7 @@ export function AyoDetektifBeritaT2({
               <h3 className="font-display font-black text-gray-800 text-sm">
                 Aktivitas 2: Portal Analisis Berita
               </h3>
-              <p className="text-[11px] text-gray-500 leading-normal font-semibold">
+              <p className="text-xs text-gray-500 leading-normal font-semibold">
                 Bandingkan berbagai rilis berita di simulator laptop untuk menentukan kelayakannya.
               </p>
             </div>
@@ -9197,14 +9203,14 @@ export function AyoDetektifBeritaT2({
 
         {/* Gamified progress bar */}
         <div className="bg-white border border-slate-150 rounded-2xl p-3 shadow-2xs min-w-[200px] space-y-1.5 self-start">
-          <div className="flex justify-between items-center text-[10px] font-bold">
+          <div className="flex justify-between items-center text-xs font-bold">
             <span className="text-slate-500">Kemajuan Analisis Berita:</span>
             <span className="text-amber-600 font-extrabold">{totalAnswered}/{newsItems.length} Berita</span>
           </div>
           <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
             <div className="h-full bg-emerald-500 transition-all duration-500" style={{ width: `${(totalAnswered / newsItems.length) * 100}%` }}></div>
           </div>
-          <div className="flex justify-between text-[9px] font-bold text-slate-400">
+          <div className="flex justify-between text-xs font-bold text-slate-400">
             <span>Progress</span>
             <span>{Math.round((totalAnswered / newsItems.length) * 100)}%</span>
           </div>
@@ -9224,7 +9230,7 @@ export function AyoDetektifBeritaT2({
               key={n.id}
               type="button"
               onClick={() => setActiveNewsId(n.id)}
-              className={`px-4 py-2.5 rounded-xl text-[10.5px] font-black border transition-all flex items-center gap-1.5 cursor-pointer ${isActive
+              className={`px-4 py-2.5 rounded-xl text-xs font-black border transition-all flex items-center gap-1.5 cursor-pointer ${isActive
                 ? 'bg-amber-500 border-amber-500 text-white shadow-md shadow-amber-200'
                 : 'bg-white border-slate-200 text-slate-655 hover:bg-slate-50 hover:border-slate-350'
                 }`}
@@ -9232,12 +9238,12 @@ export function AyoDetektifBeritaT2({
               <span>{n.label}</span>
               {isSubmitted ? (
                 isCorrect ? (
-                  <span className="text-[8px] bg-emerald-500 text-white px-1.5 py-0.25 rounded-md font-black shadow-3xs">✔</span>
+                  <span className="text-xs bg-emerald-500 text-white px-1.5 py-0.25 rounded-md font-black shadow-3xs">✔</span>
                 ) : (
-                  <span className="text-[8px] bg-rose-500 text-white px-1.5 py-0.25 rounded-md font-black shadow-3xs">✖</span>
+                  <span className="text-xs bg-rose-500 text-white px-1.5 py-0.25 rounded-md font-black shadow-3xs">✖</span>
                 )
               ) : isDone ? (
-                <span className="text-[9px] text-emerald-600 font-black">✔</span>
+                <span className="text-xs text-emerald-600 font-black">✔</span>
               ) : null}
             </button>
           );
@@ -9259,7 +9265,7 @@ export function AyoDetektifBeritaT2({
             {/* Web Browser Screen View */}
             <div className="absolute inset-0 bg-[#f1f3f4] flex flex-col text-slate-800 font-sans">
               {/* Tab Bar */}
-              <div className="h-9 bg-[#e3e4e6] border-b border-slate-300 flex items-end px-3 gap-1 select-none text-[9.5px]">
+              <div className="h-9 bg-[#e3e4e6] border-b border-slate-300 flex items-end px-3 gap-1 select-none text-xs">
                 <div className="flex gap-1.5 mr-4 pb-2.5">
                   <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
                   <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
@@ -9286,7 +9292,7 @@ export function AyoDetektifBeritaT2({
                   </svg>
                 </div>
                 {/* URL block */}
-                <div className="flex-1 bg-[#f1f3f4] rounded-lg px-3.5 py-1.5 text-[10.5px] text-slate-600 font-semibold flex items-center gap-1.5 border border-slate-200">
+                <div className="flex-1 bg-[#f1f3f4] rounded-lg px-3.5 py-1.5 text-xs text-slate-600 font-semibold flex items-center gap-1.5 border border-slate-200">
                   <span className="text-emerald-600 text-xs">🔒</span>
                   <span className="text-emerald-700 font-bold">https://</span>
                   <span className="truncate font-medium">{activeNews.source.split('(')[1]?.replace(')', '') || 'berita-terpercaya.com'}</span>
@@ -9297,8 +9303,8 @@ export function AyoDetektifBeritaT2({
               <div className="flex-1 overflow-y-auto bg-slate-100 p-5">
                 <article className="max-w-2xl mx-auto bg-white border border-slate-200/80 rounded-2xl shadow-xs p-5 space-y-4 font-serif">
                   <div className="space-y-2 font-sans">
-                    <div className="flex justify-between items-center text-[9.5px]">
-                      <span className={`px-2.5 py-0.5 rounded-full font-black border tracking-wider text-[8.5px] ${activeNews.tagColor}`}>
+                    <div className="flex justify-between items-center text-xs">
+                      <span className={`px-2.5 py-0.5 rounded-full font-black border tracking-wider text-xs ${activeNews.tagColor}`}>
                         {activeNews.tag}
                       </span>
                       <span className="text-slate-400 font-bold">{activeNews.date}</span>
@@ -9306,7 +9312,7 @@ export function AyoDetektifBeritaT2({
                     <h1 className="text-sm sm:text-base font-serif font-black text-slate-900 leading-snug">
                       {activeNews.title}
                     </h1>
-                    <div className="text-[10px] text-slate-450 font-bold border-y border-slate-100 py-2 flex flex-wrap gap-x-3 gap-y-1">
+                    <div className="text-xs text-slate-450 font-bold border-y border-slate-100 py-2 flex flex-wrap gap-x-3 gap-y-1">
                       <span>Penulis: <span className="text-slate-600 font-extrabold">{activeNews.author}</span></span>
                       <span>Sumber: <span className="text-slate-600 font-extrabold">{activeNews.source.split(' ')[0]}</span></span>
                     </div>
@@ -9319,13 +9325,13 @@ export function AyoDetektifBeritaT2({
                       alt={activeNews.label}
                       className="w-full max-h-56 object-cover rounded-lg border border-slate-200/60 shadow-3xs"
                     />
-                    <p className="text-[9px] text-center text-slate-500 italic font-semibold leading-relaxed px-2">
+                    <p className="text-xs text-center text-slate-500 italic font-semibold leading-relaxed px-2">
                       {activeNews.caption}
                     </p>
                   </div>
 
                   {/* Body text */}
-                  <div className="text-[11px] leading-relaxed text-slate-700 space-y-3 font-medium whitespace-pre-line text-left">
+                  <div className="text-xs leading-relaxed text-slate-700 space-y-3 font-medium whitespace-pre-line text-left">
                     {activeNews.text}
                   </div>
                 </article>
@@ -9348,7 +9354,7 @@ export function AyoDetektifBeritaT2({
             <h4 className="font-display font-black text-gray-800 text-xs">
               Lembar Kerja Kriteria Kelayakan: <span className="text-amber-600">{activeNews.label}</span>
             </h4>
-            <span className="text-[9.5px] text-slate-450 font-black uppercase tracking-wider">
+            <span className="text-xs text-slate-450 font-black uppercase tracking-wider">
               Kanal Analisis
             </span>
           </div>
@@ -9356,7 +9362,7 @@ export function AyoDetektifBeritaT2({
           <div className="space-y-4 text-xs">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
               <div className="space-y-1.5">
-                <label className="text-[9.5px] font-black text-slate-550 uppercase tracking-wide block">
+                <label className="text-xs font-black text-slate-550 uppercase tracking-wide block">
                   Judul Berita (Ditulis Oleh Siswa):
                 </label>
                 <input
@@ -9369,7 +9375,7 @@ export function AyoDetektifBeritaT2({
                 />
               </div>
               <div className="space-y-1.5">
-                <label className="text-[9.5px] font-black text-slate-550 uppercase tracking-wide block">
+                <label className="text-xs font-black text-slate-550 uppercase tracking-wide block">
                   Sumber Berita (Ditulis Oleh Siswa):
                 </label>
                 <input
@@ -9419,8 +9425,8 @@ export function AyoDetektifBeritaT2({
                   }`}>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div className="space-y-0.5">
-                      <span className="font-extrabold text-[10.5px] text-slate-800 block leading-tight">{crit.label}</span>
-                      <span className="text-[9.5px] text-slate-450 leading-relaxed font-semibold block">{crit.desc}</span>
+                      <span className="font-extrabold text-xs text-slate-800 block leading-tight">{crit.label}</span>
+                      <span className="text-xs text-slate-450 leading-relaxed font-semibold block">{crit.desc}</span>
                     </div>
 
                     <div className="flex items-center gap-2 flex-shrink-0">
@@ -9439,7 +9445,7 @@ export function AyoDetektifBeritaT2({
                             type="button"
                             disabled={isSubmitted}
                             onClick={() => handleFieldChange(activeNews.id, crit.id, val)}
-                            className={`px-4 py-1.5 rounded-lg border text-[10px] uppercase font-bold transition-all cursor-pointer ${btnClass}`}
+                            className={`px-4 py-1.5 rounded-lg border text-xs uppercase font-bold transition-all cursor-pointer ${btnClass}`}
                           >
                             {val}
                           </button>
@@ -9454,7 +9460,7 @@ export function AyoDetektifBeritaT2({
                     disabled={isSubmitted}
                     onChange={(e) => handleFieldChange(activeNews.id, crit.id + 'Detail', e.target.value)}
                     placeholder="Tuliskan bukti temuanmu di dalam teks..."
-                    className="w-full rounded-xl border border-slate-150 bg-slate-50/50 px-3.5 py-2 text-[10.5px] text-slate-700 font-semibold focus:border-amber-400 focus:outline-none focus:bg-white transition-all"
+                    className="w-full rounded-xl border border-slate-150 bg-slate-50/50 px-3.5 py-2 text-xs text-slate-700 font-semibold focus:border-amber-400 focus:outline-none focus:bg-white transition-all"
                   />
                 </div>
               );
@@ -9462,7 +9468,7 @@ export function AyoDetektifBeritaT2({
 
             {/* Kriteria 6: Kesimpulan */}
             <div className="p-4 bg-amber-50/20 rounded-2xl border border-amber-150 shadow-2xs space-y-3.5 text-left">
-              <label className="text-[10px] font-black text-slate-655 uppercase tracking-wider block">
+              <label className="text-xs font-black text-slate-655 uppercase tracking-wider block">
                 Kriteria 6: Kesimpulan Hasil Analisis Kelayakan Berita
               </label>
               <div className="grid grid-cols-2 gap-3.5">
@@ -9481,7 +9487,7 @@ export function AyoDetektifBeritaT2({
                       type="button"
                       disabled={isSubmitted}
                       onClick={() => handleFieldChange(activeNews.id, 'kesimpulan', type)}
-                      className={`py-3 rounded-xl border text-[10.5px] uppercase font-black transition-all cursor-pointer ${btnClass}`}
+                      className={`py-3 rounded-xl border text-xs uppercase font-black transition-all cursor-pointer ${btnClass}`}
                     >
                       {type === 'benar' ? '✔ Benar (Fakta/Valid)' : '❓ Meragukan (Hoaks/Opini)'}
                     </button>
@@ -9490,7 +9496,7 @@ export function AyoDetektifBeritaT2({
               </div>
 
               {isSubmitted && (
-                <div className={`p-3 rounded-xl border text-[10.5px] font-bold text-center leading-relaxed shadow-3xs ${activeData.kesimpulan === activeNews.correct
+                <div className={`p-3 rounded-xl border text-xs font-bold text-center leading-relaxed shadow-3xs ${activeData.kesimpulan === activeNews.correct
                   ? 'bg-emerald-50 border-emerald-250 text-emerald-800'
                   : 'bg-rose-50 border-rose-250 text-rose-800'
                   }`}>
@@ -9503,7 +9509,7 @@ export function AyoDetektifBeritaT2({
 
             {/* Form footer panel */}
             <div className="pt-3 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-200/50">
-              <span className="text-[10px] text-slate-555 font-extrabold bg-slate-100 border border-slate-150 px-3.5 py-1.5 rounded-full">
+              <span className="text-xs text-slate-555 font-extrabold bg-slate-100 border border-slate-150 px-3.5 py-1.5 rounded-full">
                 Kemajuan: {totalAnswered} dari {newsItems.length} Berita Dianalisis
               </span>
 
@@ -9765,7 +9771,7 @@ export function AyoMengamatiTopik6Gamified({
               className="w-full md:w-2/5 aspect-[4/3] object-cover rounded-2xl shadow-xs" 
             />
             <div className="space-y-2 flex-1">
-              <span className="text-[9.5px] font-black text-rose-500 bg-rose-50 border border-rose-100 px-2.5 py-1 rounded-full uppercase tracking-wider">
+              <span className="text-xs font-black text-rose-500 bg-rose-50 border border-rose-100 px-2.5 py-1 rounded-full uppercase tracking-wider">
                 🚨 Studi Kasus: Tren Gengster
               </span>
               <h4 className="text-sm font-black text-slate-800 leading-tight">Farah dan Ajakan Geng "Siber Scorpion"</h4>
@@ -9786,7 +9792,7 @@ export function AyoMengamatiTopik6Gamified({
                 </div>
                 <div className="text-left">
                   <h4 className="text-xs font-black leading-tight">Mabar Squad</h4>
-                  <span className="text-[9.5px] font-semibold text-emerald-100 block truncate max-w-[200px]">
+                  <span className="text-xs font-semibold text-emerald-100 block truncate max-w-[200px]">
                     Daffa, Rian, Tasya, Farah, Kamu
                   </span>
                 </div>
@@ -9807,7 +9813,7 @@ export function AyoMengamatiTopik6Gamified({
             <div className="flex-1 overflow-y-auto p-4 space-y-3.5">
               {/* Date Header */}
               <div className="flex justify-center select-none">
-                <span className="bg-white/80 border border-slate-200 text-slate-500 px-3 py-1 rounded-lg text-[9px] font-black uppercase tracking-wider shadow-3xs">
+                <span className="bg-white/80 border border-slate-200 text-slate-500 px-3 py-1 rounded-lg text-xs font-black uppercase tracking-wider shadow-3xs">
                   Hari Ini
                 </span>
               </div>
@@ -9815,44 +9821,44 @@ export function AyoMengamatiTopik6Gamified({
               {/* Daffa */}
               <div className="flex items-start gap-1.5 max-w-[85%] text-left">
                 <div className="bg-white rounded-2xl rounded-tl-none p-3 shadow-3xs border border-slate-200/50 relative">
-                  <span className="text-[9.5px] font-black text-red-500 block mb-0.5">Daffa</span>
-                  <p className="text-[11.5px] text-slate-800 leading-normal font-semibold">
+                  <span className="text-xs font-black text-red-500 block mb-0.5">Daffa</span>
+                  <p className="text-xs text-slate-800 leading-normal font-semibold">
                     Guys! Kita bikin geng juga yuk! Namanya 'Siber Scorpion'. Besok malam kita kumpul di jembatan layang dekat jalan sepi, kita rekam video pose sangar pakai hoodie dan masker hitam biar dikira gengster keren!
                   </p>
-                  <span className="text-[8.5px] text-slate-400 font-semibold float-right mt-1 ml-2">15:30</span>
+                  <span className="text-xs text-slate-400 font-semibold float-right mt-1 ml-2">15:30</span>
                 </div>
               </div>
 
               {/* Rian */}
               <div className="flex items-start gap-1.5 max-w-[85%] text-left">
                 <div className="bg-white rounded-2xl rounded-tl-none p-3 shadow-3xs border border-slate-200/50 relative">
-                  <span className="text-[9.5px] font-black text-blue-500 block mb-0.5">Rian</span>
-                  <p className="text-[11.5px] text-slate-800 leading-normal font-semibold">
+                  <span className="text-xs font-black text-blue-500 block mb-0.5">Rian</span>
+                  <p className="text-xs text-slate-800 leading-normal font-semibold">
                     Wih, mantap! Biar anak-anak kelas sebelah segan sama kita dan nggak berani ganggu! Kita post di IG Reels/TikTok juga biar rame.
                   </p>
-                  <span className="text-[8.5px] text-slate-400 font-semibold float-right mt-1 ml-2">15:32</span>
+                  <span className="text-xs text-slate-400 font-semibold float-right mt-1 ml-2">15:32</span>
                 </div>
               </div>
 
               {/* Tasya */}
               <div className="flex items-start gap-1.5 max-w-[85%] text-left">
                 <div className="bg-white rounded-2xl rounded-tl-none p-3 shadow-3xs border border-slate-200/50 relative">
-                  <span className="text-[9.5px] font-black text-pink-500 block mb-0.5">Tasya</span>
-                  <p className="text-[11.5px] text-slate-800 leading-normal font-semibold">
+                  <span className="text-xs font-black text-pink-500 block mb-0.5">Tasya</span>
+                  <p className="text-xs text-slate-800 leading-normal font-semibold">
                     Aduh, kalau malam-malam nongkrong di jembatan kan bahaya, trus nanti dikira gengster beneran buat tawuran sama warga atau polisi. Tapi kalau aku nggak ikut, ntar dibilang penakut trus dikeluarin dari grup ya? 🥺
                   </p>
-                  <span className="text-[8.5px] text-slate-400 font-semibold float-right mt-1 ml-2">15:35</span>
+                  <span className="text-xs text-slate-400 font-semibold float-right mt-1 ml-2">15:35</span>
                 </div>
               </div>
 
               {/* Daffa */}
               <div className="flex items-start gap-1.5 max-w-[85%] text-left">
                 <div className="bg-white rounded-2xl rounded-tl-none p-3 shadow-3xs border border-slate-200/50 relative">
-                  <span className="text-[9.5px] font-black text-red-500 block mb-0.5">Daffa</span>
-                  <p className="text-[11.5px] text-slate-800 leading-normal font-semibold">
+                  <span className="text-xs font-black text-red-500 block mb-0.5">Daffa</span>
+                  <p className="text-xs text-slate-800 leading-normal font-semibold">
                     Biarin aja! Yang nggak ikut video 'Siber Scorpion' besok dianggap cemen, cupu, dan bukan anak gaul kelas kita lagi! Farah gimana? Berani gabung gak?
                   </p>
-                  <span className="text-[8.5px] text-slate-400 font-semibold float-right mt-1 ml-2">15:36</span>
+                  <span className="text-xs text-slate-400 font-semibold float-right mt-1 ml-2">15:36</span>
                 </div>
               </div>
 
@@ -9860,8 +9866,8 @@ export function AyoMengamatiTopik6Gamified({
               <div className="flex justify-center max-w-[95%] mx-auto py-1">
                 <div className="bg-[#fff3cd] border border-amber-200 rounded-2xl p-3.5 shadow-3xs flex items-start gap-2.5">
                   <ShieldAlert className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
-                  <div className="text-[10px] font-bold text-amber-900 text-left leading-normal">
-                    <span className="font-black block text-[11px] mb-0.5 text-amber-950">💡 Dilema Batin Farah (FOMO):</span>
+                  <div className="text-xs font-bold text-amber-900 text-left leading-normal">
+                    <span className="font-black block text-xs mb-0.5 text-amber-950">💡 Dilema Batin Farah (FOMO):</span>
                     "Aku takut dikucilkan dan dibilang tidak gaul oleh Daffa dkk. Tapi nongkrong malam hari bergaya gengster di jembatan sepi itu melanggar aturan dan bisa kena sanksi sekolah dari TPPK bahkan polisi. Aku harus bagaimana?"
                   </div>
                 </div>
@@ -9871,11 +9877,11 @@ export function AyoMengamatiTopik6Gamified({
               {isComposerComplete && (
                 <div className="flex justify-end w-full text-right">
                   <div className="bg-[#d9fdd3] rounded-2xl rounded-tr-none p-3 shadow-3xs border border-[#d9fdd3]/50 relative max-w-[85%] text-left">
-                    <span className="text-[9.5px] font-black text-[#00a884] block mb-0.5">Farah (Kamu)</span>
-                    <p className="text-[11.5px] text-slate-800 leading-normal font-semibold">
+                    <span className="text-xs font-black text-[#00a884] block mb-0.5">Farah (Kamu)</span>
+                    <p className="text-xs text-slate-800 leading-normal font-semibold">
                       {draftMessage || 'Maaf teman-teman, aku tidak bisa ikut...'}
                     </p>
-                    <span className="text-[8.5px] text-slate-400 font-semibold float-right mt-1 ml-2">15:40 ✔✔</span>
+                    <span className="text-xs text-slate-400 font-semibold float-right mt-1 ml-2">15:40 ✔✔</span>
                   </div>
                 </div>
               )}
@@ -9885,7 +9891,7 @@ export function AyoMengamatiTopik6Gamified({
             <div className="bg-[#f0f2f5] px-3.5 py-2.5 flex items-center gap-2.5 shrink-0 select-none border-t border-slate-200">
               <div className="flex-1 bg-white rounded-full py-2 px-4 flex items-center gap-2 border border-slate-250/60 shadow-3xs">
                 <span className="text-slate-400 text-xs">😀</span>
-                <span className="text-slate-400 text-[11px] font-semibold flex-1 text-left">Ketik pesan...</span>
+                <span className="text-slate-400 text-xs font-semibold flex-1 text-left">Ketik pesan...</span>
                 <span className="text-slate-400 text-xs">📎</span>
               </div>
               <div className="h-8.5 w-8.5 rounded-full bg-[#00a884] text-white flex items-center justify-center shadow-xs">
@@ -9896,7 +9902,7 @@ export function AyoMengamatiTopik6Gamified({
 
           {/* Quiz 1 */}
           <div className="rounded-2xl border border-primary-100 bg-white p-5 shadow-sm space-y-4">
-            <h5 className="text-[12px] font-extrabold text-primary-800">
+            <h5 className="text-xs font-extrabold text-primary-800">
               Pertanyaan 1: Mengapa Farah mengalami dilema di grup chat tersebut?
             </h5>
             <div className="space-y-2 text-left">
@@ -9964,14 +9970,14 @@ export function AyoMengamatiTopik6Gamified({
                 <button
                   type="button"
                   onClick={handleResetSorting}
-                  className="text-[10px] font-black text-rose-500 hover:underline flex items-center gap-0.5 cursor-pointer"
+                  className="text-xs font-black text-rose-500 hover:underline flex items-center gap-0.5 cursor-pointer"
                 >
                   <RotateCcw className="h-3 w-3" /> Reset
                 </button>
               )}
             </div>
 
-            <p className="text-[11px] font-semibold text-slate-500 leading-relaxed">
+            <p className="text-xs font-semibold text-slate-500 leading-relaxed">
               Tren gengster di media sosial sering kali membawa pengaruh buruk. Bacalah setiap pernyataan kartu di bawah, kemudian klasifikasikan ke dalam kategori <strong>Tindakan Bijak & Aman</strong> atau <strong>Tindakan Berbahaya & Negatif</strong>.
             </p>
 
@@ -9986,7 +9992,7 @@ export function AyoMengamatiTopik6Gamified({
                       zone ? 'opacity-90 border-slate-150' : 'border-slate-200'
                     }`}
                   >
-                    <span className="text-[11px] text-slate-700 font-bold leading-normal flex-1">
+                    <span className="text-xs text-slate-700 font-bold leading-normal flex-1">
                       {card.text}
                     </span>
                     
@@ -9994,7 +10000,7 @@ export function AyoMengamatiTopik6Gamified({
                       <button
                         type="button"
                         onClick={() => handleSortCard(card.id, 'bijak')}
-                        className={`px-3 py-1.5 rounded-lg text-[10px] font-black uppercase transition-all cursor-pointer ${
+                        className={`px-3 py-1.5 rounded-lg text-xs font-black uppercase transition-all cursor-pointer ${
                           zone === 'bijak'
                             ? 'bg-emerald-500 text-white shadow-xs'
                             : 'bg-slate-100 hover:bg-emerald-50 hover:text-emerald-600 text-slate-600 border border-slate-200/50'
@@ -10005,7 +10011,7 @@ export function AyoMengamatiTopik6Gamified({
                       <button
                         type="button"
                         onClick={() => handleSortCard(card.id, 'bahaya')}
-                        className={`px-3 py-1.5 rounded-lg text-[10px] font-black uppercase transition-all cursor-pointer ${
+                        className={`px-3 py-1.5 rounded-lg text-xs font-black uppercase transition-all cursor-pointer ${
                           zone === 'bahaya'
                             ? 'bg-rose-500 text-white shadow-xs'
                             : 'bg-slate-100 hover:bg-rose-50 hover:text-rose-600 text-slate-600 border border-slate-200/50'
@@ -10049,7 +10055,7 @@ export function AyoMengamatiTopik6Gamified({
             <h4 className="text-xs font-black text-slate-655 flex items-center gap-1">
               ✍️ Misi 3: Buat Draf Pesan Penolakan Farah
             </h4>
-            <p className="text-[11px] font-semibold text-slate-500 leading-relaxed">
+            <p className="text-xs font-semibold text-slate-500 leading-relaxed">
               Bantu Farah menulis pesan di grup WhatsApp <strong>"Mabar Squad"</strong>. Tuliskan pesan penolakan yang <strong>sopan</strong> (gunakan kata sapaan/maaf), <strong>tegas</strong> (jelaskan bahaya dipanggil guru BK/TPPK atau tertangkap polisi), dan tawarkan <strong>alternatif</strong> kegiatan kreatif yang aman (seperti menggambar komik digital atau game Scratch).
             </p>
 
@@ -10063,16 +10069,16 @@ export function AyoMengamatiTopik6Gamified({
                   </div>
                   <div className="text-left">
                     <h4 className="text-xs font-black leading-tight">Mabar Squad</h4>
-                    <span className="text-[8.5px] font-semibold text-emerald-100 block">Draf Balasan Farah...</span>
+                    <span className="text-xs font-semibold text-emerald-100 block">Draf Balasan Farah...</span>
                   </div>
                 </div>
 
                 {/* Tips Strategy Panel */}
                 <div className="bg-white/95 px-4 py-3 border-b border-slate-200 space-y-2">
-                  <span className="text-[9.5px] font-black text-primary-500 uppercase tracking-wide block">
+                  <span className="text-xs font-black text-primary-500 uppercase tracking-wide block">
                     TIPS STRATEGI PENOLAKAN SOPAN & TEGAS:
                   </span>
-                  <ul className="text-[10px] font-semibold text-slate-500 list-disc list-inside space-y-1">
+                  <ul className="text-xs font-semibold text-slate-500 list-disc list-inside space-y-1">
                     <li>Mengandung sapaan bersahabat/sopan (misal: <em>"Maaf sebelumnya, teman-teman..."</em> atau <em>"Sori guys..."</em>).</li>
                     <li>Menjelaskan alasan keselamatan/tata tertib (misal: <em>"soalnya itu bahaya banget, bisa dikira gengster beneran dan ditangkap polisi/BK/TPPK"</em>).</li>
                     <li>Menyarankan aktivitas alternatif aman (misal: <em>"mending kita buat proyek komik digital bareng"</em> atau <em>"belajar Scratch"</em>).</li>
@@ -10127,7 +10133,7 @@ export function AyoMengamatiTopik6Gamified({
                 </div>
                 <div>
                   <p className="text-xs font-black text-emerald-800">Misi Selesai & Berhasil Terkirim!</p>
-                  <p className="text-[10px] font-semibold text-emerald-700 leading-normal">
+                  <p className="text-xs font-semibold text-emerald-700 leading-normal">
                     Terima kasih telah membantu Farah menolak peer pressure secara asyik dan bijak! Jawabanmu otomatis terangkum dalam lembar kerja siswa.
                   </p>
                 </div>
@@ -10408,7 +10414,7 @@ export function AyoMengamatiTopik4Gamified({
                 ) : (
                   /* Comic Page Style */
                   <div className="w-full flex flex-col items-center px-2">
-                    <span className="text-[10px] font-black uppercase text-rose-600 tracking-widest">
+                    <span className="text-xs font-black uppercase text-rose-600 tracking-widest">
                       {currentPageData.title}
                     </span>
                     <div 
@@ -10421,7 +10427,7 @@ export function AyoMengamatiTopik4Gamified({
                         className="w-full h-auto rounded-xl object-contain max-h-[350px] sm:max-h-[380px] transition-transform duration-300 group-hover:scale-[1.01]"
                         loading="eager"
                       />
-                      <div className="absolute bottom-4 right-4 px-2 py-1 bg-black/60 text-white rounded-lg text-[9px] font-bold flex items-center gap-1 backdrop-blur-sm opacity-85 group-hover:opacity-100 transition-opacity">
+                      <div className="absolute bottom-4 right-4 px-2 py-1 bg-black/60 text-white rounded-lg text-xs font-bold flex items-center gap-1 backdrop-blur-sm opacity-85 group-hover:opacity-100 transition-opacity">
                         <ZoomIn className="h-3 w-3" />
                         Ketuk untuk perbesar
                       </div>
@@ -10449,7 +10455,7 @@ export function AyoMengamatiTopik4Gamified({
             >
               <ChevronLeft className="h-4 w-4" /> Sebelumnya
             </button>
-            <span className="text-[10px] sm:text-xs font-black text-amber-955 uppercase tracking-widest bg-amber-900/5 px-3 py-1.5 rounded-lg">
+            <span className="text-xs font-black text-amber-955 uppercase tracking-widest bg-amber-900/5 px-3 py-1.5 rounded-lg">
               Halaman {bookPage + 1} / {pages.length}
             </span>
             <button
@@ -10476,7 +10482,7 @@ export function AyoMengamatiTopik4Gamified({
           </div>
           <div>
             <h3 className="font-display font-black text-slate-800 text-sm sm:text-base leading-none">Pertanyaan Investigasi Kasus</h3>
-            <span className="text-[10px] font-semibold text-slate-400 block mt-1">Uji kejelian analisismu berdasarkan komik di atas</span>
+            <span className="text-xs font-semibold text-slate-400 block mt-1">Uji kejelian analisismu berdasarkan komik di atas</span>
           </div>
         </div>
 
@@ -10517,7 +10523,7 @@ export function AyoMengamatiTopik4Gamified({
                         onClick={() => handleSelectOption(qi, oi)}
                         className={`flex w-full items-center gap-3 rounded-2xl border px-4 py-3 text-left text-xs transition-all ${optClass}`}
                       >
-                        <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-lg text-[10px] font-black ${
+                        <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-lg text-xs font-black ${
                           isSolved && opt.isCorrect
                             ? 'bg-success-500 text-white'
                             : isSelected

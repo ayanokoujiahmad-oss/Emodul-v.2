@@ -1158,7 +1158,9 @@ const DEFAULT_CLASSROOMS: Classroom[] = [
   { id: 'class-001', name: 'Kelas 6A', guruId: 'demo-guru-001', createdAt: Date.now() },
   { id: 'class-002', name: 'Kelas 6B', guruId: 'demo-guru-001', createdAt: Date.now() },
   { id: 'class-003', name: 'Kelas 5', guruId: 'demo-guru-001', createdAt: Date.now() },
-  { id: 'class-004', name: 'Kelas 6', guruId: 'demo-guru-001', createdAt: Date.now() }
+  { id: 'class-004', name: 'Kelas 6', guruId: 'demo-guru-001', createdAt: Date.now() },
+  { id: 'class-005', name: 'Kelas Dosen', guruId: 'demo-guru-001', createdAt: Date.now() },
+  { id: 'class-006', name: 'Kelas Uji', guruId: 'demo-guru-001', createdAt: Date.now() },
 ];
 
 export function getDemoClassrooms(guruId: string): Classroom[] {

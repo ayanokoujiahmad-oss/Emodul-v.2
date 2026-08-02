@@ -131,13 +131,13 @@ export default function CopyrightSim({ onComplete }: CopyrightSimProps) {
  >
  {/* Context Card */}
  <div className="bg-white/95 rounded-2xl border border-primary-100 p-5 shadow-sm space-y-3">
- <span className="text-[10px] uppercase font-bold tracking-widest text-primary-400">
+ <span className="text-xs uppercase font-bold tracking-widest text-primary-400">
  Skenario Penggunaan {currentIdx + 1} dari {SCENARIOS.length}
  </span>
  <p className="text-xs text-gray-700 leading-relaxed font-medium">
  {currentScenario.context}
  </p>
- <div className="p-3 bg-primary-50/40 rounded-xl border border-primary-50 text-[10px] text-primary-600 flex gap-2 items-start">
+ <div className="p-3 bg-primary-50/40 rounded-xl border border-primary-50 text-xs text-primary-600 flex gap-2 items-start">
  <FileText className="w-4 h-4 shrink-0 text-primary-400 mt-0.5" />
  <span><b>Tindakan:</b> {currentScenario.usageDescription}</span>
  </div>
@@ -177,7 +177,7 @@ export default function CopyrightSim({ onComplete }: CopyrightSimProps) {
  className={`p-4 border rounded-2xl text-center bg-white transition-all ${btn.color} ${activeStyle}`}
  >
  <span className="font-bold text-xs sm:text-sm block">{btn.label}</span>
- <span className="text-[9px] opacity-70 mt-1 block">{btn.desc}</span>
+ <span className="text-xs opacity-70 mt-1 block">{btn.desc}</span>
  </button>
  );
  })}

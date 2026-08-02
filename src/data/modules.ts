@@ -37,46 +37,43 @@ const topic1: Topic = {
     {
       type: "tujuan",
       title: "Tujuan Pembelajaran",
-      content: `Setelah menyelesaikan materi dan aktivitas pada topik 1 "Aku Cerdas di Dunia Digital!" kamu akan mampu:
-1. Mampu menghubungkan jenis perangkat digital dengan fungsi dan manfaatnya secara logis.
-2. Menganalisis manfaat dan risiko penggunaan perangkat digital dalam kehidupan sehari-hari.
-3. Menyusun komitmen tindakan yang bijak, aman dan bertanggung jawab dalam menggunakan perangkat digital.`
+      content: `Setelah menyelesaikan materi dan aktivitas pada topik 1 "Aku Cerdas di Dunia Digital!" kamu diharapkan mampu:
+1. menghubungkan jenis perangkat digital dengan fungsi dan manfaatnya secara logis;
+2. menganalisis manfaat dan risiko penggunaan perangkat digital dalam kehidupan sehari-hari; dan
+3. menyusun komitmen tindakan yang bijak, aman, dan bertanggung jawab dalam menggunakan perangkat digital.`
     },
-    {
+        {
       type: "kata-kunci",
       title: "Kata Kunci",
-      content: `Perangkat Digital - Alat elektronik yang membantu kita membuat, menyimpan, melihat, atau mengirim informasi.
-Internet - Jaringan yang menghubungkan banyak perangkat agar dapat bertukar informasi.
-Dunia Digital - Ruang kegiatan yang terjadi melalui perangkat digital dan internet.
-Risiko Digital - Kemungkinan masalah saat memakai teknologi, seperti penipuan, komentar jahat, atau lupa waktu.
-Data Pribadi - Informasi tentang diri kita yang bisa dipakai untuk mengenali kita, sehingga perlu dijaga, misalnya nama lengkap, alamat, nomor telepon, dan kata sandi.
-Jejak Digital - Bekas aktivitas kita di dunia digital, seperti unggahan, komentar, pencarian, atau pesan.
-Identitas Digital - Gambaran tentang siapa diri kita di dunia digital, yang terbentuk dari data pribadi dan jejak digital yang kita tinggalkan.
-Pengguna Digital Cerdas - Orang yang memakai teknologi dengan aman, sopan, bermanfaat, dan bertanggung jawab.
-Nomophobia - Singkatan dari no-mobile-phone phobia. Kondisi kecemasan berlebih ketika seseorang tidak memegang ponsel, kehilangan akses internet, baterai habis, atau tidak dapat memeriksa notifikasi di gawai.
-
-Hak Digital Anak - Hak yang dimiliki setiap anak saat menggunakan internet. Mencakup hak mengakses informasi, hak mendapat perlindungan, hak berpendapat dan berpartisipasi, serta hak menjaga privasi. Memahami hak membuatmu menjadi pengguna digital yang percaya diri.
-
-Tanggung Jawab Digital - Kewajiban yang menyertai setiap hak di dunia digital. Jika kamu ingin dihormati, kamu juga harus menghormati orang lain. Jika kamu ingin privasimu dijaga, kamu juga harus menjaga privasi temanmu. Keseimbangan hak dan tanggung jawab membuat dunia digital nyaman untuk semua.
-
-Resiliensi Digital - Kemampuan untuk tetap tenang dan bangkit kembali saat mengalami hal yang kurang menyenangkan di dunia digital. Bukan berarti tidak boleh membuat kesalahan, tetapi tahu cara belajar dari kesalahan itu dan menjadi lebih kuat. Seperti belajar bersepeda—jatuh itu wajar, yang penting bangkit lagi!`
+      content: `Gawai - Alat elektronik praktis dengan fungsi khusus, seperti ponsel, tablet, atau laptop.
+Perangkat Digital - Alat elektronik yang mengolah, menyimpan, menampilkan, atau mengirim informasi digital.
+Internet - Jaringan komputer global yang menghubungkan berbagai perangkat agar dapat bertukar informasi.
+Dunia Digital - Ruang kegiatan dan komunikasi yang terjadi melalui perangkat digital dan internet.
+Peramban - Aplikasi yang digunakan untuk menjelajah dan membuka situs web di internet, seperti Google Chrome.
+Tautan - Sambungan atau alamat digital yang dapat diklik untuk berpindah ke halaman lain di internet.
+Data Pribadi - Informasi penting tentang diri kita yang perlu dijaga kerahasiaannya, seperti nama lengkap, alamat rumah, dan kata sandi.
+Jejak Digital - Rekam jejak atau bekas aktivitas yang kita tinggalkan saat menggunakan internet.
+Hoaks - Informasi palsu atau berita tidak benar yang sengaja disebarkan di internet.`
     },
     {
       type: "peta-materi",
       title: "Peta Materi",
       content: `Peta perjalanan belajarmu:
-Tahap 1: Bersiap belajar dari cerita Raka dan perangkat digital di sekitar kita.
-Tahap 2: Menjawab tantangan awal untuk melihat pengetahuan awalmu.
-Tahap 3: Belajar mengenal perangkat digital, hak dan tanggung jawab, internet, manfaat, dan risikonya.
-Tahap 4: Berlatih memahami materi melalui diskusi dan pertanyaan.
-Tahap 5: Mengerjakan uji pemahaman dan refleksi belajar.`
+
+Tahap 1: Membaca cerita Raka tentang pesan berantai di grup kelas.
+Tahap 2: Menjawab tantangan awal "Seberapa Jeli Matamu?".
+Tahap 3: Mempelajari materi tentang hoaks, fakta, opini, dan cara mengecek fakta.
+Tahap 4: Menganalisis informasi untuk menentukan apakah informasi tersebut valid atau meragukan.
+Tahap 5: Mengevaluasi kredibilitas portal berita berdasarkan sumber, tanggal, isi, bukti, dan gaya bahasa.
+Tahap 6: Menentukan tindakan yang tepat melalui simulasi Detektif Fakta.
+Tahap 7: Mengerjakan uji pemahaman dan refleksi belajar.` 
     },
     {
       type: "bersiap-belajar",
       title: "Bersiap-Siap Belajar",
-      content: `Pernahkah kamu menggunakan HP untuk menonton video pembelajaran? Pernahkah kamu mencari gambar di internet untuk mengerjakan tugas sekolah? Atau pernahkah kamu mengirim pesan kepada teman melalui WhatsApp?
+      content: `Pernahkah kamu menggunakan gawai untuk menonton video pembelajaran? Pernahkah kamu mencari gambar di internet untuk mengerjakan tugas sekolah? Atau pernahkah kamu mengirim pesan kepada teman melalui WhatsApp?
 
-Saat ini, teknologi digital sudah sangat dekat dengan kehidupan kita. Kita dapat menggunakannya untuk belajar, bermain, berkomunikasi, mencari informasi, dan membuat karya. Namun, apakah semua kegiatan digital selalu baik? Apa yang terjadi jika HP atau Chromebook digunakan tidak sesuai tujuan?`,
+Saat ini, teknologi digital sudah sangat dekat dengan kehidupan kita. Kita dapat menggunakannya untuk belajar, bermain, berkomunikasi, mencari informasi, dan membuat karya. Namun, apakah semua kegiatan digital selalu baik? Apa yang terjadi jika gawai atau *Chromebook* digunakan tidak sesuai tujuan?`,
       comics: [
         "/komik_halaman_1.png",
         "/komik_halaman_2.png"
@@ -201,23 +198,23 @@ Saat ini, teknologi digital sudah sangat dekat dengan kehidupan kita. Kita dapat
       title: "Yuk, Belajar Bersama!",
       content: `## Mengenal Dunia Digital di Sekitarku
 
-### A. Ayo, Mengamati Benda di Sekitarmu!
-Coba putar kepalamu dan lihat benda-benda di sekitarmu saat ini. Apakah kamu melihat gawai seperti handphone (HP), komputer, laptop, Chromebook, televisi pintar (Smart TV), jam tangan digital (smartwatch), kamera, atau proyektor?
-Benda-benda tersebut sangat akrab dengan kehidupan kita sehari-hari. Ada yang dipakai untuk belajar daring, menonton video animasi, mengetik tugas sekolah, mencari informasi tentang tata surya, memotret kucing peliharaan, atau mengirim pesan suara kepada kakek dan nenek. Benda-benda canggih ini disebut perangkat digital.
+### A. Ayo, Mengamati Benda di Sekitarmu
+Coba lihat benda-benda di sekitarmu saat ini. Apakah kamu melihat gawai seperti ponsel, komputer, laptop, *Chromebook*, televisi pintar, jam tangan pintar, kamera, atau proyektor?
+Benda-benda tersebut sangat akrab dengan kehidupan kita sehari-hari. Ada yang dipakai untuk belajar *daring*, menonton video animasi, mengetik tugas sekolah, mencari informasi tentang tata surya, memotret kucing peliharaan, atau mengirim pesan suara kepada kakek dan nenek. Benda-benda canggih ini disebut perangkat digital.
 
 ![Aktivitas Mengamati Perangkat Digital](/perangkat_digital_kelas.png)
 
 **Apa itu perangkat digital?**
-Perangkat digital adalah alat yang dapat mengolah, menyimpan, menampilkan, atau mengirim informasi dalam bentuk kode-kode digital. Beberapa perangkat digital ini punya kekuatan super karena dapat terhubung ke internet, seperti HP, laptop, Chromebook, dan komputer.
+Perangkat digital adalah alat yang dapat mengolah, menyimpan, menampilkan, atau mengirim informasi dalam bentuk kode-kode digital. Beberapa perangkat digital ini memiliki kekuatan super karena dapat terhubung ke internet, seperti gawai, laptop, *Chromebook*, dan komputer.
 Perangkat digital membantu kita mengolah informasi berupa tulisan, gambar, suara, video, angka, atau pesan.
-Contohnya: Saat kamu menonton video eksperimen sains di gawai, layarnya menampilkan gabungan gambar dan suara. Saat kamu mengetik cerita di Chromebook, tulisanmu langsung tersimpan secara otomatis dalam bentuk digital (tanpa menggunakan kertas). Saat kamu mengirim stiker lucu kepada teman, pesan itu melesat melalui jaringan udara hingga sampai ke layar HP temanmu dalam hitungan detik!
+Contohnya: Saat kamu menonton video eksperimen sains di gawai, layarnya menampilkan gabungan gambar dan suara. Saat kamu mengetik cerita di *Chromebook*, tulisanmu langsung tersimpan secara otomatis dalam bentuk digital (tanpa menggunakan kertas). Saat kamu mengirim stiker lucu kepada teman, pesan itu melesat melalui jaringan udara hingga sampai ke layar gawai temanmu dalam hitungan detik.
 
-Nah, ketika kita menggunakan perangkat digital untuk belajar, berkomunikasi, mencari informasi, bermain game, atau membuat poster, itu artinya kita sedang masuk dan hidup di dalam Dunia Digital.
-Dunia digital memang sangat seru dan bermanfaat seperti kantong ajaib Doraemon! Namun, kita tetap perlu menggunakannya dengan hati-hati. Kita harus tahu kapan waktunya menggunakan perangkat, untuk apa perangkat itu digunakan, dan bagaimana menggunakannya dengan bijak agar tidak merugikan diri sendiri.
+Nah, ketika kita menggunakan perangkat digital untuk belajar, berkomunikasi, mencari informasi, bermain gim, atau membuat poster, itu artinya kita sedang masuk dan beraktivitas di dalam dunia digital.
+Dunia digital memang sangat seru dan bermanfaat seperti kantong ajaib Doraemon. Namun, kita tetap perlu menggunakannya dengan hati-hati. Kita harus tahu kapan waktunya menggunakan perangkat, untuk apa perangkat itu digunakan, dan bagaimana menggunakannya dengan bijak agar tidak merugikan diri sendiri.
 
 ### B. Hak dan Tanggung Jawabmu di Dunia Digital
 
-Saat kamu masuk ke dunia digital, kamu memiliki **hak**—hal-hal yang boleh dan seharusnya kamu dapatkan. Tapi ingat, setiap hak selalu datang bersama **tanggung jawab**. Seperti dua sisi mata uang, hak dan tanggung jawab tidak bisa dipisahkan. Yuk, kita kenali!
+Saat kamu masuk ke dunia digital, kamu memiliki **hak**, yaitu hal-hal yang boleh dan seharusnya kamu dapatkan. Namun ingat, setiap hak selalu datang bersama **tanggung jawab**. Seperti dua sisi mata uang, hak dan tanggung jawab tidak dapat dipisahkan. Yuk, kita kenali.
 
 **Hakmu di Dunia Digital:**
 
@@ -233,35 +230,35 @@ Saat kamu masuk ke dunia digital, kamu memiliki **hak**—hal-hal yang boleh dan
 | Tanggung Jawabmu | Artinya |
 |---|---|
 | **Menghormati Orang Lain** | Jika kamu ingin dihormati, kamu juga harus menghormati orang lain. Jangan mengejek, menghina, atau menyakiti perasaan teman di internet. |
-| **Menjaga Keamanan Diri Sendiri dan Orang Lain** | Jika kamu ingin privasimu dijaga, kamu juga harus menjaga privasi temanmu. Jangan sebarkan foto atau data pribadi orang lain tanpa izin. |
-| **Berpikir Sebelum Bertindak** | Setiap komentar, unggahan, atau kirimanmu akan menjadi jejak digital. Pikirkan baik-baik sebelum menekan tombol "kirim"! |
-| **Berani Melapor** | Jika kamu melihat atau mengalami sesuatu yang tidak baik di internet, laporkan kepada guru atau orang tua. Melapor bukan berarti mengadu—itu artinya kamu melindungi diri sendiri dan teman-temanmu. |
+| **Menjaga Keamanan Diri Sendiri dan Orang Lain** | Jika kamu ingin privasimu dijaga, kamu juga harus menjaga privasi temanmu. Jangan menyebarkan foto atau data pribadi orang lain tanpa izin. |
+| **Berpikir Sebelum Bertindak** | Setiap komentar, unggahan, atau kirimanmu akan menjadi jejak digital. Pikirkan baik-baik sebelum menekan tombol "kirim". |
+| **Berani Melapor** | Jika kamu melihat atau mengalami sesuatu yang tidak baik di internet, laporkan kepada guru atau orang tua. Melapor bukan berarti mengadu, itu artinya kamu melindungi diri sendiri dan teman-temanmu. |
 
 **Keseimbangan hak dan tanggung jawab inilah yang membuat dunia digital menjadi tempat yang nyaman, aman, dan menyenangkan untuk semua orang.**
 
 ### C. Rahasia di Balik Layar: Apa Itu Internet?
-Pasti kamu pernah membuka YouTube atau mencari sesuatu di Google, kan? Ketika kamu mengetik satu kata kunci, tiba-tiba muncul jutaan informasi. Pernahkah kamu berpikir, "Dari mana datangnya semua tulisan dan video itu? Bagaimana informasi itu bisa sampai ke layar layarku?"
-Jawabannya adalah Internet.
-Internet dapat dibayangkan seperti jalan tol tak kasat mata yang sangat luas dan saling menyambung di seluruh dunia. Jalan tol ini tidak dilewati oleh mobil, melainkan dilewati oleh data dan informasi yang menghubungkan miliaran perangkat.
+Kamu pasti pernah membuka *YouTube* atau mencari sesuatu di *Google*, kan? Ketika kamu mengetik satu kata kunci, tiba-tiba muncul jutaan informasi. Pernahkah kamu berpikir, "Dari mana datangnya semua tulisan dan video itu? Bagaimana informasi itu bisa sampai ke layarku?"
+Jawabannya adalah internet.
+Internet dapat dibayangkan seperti jalan tol tak kasat mata yang sangat luas dan saling terhubung di seluruh dunia. Jalan tol ini tidak dilewati oleh mobil, melainkan dilewati oleh data dan informasi yang menghubungkan miliaran perangkat.
 
 ![Bagaimana Internet Bekerja](/cara_kerja_internet.png)
 
-Saat kamu mencari informasi, perangkatmu bertugas seperti Pak Pos. Ia mengirimkan "surat permintaan" melalui jaringan internet. Permintaan itu melaju sangat cepat menuju tempat penyimpanan informasi raksasa (disebut Server). Setelah informasinya ditemukan, internet mengirimkannya kembali ke perangkatmu. Semua proses ini terjadi hanya dalam kedipan mata!
-Misalnya: Kamu mengetik, “Cara membuat pesawat kertas yang bisa terbang jauh”. Perangkatmu mengirim permintaan melalui jalan tol internet. Lalu, internet mencari dan mengumpulkan video atau artikel yang paling cocok. Wuuush! Hasilnya langsung muncul di layarmu. Jadi, internet bukan sihir, ya! Internet adalah kehebatan teknologi jaringan.
+Saat kamu mencari informasi, perangkatmu bertugas seperti pak pos. Ia mengirimkan "surat permintaan" melalui jaringan internet. Permintaan itu melaju sangat cepat menuju tempat penyimpanan informasi raksasa (disebut *server*). Setelah informasinya ditemukan, internet mengirimkannya kembali ke perangkatmu. Semua proses ini terjadi hanya dalam kedipan mata.
+Misalnya: Kamu mengetik, "Cara membuat pesawat kertas yang bisa terbang jauh". Perangkatmu mengirim permintaan melalui jalan tol internet. Lalu, internet mencari dan mengumpulkan video atau artikel yang paling cocok. Hasilnya langsung muncul di layarmu. Jadi, internet bukan sihir, ya. Internet adalah kehebatan teknologi jaringan.
 
 Begini cara sederhana internet bekerja:
-1. Kamu menyalakan perangkat digital (HP/Laptop).
-2. Perangkatmu terhubung dengan Wi-Fi atau data seluler (membuka pintu tol internet).
-3. Kamu membuka aplikasi browser (seperti Google Chrome).
-4. Kamu mengetik kata kunci atau menekan sebuah tautan (link).
-5. Internet melesat membawa permintaanmu ke server.
+1. Kamu menyalakan perangkat digital (gawai/laptop).
+2. Perangkatmu terhubung dengan *Wi-Fi* atau data seluler (membuka pintu tol internet).
+3. Kamu membuka aplikasi peramban (seperti *Google Chrome*).
+4. Kamu mengetik kata kunci atau menekan sebuah tautan.
+5. Internet melesat membawa permintaanmu ke *server*.
 6. Informasi yang kamu minta dikirim kembali dan muncul di layarmu.
 
- Penting Diingat: Karena internet itu jalanan umum yang bebas dilewati siapa saja, tidak semua informasi di internet pasti benar, aman, atau cocok untuk anak-anak. Karena itu, kamu harus menjadi penjelajah internet yang cerdas!
+Penting Diingat: Karena internet itu jalanan umum yang bebas dilewati siapa saja, tidak semua informasi di internet pasti benar, aman, atau cocok untuk anak-anak. Karena itu, kamu harus menjadi penjelajah internet yang cerdas.
 
 ### D. Dua Sisi Koin: Manfaat dan Risiko Dunia Digital
 Dunia digital itu ibarat sebuah pisau. Di tangan yang tepat, pisau bisa digunakan untuk memotong buah dan memasak makanan lezat. Tapi jika digunakan sembarangan, pisau bisa melukai jarimu.
-Begitu juga dengan dunia digital. Pengguna digital yang hebat bukan hanya mereka yang jago main game atau cepat mengetik. Pengguna digital yang cerdas adalah mereka yang tahu cara memanfaatkan teknologi dengan aman, sopan, dan bertanggung jawab.
+Begitu juga dengan dunia digital. Pengguna digital yang hebat bukan hanya mereka yang jago bermain gim atau cepat mengetik. Pengguna digital yang cerdas adalah mereka yang tahu cara memanfaatkan teknologi dengan aman, sopan, dan bertanggung jawab.
 
 #### 1. Manfaat Dunia Digital
 Dunia digital membuka jendela dunia. Ini dia berbagai manfaat luar biasa yang bisa kita dapatkan:
@@ -271,45 +268,45 @@ Dunia digital membuka jendela dunia. Ini dia berbagai manfaat luar biasa yang bi
 | Manfaat Dunia Digital | Contoh Kegiatan Seru |
 |---|---|
 | Membantu Belajar | Menonton video pelajaran matematika yang sulit, membaca ensiklopedia digital, atau berlatih bahasa asing menggunakan aplikasi. |
-| Menjelajah Dunia (Virtual) | Mengunjungi museum luar negeri atau melihat permukaan planet Mars melalui Google Earth tanpa harus keluar kamar! |
+| Menjelajah Dunia (*Virtual*) | Mengunjungi museum luar negeri atau melihat permukaan planet Mars melalui *Google Earth* tanpa harus keluar kamar. |
 | Membantu Mencari Informasi | Mencari resep masakan untuk membantu Ibu, atau mencari tahu "Mengapa langit berwarna biru?" |
-| Membantu Berkomunikasi | Melakukan video call (panggilan video) dengan keluarga yang tinggal di luar kota, atau mengirim pesan ke guru. |
-| Membantu Membuat Karya | Mendesain poster kemerdekaan, menggambar ilustrasi digital, atau membuat slide presentasi yang keren. |
-| Membantu Bekerja Sama | Berdiskusi tugas kelompok dengan teman melalui dokumen online (seperti Google Docs) dari rumah masing-masing. |
-| Hiburan yang Sehat | Bermain game edukasi untuk mengasah otak atau mendengarkan musik santai. |
+| Membantu Berkomunikasi | Melakukan panggilan video dengan keluarga yang tinggal di luar kota, atau mengirim pesan ke guru. |
+| Membantu Membuat Karya | Mendesain poster kemerdekaan, menggambar ilustrasi digital, atau membuat salindia presentasi yang keren. |
+| Membantu Bekerja Sama | Berdiskusi tugas kelompok dengan teman melalui dokumen *daring* (seperti *Google Docs*) dari rumah masing-masing. |
+| Hiburan yang Sehat | Bermain gim edukasi untuk mengasah otak atau mendengarkan musik santai. |
 
 Teknologi digital akan sangat bermanfaat jika digunakan sesuai tujuan. Saat waktunya belajar, gunakan perangkat untuk belajar. Saat waktunya tidur, matikan perangkat agar tubuh dan matamu bisa beristirahat total.
 
 #### 2. Risiko Dunia Digital
-Meskipun menyenangkan, dunia maya punya lubang-lubang jebakan (risiko). Kita tidak perlu takut, kita hanya perlu mengenalinya agar tidak terperosok!
+Meskipun menyenangkan, dunia maya punya lubang-lubang jebakan (risiko). Kita tidak perlu takut, kita hanya perlu mengenalinya agar tidak terperosok.
 
 ![Risiko dan Bahaya Dunia Digital](/risiko_digital_safety.png)
 
 | Risiko Digital | Contoh Kejadian | Sikap Pengguna Cerdas (Penjelajah Hebat) |
 |---|---|---|
-| Penyebaran Data Pribadi | Tiba-tiba ada situs web game yang memintamu mengisi nama lengkap, alamat rumah, atau password sekolah. | Tutup halamannya! Jangan pernah membagikan data pribadimu kepada situs atau orang tak dikenal. |
-| Tautan Penipuan (Phishing) | Mendapat pesan WhatsApp berbunyi: "Selamat! Kamu menang hadiah iPhone 15! Klik link ini sekarang!" | Abaikan dan Hapus! Tidak asal klik tautan mencurigakan karena bisa merusak perangkat atau mencuri data. |
-| Konten Tidak Sesuai Usia | Di media sosial (TikTok, Reels, Shorts), tiba-tiba muncul video berisi kekerasan, kata kotor, tantangan berbahaya (challenge), atau hal menakutkan lainnya yang tidak pantas untuk usiamu. | Segera tutup aplikasinya! Jangan ditonton, jangan disukai (like), jangan ditiru, dan ceritakan kepada orang tua atau orang dewasa yang kamu percaya. |
-| Komentar Jahat (Cyberbullying) | Melihat teman diejek di grup kelas, atau kamu terpancing menulis kata-kata kasar karena marah di game. | Tarik napas panjang. Gunakan selalu bahasa yang sopan. Jika melihat buli, jadilah pembela atau laporkan pada guru. |
-| Informasi Palsu (Hoaks) | Membaca pesan "Besok kiamat karena ada meteor jatuh!" di media sosial. | Jangan langsung percaya! Cek kebenarannya dari sumber resmi atau tanyakan kepada orang dewasa. |
-| Kesehatan Fisik (Mata & Tubuh) | Menatap layar HP atau laptop tanpa henti selama 3 jam sampai mata merah, perih, dan leher pegal. | Terapkan rumus 20-20-20! (Setiap 20 menit, tatap benda sejauh 20 kaki/6 meter, selama 20 detik). Batasi waktu bermain. |
-| Mengambil Karya Orang Lain | Mengunduh hasil gambar orang dari Google, lalu mengakuinya sebagai hasil gambarmu sendiri. | Selalu jujur! Cantumkan nama sumber jika memakai gambar orang lain, atau belajarlah membuat karyamu sendiri. |
-| Lupa Waktu & Kewajiban | Asyik membuka game saat guru sedang menerangkan, atau lupa mengerjakan PR karena menonton YouTube. | Disiplin waktu. Kembali fokus to tugas utama. Ingat pepatah: Bermain ada waktunya, belajar ada waktunya! |
+| Penyebaran Data Pribadi | Tiba-tiba ada situs web gim yang memintamu mengisi nama lengkap, alamat rumah, atau kata sandi sekolah. | Tutup halamannya! Jangan pernah membagikan data pribadimu kepada situs atau orang tak dikenal. |
+| Tautan Penipuan (*Phishing*) | Mendapat pesan *WhatsApp* berbunyi: "Selamat! Kamu menang hadiah iPhone 15! Klik tautan ini sekarang!" | Abaikan dan hapus! Tidak asal menekan tautan mencurigakan karena bisa merusak perangkat atau mencuri data. |
+| Konten Tidak Sesuai Usia | Di media sosial (*TikTok*, *Reels*, *Shorts*), tiba-tiba muncul video berisi kekerasan, kata kotor, tantangan berbahaya (*challenge*), atau hal menakutkan lainnya yang tidak pantas untuk usiamu. | Segera tutup aplikasinya! Jangan ditonton, jangan disukai, jangan ditiru, dan ceritakan kepada orang tua atau orang dewasa yang kamu percaya. |
+| Komentar Jahat (*Cyberbullying*) | Melihat teman diejek di grup kelas, atau kamu terpancing menulis kata-kata kasar karena marah di dalam gim. | Tarik napas panjang. Gunakan selalu bahasa yang sopan. Jika melihat perundungan siber, jadilah pembela atau laporkan kepada guru. |
+| Informasi Palsu (Hoaks) | Membaca pesan "Besok kiamat karena ada meteor jatuh!" di media sosial. | Jangan langsung percaya. Cek kebenarannya dari sumber resmi atau tanyakan kepada orang dewasa. |
+| Kesehatan Fisik (Mata & Tubuh) | Menatap layar gawai atau laptop tanpa henti selama 3 jam sampai mata merah, perih, dan leher pegal. | Terapkan rumus 20-20-20! (Setiap 20 menit, tatap benda sejauh 20 kaki/6 meter, selama 20 detik). Batasi waktu bermain. |
+| Mengambil Karya Orang Lain | Mengunduh hasil gambar orang dari *Google*, lalu mengakuinya sebagai hasil gambarmu sendiri. | Selalu jujur. Cantumkan nama sumber jika memakai gambar orang lain, atau belajarlah membuat karyamu sendiri. |
+| Lupa Waktu & Kewajiban | Asyik bermain gim saat guru sedang menerangkan, atau lupa mengerjakan PR karena menonton *YouTube*. | Disiplin waktu. Kembali fokus pada tugas utama. Ingat pepatah: Bermain ada waktunya, belajar ada waktunya. |
 
-Risiko digital dapat muncul kapan saja: saat kita belajar, bermain, menonton video, atau membuka pesan. Karena itu, ingatlah kunci ini: Berhenti dan berpikir sejenak sebelum kamu menekan layar (klik) atau mengirim sesuatu di internet.
+Risiko digital dapat muncul kapan saja: saat kita belajar, bermain, menonton video, atau membuka pesan. Karena itu, ingatlah kunci ini: Berhenti dan berpikir sejenak sebelum kamu menekan layar atau mengirim sesuatu di internet.
 
 ### E. Batasan Usia dan Durasi Layar yang Sehat
 
 Tahukah kamu bahwa pemerintah Indonesia mengatur batasan usia anak dalam mengakses internet dan media sosial? Hal ini tertuang dalam **Peraturan Pemerintah (PP) Nomor 17 Tahun 2025 tentang Tata Kelola Penyelenggaraan Sistem Elektronik dalam Pelindungan Anak (PP TUNAS)**.
 
 Berdasarkan aturan tersebut, anak dikelompokkan sebagai berikut:
-1. **Di bawah 13 tahun (seperti kamu sekarang!)**: Hanya diperbolehkan memiliki akun pada produk dan layanan digital berisiko rendah yang dirancang khusus untuk anak-anak, dan wajib didampingi serta mendapatkan izin dari orang tua atau wali.
+1. **Di bawah 13 tahun (seperti kamu sekarang)**: Hanya diperbolehkan memiliki akun pada produk dan layanan digital berisiko rendah yang dirancang khusus untuk anak-anak, dan wajib didampingi serta mendapatkan izin dari orang tua atau wali.
 2. **13 hingga 15 tahun**: Dapat mengakses layanan digital dengan risiko sedang, namun tetap memerlukan persetujuan dari orang tua.
 3. **16 hingga 17 tahun**: Diizinkan mengakses layanan digital dengan risiko tinggi (seperti media sosial umum), asalkan telah mendapatkan persetujuan dari orang tua.
 
-Sebagai Penyelenggara Sistem Elektronik (PSE), aplikasi atau situs web wajib memverifikasi usia penggunanya agar anak-anak tidak salah masuk ke ruang digital yang berbahaya!
+Sebagai Penyelenggara Sistem Elektronik (PSE), aplikasi atau situs web wajib memverifikasi usia penggunanya agar anak-anak tidak salah masuk ke ruang digital yang berbahaya.
 
-Selain batasan usia, durasi menatap layar (*screentime*) juga sangat penting untuk dijaga. Rata-rata orang Indonesia menghabiskan **5,7 jam per hari** di internet (salah satu yang terlama di dunia!). Padahal, rekomendasi durasi layar sehat menurut para ahli kesehatan adalah:
+Selain batasan usia, durasi menatap layar (*screen time*) juga sangat penting untuk dijaga. Rata-rata orang Indonesia menghabiskan **5,7 jam per hari** di internet (salah satu yang terlama di dunia). Padahal, rekomendasi durasi layar sehat menurut para ahli kesehatan adalah:
 
 | Usia Anak | Rekomendasi Durasi Penggunaan Perangkat |
 |---|---|
@@ -319,7 +316,7 @@ Selain batasan usia, durasi menatap layar (*screentime*) juga sangat penting unt
 | **5 - 10 tahun** | Maksimal 2 jam per hari (di luar tugas sekolah), tanpa mengganggu tidur dan belajar. |
 | **10 - 17 tahun** | Maksimal 2 jam per hari (di luar tugas sekolah) agar kesehatan fisik dan interaksi sosial tetap terjaga. |
 
-Jika kamu terus-menerus menatap layar HP hingga gelisah saat ponsel jauh dari jangkauan, takut tertinggal informasi (FOMO), dan sulit fokus tanpa gawai, hati-hati! Kamu mungkin sedang mengalami **Nomophobia**. Yuk, atur waktu bermain gawai secara seimbang!
+Jika kamu terus-menerus menatap layar gawai hingga gelisah saat gawai jauh dari jangkauan, takut tertinggal informasi (*FOMO*), dan sulit fokus tanpa gawai, hati-hati. Kamu mungkin sedang mengalami *Nomophobia*. Yuk, atur waktu bermain gawai secara seimbang.
 
 Dari berbagai manfaat dan risiko di atas, pengalaman apa yang paling sering kamu temui saat menggunakan internet sehari-hari?`
     },
@@ -327,14 +324,14 @@ Dari berbagai manfaat dan risiko di atas, pengalaman apa yang paling sering kamu
       type: "ayo-mengamati",
       title: "Ayo, Mengamati!",
       content: `### Studi Kasus: Komitmen Digital Raka dan Sisi
-Raka sangat senang bermain game online di HP barunya. Suatu hari, saat sedang seru bermain, muncul notifikasi pesan dari orang asing yang menawarkan koin game gratis. Orang tersebut meminta Raka mengirimkan foto rapor sekolah dan nomor WhatsApp orang tuanya sebagai syarat. Raka ragu-ragu dan bingung.
+Raka sangat senang bermain gim *online* di gawai barunya. Suatu hari, saat sedang seru bermain, muncul notifikasi pesan dari orang asing yang menawarkan koin gim gratis. Orang tersebut meminta Raka mengirimkan foto rapor sekolah dan nomor WhatsApp orang tuanya sebagai syarat. Raka ragu-ragu dan bingung.
 
 Di sisi lain, Sisi selalu membuat jadwal kapan ia boleh bermain gawai dan kapan harus belajar, serta tidak pernah memberikan informasi pribadinya kepada siapa pun di internet. Sisi tahu bahwa menjaga rahasia data pribadi adalah hak sekaligus tanggung jawab penting untuk melindunginya di dunia digital.`,
       questions: [
         {
           id: qid(),
           type: "essay",
-          question: "Apa yang sebaiknya dilakukan Raka saat dimintai data pribadi (foto rapor dan nomor WA orang tua) oleh orang asing di game online?",
+          question: "Apa yang sebaiknya dilakukan Raka saat dimintai data pribadi (foto rapor dan nomor WA orang tua) oleh orang asing di gim online?",
           points: 10
         },
         {
@@ -707,7 +704,7 @@ Kamu akan:
             },
             {
               id: "d",
-              text: "Siswa sudah bisa mengetik dengan cepat dan bermain game online",
+              text: "Siswa sudah bisa mengetik dengan cepat dan bermain gim online",
               isCorrect: false
             }
           ],
@@ -724,7 +721,7 @@ Kamu akan:
         {
           id: qid(),
           type: "reflective",
-          question: "Untuk apa kamu paling sering menggunakan HP atau perangkat digital?",
+          question: "Untuk apa kamu paling sering menggunakan gawai atau perangkat digital?",
           points: 0
         },
         {
@@ -757,12 +754,12 @@ Kamu akan:
 };
 
 /* ═══════════════════════════════════════════════
- TOPIC 2 – Benar atau Meragukan? Yuk, Cek Dulu!
+ TOPIC 2 – Benar atau Meragukan? Yuk, Cek Dulu
  ═══════════════════════════════════════════════ */
 const topic2: Topic = {
   id: "topik-2",
   number: 2,
-  title: "Benar atau Meragukan? Yuk, Cek Dulu!",
+  title: "Benar atau Meragukan? Yuk, Cek Dulu",
   description: "Belajar membedakan informasi benar dan hoaks di internet.",
   icon: "search",
   color: "bg-amber-500",
@@ -773,40 +770,37 @@ const topic2: Topic = {
       type: "tujuan",
       title: "Tujuan Pembelajaran",
       content: `Setelah mempelajari topik ini, kamu diharapkan mampu:
-1. Menganalisis informasi yang diterima untuk mendeteksi apakah informasi tersebut valid atau meragukan dengan baik.
-2. Mengevaluasi kredibilitas sebuah informasi atau portal berita berdasarkan kriteria kelayakan (kejelasan sumber, tanggal, kesesuaian judul dengan isi, ketersediaan bukti, dan penggunaan gaya bahasa) dengan benar.
-3. Membedakan secara kritis antara fakta, opini dan hoaks pada informasi yang beredar di linimasa media digital dengan tepat.
-4. Menentukan tindakan dan keputusan yang tepat ketika menghadapi berita atau informasi yang terindikasi hoaks dengan baik.`
+1. menganalisis informasi yang diterima untuk mendeteksi apakah informasi tersebut valid atau meragukan dengan baik;
+2. mengevaluasi kredibilitas sebuah informasi atau portal berita berdasarkan kriteria kelayakan (kejelasan sumber, tanggal, kesesuaian judul dengan isi, ketersediaan bukti, dan penggunaan gaya bahasa) dengan benar; dan
+3. menentukan tindakan dan keputusan yang tepat ketika menghadapi berita atau informasi yang terindikasi hoaks dengan baik.`
     },
     {
       type: "kata-kunci",
       title: "Kata Kunci",
-      content: ` **Informasi** – Pesan, berita, gambar, video, atau data yang kita terima dari orang lain maupun internet.
+      content: `**Informasi** – Pesan, berita, gambar, video, atau data yang kita terima dari orang lain maupun internet.
 
- **Sumber Informasi** – Tempat asal suatu informasi, misalnya guru, sekolah, situs resmi, media berita, atau pesan di grup chat.
+**Sumber Informasi** – Tempat asal suatu informasi, misalnya guru, sekolah, situs resmi, media berita, atau pesan di grup percakapan.
 
- **Fakta** – Informasi yang dapat dibuktikan kebenarannya dengan data, bukti, atau sumber tepercaya.
+**Fakta** – Informasi yang dapat dibuktikan kebenarannya dengan data, bukti, atau sumber tepercaya.
 
- **Hoaks** – Informasi palsu atau menyesatkan yang sengaja disebarkan di dunia digital sehingga bisa membuat orang salah paham, panik, atau tertipu.
+**Hoaks** – Informasi palsu atau menyesatkan yang sengaja disebarkan di dunia digital sehingga bisa membuat orang salah paham, panik, atau tertipu.
 
- **Cek Fakta** – Kegiatan memeriksa kebenaran informasi dengan melihat sumber, tanggal, bukti, dan membandingkan dengan sumber lain.
+**Cek Fakta** – Kegiatan memeriksa kebenaran informasi dengan melihat sumber, tanggal, bukti, dan membandingkan dengan sumber lain.
 
- **Bijak Membagikan Informasi** – Sikap berhenti sejenak, memeriksa, dan bertanya kepada orang dewasa sebelum meneruskan informasi yang meragukan.`
+**Bijak Membagikan Informasi** – Sikap berhenti sejenak, memeriksa, dan bertanya kepada orang dewasa sebelum meneruskan informasi yang meragukan.`
     },
     {
       type: "peta-materi",
       title: "Peta Materi",
-      content: ` Peta perjalanan belajarmu:
+      content: `Peta perjalanan belajarmu:
 
- Tahap 1: Bersiap belajar dari cerita Raka dan pesan berantai di grup kelas.
- Tahap 2: Menjawab tantangan awal – Seberapa jeli matamu?
- Tahap 3: Belajar mengenal hoaks dan cara mengecek fakta.
- Tahap 4: Mengamati informasi – Benar atau meragukan?
- Tahap 5: Aktivitas Detektif Informasi – Menganalisis portal berita.
- Tahap 6: Bereksplorasi dalam simulasi Detektif Fakta.
- Tahap 7: Uji pemahaman akhir dan refleksi.
-
-Ayo jadi detektif yang cerdas! `
+Tahap 1: Membaca cerita Raka tentang pesan berantai di grup kelas.
+Tahap 2: Menjawab tantangan awal "Seberapa Jeli Matamu?".
+Tahap 3: Mempelajari materi tentang hoaks, fakta, opini, dan cara mengecek fakta.
+Tahap 4: Menganalisis informasi untuk menentukan apakah informasi tersebut valid atau meragukan.
+Tahap 5: Mengevaluasi kredibilitas portal berita berdasarkan sumber, tanggal, isi, bukti, dan gaya bahasa.
+Tahap 6: Menentukan tindakan yang tepat melalui simulasi Detektif Fakta.
+Tahap 7: Mengerjakan uji pemahaman dan refleksi belajar.`
     },
     {
       type: "bersiap-belajar",
@@ -814,7 +808,7 @@ Ayo jadi detektif yang cerdas! `
       content: "Jawab pertanyaan pemantik berikut berdasarkan cerita di bawah.",
       passage: `**Pesan di Grup Kelas**
 
-Pagi itu, Raka sedang bersiap-siap untuk pergi ke sekolah. Ia sudah memakai seragam dan sedang memasukkan buku ke dalam tas. Tiba-tiba, HP Raka berbunyi.
+Pagi itu, Raka sedang bersiap-siap untuk pergi ke sekolah. Ia sudah memakai seragam dan sedang memasukkan buku ke dalam tas. Tiba-tiba, gawai Raka berbunyi.
 
 Raka membuka pesan yang masuk. Pesan itu berbunyi:
 *"Besok semua murid tidak perlu masuk sekolah karena akan ada hujan besar. Sebarkan cepat ke semua teman!"*
@@ -834,7 +828,7 @@ Tidak lama kemudian, Digi, robot kecil teman belajar mereka, ikut membantu. Digi
 
 Raka pun tidak jadi menyebarkan pesan itu. Ia memilih memeriksa kebenaran informasi kepada wali kelas. Setelah ditanyakan, ternyata sekolah tetap masuk seperti biasa. Pesan tentang libur karena hujan besar itu tidak benar.
 
-Raka merasa lega karena belum menyebarkan pesan tersebut. Ia belajar bahwa tidak semua informasi di grup chat boleh langsung dipercaya. Mulai hari itu, Raka berjanji akan mengecek kebenaran informasi sebelum membagikannya kepada orang lain.`,
+Raka merasa lega karena belum menyebarkan pesan tersebut. Ia belajar bahwa tidak semua informasi di grup *chat* boleh langsung dipercaya. Mulai hari itu, Raka berjanji akan mengecek kebenaran informasi sebelum membagikannya kepada orang lain.`,
       mediaType: "image",
       mediaUrl: "/hoax_message_illustration.png",
       questions: [
@@ -929,10 +923,10 @@ Raka merasa lega karena belum menyebarkan pesan tersebut. Ia belajar bahwa tidak
     },
     {
       type: "yuk-belajar",
-      title: "Yuk, Belajar Bersama!",
-      content: `Setiap hari, kita pasti memegang HP, menonton televisi, atau membaca pesan dari teman. Dari benda-benda itu, kita menerima banyak sekali informasi.
+      title: "Yuk, Belajar Bersama",
+      content: `Setiap hari, kita pasti memegang gawai, menonton televisi, atau membaca pesan dari teman. Dari benda-benda itu, kita menerima banyak sekali informasi.
 
-Informasi sangat membantu kita belajar. Kita jadi tahu jadwal pelajaran besok, cara membuat kerajinan tangan, atau berita terbaru. Tapi, tahukah kamu? Tidak semua tulisan atau video yang ada di internet itu benar, lho!
+Informasi sangat membantu kita belajar. Kita jadi tahu jadwal pelajaran besok, cara membuat kerajinan tangan, atau berita terbaru. Namun, tahukah kamu? Tidak semua tulisan atau video yang ada di internet itu benar, lho.
 
 Seiring canggihnya teknologi, informasi gampang sekali dibuat dan disebarkan. Ada informasi yang benar, ada yang hanya pendapat seseorang, dan ada juga yang sengaja dibuat untuk menipu kita.
 
@@ -940,7 +934,7 @@ Yuk, kita belajar agar kamu bisa membedakan informasi yang benar (fakta) dengan 
 
 ### Misteri "Hujan Permen" di Kota Pelangi
 
-Suatu sore, sebuah pesan berantai masuk ke grup WhatsApp warga Kota Pelangi. Pesan itu ditulis dengan huruf kapital semua dan disertai banyak tanda seru. Bunyinya seperti ini:
+Suatu sore, sebuah pesan berantai masuk ke grup *WhatsApp* warga Kota Pelangi. Pesan itu ditulis dengan huruf kapital semua dan disertai banyak tanda seru. Bunyinya seperti ini:
 
 "PENGUMUMAN PENTING!!! Besok pagi pukul 08.00 WIB, helikopter dari pabrik permen terbesar di dunia akan membagikan 1 ton permen cokelat dari atas langit Kota Pelangi! Siapkan ember dan payung terbalik kalian! Jangan lupa sebarkan pesan ini ke 20 orang temanmu agar helikopternya jadi datang!!!"
 
@@ -952,11 +946,11 @@ Budi pulang dengan wajah cemberut. Ibunya tersenyum dan berkata, "Budi, sebelum 
 
 ### A. Informasi Ada di Sekitar Kita
 
-Dari cerita Budi, kita belajar satu pelajaran penting: **Jangan mudah terpancing!**
+Dari cerita Budi, kita belajar satu pelajaran penting: **Jangan mudah terpancing.**
 
 Setiap hari, kita menerima banyak sekali informasi. Informasi itu bisa kita temukan di buku, televisi, radio, papan pengumuman, internet, media sosial, video, atau pesan dari teman.
 
-Informasi sangat membantu kita! Dengan informasi, kita bisa mengetahui jadwal pelajaran, berita terbaru, cara membuat prakarya, atau langkah-langkah mengerjakan tugas. Informasi membuat kita terus belajar hal-hal baru.
+Informasi sangat membantu kita. Dengan informasi, kita bisa mengetahui jadwal pelajaran, berita terbaru, cara membuat prakarya, atau langkah-langkah mengerjakan tugas. Informasi membuat kita terus belajar hal-hal baru.
 
 Namun, pertanyaannya: **Apakah semua informasi yang kita temukan selalu benar?**
 
@@ -976,7 +970,7 @@ Kita tidak cukup hanya membaca judulnya saja, karena kadang judul dibuat heboh a
 Agar kamu tidak tertipu seperti anak-anak di Kota Pelangi, kamu wajib bisa membedakan tiga jenis informasi yang setiap hari berseliweran di internet. Mari kita pelajari perbedaannya dengan saksama.
 
 #### 1. FAKTA (Kenyataan yang Sebenarnya)
-Fakta adalah sesuatu yang benar-benar terjadi, ada buktinya yang nyata, dan tidak bisa dibantah oleh siapa pun karena memang begitulah keadaannya. Fakta itu seperti jawaban rumus matematika; tidak peduli kamu suka atau tidak, jawabannya tetap sama.
+Fakta adalah sesuatu yang benar-benar terjadi, ada buktinya yang nyata, dan tidak bisa dibantah oleh siapa pun karena memang begitulah keadaannya. Fakta itu seperti jawaban rumus matematika. Tidak peduli kamu suka atau tidak, jawabannya tetap sama.
 
 **Ciri-ciri Fakta:**
 - Memiliki data yang jelas dan akurat (ada angka, nama tempat, waktu kejadian).
@@ -995,11 +989,11 @@ Opini adalah pendapat, gagasan, perasaan, atau pikiran seseorang terhadap suatu 
 - Tidak memiliki bukti angka atau data yang pasti, karena hanya berdasarkan perasaan.
 
 *Contoh Kalimat Opini:*
-- "Menurutku, pelajaran Matematika adalah pelajaran yang paling menyenangkan dan mudah di dunia!" (Ini opini. Teman sebangkumu mungkin merasa pelajaran Olahraga yang paling mudah).
+- "Menurutku, pelajaran Matematika adalah pelajaran yang paling menyenangkan dan mudah di dunia." (Ini opini. Teman sebangkumu mungkin merasa pelajaran Olahraga yang paling mudah).
 - "Kucing adalah hewan peliharaan yang paling lucu dibandingkan anjing." (Ini juga opini, karena pecinta anjing pasti tidak akan setuju).
 
 #### 3. HOAKS (Berita Bohong atau Berita Palsu)
-Ini adalah musuh utama para detektif digital! Hoaks adalah informasi palsu, bohong, dan rekayasa yang sengaja dibuat agar terlihat seolah-olah sebagai sebuah kebenaran atau fakta.
+Ini adalah musuh utama para detektif digital. Hoaks adalah informasi palsu, bohong, dan rekayasa yang sengaja dibuat agar terlihat seolah-olah sebagai sebuah kebenaran atau fakta.
 
 Hoaks sangat berbahaya. Bentuknya bisa bermacam-macam, mulai dari cerita karangan, foto yang sudah diedit agar terlihat seram, atau video kejadian di luar negeri yang disebut-sebut terjadi di Indonesia.
 
@@ -1013,18 +1007,18 @@ Ada yang membuatnya hanya untuk iseng dan bercanda (padahal ini candaan yang san
 
 Nah, sekarang kamu sudah tahu musuh utamanya. Bagaimana cara melawannya? Jika kamu melihat pesan yang aneh, heboh, atau terlalu bagus untuk menjadi kenyataan (seperti hujan permen), gunakan jurus detektif ini:
 
-#### 1. Periksa Siapa Sumbernya!
+#### 1. Periksa Siapa Sumbernya
 Tanya pada dirimu: "Siapa yang menulis dan menyebarkan berita ini?"
-Informasi yang benar selalu memiliki sumber yang dapat dipercaya. Jika kamu mendapat berita bahwa sekolah akan diliburkan dari sebuah pesan terusan (forwarded) yang tidak jelas siapa penulis aslinya, kamu harus curiga. Namun, jika berita itu diumumkan langsung oleh Kepala Sekolah di lapangan upacara, maka itu adalah fakta yang bisa dipercaya.
+Informasi yang benar selalu memiliki sumber yang dapat dipercaya. Jika kamu mendapat berita bahwa sekolah akan diliburkan dari sebuah pesan terusan (*forwarded*) yang tidak jelas siapa penulis aslinya, kamu harus curiga. Namun, jika berita itu diumumkan langsung oleh Kepala Sekolah di lapangan upacara, maka itu adalah fakta yang bisa dipercaya.
 
-#### 2. Baca Isinya Sampai Tuntas!
+#### 2. Baca Isinya Sampai Tuntas
 Tanya pada dirimu: "Apakah aku sudah membaca seluruh teksnya dari atas sampai bawah?"
-Jangan pernah menyebarkan berita hanya dengan membaca judulnya saja! Pembuat hoaks sangat suka membuat judul yang heboh (clickbait) untuk memancing orang marah atau penasaran.
-*Contoh:* Judulnya tertulis "Gawat! Siswa SD Kini Dilarang Membawa Bekal ke Sekolah!" Jika kamu hanya baca judulnya, kamu pasti marah. Padahal, jika dibaca sampai baris terakhir, isinya adalah "Siswa dilarang membawa bekal berupa makanan cepat saji (junk food) dan disarankan membawa bekal sayuran sehat." Sangat berbeda, bukan?
+Jangan pernah menyebarkan berita hanya dengan membaca judulnya saja. Pembuat hoaks sangat suka membuat judul yang heboh (*clickbait*) untuk memancing orang marah atau penasaran.
+*Contoh:* Judulnya tertulis "Gawat! Siswa SD Kini Dilarang Membawa Bekal ke Sekolah!" Jika kamu hanya baca judulnya, kamu pasti marah. Padahal, jika dibaca sampai baris terakhir, isinya adalah "Siswa dilarang membawa bekal berupa makanan cepat saji (*junk food*) dan disarankan membawa bekal sayuran sehat." Sangat berbeda, bukan?
 
 #### 3. Periksa Tanggal
 Tanya pada dirimu: "Kapan berita ini sebenarnya dibuat?"
-Banyak pembuat hoaks yang malas. Mereka sering mendaur ulang berita lama. Misalnya, ada berita badai besar yang memang benar-benar terjadi pada tahun 2018. Namun, video itu disebarkan lagi pada tahun ini dengan tulisan "Awas, badai akan datang siang ini!" Hal ini tentu akan membuat warga panik, padahal cuaca sedang cerah benderang. Perhatikan selalu tanggal terbitnya sebuah berita!
+Banyak pembuat hoaks yang malas. Mereka sering mendaur ulang berita lama. Misalnya, ada berita badai besar yang memang benar-benar terjadi pada tahun 2018. Namun, video itu disebarkan lagi pada tahun ini dengan tulisan "Awas, badai akan datang siang ini!" Hal ini tentu akan membuat warga panik, padahal cuaca sedang cerah benderang. Perhatikan selalu tanggal terbitnya sebuah berita.
 
 #### 4. Bandingkan dengan Tempat Lain
 Tanya pada dirimu: "Apakah koran, berita televisi, atau orang dewasa yang tepercaya juga membicarakan hal ini?"
@@ -1043,34 +1037,34 @@ Maka abaikan saja! Orang yang menyampaikan fakta kebenaran tidak akan pernah mem
     },
     {
       type: "ayo-memahami",
-      title: "Ayo, Memahami!",
+      title: "Ayo, Memahami",
       content: "Perhatikan kelima informasi berikut pada layar gawai dan tentukan apakah informasi tersebut Benar atau Meragukan."
     },
     {
       type: "ayo-mengamati",
-      title: "Ayo, Mengamati!",
+      title: "Ayo, Mengamati",
       content: "Bandingkan kelima portal berita berikut dan analisislah kebenarannya dengan mengisi Lembar Kerja Detektif Informasi."
     },
     {
       type: "ayo-bereksplorasi",
-      title: "Ayo, Bereksplorasi!",
-      content: `## Simulasi: Menjadi Detektif Fakta 
+      title: "Ayo, Bereksplorasi",
+      content: `## Simulasi: Menjadi Detektif Fakta
 
 Dalam simulasi ini, kamu akan berperan sebagai **Detektif Fakta** yang bertugas memeriksa berbagai berita dan informasi.
 
 Kamu akan:
-1. Membaca berita-berita yang muncul di timeline
+1. Membaca berita-berita yang muncul di linimasa
 2. Menganalisis apakah berita itu **fakta**, **opini**, atau **hoaks**
 3. Memutuskan tindakan yang tepat untuk setiap berita
 4. Mendapatkan skor berdasarkan ketepatan analisismu
 
-Semakin teliti kamu, semakin tinggi skormu! Ayo buktikan bahwa kamu adalah Detektif Fakta yang hebat! `,
+Semakin teliti kamu, semakin tinggi skormu. Ayo buktikan bahwa kamu adalah Detektif Fakta yang hebat.`,
       simulationId: "hoax-detective"
     },
     {
       type: "uji-pemahaman",
-      title: "Uji Pemahamanmu!",
-      content: "Jawab semua pertanyaan untuk mendapatkan lencana **Detektif Fakta** ",
+      title: "Uji Pemahaman",
+      content: "Jawab semua pertanyaan untuk mendapatkan lencana **Detektif Fakta**.",
       questions: [
         {
           id: qid(),
@@ -1387,8 +1381,8 @@ Pesan B:
     },
     {
       type: "refleksi",
-      title: "Ayo, Renungkan!",
-      content: "Kamu sudah belajar menjadi detektif fakta. Sekarang, pikirkan kebiasaanmu saat menerima informasi di internet atau grup chat.",
+      title: "Ayo, Renungkan",
+      content: "Kamu sudah belajar menjadi detektif fakta. Sekarang, pikirkan kebiasaanmu saat menerima informasi di internet atau grup *chat*.",
       questions: [
         {
           id: qid(),
@@ -1425,42 +1419,43 @@ const topic3: Topic = {
       title: "Tujuan Pembelajaran",
       content: `Setelah mempelajari materi ini, kamu diharapkan mampu:
 
-1. **Mengklasifikasikan** jenis-jenis informasi pribadi dengan benar.
-2. **Mengevaluasi** informasi pribadi yang dapat dibagikan dengan tepat.
-3. **Merancang** kombinasi kata sandi (password) dengan kuat dan aman.
-4. **Menerapkan** konten atau foto yang dapat dibagikan ke dunia digital.
+1. **mengklasifikasikan** jenis-jenis informasi pribadi dengan benar;
+2. **mengevaluasi** informasi pribadi yang dapat dibagikan dengan tepat;
+3. **merancang** kombinasi kata sandi dengan kuat dan aman; dan
+4. **menerapkan** cara memilih konten atau foto yang aman untuk dibagikan di dunia digital.
 
-Data pribadimu itu seperti kunci rumah — kalau diberikan ke sembarang orang, rumahmu bisa dimasuki orang jahat! `
+Data pribadimu itu seperti kunci rumah — kalau diberikan ke sembarang orang, rumahmu bisa dimasuki orang jahat!`
     },
     {
       type: "kata-kunci",
       title: "Kata Kunci",
-      content: ` **Data Pribadi** – Informasi yang bisa digunakan untuk mengenali seseorang, seperti nama lengkap, alamat, nomor telepon.
+      content: ` **Informasi Pribadi** – Informasi yang dapat digunakan untuk mengenali seseorang, seperti nama lengkap, alamat, dan nomor telepon.
 
  **Privasi** – Hak untuk menjaga informasi pribadi agar tidak diketahui orang lain tanpa izin.
 
- **Password (Kata Sandi)** – Kode rahasia untuk mengakses akun. Harus kuat dan tidak boleh dibagikan.
+ **Kata Sandi** – Kode rahasia untuk mengakses akun. Harus kuat dan tidak boleh dibagikan kepada siapa pun.
 
- **Phishing** – Upaya menipu seseorang untuk memberikan data pribadi melalui pesan atau website palsu.
+ ***Phishing*** **(Penipuan Daring)** – Upaya menipu seseorang agar memberikan informasi pribadi melalui pesan atau situs web palsu.
 
- **Pengaturan Privasi** – Fitur di aplikasi atau media sosial yang mengatur siapa saja yang bisa melihat informasimu.
+ **Pengaturan Privasi** – Fitur di aplikasi atau media sosial yang mengatur siapa saja yang dapat melihat informasimu.
 
- **Data Sensitif** – Data yang sangat pribadi seperti nomor KTP, password, informasi keuangan keluarga.`
+ **Jejak Digital** – Rekam jejak atau bekas aktivitas yang kita tinggalkan saat menggunakan internet.
+
+ **Data Sensitif** – Data yang sangat pribadi, seperti nomor KTP, kata sandi, dan informasi keuangan keluarga.`
     },
     {
       type: "peta-materi",
       title: "Peta Materi",
-      content: ` Peta perjalanan belajarmu:
+      content: `Peta perjalanan belajarmu:
 
- Tahap 1: Bersiap belajar dari cerita komik Bima dan formulir yang mencurigakan.
- Tahap 2: Menjawab tantangan awal – Apa yang kamu ketahui tentang privasi?
- Tahap 3: Belajar tentang data pribadi, jejak digital, dan cara melindunginya.
- Tahap 4: Latihan memahami – Mengenali data pribadi dan phishing.
- Tahap 5: Mengamati studi kasus Rani dan game online.
- Tahap 6: Bereksplorasi dalam simulasi Privasi di Media Sosial.
- Tahap 7: Uji pemahaman akhir dan refleksi.
-
-Jadilah Guardian Privasi! `
+Tahap 1: Membaca cerita Raka tentang membagikan data pribadi di internet.
+Tahap 2: Menjawab tantangan awal "Aman atau Tidak?".
+Tahap 3: Mempelajari jenis-jenis informasi pribadi, jejak digital, dan pentingnya menjaga privasi.
+Tahap 4: Mengklasifikasikan informasi pribadi yang boleh dan tidak boleh dibagikan.
+Tahap 5: Mengevaluasi informasi pribadi yang aman untuk dibagikan dalam berbagai situasi.
+Tahap 6: Merancang kata sandi yang kuat dan memilih konten yang aman untuk dibagikan di dunia digital.
+Tahap 7: Menerapkan cara berbagi konten secara aman.
+Tahap 8: Mengerjakan uji pemahaman dan refleksi belajar.`
     },
     {
       type: "bersiap-belajar",
@@ -1489,7 +1484,7 @@ Yuk, kita baca cerita komik di bawah ini untuk melihat apa yang dialami oleh Bim
         {
           id: qid(),
           type: "reflective",
-          question: "Pernahkah kamu melihat halaman, aplikasi, atau game yang meminta data pribadi? Apa yang kamu lakukan saat itu?",
+          question: "Pernahkah kamu melihat halaman, aplikasi, atau gim yang meminta informasi pribadi? Apa yang kamu lakukan saat itu?",
           points: 0
         }
       ]
@@ -1530,7 +1525,7 @@ Yuk, kita baca cerita komik di bawah ini untuk melihat apa yang dialami oleh Bim
         {
           id: qid(),
           type: "mc",
-          question: "Password yang kuat seharusnya...",
+          question: "Kata sandi yang kuat seharusnya...",
           options: [
             {
               id: "a",
@@ -1592,7 +1587,7 @@ Yuk, kita baca cerita komik di bawah ini untuk melihat apa yang dialami oleh Bim
 Nah, pada topik ini kamu akan belajar mengenali data pribadi. Kamu juga akan belajar cara menjaga data pribadi agar tidak disalahgunakan orang lain.
 
 ## A. Data Pribadi Ada di Sekitar Kita
-Pernahkah kamu menulis nama di buku tugas? Pernahkah kamu mengisi nama saat masuk ke aplikasi belajar? Atau mungkin kamu pernah membuat akun gim, akun belajar, atau bergabung ke grup kelas? Saat melakukan kegiatan itu, kamu biasanya diminta menuliskan beberapa informasi tentang dirimu. Misalnya nama, kelas, nama sekolah, atau alamat email. Informasi seperti itu disebut data pribadi.
+Pernahkah kamu menulis nama di buku tugas? Pernahkah kamu mengisi nama saat masuk ke aplikasi belajar? Atau mungkin kamu pernah membuat akun gim, akun belajar, atau bergabung ke grup kelas? Saat melakukan kegiatan itu, kamu biasanya diminta menuliskan beberapa informasi tentang dirimu. Misalnya nama, kelas, nama sekolah, atau alamat surel (*email*). Informasi seperti itu disebut data pribadi.
 
 Data pribadi adalah informasi yang berkaitan dengan diri seseorang. Data ini dapat menunjukkan siapa diri kita, di mana kita tinggal, bagaimana orang lain dapat menghubungi kita, atau akun apa yang kita gunakan.
 
@@ -1604,7 +1599,7 @@ Contoh data pribadi antara lain:
 - Nama orang tua
 - Nama sekolah dan kelas
 - Foto diri
-- Alamat email
+- Alamat surel (*email*)
 - Nama akun
 - Kata sandi
 - Lokasi rumah atau sekolah
@@ -1617,7 +1612,7 @@ Tidak semua data pribadi boleh dibagikan sembarangan. Ada data yang boleh dituli
 ## B. Tidak Semua Informasi Boleh Dibagikan
 Coba perhatikan dua kalimat berikut.
 - Kalimat 1: "Namaku Raka. Aku suka menggambar hewan."
-- Kalimat 2: "Namaku Raka Pratama. Aku kelas 5 SD Harapan. Rumahku di Jalan Melati Nomor 10. Nomor HP ibuku 08xxxxxxxx."
+- Kalimat 2: "Namaku Raka Pratama. Aku kelas 5 SD Harapan. Rumahku di Jalan Melati Nomor 10. Nomor gawai ibuku 08xxxxxxxx."
 
 Menurutmu, kalimat mana yang lebih berisiko jika ditulis di internet?
 Kalimat pertama hanya berisi nama panggilan dan hobi. Informasi itu masih tergolong umum. Namun, kalimat kedua berisi nama lengkap, sekolah, alamat rumah, dan nomor telepon orang tua. Informasi seperti itu harus dijaga karena dapat membuat orang lain mengetahui terlalu banyak tentang diri kita.
@@ -1655,7 +1650,7 @@ Kadang-kadang kita memang perlu mengisi data. Misalnya saat mengerjakan kuis dar
 
 Namun, sebelum mengisi data, kamu perlu memperhatikan beberapa hal.
 1. Lihat siapa yang meminta data tersebut. Jika formulir diberikan oleh guru, sekolah, atau orang tua, kemungkinan formulir itu memang diperlukan. Namun, tetap isi sesuai arahan.
-2. Perhatikan data apa saja yang diminta. Jika hanya meminta nama panggilan dan kelas, biasanya masih aman untuk kegiatan belajar. Tetapi jika meminta alamat rumah, nomor HP orang tua, foto kartu keluarga, atau kata sandi, kamu harus bertanya kepada guru atau orang tua terlebih dahulu.
+2. Perhatikan data apa saja yang diminta. Jika hanya meminta nama panggilan dan kelas, biasanya masih aman untuk kegiatan belajar. Tetapi jika meminta alamat rumah, nomor gawai orang tua, foto kartu keluarga, atau kata sandi, kamu harus bertanya kepada guru atau orang tua terlebih dahulu.
 3. Jangan pernah menulis kata sandi di formulir apa pun. Kata sandi hanya digunakan oleh pemilik akun. Guru, teman, atau aplikasi belajar tidak seharusnya meminta kata sandi pribadimu.
 4. Jangan langsung menekan tombol kirim jika belum yakin. Baca kembali data yang kamu tulis. Jika ada yang membuatmu bingung, berhenti dan bertanyalah.
 
@@ -1665,24 +1660,24 @@ Namun, sebelum mengisi data, kamu perlu memperhatikan beberapa hal.
 Setiap kali kita menulis, mengunggah, mengirim pesan, atau mengisi sesuatu di internet, kegiatan itu dapat meninggalkan **Jejak Digital**. Jejak digital adalah rekaman, bekas, atau riwayat aktivitas kita saat menjelajahi dunia digital. Sama seperti berjalan di atas pasir pantai basah yang meninggalkan bekas kaki, setiap tindakan kita di internet meninggalkan bekas yang bisa dilihat orang lain.
 
 Ada dua jenis jejak digital yang perlu kamu ketahui:
-1. **Jejak Digital Aktif**: Jejak yang kita tinggalkan secara sadar dan sengaja. Contohnya: mengirim pesan di grup chat kelas, mengunggah foto atau video di media sosial, menulis komentar di bawah video YouTube, atau mengisi formulir pendaftaran akun gim.
-2. **Jejak Digital Pasif**: Jejak yang tertinggal tanpa kita sadari secara langsung. Contohnya: situs web yang merekam alamat internet (IP Address) kita saat kita mengunjunginya, aplikasi yang merekam lokasi keberadaan kita melalui GPS, atau riwayat pencarian yang mengingat apa saja yang pernah kita cari.
+1. **Jejak Digital Aktif**: Jejak yang kita tinggalkan secara sadar dan sengaja. Contohnya: mengirim pesan di grup *chat* kelas, mengunggah foto atau video di media sosial, menulis komentar di bawah video *YouTube*, atau mengisi formulir pendaftaran akun gim.
+2. **Jejak Digital Pasif**: Jejak yang tertinggal tanpa kita sadari secara langsung. Contohnya: situs web yang merekam alamat internet (*IP Address*) kita saat kita mengunjunginya, aplikasi yang merekam lokasi keberadaan kita melalui *GPS*, atau riwayat pencarian yang mengingat apa saja yang pernah kita cari.
 
 ### Mengapa Kita Harus Peduli dengan Jejak Digital?
-Mungkin kamu berpikir, "Ah, kan tinggal klik hapus, beres!" Kenyataannya tidak semudah itu. Di dunia digital, apa yang sudah dibagikan sangat sulit untuk benar-benar dihilangkan karena:
-- **Mudah Menyebar & Disimpan**: Orang lain bisa dengan cepat mengunduh foto kita atau mengambil tangkapan layar (screenshot) pesan kita, lalu menyebarkannya lagi bahkan setelah kita menghapus postingan asli kita.
-- **Bersifat Permanen (Abadi)**: Data di internet disimpan di komputer raksasa (server) penyedia aplikasi yang tidak selalu terhapus saat kita menutup akun.
+Mungkin kamu berpikir, "Ah, kan tinggal klik hapus, beres." Kenyataannya tidak semudah itu. Di dunia digital, apa yang sudah dibagikan sangat sulit untuk benar-benar dihilangkan karena:
+- **Mudah Menyebar & Disimpan**: Orang lain bisa dengan cepat mengunduh foto kita atau mengambil tangkapan layar (*screenshot*) pesan kita, lalu menyebarkannya lagi bahkan setelah kita menghapus *unggahan* asli kita.
+- **Bersifat Permanen (Abadi)**: Data di internet disimpan di komputer raksasa (*server*) penyedia aplikasi yang tidak selalu terhapus saat kita menutup akun.
 - **Bisa Memengaruhi Masa Depan**: Ketika kamu tumbuh dewasa dan mendaftar ke sekolah yang lebih tinggi atau melamar pekerjaan, pihak sekolah atau perusahaan sering kali memeriksa jejak digitalmu. Jejak digital yang buruk (seperti suka mengejek teman di internet, menggunakan kata kasar, atau membagikan konten buruk) bisa membuatmu kehilangan kesempatan berharga.
 
 ### Tips Menjaga Jejak Digital Tetap Bersih (Rumus T.H.I.N.K.)
 Sebelum kamu membagikan foto, mengirim komentar, atau mengisi formulir apa pun di internet, selalu ingat rumus **T.H.I.N.K.**:
 - **T (True / Benar)**: Apakah informasi yang saya bagikan ini benar dan bukan kabar bohong (hoaks)?
 - **H (Helpful / Bermanfaat)**: Apakah kiriman ini membantu atau berguna bagi orang lain?
-- **I (Inspiring / Menginspirasi)**: Apakah komentar atau postingan ini memberikan semangat positif bagi yang membaca?
+- **I (Inspiring / Menginspirasi)**: Apakah komentar atau *unggahan* ini memberikan semangat positif bagi yang membaca?
 - **N (Necessary / Penting)**: Apakah ini benar-benar perlu dibagikan? Atau justru membocorkan data pribadi saya?
 - **K (Kind / Sopan)**: Apakah kata-kata yang saya gunakan sopan dan tidak menyakiti perasaan orang lain?
 
-Jejak digital dapat berguna jika digunakan dengan baik. Misalnya, tugas yang dikirim lewat aplikasi belajar dapat membantu guru menilai pekerjaanmu. Namun, jejak digital juga bisa merugikan jika kamu sembarangan membagikan data pribadi. Karena itu, jadilah pengguna digital yang cerdas dan hati-hati!
+Jejak digital dapat berguna jika digunakan dengan baik. Misalnya, tugas yang dikirim lewat aplikasi belajar dapat membantu guru menilai pekerjaanmu. Namun, jejak digital juga bisa merugikan jika kamu sembarangan membagikan data pribadi. Karena itu, jadilah pengguna digital yang cerdas dan hati-hati.
 
 ![Jejak Digital Kaki](/jejak_digital_kaki.png)`
     },
@@ -1741,7 +1736,7 @@ Jejak digital dapat berguna jika digunakan dengan baik. Misalnya, tugas yang dik
             },
             {
               id: "d",
-              text: "Cara mengirim email",
+              text: "Cara mengirim surel",
               isCorrect: false
             }
           ],
@@ -1751,7 +1746,7 @@ Jejak digital dapat berguna jika digunakan dengan baik. Misalnya, tugas yang dik
           id: qid(),
           type: "essay",
           question: "Sebutkan 3 cara yang bisa kamu lakukan untuk melindungi data pribadimu di internet!",
-          correctAnswer: "Membuat password yang kuat, mengatur privasi akun, tidak membagikan data sensitif, waspada phishing, bertanya pada orang tua.",
+          correctAnswer: "Membuat kata sandi yang kuat, mengatur privasi akun, tidak membagikan data sensitif, waspada phishing, bertanya kepada orang tua.",
           points: 20
         }
       ]
@@ -1759,18 +1754,18 @@ Jejak digital dapat berguna jika digunakan dengan baik. Misalnya, tugas yang dik
     {
       type: "ayo-mengamati",
       title: "Ayo, Mengamati!",
-      content: `## Studi Kasus: Rani dan Game Online
+      content: `## Studi Kasus: Rani dan Gim *Online*
 
-Rani sangat suka bermain game online. Suatu hari, dia menerima pesan di dalam game:
+Rani sangat suka bermain gim *online*. Suatu hari, dia menerima pesan di dalam gim:
 
-> "Halo Rani! Aku admin game. Kami sedang memberikan hadiah 1000 diamond gratis! Untuk mendapatkannya, kirimkan nama lengkap, email, password, dan nomor HP orang tuamu."
+> "Halo Rani! Aku admin gim. Kami sedang memberikan hadiah 1000 *diamond* gratis! Untuk mendapatkannya, kirimkan nama lengkap, surel, kata sandi, dan nomor gawai orang tuamu."
 
 Rani sangat senang dan hampir saja mengirimkan datanya. Untungnya, dia ingat pelajaran tentang privasi data.
 
 ### Apa yang dilakukan Rani?
 1. Tidak mengirimkan data apapun
-2. Mengecek apakah benar ada event hadiah di website resmi game
-3. Melaporkan akun tersebut ke admin game yang asli
+2. Mengecek apakah benar ada kegiatan hadiah di situs web resmi gim
+3. Melaporkan akun tersebut ke admin gim yang asli
 4. Memberitahu orang tuanya tentang pesan tersebut
 
 Ternyata, pesan itu adalah **phishing** — upaya untuk mencuri data pribadi Rani!`,
@@ -1787,12 +1782,12 @@ Ternyata, pesan itu adalah **phishing** — upaya untuk mencuri data pribadi Ran
             },
             {
               id: "b",
-              text: "Karena meminta data pribadi seperti password dan nomor HP",
+              text: "Karena meminta informasi pribadi seperti kata sandi dan nomor gawai",
               isCorrect: true
             },
             {
               id: "c",
-              text: "Karena dikirim melalui game",
+              text: "Karena dikirim melalui gim",
               isCorrect: false
             },
             {
@@ -1865,7 +1860,7 @@ Ingat: privasimu adalah hakmu! Kamu yang menentukan siapa yang boleh tahu inform
           id: qid(),
           type: "mc",
           question: "Tindakan paling aman yang dilakukan Dika adalah....",
-          context: "Dika membuka gim edukasi. Sebelum bermain, muncul formulir yang meminta nama lengkap, alamat rumah, nomor HP orang tua, dan kata sandi akun.",
+          context: "Dika membuka gim edukasi. Sebelum bermain, muncul formulir yang meminta nama lengkap, alamat rumah, nomor gawai orang tua, dan kata sandi akun.",
           options: [
             {
               id: "a",
@@ -1950,7 +1945,7 @@ Ingat: privasimu adalah hakmu! Kamu yang menentukan siapa yang boleh tahu inform
           id: qid(),
           type: "mc",
           question: "Keputusan yang paling tepat untuk formulir tersebut adalah....",
-          context: "Formulir dari wali kelas meminta nama lengkap, kelas, dan nomor HP orang tua untuk kegiatan lomba sekolah.",
+          context: "Formulir dari wali kelas meminta nama lengkap, kelas, dan nomor gawai orang tua untuk kegiatan lomba sekolah.",
           options: [
             {
               id: "a",
@@ -1959,7 +1954,7 @@ Ingat: privasimu adalah hakmu! Kamu yang menentukan siapa yang boleh tahu inform
             },
             {
               id: "b",
-              text: "Mengisi nama dan kelas saja, lalu mengosongkan nomor HP orang tua",
+              text: "Mengisi nama dan kelas saja, lalu mengosongkan nomor gawai orang tua",
               isCorrect: false
             },
             {
@@ -1969,7 +1964,7 @@ Ingat: privasimu adalah hakmu! Kamu yang menentukan siapa yang boleh tahu inform
             },
             {
               id: "d",
-              text: "Menulis nomor HP lain agar data orang tua tidak terlihat",
+              text: "Menulis nomor gawai lain agar data orang tua tidak terlihat",
               isCorrect: false
             }
           ],
@@ -2076,7 +2071,7 @@ Ingat: privasimu adalah hakmu! Kamu yang menentukan siapa yang boleh tahu inform
             },
             {
               id: "c",
-              text: "karena alamat rumah aman dibagikan jika tidak disertai nomor HP",
+              text: "karena alamat rumah aman dibagikan jika tidak disertai nomor gawai",
               isCorrect: false
             },
             {
@@ -2167,42 +2162,40 @@ Internet itu seperti kota besar — seru untuk dijelajahi, tapi kamu harus tahu 
     {
       type: "kata-kunci",
       title: "Kata Kunci",
-      content: ` **Malware** – Perangkat lunak jahat yang bisa merusak komputer atau HP, seperti virus.
+      content: ` ***Malware*** **(Perangkat Lunak Jahat)** – Perangkat lunak jahat yang dapat merusak gawai atau komputer, seperti virus.
 
- **Virus Komputer** – Program jahat yang bisa menyebar dan merusak file di perangkatmu.
+ **Virus Komputer** – Program jahat yang dapat menyebar dan merusak berkas di perangkatmu.
 
- **Spam** – Pesan yang tidak diinginkan, biasanya berisi iklan atau penipuan.
+ ***Spam*** – Pesan yang tidak diinginkan, biasanya berisi iklan atau penipuan.
 
- **Pop-up** – Jendela kecil yang muncul tiba-tiba di layar, biasanya berisi iklan atau peringatan palsu.
+ ***Pop-up*** – Jendela kecil yang muncul tiba-tiba di layar, biasanya berisi iklan atau peringatan palsu.
 
- **Link Mencurigakan** – Tautan yang bisa mengarahkan ke website berbahaya.
+ **Tautan Mencurigakan** – Tautan yang dapat mengarahkan ke situs web berbahaya.
 
- **Update (Pembaruan)** – Versi terbaru aplikasi atau sistem operasi yang memperbaiki keamanan.
+ **Pembaruan (*Update*)** – Versi terbaru aplikasi atau sistem operasi yang memperbaiki keamanan.
 
- **Antivirus** – Program yang melindungi perangkat dari virus dan malware.
+ **Antivirus** – Program yang melindungi perangkat dari virus dan *malware*.
 
- **Trojan (Kuda Troya)** – Malware yang menyamar sebagai aplikasi atau game yang bagus, padahal sebenarnya berbahaya.
+ ***Trojan*** **(Kuda Troya)** – *Malware* yang menyamar sebagai aplikasi atau gim yang bagus, padahal sebenarnya berbahaya.
 
- **Wi-Fi Publik** – Internet gratis di tempat umum (kafe, taman) yang bisa tidak aman karena data dapat disadap orang lain.
+ ***Wi-Fi*** **Publik** – Internet gratis di tempat umum (kafe, taman) yang dapat tidak aman karena data dapat disadap orang lain.
 
- **VPN (Virtual Private Network)** – Layanan yang mengamankan koneksi internet menjadi seperti "terowongan rahasia" yang sulit disadap.
+ ***VPN*** **(***Virtual Private Network***)** – Layanan yang mengamankan koneksi internet menjadi seperti "terowongan rahasia" yang sulit disadap.
 
- **HTTPS / Ikon Gembok** – Tanda bahwa sebuah situs web aman karena koneksi datanya terenkripsi.`
+ ***HTTPS*** **/ Ikon Gembok** – Tanda bahwa sebuah situs web aman karena koneksi datanya terenkripsi.`
     },
     {
       type: "peta-materi",
       title: "Peta Materi",
-      content: ` Peta perjalanan belajarmu:
+      content: `Peta perjalanan belajarmu:
 
- Tahap 1: Bersiap belajar dari cerita Raka, Naya, dan Digi tentang tautan mencurigakan.
- Tahap 2: Menjawab tantangan awal – Apa yang kamu ketahui tentang keamanan internet?
- Tahap 3: Belajar tentang ancaman siber, jurus 4P, dan cara mengatasinya.
- Tahap 4: Latihan memahami – Trojan, website aman, dan Wi-Fi publik.
- Tahap 5: Mengamati studi kasus Riko dan aplikasi "gratis".
- Tahap 6: Bereksplorasi dalam simulasi Ksatria Siber.
- Tahap 7: Uji pemahaman akhir dan refleksi.
-
-Jadilah Ksatria Siber yang tangguh! `
+Tahap 1: Membaca cerita Raka tentang pesan berantai di grup kelas.
+Tahap 2: Menjawab tantangan awal "Seberapa Jeli Matamu?".
+Tahap 3: Mempelajari materi tentang hoaks, fakta, opini, dan cara mengecek fakta.
+Tahap 4: Menganalisis informasi untuk menentukan apakah informasi tersebut valid atau meragukan.
+Tahap 5: Mengevaluasi kredibilitas portal berita berdasarkan sumber, tanggal, isi, bukti, dan gaya bahasa.
+Tahap 6: Menentukan tindakan yang tepat melalui simulasi Detektif Fakta.
+Tahap 7: Mengerjakan uji pemahaman dan refleksi belajar.`
     },
     {
       type: "bersiap-belajar",
@@ -2210,13 +2203,13 @@ Jadilah Ksatria Siber yang tangguh! `
       content: "Setelah membaca cerita di bawah, pikirkan: pernahkah kamu melihat pesan seperti itu? Apa yang kamu lakukan saat itu?",
       passage: `**Tahan Dulu Sebelum Klik!**
 
-Pernahkah kamu melihat pesan seperti ini saat menggunakan HP, Chromebook, atau komputer?
+Pernahkah kamu melihat pesan seperti ini saat menggunakan gawai, *Chromebook*, atau komputer?
 *"Selamat! Kamu mendapat hadiah gratis. Klik sekarang!"*
 *"Akunmu akan ditutup. Masukkan kata sandi di sini!"*
-*"Download aplikasi ini agar game-mu menang terus!"*
-*"Klik link ini, jangan beri tahu siapa-siapa!"*
+*"Unduh aplikasi ini agar gim-mu menang terus!"*
+*"Klik tautan ini, jangan beri tahu siapa-siapa!"*
 
-Pesan seperti itu mungkin terlihat menarik. Ada yang menjanjikan hadiah, kuota gratis, item game, aplikasi keren, atau video seru. Namun, apakah semua pesan seperti itu aman untuk dibuka? Belum tentu.
+Pesan seperti itu mungkin terlihat menarik. Ada yang menjanjikan hadiah, kuota gratis, item gim, aplikasi keren, atau video seru. Namun, apakah semua pesan seperti itu aman untuk dibuka? Belum tentu.
 
 Ada tautan yang dapat membawa kita ke halaman yang tidak sesuai untuk anak-anak. Ada juga tautan yang meminta data pribadi, seperti nama lengkap, alamat rumah, nomor telepon, atau kata sandi. Bahkan, ada tautan yang dapat mengarahkan kita untuk mengunduh aplikasi berbahaya.
 
@@ -2277,7 +2270,7 @@ Sekarang, perhatikan beberapa pesan berikut. Tugasmu hanya membaca, mengamati, d
             },
             {
               id: "c",
-              text: "Aman, karena dikirim lewat HP",
+              text: "Aman, karena dikirim lewat gawai",
               isCorrect: false
             },
             {
@@ -2353,18 +2346,18 @@ Sekarang, perhatikan beberapa pesan berikut. Tugasmu hanya membaca, mengamati, d
     {
       type: "yuk-belajar",
       title: "Yuk, Belajar Bersama!",
-      content: `## A. Mengenal Tautan (Link) dan Konten di Internet
-Saat menggunakan internet, kamu pasti sering menemukan tautan atau sering disebut link. Tautan biasanya berupa teks berwarna biru yang bisa diklik. Tautan adalah alamat yang akan membawamu berpindah dari satu halaman ke halaman lain. Misalnya, ketika kamu mengeklik judul video YouTube, membuka modul pelajaran dari sekolah, atau masuk ke halaman tugas.
+      content: `## A. Mengenal Tautan (*Link*) dan Konten di Internet
+Saat menggunakan internet, kamu pasti sering menemukan tautan atau sering disebut *link*. Tautan biasanya berupa teks berwarna biru yang bisa diklik. Tautan adalah alamat yang akan membawamu berpindah dari satu halaman ke halaman lain. Misalnya, ketika kamu mengeklik judul video *YouTube*, membuka modul pelajaran dari sekolah, atau masuk ke halaman tugas.
 
 *Tautan itu persis seperti pintu. Ada dua jenis pintu di internet:*
-1. **Pintu Aman (Tautan Resmi):** Membawa kamu ke halaman resmi sekolah (seperti Google Classroom), video belajar yang aman, atau situs terpercaya. Aman diklik!
-2. **Pintu Bahaya (Tautan Palsu):** Membawa kamu ke situs penipuan yang mencoba mencuri kata sandimu (phishing), merusak perangkat dengan virus, atau menampilkan iklan kotor. Harus dihindari!
+1. **Pintu Aman (Tautan Resmi):** Membawa kamu ke halaman resmi sekolah (seperti *Google Classroom*), video belajar yang aman, atau situs terpercaya. Aman diklik.
+2. **Pintu Bahaya (Tautan Palsu):** Membawa kamu ke situs penipuan yang mencoba mencuri kata sandimu (*phishing*), merusak perangkat dengan virus, atau menampilkan iklan kotor. Harus dihindari.
 
 Selain tautan, di balik pintu-pintu itu terdapat Konten.
-Konten adalah semua isi yang ada di internet. Bentuknya bisa berupa teks, foto, video, rekaman suara, kolom komentar, permainan (game), dan iklan.
+Konten adalah semua isi yang ada di internet. Bentuknya bisa berupa teks, foto, video, rekaman suara, kolom komentar, permainan (gim), dan iklan.
 Ingat, tidak semua konten di internet cocok untuk anak-anak. Ada konten yang sangat bermanfaat, tetapi ada juga konten yang menakutkan, kasar, mengejek orang lain, atau meminta kamu melakukan tantangan yang berbahaya.
 
-Jadi, saat memegang gawai, kamu adalah kaptennya! Selalu tanyakan tiga hal ini pada dirimu sendiri:
+Jadi, saat memegang gawai, kamu adalah kaptennya. Selalu tanyakan tiga hal ini pada dirimu sendiri:
 - "Apakah tempat ini aman?"
 - "Apakah tontonan ini sesuai untuk usiaku?"
 - "Apakah aku perlu meminta bantuan guru atau Ayah dan Ibu?"
@@ -2372,39 +2365,40 @@ Jadi, saat memegang gawai, kamu adalah kaptennya! Selalu tanyakan tiga hal ini p
 ## B. Ciri-Ciri Tautan dan Konten Mencurigakan
 Jebakan di internet sebenarnya mudah dikenali jika kamu teliti. Perhatikan 6 tanda bahaya berikut ini:
 
- **1. Menjanjikan Hadiah yang Terlalu Menarik (Terlalu Bagus untuk Menjadi Nyata)**
+ 1. **Menjanjikan Hadiah yang Terlalu Menarik (Terlalu Bagus untuk Menjadi Nyata)**
 Penjahat internet sering memancing menggunakan hadiah.
-- "Kamu pemenang beruntung! HP gratis menunggumu!"
+- "Kamu pemenang beruntung! Gawai gratis menunggumu!"
 - "Klik di sini untuk dapat 10.000 diamond gratis tanpa bayar!"
 - "Dapatkan kuota internet 50GB seumur hidup!"
-*Ingat: Kalau hadiahnya terdengar sangat tidak masuk akal dan terlalu mudah didapat, itu hampir 100% adalah penipuan!*
+*Ingat: Kalau hadiahnya terdengar sangat tidak masuk akal dan terlalu mudah didapat, itu hampir 100% adalah penipuan.*
 
- **2. Membuatmu Terburu-buru, Panik, atau Takut**
+ 2. **Membuatmu Terburu-buru, Panik, atau Takut**
 Pesan jebakan sengaja dirancang agar kamu tidak sempat berpikir panjang.
 - "Awas! Akunmu akan dihapus dalam 5 menit jika tidak mengeklik ini!"
-- "HP kamu terkena 100 virus berbahaya! Bersihkan sekarang!"
+- "Gawai kamu terkena 100 virus berbahaya! Bersihkan sekarang!"
 - "Kalau kamu tidak menyebarkan pesan ini, ibumu akan celaka!"
 *Ingat: Perusahaan resmi tidak pernah mengancam penggunanya seperti itu.*
 
- **3. Meminta Kata Sandi atau Data Penting**
-Jika ada tautan yang tiba-tiba memunculkan kolom formulir dan memintamu mengisi kata sandi (password), kode OTP (angka rahasia dari SMS), alamat rumah lengkap, atau nama ibu kandung, segera tutup! Itu adalah upaya pencurian akun.
+ 3. **Meminta Kata Sandi atau Data Penting**
+Jika ada tautan yang tiba-tiba memunculkan kolom formulir dan memintamu mengisi kata sandi, kode OTP (angka rahasia dari SMS), alamat rumah lengkap, atau nama ibu kandung, segera tutup. Itu adalah upaya pencurian akun (*phishing*).
 
- **4. Alamat Tautannya Terlihat Aneh dan Acak-acakan**
+ 4. **Alamat Tautannya Terlihat Aneh dan Acak-acakan**
 Kadang penipu membuat situs yang namanya dimiripkan dengan situs terkenal, tetapi jika diperhatikan ada yang aneh.
 - Contoh asli: \`www.roblox.com\`
 - Contoh palsu: \`www.roblox-hadiah-gratis99.site\` atau \`www.r0blox.net\`
 *Alamat yang terlalu panjang, banyak angka acak, dan tidak beraturan harus segera dihindari.*
 
- **5. Berisi Iklan atau Tombol Unduhan (Download) yang Memaksa**
-Pernahkah kamu membuka sebuah situs untuk membaca cerita, tapi tiba-tiba muncul tombol hijau besar bertuliskan "DOWNLOAD SEKARANG!" berkedip-kedip? Jangan pernah menekannya! Itu biasanya adalah virus atau aplikasi jahat yang bisa merusak gawaimu.
+ 5. **Berisi Iklan atau Tombol Unduhan (*Download*) yang Memaksa**
+Pernahkah kamu membuka sebuah situs untuk membaca cerita, tapi tiba-tiba muncul tombol hijau besar bertuliskan "DOWNLOAD SEKARANG!" berkedip-kedip? Jangan pernah menekannya. Itu biasanya adalah virus atau aplikasi jahat yang bisa merusak gawaimu.
 
- **6. Mengandung Konten yang Tidak Pantas**
+ 6. **Mengandung Konten yang Tidak Pantas**
 Konten tidak pantas adalah gambar, video, atau tulisan yang tidak boleh dilihat oleh anak-anak. Jika kamu melihatnya, kamu mungkin akan merasa kaget, jijik, atau takut.
 
-*Gunakan perisai pemahamanmu untuk mengenali tanda bahaya ini dan jangan asal klik!*
+*Gunakan perisai pemahamanmu untuk mengenali tanda bahaya ini dan jangan asal klik.*
 
-## BAB KHUSUS: Waspada Konten Tidak Pantas di Media Sosial!
-Saat ini, mengakses media sosial sangatlah mudah. Kamu mungkin suka menonton video pendek di TikTok, Instagram Reels, atau YouTube Shorts. Hanya dengan menggeser layar (swipe), video baru akan terus bermunculan.
+## BAB KHUSUS: Waspada Konten Tidak Pantas di Media Sosial
+
+Saat ini, mengakses media sosial sangatlah mudah. Kamu mungkin suka menonton video pendek di *TikTok*, *Instagram Reels*, atau *YouTube Shorts*. Hanya dengan menggeser layar (*swipe*), video baru akan terus bermunculan.
 
 Namun, sistem (algoritma) di media sosial kadang tanpa sengaja memunculkan video yang bukan untuk anak-anak. Inilah yang disebut Konten Tidak Pantas.
 
@@ -2412,89 +2406,89 @@ Namun, sistem (algoritma) di media sosial kadang tanpa sengaja memunculkan video
 - **Konten Kekerasan:** Video orang berkelahi, kecelakaan parah yang tidak disensor, atau kekerasan pada hewan peliharaan.
 - **Konten Menakutkan (Horor):** Penampakan menyeramkan atau cerita misteri yang bisa membuatmu bermimpi buruk dan tidak berani ke kamar mandi sendirian.
 - **Kata-Kata Kasar dan Jorok:** Video yang berisi makian, hinaan, atau obrolan yang tidak sopan.
-- **Tantangan Berbahaya (Dangerous Challenge):** Video yang mengajak penontonnya melakukan hal konyol yang membahayakan nyawa, seperti menahan napas terlalu lama atau melompat dari tempat tinggi.
+- **Tantangan Berbahaya (*Dangerous Challenge*):** Video yang mengajak penontonnya melakukan hal konyol yang membahayakan nyawa, seperti menahan napas terlalu lama atau melompat dari tempat tinggi.
 - **Konten Khusus Dewasa:** Gambar atau video yang menampakkan hal-hal yang tidak seharusnya dilihat oleh anak di bawah umur.
 
 ### Apa Dampaknya Jika Kamu Sering Melihatnya?
 Konten-konten ini bisa meracuni pikiranmu. Kamu bisa menjadi anak yang pemarah, suka meniru kata-kata kasar, selalu merasa ketakutan, atau kehilangan konsentrasi saat belajar.
 
 ### Jurus Menghadapi Konten Tidak Pantas di Media Sosial:
-- **Geser Cepat (Swipe Away):** Jika tiba-tiba muncul video yang membuatmu merasa tidak nyaman, aneh, atau takut, jangan terus ditonton! Langsung geser layarmu ke video berikutnya.
-- **Tekan "Tidak Tertarik" (Not Interested):** Di TikTok atau YouTube, kamu bisa menekan layar agak lama di video tersebut, lalu pilih tombol "Tidak Tertarik" atau "Don't Recommend". Dengan begitu, sistem tahu kamu tidak menyukai video kotor tersebut.
+- **Geser Cepat (*Swipe Away*):** Jika tiba-tiba muncul video yang membuatmu merasa tidak nyaman, aneh, atau takut, jangan terus ditonton. Langsung geser layarmu ke video berikutnya.
+- **Tekan "Tidak Tertarik" (*Not Interested*):** Di *TikTok* atau *YouTube*, kamu bisa menekan layar agak lama di video tersebut, lalu pilih tombol "Tidak Tertarik" atau "*Not Interested*". Dengan begitu, sistem tahu kamu tidak menyukai video kotor tersebut.
 - **Lapor pada Orang Dewasa:** Jika videonya sangat mengganggu, tunjukkan pada orang tuamu agar mereka bisa memblokir akun yang menyebarkannya.
 
-## Langkah Aman Sebelum Mengeklik: Lakukan "4P"!
-Agar kamu selamat dari semua jebakan dan konten buruk di atas, jadikan 4P sebagai perisaimu sebelum jarimu menekan layar!
+## Langkah Aman Sebelum Mengeklik: Lakukan "4P"
+Agar kamu selamat dari semua jebakan dan konten buruk di atas, jadikan 4P sebagai perisaimu sebelum jarimu menekan layar.
 
 ### 1. PAUSE (Berhenti Sebentar)
-Jangan langsung mengklik! Tahan jarimu. Saat kamu menerima pesan yang menjanjikan hadiah atau ancaman, ambil napas dalam-dalam. Penjahat internet ingin kamu panik. Dengan berhenti sejenak, kamu sudah menggagalkan rencana jahat mereka.
+Jangan langsung mengklik. Tahan jarimu. Saat kamu menerima pesan yang menjanjikan hadiah atau ancaman, ambil napas dalam-dalam. Penjahat internet ingin kamu panik. Dengan berhenti sejenak, kamu sudah menggagalkan rencana jahat mereka.
 
 ### 2. PERIKSA (Jadilah Detektif)
 Setelah berhenti, gunakan mata detektifmu:
 - Siapa yang mengirim pesan ini? Orang tak dikenal?
 - Apakah alamat tautannya aneh?
-- Apakah pesan ini menyuruhku merahasiakannya dari Ayah dan Ibu? *(Ingat, hal yang baik tidak perlu dirahasiakan dari orang tua!)*
+- Apakah pesan ini menyuruhku merahasiakannya dari Ayah dan Ibu? *(Ingat, hal yang baik tidak perlu dirahasiakan dari orang tua.)*
 
 ### 3. PIKIRKAN Risiko (Gunakan Logikamu)
 Tanya pada dirimu sendiri:
 - "Kalau aku isi namaku dan kata sandiku di sini, apakah akunku akan dicuri?"
-- "Kalau aku klik unduh, apakah HP ini akan rusak kena virus?"
-*Lebih baik berhati-hati dan tidak mendapat "hadiah palsu", daripada menangis karena akun game atau data pentingmu lenyap dicuri orang.*
+- "Kalau aku klik unduh, apakah gawai ini akan rusak kena virus?"
+*Lebih baik berhati-hati dan tidak mendapat "hadiah palsu", daripada menangis karena akun gim atau data pentingmu lenyap dicuri orang.*
 
 ### 4. PUTUSKAN (Ambil Tindakan Cerdas)
-Setelah memikirkan risikonya, ambil keputusan yang paling aman!
+Setelah memikirkan risikonya, ambil keputusan yang paling aman.
 Keputusan terbaik sering kali adalah: Mengabaikan pesan, menutup layar, tidak mengisi data apa pun, dan menceritakannya kepada orang tua.
 
 ### Contoh Simulasi 4P:
-*Pesan di HP: "Selamat! Kamu terpilih mendapat HP gratis. Klik link www.hadiah-hp-segera.com dan isi alamat rumahmu sekarang juga sebelum jam 12 siang!"*
+*Pesan di gawai: "Selamat! Kamu terpilih mendapat gawai gratis. Klik tautan www.hadiah-hp-segera.com dan isi alamat rumahmu sekarang juga sebelum jam 12 siang!"*
 
 | Langkah 4P | Tindakan Penjelajah Cerdas |
 |---|---|
 | **Pause** | Aku tahan jariku, aku tidak terburu-buru meski batas waktunya jam 12 siang. |
-| **Periksa** | Alamat link-nya sangat aneh. Dan kenapa ada orang tak dikenal tiba-tiba mau memberi HP mahal secara gratis? |
+| **Periksa** | Alamat tautannya sangat aneh. Dan kenapa ada orang tak dikenal tiba-tiba mau memberi gawai mahal secara gratis? |
 | **Pikirkan** | Kalau aku berikan alamat rumahku, orang jahat bisa tahu di mana aku tinggal. Ini berbahaya bagi keselamatanku dan keluargaku. |
-| **Putuskan** | Aku tidak akan mengeklik link itu. Aku hapus pesannya dan kublokir nomor pengirimnya. |
+| **Putuskan** | Aku tidak akan mengeklik tautan itu. Aku hapus pesannya dan kublokir nomor pengirimnya. |
 
-### Terlanjur Mengeklik Tautan Bahaya? Lakukan Langkah Darurat Ini!
-Jangan panik! Jika kamu telanjur mengeklik tautan aneh, segera lakukan langkah penyelamatan ini:
-1. **Tutup Layar:** Segera tekan tombol silang (X) atau tutup aplikasi browser-mu.
+### Terlanjur Mengeklik Tautan Bahaya? Lakukan Langkah Darurat Ini
+Jangan panik. Jika kamu telanjur mengeklik tautan aneh, segera lakukan langkah penyelamatan ini:
+1. **Tutup Layar:** Segera tekan tombol silang (X) atau tutup aplikasi perambanmu.
 2. **Matikan Wi-Fi/Koneksi Internet:** Ini penting agar virus tidak menyebar ke perangkat lain di rumahmu.
 3. **Jangan Isi Kolom Apa Pun:** Jika halaman itu meminta nama atau kata sandi, biarkan kosong.
-4. **LAPOR SEKARANG JUGA:** Temui Ayah, Ibu, atau Gurumu. Katakan dengan jujur, *"Ayah/Ibu/Guru, tadi aku tidak sengaja memencet tautan aneh dan layarnya berubah. Tolong periksa HP-ku."*
+4. **LAPOR SEKARANG JUGA:** Temui Ayah, Ibu, atau Gurumu. Katakan dengan jujur, *"Ayah/Ibu/Guru, tadi aku tidak sengaja memencet tautan aneh dan layarnya berubah. Tolong periksa gawai saya."*
 
 *Meminta bantuan orang dewasa bukan berarti kamu anak yang ceroboh atau nakal. Justru, berani melapor adalah tanda bahwa kamu anak yang sangat bertanggung jawab dan pintar melindungi diri sendiri.*
 
 ## Mengenal Lebih Dekat: Jenis Malware & Bahaya Wi-Fi Publik
 
 ### Jenis-Jenis Malware yang Perlu Kamu Kenal
-Malware (perangkat lunak jahat) punya banyak "tokoh jahat". Kenali beberapa yang paling sering menjebak anak-anak:
-- **Virus Komputer**: Program jahat yang menyebar dengan menempel pada file lain. Bisa merusak data dan memperlambat perangkatmu.
-- **Trojan (Kuda Troya)**: Malware yang **berpura-pura menjadi aplikasi atau game yang bagus**, padahal sebenarnya berbahaya. Namanya terinspirasi dari kisah kuda kayu Troya yang menyembunyikan prajurit di dalamnya. Contoh: game "gratis" versi mod dari situs tidak resmi ternyata mencuri data atau memunculkan iklan tanpa henti.
-- **Worm (Cacing)**: Malware yang bisa menyebar sendiri tanpa kamu mengklik apa pun, biasanya lewat jaringan internet.
-- **Spyware**: Malware yang diam-diam mengintai aktivitasmu, misalnya mencatat tombol yang kamu tekan (pencuri kata sandi).
+*Malware* (perangkat lunak jahat) punya banyak "tokoh jahat". Kenali beberapa yang paling sering menjebak anak-anak:
+- **Virus Komputer**: Program jahat yang menyebar dengan menempel pada *file* lain. Bisa merusak data dan memperlambat perangkatmu.
+- **Trojan (Kuda Troya)**: *Malware* yang **berpura-pura menjadi aplikasi atau gim yang bagus**, padahal sebenarnya berbahaya. Namanya terinspirasi dari kisah kuda kayu Troya yang menyembunyikan prajurit di dalamnya. Contoh: gim "gratis" versi *mod* dari situs tidak resmi ternyata mencuri data atau memunculkan iklan tanpa henti.
+- **Worm (Cacing)**: *Malware* yang bisa menyebar sendiri tanpa kamu mengklik apa pun, biasanya lewat jaringan internet.
+- **Spyware**: *Malware* yang diam-diam mengintai aktivitasmu, misalnya mencatat tombol yang kamu tekan (pencuri kata sandi).
 
 ### Hati-Hati dengan Wi-Fi Publik
-Wi-Fi publik adalah internet gratis yang sering tersedia di kafe, taman, atau tempat umum. Tidak semua Wi-Fi publik itu aman! Karena jalannya terbuka, **data yang kamu kirim bisa disadap (dicuri) orang lain** yang berada di jaringan yang sama.
+*Wi-Fi* publik adalah internet gratis yang sering tersedia di kafe, taman, atau tempat umum. Tidak semua *Wi-Fi* publik itu aman. Karena jalannya terbuka, **data yang kamu kirim bisa disadap (dicuri) orang lain** yang berada di jaringan yang sama.
 
-Risiko Wi-Fi publik:
+Risiko *Wi-Fi* publik:
 - Data pribadi dan kata sandi yang kamu ketik bisa dicuri.
 - Akunmu bisa diretas jika kamu masuk ke aplikasi penting.
 
-Cara mengamankan diri saat terpaksa memakai Wi-Fi publik:
-- **Hindari membuka akun penting** (bank, email utama, akun sekolah).
-- **Gunakan VPN** (Virtual Private Network) jika ada — VPN membuat koneksi internetmu jadi seperti "terowongan rahasia" yang sulit disadap. (Mintai bantuan orang tua untuk memasangnya.)
-- Lebih baik gunakan **Wi-Fi rumah** atau **data seluler** untuk kegiatan penting.
+Cara mengamankan diri saat terpaksa memakai *Wi-Fi* publik:
+- **Hindari membuka akun penting** (bank, surel utama, akun sekolah).
+- **Gunakan VPN** (*Virtual Private Network*) jika ada — *VPN* membuat koneksi internetmu jadi seperti "terowongan rahasia" yang sulit disadap. (Minta bantuan orang tua untuk memasangnya.)
+- Lebih baik gunakan ***Wi-Fi* rumah** atau **data seluler** untuk kegiatan penting.
 
-### Tanda Website (Situs) yang Aman
+### Tanda Situs Web yang Aman
 Sebelum memasukkan data atau sekadar membaca, periksa apakah situsnya aman:
-- Ada **ikon gembok (🔒)** di sebelah alamat situs (address bar).
-- Alamatnya diawali **https://** (huruf "s" berarti secure/aman).
-- Tidak memunculkan pop-up aneh atau memaksa mengunduh sesuatu.
+- Ada **ikon gembok (🔒)** di sebelah alamat situs (*address bar*).
+- Alamatnya diawali **https://** (huruf "s" berarti *secure*/aman).
+- Tidak memunculkan *pop-up* aneh atau memaksa mengunduh sesuatu.
 
-*Ingat: meskipun ada gembok, kamu tetap tidak boleh membagikan data pribadi sembarangan, ya!*
+*Ingat: meskipun ada gembok, kamu tetap tidak boleh membagikan data pribadi sembarangan, ya.*
 
   **Pesan Digi:**
-"Di dunia digital, kamu adalah kapten kapalnya! Gunakan perisai 4P (Pause, Periksa, Pikirkan, Putuskan). Jika melihat yang aneh, menakutkan, atau memaksa, jangan ragu untuk menutupnya dan bercerita kepada orang tuamu. Selamat menjelajah dengan aman!"`
+"Di dunia digital, kamu adalah kapten kapalnya. Gunakan perisai 4P (Pause, Periksa, Pikirkan, Putuskan). Jika melihat yang aneh, menakutkan, atau memaksa, jangan ragu untuk menutupnya dan bercerita kepada orang tuamu. Selamat menjelajah dengan aman."`
     },
     {
       type: "ayo-memahami",
@@ -2532,7 +2526,7 @@ Sebelum memasukkan data atau sekadar membaca, periksa apakah situsnya aman:
         {
           id: qid(),
           type: "mc",
-          question: "Tanda bahwa sebuah website aman adalah...",
+          question: "Tanda bahwa sebuah situs web aman adalah...",
           options: [
             {
               id: "a",
@@ -2574,28 +2568,28 @@ Sebelum memasukkan data atau sekadar membaca, periksa apakah situsnya aman:
 Mari kita amati dua kasus nyata yang sering menimpa anak-anak di internet berikut ini:
 
 ### Kasus 1: Riko dan Aplikasi "Gratis" (Trojan & Virus)
-Riko ingin mengunduh game populer yang seharusnya berbayar. Temannya memberikan link untuk mengunduh versi "gratis" dari website tidak dikenal. Setelah Riko mengunduh dan menginstal game tersebut:
-1. HP Riko menjadi sangat lambat.
-2. Muncul banyak iklan pop-up yang tidak bisa ditutup.
+Riko ingin mengunduh gim populer yang seharusnya berbayar. Temannya memberikan tautan untuk mengunduh versi "gratis" dari situs web tidak dikenal. Setelah Riko mengunduh dan memasang gim tersebut:
+1. Gawai Riko menjadi sangat lambat.
+2. Muncul banyak iklan *pop-up* yang tidak bisa ditutup.
 3. Pulsa gawai orang tuanya terpotong secara otomatis tanpa sebab.
-4. Foto-foto dan kontak di HP Riko disadap dan dikirim ke orang tak dikenal.
+4. Foto-foto dan kontak di gawai Riko disadap dan dikirim ke orang tak dikenal.
 
-Ternyata, game "gratis" itu adalah **Trojan** — malware berbahaya yang menyamar sebagai game seru!
+Ternyata, gim "gratis" itu adalah ***Trojan*** — *malware* berbahaya yang menyamar sebagai gim seru!
 
 ---
 
-### Kasus 2: Adit dan Jebakan Top-Up Game Murah (Eksploitasi & Penipuan Komersial)
-Adit sangat ingin membeli kostum (skin) baru di game online favoritnya. Ia melihat iklan di media sosial yang menawarkan: *"Promo Spesial: 5000 Diamond hanya Rp 10.000! Klik www.topup-murah-meriah.com"*. Padahal di toko resmi game, harganya Rp 150.000.
+### Kasus 2: Adit dan Jebakan *Top-Up* Gim Murah (Eksploitasi & Penipuan Komersial)
+Adit sangat ingin membeli kostum (*skin*) baru di gim *online* favoritnya. Ia melihat iklan di media sosial yang menawarkan: *"Promo Spesial: 5000 Diamond hanya Rp 10.000! Klik www.topup-murah-meriah.com"*. Padahal di toko resmi game, harganya Rp 150.000.
 
 Tergiur dengan harga yang sangat murah, Adit mengeklik tautan tersebut. Di sana, ia diminta untuk:
-1. Memasukkan username dan password akun game miliknya.
-2. Memasukkan nomor handphone orang tuanya beserta kode PIN dompet digital (e-wallet) ShopeePay untuk pembayaran.
+1. Memasukkan nama pengguna dan kata sandi akun gim miliknya.
+2. Memasukkan nomor gawai orang tuanya beserta kode PIN dompet digital (*e-wallet*) *ShopeePay* untuk pembayaran.
 
-Setelah mengisi semua data tersebut, Adit tidak pernah mendapatkan Diamond game-nya. Sebaliknya, keesokan harinya:
-1. Akun game Adit tidak bisa dibuka karena kata sandinya diubah oleh penipu (akunnya dicuri).
+Setelah mengisi semua data tersebut, Adit tidak pernah mendapatkan *diamond* gim-nya. Sebaliknya, keesokan harinya:
+1. Akun gim Adit tidak bisa dibuka karena kata sandinya diubah oleh penipu (akunnya dicuri).
 2. Saldo ShopeePay milik ibunya terkuras habis oleh transaksi belanja misterius dari luar kota.
 
-Ternyata, situs tersebut adalah situs **Phishing** yang mengeksploitasi keinginan anak-anak untuk membeli item game demi mencuri uang dan akun!`,
+Ternyata, situs tersebut adalah situs **Phishing** yang mengeksploitasi keinginan anak-anak untuk membeli item gim demi mencuri uang dan akun!`,
       questions: [
         {
           id: qid(),
@@ -2604,12 +2598,12 @@ Ternyata, situs tersebut adalah situs **Phishing** yang mengeksploitasi keingina
           options: [
             {
               id: "a",
-              text: "HP menjadi cepat penuh karena game yang diinstal terlalu bagus",
+              text: "Gawai menjadi cepat penuh karena gim yang dipasang terlalu bagus",
               isCorrect: false
             },
             {
               id: "b",
-              text: "HP terinfeksi malware/virus, akun dicuri, dan uang orang tua terkuras habis",
+              text: "Gawai terinfeksi malware/virus, akun dicuri, dan uang orang tua terkuras habis",
               isCorrect: true
             },
             {
@@ -2619,7 +2613,7 @@ Ternyata, situs tersebut adalah situs **Phishing** yang mengeksploitasi keingina
             },
             {
               id: "d",
-              text: "Game menjadi tidak bisa dimainkan bersama teman sekelas lagi",
+              text: "Gim menjadi tidak bisa dimainkan bersama teman sekelas lagi",
               isCorrect: false
             }
           ],
@@ -2628,11 +2622,11 @@ Ternyata, situs tersebut adalah situs **Phishing** yang mengeksploitasi keingina
         {
           id: qid(),
           type: "mc",
-          question: "Tanda utama yang menunjukkan bahwa situs top-up Diamond game tempat Adit membeli adalah penipuan (phishing) adalah....",
+          question: "Tanda utama yang menunjukkan bahwa situs top-up Diamond gim tempat Adit membeli adalah penipuan (phishing) adalah....",
           options: [
             {
               id: "a",
-              text: "Harga Diamond yang ditawarkan sangat tidak masuk akal murahnya dan meminta password akun serta PIN dompet digital",
+              text: "Harga Diamond yang ditawarkan sangat tidak masuk akal murahnya dan meminta kata sandi akun serta PIN dompet digital",
               isCorrect: true
             },
             {
@@ -2642,12 +2636,12 @@ Ternyata, situs tersebut adalah situs **Phishing** yang mengeksploitasi keingina
             },
             {
               id: "c",
-              text: "Situs web tersebut memuat game-game populer yang biasa dimainkan anak-anak",
+              text: "Situs web tersebut memuat gim-gim populer yang biasa dimainkan anak-anak",
               isCorrect: false
             },
             {
               id: "d",
-              text: "Situs web dapat dibuka di browser HP maupun Chromebook sekolah",
+              text: "Situs web dapat dibuka di peramban gawai maupun Chromebook sekolah",
               isCorrect: false
             }
           ],
@@ -2656,8 +2650,8 @@ Ternyata, situs tersebut adalah situs **Phishing** yang mengeksploitasi keingina
         {
           id: qid(),
           type: "essay",
-          question: "Tuliskan 3 perbedaan utama antara tempat top-up game resmi dengan situs top-up ilegal milik penipu!",
-          correctAnswer: "Top-up resmi dilakukan di platform resmi (seperti Codashop/UniPin/toko dalam game), tidak pernah meminta password akun game atau PIN dompet digital, harganya wajar. Top-up ilegal meminta password/PIN, menawarkan harga yang terlampau murah, dan menggunakan tautan tidak resmi/mencurigakan.",
+          question: "Tuliskan 3 perbedaan utama antara tempat top-up gim resmi dengan situs top-up ilegal milik penipu!",
+          correctAnswer: "Top-up resmi dilakukan di platform resmi (seperti Codashop/UniPin/toko dalam gim), tidak pernah meminta kata sandi akun gim atau PIN dompet digital, harganya wajar. Top-up ilegal meminta kata sandi/PIN, menawarkan harga yang terlampau murah, dan menggunakan tautan tidak resmi/mencurigakan.",
           points: 20
         }
       ]
@@ -2877,7 +2871,7 @@ Semakin banyak ancaman yang berhasil kamu atasi, semakin tinggi skor Ksatria Sib
             },
             {
               id: "c",
-              text: "\"Kalau aku isi kata sandi, akun game-ku bisa dicuri orang tidak dikenal.\"",
+              text: "\"Kalau aku isi kata sandi, akun gim-ku bisa dicuri orang tidak dikenal.\"",
               isCorrect: true
             },
             {
@@ -2919,7 +2913,7 @@ Semakin banyak ancaman yang berhasil kamu atasi, semakin tinggi skor Ksatria Sib
         {
           id: qid(),
           type: "mc",
-          question: "Karena tidak sengaja tersentuh saat HP-nya terjatuh, layar HP Rina membuka situs bergambar menyeramkan dan meminta izin lokasi. Tindakan penyelamatan terbaik adalah....",
+          question: "Karena tidak sengaja tersentuh saat gawainya terjatuh, layar gawai Rina membuka situs bergambar menyeramkan dan meminta izin lokasi. Tindakan penyelamatan terbaik adalah....",
           options: [
             {
               id: "a",
@@ -3019,37 +3013,35 @@ const topic5: Topic = {
 3. Mengevaluasi kelayakan sebuah pesan dengan cermat sebelum memutuskan untuk mengirimkannya.
 4. Menyusun kalimat atau balasan yang sopan saat berkomunikasi di berbagai platform digital.
 
-Di balik layar HP atau komputer, ada manusia sungguhan yang bisa merasa sedih, senang, atau tersakiti oleh kata-katamu. Yuk, jadi pengguna internet yang santun! `
+Di balik layar gawai atau komputer, ada manusia sungguhan yang bisa merasa sedih, senang, atau tersakiti oleh kata-katamu. Yuk, jadi pengguna internet yang santun! `
     },
     {
       type: "kata-kunci",
       title: "Kata Kunci",
-      content: ` **Netiket (Netiquette)** – Etika atau tata krama saat berkomunikasi di internet.
+      content: ` **Netiket (*Netiquette*)** – Etika atau tata krama saat berkomunikasi di internet.
 
- **Cyberbullying** – Perundungan (bullying) yang dilakukan melalui media digital seperti chat, media sosial, atau game online.
+ ***Cyberbullying*** **(Perundungan Siber)** – Perundungan yang dilakukan melalui media digital, seperti pesan, media sosial, atau gim *online*.
 
  **Empati** – Kemampuan untuk merasakan dan memahami perasaan orang lain.
 
- **Hate Speech** – Ujaran kebencian; kata-kata yang menyerang seseorang karena ras, agama, atau perbedaan lainnya.
+ **Ujaran Kebencian (*Hate Speech*)** – Kata-kata yang menyerang seseorang karena ras, agama, atau perbedaan lainnya.
 
- **Flaming** – Mengirim pesan yang kasar, provokatif, atau menghina secara online.
+ ***Flaming*** – Mengirim pesan yang kasar, provokatif, atau menghina secara *online*.
 
- **Tone** – Nada atau cara menyampaikan pesan. Di pesan teks, tone bisa disalahartikan karena tidak ada ekspresi wajah.`
+ **Nada Pesan (*Tone*)** – Nada atau cara menyampaikan pesan. Di pesan teks, nada pesan dapat disalahartikan karena tidak ada ekspresi wajah.`
     },
     {
       type: "peta-materi",
       title: "Peta Materi",
-      content: ` Peta perjalanan belajarmu:
+      content: `Peta perjalanan belajarmu:
 
- Tahap 1: Bersiap belajar dari cerita tentang komunikasi di dunia digital.
- Tahap 2: Menjawab tantangan awal – Sopankah cara chatting-mu?
- Tahap 3: Belajar tentang netiket, komunikasi yang baik, dan tiga pertanyaan sebelum mengirim.
- Tahap 4: Latihan memahami – Cyberbullying dan cara merespons pesan jahat.
- Tahap 5: Mengamati studi kasus grup chat kelas 6A.
- Tahap 6: Bereksplorasi dalam simulasi Chat dengan Bijak.
- Tahap 7: Uji pemahaman akhir dan refleksi.
-
-Jadilah Duta Santun Digital! `
+Tahap 1: Membaca cerita Raka tentang pesan berantai di grup kelas.
+Tahap 2: Menjawab tantangan awal "Seberapa Jeli Matamu?".
+Tahap 3: Mempelajari materi tentang hoaks, fakta, opini, dan cara mengecek fakta.
+Tahap 4: Menganalisis informasi untuk menentukan apakah informasi tersebut valid atau meragukan.
+Tahap 5: Mengevaluasi kredibilitas portal berita berdasarkan sumber, tanggal, isi, bukti, dan gaya bahasa.
+Tahap 6: Menentukan tindakan yang tepat melalui simulasi Detektif Fakta.
+Tahap 7: Mengerjakan uji pemahaman dan refleksi belajar.`
     },
     {
       type: "bersiap-belajar",
@@ -3147,9 +3139,9 @@ Hari ini, kamu akan belajar cara berkomunikasi dengan santun di dunia digital. K
       type: "yuk-belajar",
       title: "Yuk, Belajar Bersama!",
       content: `## A. Apa Itu Komunikasi Digital?
-Pernahkah kamu mengirim pesan di grup kelas, membalas WhatsApp teman, menulis komentar di video, atau memberi tanggapan pada karya teman di aplikasi belajar?
+Pernahkah kamu mengirim pesan di grup kelas, membalas *WhatsApp* teman, menulis komentar di video, atau memberi tanggapan pada karya teman di aplikasi belajar?
 
-Kegiatan seperti itu disebut komunikasi digital. Komunikasi digital adalah kegiatan menyampaikan pesan menggunakan perangkat digital, seperti HP, Chromebook, komputer, atau tablet. Pesan itu bisa dikirim melalui WhatsApp, email, grup kelas, kolom komentar, gim online, atau aplikasi belajar.
+Kegiatan seperti itu disebut komunikasi digital. Komunikasi digital adalah kegiatan menyampaikan pesan menggunakan perangkat digital, seperti gawai, *Chromebook*, komputer, atau tablet. Pesan itu bisa dikirim melalui *WhatsApp*, surel (*email*), grup kelas, kolom komentar, gim *online*, atau aplikasi belajar.
 
 Dalam komunikasi langsung, kita bisa melihat wajah, mendengar nada suara, dan memperhatikan gerak tubuh orang lain. Namun, dalam komunikasi digital, orang lain biasanya hanya membaca tulisan kita. Karena itu, pesan yang kurang jelas bisa membuat orang lain salah paham.
 
@@ -3157,7 +3149,7 @@ Dalam komunikasi langsung, kita bisa melihat wajah, mendengar nada suara, dan me
 
 Perhatikan contoh berikut.
 
-[table: Pesan Kurang Tepat, Pesan Lebih Santun | "Kamu lama banget balasnya!" | "Kamu sudah sempat membaca pesanku? Aku menunggu jawabanmu\, ya." ]
+[table: Pesan Kurang Tepat, Pesan Lebih Santun | "Kamu lama banget balasnya!" | "Kamu sudah sempat membaca pesanku? Aku menunggu jawabanmu, ya." ]
 
 Kedua pesan itu memiliki tujuan yang hampir sama, yaitu menanyakan balasan. Namun, rasanya berbeda. Pesan pertama terdengar seperti marah. Pesan kedua terdengar lebih sopan dan nyaman dibaca.
 
@@ -3168,7 +3160,7 @@ Dunia digital bukan tempat yang terpisah dari kehidupan nyata. Orang yang membac
 
 Misalnya, saat teman mengunggah hasil gambar, lalu ada yang menulis, "Jelek sekali gambarmu!" Teman itu bisa merasa malu dan tidak percaya diri. Padahal, kita tetap bisa memberi saran dengan cara yang lebih baik.
 
-Selain itu, pesan digital dapat tersimpan. Komentar, foto, pesan, dan unggahan yang kita kirim dapat menjadi bagian dari jejak digital. Jejak digital adalah rekaman atau bekas aktivitas yang kita lakukan di dunia digital. UNICEF juga menjelaskan bahwa perundungan siber dapat meninggalkan jejak digital yang menjadi catatan atau bukti dari tindakan tersebut.
+Selain itu, pesan digital dapat tersimpan. Komentar, foto, pesan, dan unggahan yang kita kirim dapat menjadi bagian dari jejak digital. Jejak digital adalah rekaman atau bekas aktivitas yang kita lakukan di dunia digital. UNICEF juga menjelaskan bahwa perundungan siber (*cyberbullying*) dapat meninggalkan jejak digital yang menjadi catatan atau bukti dari tindakan tersebut.
 
 Karena itu, sebelum menekan tombol kirim, kita perlu berpikir terlebih dahulu.
 
@@ -3177,8 +3169,8 @@ Karena itu, sebelum menekan tombol kirim, kita perlu berpikir terlebih dahulu.
 ### Kenapa Netiket Sangat Penting di Zaman Sekarang?
 1. **Ada Manusia Nyata di Balik Layar:** Setiap akun di internet dibaca oleh orang sungguhan yang memiliki hati dan perasaan. Kata-kata kasar kita bisa membuat mereka sedih atau kehilangan percaya diri.
 2. **Jejak Digital Bersifat Abadi:** Apa pun yang kamu tulis hari ini akan terekam selamanya di internet. Jejak digital yang buruk bisa dilihat kembali di masa depan ketika kamu mendaftar sekolah, beasiswa, atau melamar kerja.
-3. **Teks Sangat Mudah Disalahpahami:** Karena tidak ada ekspresi wajah dan nada suara dalam chat, teks biasa (terutama jika menggunakan huruf kapital atau tanda seru berlebih) bisa dikira sebagai teriakan atau kemarahan.
-4. **Mencegah Perundungan Siber (Cyberbullying):** Netiket menjaga agar candaan di internet tetap sehat dan tidak berubah menjadi ejekan kasar atau perundungan yang menyakitkan.
+3. **Teks Sangat Mudah Disalahpahami:** Karena tidak ada ekspresi wajah dan nada suara dalam *chat*, teks biasa (terutama jika menggunakan huruf kapital atau tanda seru berlebih) bisa dikira sebagai teriakan atau kemarahan.
+4. **Mencegah Perundungan Siber (*Cyberbullying*):** Netiket menjaga agar candaan di internet tetap sehat dan tidak berubah menjadi ejekan kasar atau perundungan yang menyakitkan.
 
 Santun di dunia digital berarti:
 1. Menggunakan kata-kata yang baik;
@@ -3200,7 +3192,7 @@ Ketiga, membantu teman menjadi lebih baik.
 
 Perhatikan contoh berikut.
 
-[table: Komentar Kurang Santun, Komentar Lebih Santun | "Video kamu membosankan." | "Videonya sudah bagus. Mungkin bisa dibuat lebih singkat agar lebih menarik." | "Tulisanmu jelek." | "Tulisanmu bisa dibuat lebih rapi agar mudah dibaca." | "Kamu salah semua." | "Ada beberapa bagian yang perlu diperbaiki. Yuk\, coba cek lagi." | "Kok kamu tidak paham-paham?" | "Bagian mana yang masih membingungkan? Mungkin kita bisa belajar bersama." ]
+[table: Komentar Kurang Santun, Komentar Lebih Santun | "Video kamu membosankan." | "Videonya sudah bagus. Mungkin bisa dibuat lebih singkat agar lebih menarik." | "Tulisanmu jelek." | "Tulisanmu bisa dibuat lebih rapi agar mudah dibaca." | "Kamu salah semua." | "Ada beberapa bagian yang perlu diperbaiki. Yuk, coba cek lagi." | "Kok kamu tidak paham-paham?" | "Bagian mana yang masih membingungkan? Mungkin kita bisa belajar bersama." ]
 
 Kata-kata yang santun tidak membuat orang lain takut belajar. Sebaliknya, kata-kata yang baik dapat membuat teman lebih bersemangat.
 
@@ -3216,7 +3208,7 @@ Saat menulis pesan, bukan hanya kata-kata yang perlu diperhatikan. Cara mengetik
 
 Perhatikan contoh berikut.
 
-[table: Pesan Kurang Tepat, Pesan Lebih Santun | "AKU TUNGGU SEKARANG!!!" | "Aku tunggu sekarang\, ya. Terima kasih." ]
+[table: Pesan Kurang Tepat, Pesan Lebih Santun | "AKU TUNGGU SEKARANG!!!" | "Aku tunggu sekarang, ya. Terima kasih." ]
 
 Kalimat dengan huruf kapital semua dan banyak tanda seru bisa terasa seperti marah atau memaksa. Padahal, mungkin maksud pengirim hanya ingin mengingatkan.
 
@@ -3237,7 +3229,7 @@ Sebelum menekan tombol kirim, gunakan tiga pertanyaan berikut.
 
 Contoh:
 
-[table: Situasi, Pesan yang Kurang Tepat, Pesan yang Lebih Baik | Teman terlambat membalas pesan | "Lama banget sih!" | "Tidak apa-apa\, aku tunggu balasanmu\, ya." | Teman salah mengirim tugas | "Kamu salah semua." | "Sepertinya ada bagian yang perlu diperbaiki. Coba cek lagi\, ya." | Teman mengunggah gambar | "Gambarmu jelek." | "Gambarmu sudah menarik. Mungkin warnanya bisa dibuat lebih rapi." ]
+[table: Situasi, Pesan yang Kurang Tepat, Pesan yang Lebih Baik | Teman terlambat membalas pesan | "Lama banget sih!" | "Tidak apa-apa, aku tunggu balasanmu, ya." | Teman salah mengirim tugas | "Kamu salah semua." | "Sepertinya ada bagian yang perlu diperbaiki. Coba cek lagi, ya." | Teman mengunggah gambar | "Gambarmu jelek." | "Gambarmu sudah menarik. Mungkin warnanya bisa dibuat lebih rapi." ]
 
 ### Pesan Digi
 "Di dunia digital, kata-kata juga bisa membuat orang lain senang atau sedih. Jadi, sebelum mengirim pesan, pilih kata yang baik, sopan, dan tidak menyakiti."`
@@ -3316,9 +3308,9 @@ Contoh:
       type: "ayo-mengamati",
       title: "Ayo, Mengamati!",
       content: `## A. Kamus Istilah Gamer (Gamer Glossary)
-Saat bermain game online, apakah kamu sering mendengar istilah-istilah berikut? Yuk, pahami artinya:
+Saat bermain gim *online*, apakah kamu sering mendengar istilah-istilah berikut? Yuk, pahami artinya:
 - **GGWP (Good Game Well Played)**: Pujian sportif untuk menghargai permainan yang seru dan bagus dari teman maupun lawan. (Sikap Positif)
-- **Buff**: Peningkatan kekuatan karakter atau item oleh pembuat game. (Netral)
+- **Buff**: Peningkatan kekuatan karakter atau item oleh pembuat gim. (Netral)
 - **AFK (Away From Keyboard)**: Pemain yang diam saja atau meninggalkan permainan di tengah jalan secara tidak bertanggung jawab. (Negatif/Menyusahkan)
 - **Toxic**: Perilaku buruk seperti berkata kasar, menghina teman, dan merusak kenyamanan bermain bersama. (Negatif/Kasar)
 - **Noob**: Ejekan untuk pemain baru yang dianggap tidak jago atau cupu. (Negatif/Hinaan)
@@ -3333,7 +3325,7 @@ Saat bermain game online, apakah kamu sering mendengar istilah-istilah berikut? 
 ## B. Papan "Mabar Bingo" (Memilah Kata Positif vs Negatif)
 Mari kita pilah istilah-istilah di atas menggunakan format tabel [table: Kolom1, Kolom2...]:
 
-[table: Istilah Game, Kategori Perilaku, Dampak / Penjelasan Sikap | **GGWP** | **Positif & Sportif** | Memupuk persahabatan dan menghargai usaha orang lain | **Buff & Nerf** | **Istilah Teknis (Netral)** | Digunakan untuk membahas mekanik game\, bukan mengejek | **Toxic & Beban** | **Negatif (Bahaya & Kasar!)** | Membuat teman sakit hati\, merasa tertekan\, dan tidak mau bermain lagi | **Turu & Ez** | **Negatif (Sombong & Ejekan)** | Merendahkan lawan secara online dan merusak sportivitas | **AFK & KS** | **Negatif (Kurang Sportif)** | Menyusahkan tim sendiri dan memicu pertengkaran di chat ]
+[table: Istilah Gim, Kategori Perilaku, Dampak / Penjelasan Sikap | **GGWP** | **Positif & Sportif** | Memupuk persahabatan dan menghargai usaha orang lain | **Buff & Nerf** | **Istilah Teknis (Netral)** | Digunakan untuk membahas mekanik game\, bukan mengejek | **Toxic & Beban** | **Negatif (Bahaya & Kasar!)** | Membuat teman sakit hati\, merasa tertekan\, dan tidak mau bermain lagi | **Turu & Ez** | **Negatif (Sombong & Ejekan)** | Merendahkan lawan secara online dan merusak sportivitas | **AFK & KS** | **Negatif (Kurang Sportif)** | Menyusahkan tim sendiri dan memicu pertengkaran di chat ]
 
 ---
 
@@ -3355,7 +3347,7 @@ Di grup WhatsApp kelas 6A, terjadi percakapan berikut:
         {
           id: qid(),
           type: "mc",
-          question: "Berdasarkan Kamus Istilah Gamer, kata manakah yang memiliki dampak positif dan menunjukkan sportivitas saat bermain game?",
+          question: "Berdasarkan Kamus Istilah Gamer, kata manakah yang memiliki dampak positif dan menunjukkan sportivitas saat bermain gim?",
           options: [
             {
               id: "a",
@@ -3411,7 +3403,7 @@ Di grup WhatsApp kelas 6A, terjadi percakapan berikut:
         {
           id: qid(),
           type: "essay",
-          question: "Jika kamu sedang mabar game online dan teman satu timmu membuat kesalahan hingga kalah, apa komentar santun yang sebaiknya kamu kirimkan? Hindari kata toxic!",
+          question: "Jika kamu sedang mabar gim *online* dan teman satu timmu membuat kesalahan hingga kalah, apa komentar santun yang sebaiknya kamu kirimkan? Hindari kata toxic!",
           correctAnswer: "Siswa menulis balasan yang membesarkan hati, sportif, atau mengajak latihan lagi. Contoh: 'Nice try guys, nanti kita coba lagi!', 'GGWP semuanya, lain kali kita perbaiki kerja sama tim.'",
           points: 20
         }
@@ -3785,7 +3777,7 @@ Di dunia digital, kata-kata yang kita kirim bisa membuat orang lain tersenyum at
       title: "Kata Kunci",
       content: ` **Empati Digital** – Kemampuan memahami dan ikut merasakan perasaan orang lain saat berinteraksi di dunia digital.
 
- **Cyberbullying (Perundungan Siber)** – Perilaku menyakiti, mengejek, atau mempermalukan orang lain melalui pesan, komentar, atau unggahan di internet.
+ ***Cyberbullying*** **(Perundungan Siber)** – Perilaku menyakiti, mengejek, atau mempermalukan orang lain melalui pesan, komentar, atau unggahan di internet.
 
  **Komentar Sopan** – Tanggapan tertulis yang santun, tidak menyakiti, dan menghargai perasaan orang lain.
 
@@ -3795,21 +3787,20 @@ Di dunia digital, kata-kata yang kita kirim bisa membuat orang lain tersenyum at
 
  **Tindakan Aman** – Langkah yang tepat saat menghadapi perundungan siber, seperti tidak membalas, menyimpan bukti, dan melapor kepada orang dewasa.
 
- **Jejak Digital** – Semua jejak yang kita tinggalkan di internet, seperti pesan, komentar, atau unggahan, yang bisa tetap ada dalam waktu lama.`
+ **Jejak Digital** – Semua jejak yang kita tinggalkan di internet, seperti pesan, komentar, atau unggahan, yang dapat tetap ada dalam waktu lama.`
     },
     {
       type: "peta-materi",
       title: "Peta Materi",
-      content: ` Peta perjalanan belajarmu:
+      content: `Peta perjalanan belajarmu:
 
- Tahap 1: Bersiap belajar dari cerita tentang menjadi teman baik di dunia digital.
- Tahap 2: Menjawab tantangan awal – Seberapa bijak penggunaan medsos-mu?
- Tahap 3: Belajar tentang interaksi positif, cyberbullying, dan digital wellbeing.
- Tahap 4: Latihan memahami – Perilaku positif dan screen time.
- Tahap 5: Bereksplorasi dalam simulasi Jadi Teman Baik Digital.
- Tahap 6: Uji pemahaman akhir dan refleksi.
-
-Jadilah Sahabat Digital yang keren! `
+Tahap 1: Membaca cerita Raka tentang pesan berantai di grup kelas.
+Tahap 2: Menjawab tantangan awal "Seberapa Jeli Matamu?".
+Tahap 3: Mempelajari materi tentang hoaks, fakta, opini, dan cara mengecek fakta.
+Tahap 4: Menganalisis informasi untuk menentukan apakah informasi tersebut valid atau meragukan.
+Tahap 5: Mengevaluasi kredibilitas portal berita berdasarkan sumber, tanggal, isi, bukti, dan gaya bahasa.
+Tahap 6: Menentukan tindakan yang tepat melalui simulasi Detektif Fakta.
+Tahap 7: Mengerjakan uji pemahaman dan refleksi belajar.`
     },
     {
       type: "bersiap-belajar",
@@ -3871,7 +3862,7 @@ Yuk, kita belajar menjadi teman yang peduli, sopan, dan berani melakukan hal bai
             },
             {
               id: "d",
-              text: "Jenis game online",
+              text: "Jenis gim online",
               isCorrect: false
             }
           ],
@@ -3912,9 +3903,9 @@ Yuk, kita belajar menjadi teman yang peduli, sopan, dan berani melakukan hal bai
       title: "Yuk, Belajar Bersama!",
       content: `## Menjadi Warga Digital yang Baik
 
-Media sosial adalah tempat yang bisa sangat menyenangkan jika digunakan dengan bijak. Namun, kita juga harus waspada terhadap bahaya perundungan siber (cyberbullying) yang dapat menyakiti hati orang lain.
+Media sosial adalah tempat yang bisa sangat menyenangkan jika digunakan dengan bijak. Namun, kita juga harus waspada terhadap bahaya perundungan siber (*cyberbullying*) yang dapat menyakiti hati orang lain.
 
-### Dampak Buruk Cyberbullying bagi Korban
+### Dampak Buruk *Cyberbullying* bagi Korban
 Perundungan siber memiliki dampak buruk yang nyata bagi korban:
 - **Dampak Emosional**: Merasa sedih, malu, cemas, marah, dan tidak percaya diri.
 - **Dampak Fisik**: Memicu stres yang menyebabkan sakit kepala, sakit perut, kelelahan, dan susah tidur.
@@ -3924,16 +3915,16 @@ Perundungan siber memiliki dampak buruk yang nyata bagi korban:
 ---
 
 ### Jurus Penyelamat (Jika Kamu Menjadi Korban)
-Jika kamu mengalami cyberbullying, lakukan 4 langkah aman berikut:
+Jika kamu mengalami *cyberbullying*, lakukan 4 langkah aman berikut:
 1. **STOP (Jangan Membalas)**: Tetap tenang, abaikan pesan kasar, jangan membalas dengan emosi karena pelaku menyukai reaksi tersebut.
-2. **SAVE (Simpan Bukti)**: Lakukan tangkapan layar (screenshot) semua pesan, komentar, dan username pelaku sebagai bukti kuat.
-3. **BLOCK & REPORT (Blokir & Laporkan)**: Blokir akun pelaku di aplikasi dan gunakan fitur "Laporkan" (Report) di platform digital tersebut.
+2. **SAVE (Simpan Bukti)**: Lakukan tangkapan layar (*screenshot*) semua pesan, komentar, dan *username* pelaku sebagai bukti kuat.
+3. **BLOCK & REPORT (Blokir & Laporkan)**: Blokir akun pelaku di aplikasi dan gunakan fitur "Laporkan" (*Report*) di platform digital tersebut.
 4. **TALK & REPORT TO TPPK (Bercerita & Laporkan)**: Ceritakan masalah ini ke orang tua dan laporkan resmi kepada Guru Wali Kelas, Guru BK, atau **Tim Pencegahan dan Penanganan Kekerasan (TPPK)** di sekolah.
 
 ---
 
 ### Saluran Pengaduan Resmi Indonesia (Aduan Konten & KPAI)
-Selain TPPK sekolah, jika kamu atau orang tuamu menemukan konten berbahaya (seperti pornografi, judi online, kekerasan, atau bully parah), laporkan secara resmi ke saluran pengaduan pemerintah:
+Selain TPPK sekolah, jika kamu atau orang tuamu menemukan konten berbahaya (seperti pornografi, judi *online*, kekerasan, atau perundungan parah), laporkan secara resmi ke saluran pengaduan pemerintah:
 
 * **WhatsApp Resmi Aduan Konten KOMDIGI:**
 [tombol-link: Hubungi WhatsApp Aduan Konten | https://wa.me/628119224545]
@@ -3945,29 +3936,29 @@ Selain TPPK sekolah, jika kamu atau orang tuamu menemukan konten berbahaya (sepe
 ---
 
 ### Jurus Pahlawan (Jika Melihat Teman Di-bully)
-Jangan diam menjadi penonton! Ubah dirimu menjadi **Upstander (Pahlawan Penolong)** dengan 5 cara aman ini:
-1. **Beri Dukungan Pribadi (Private Support)**: Kirim pesan pribadi (japri) untuk menghibur korban ("Kamu tidak apa-apa? Aku mendukungmu!").
-2. **Alihkan Perhatian (Distraction)**: Ubah topik pembicaraan di grup WhatsApp kelas menjadi hal positif yang seru untuk menghentikan ejekan.
-3. **Tegur dengan Sopan tapi Tegas**: Beri teguran santun di kolom komentar ("Teman-teman, yuk stop ejek-ejekannya. Kasihan dia").
-4. **Jangan Ikut Meramaikan**: Jangan memberikan "Like" pada komentar jahat, jangan share ulang, dan jangan ikut tertawa.
-5. **Laporkan Bersama (Report to TPPK/Sekolah)**: Laporkan bukti screenshot bully kepada Guru Wali Kelas, Guru BK, atau **TPPK** sekolah agar pelaku ditindaklanjuti.
+Jangan diam menjadi penonton. Ubah dirimu menjadi ***Upstander* (Pahlawan Penolong)** dengan 5 cara aman ini:
+1. **Beri Dukungan Pribadi (*Private Support*)**: Kirim pesan pribadi (japri) untuk menghibur korban ("Kamu tidak apa-apa? Aku mendukungmu").
+2. **Alihkan Perhatian (*Distraction*)**: Ubah topik pembicaraan di grup *WhatsApp* kelas menjadi hal positif yang seru untuk menghentikan ejekan.
+3. **Tegur dengan Sopan tapi Tegas**: Beri teguran santun di kolom komentar ("Teman-teman, yuk hentikan ejekannya. Kasihan dia").
+4. **Jangan Ikut Meramaikan**: Jangan memberikan "*Like*" pada komentar jahat, jangan *share* ulang, dan jangan ikut tertawa.
+5. **Laporkan Bersama (*Report to TPPK/Sekolah*)**: Laporkan bukti tangkapan layar perundungan kepada Guru Wali Kelas, Guru BK, atau **TPPK** sekolah agar pelaku ditindaklanjuti.
 
 ---
 
-### Menjaga Kesehatan Digital (Digital Wellbeing)
+### Menjaga Kesehatan Digital (*Digital Wellbeing*)
 
-#### Atur Waktu Layar (Screen Time)
-- Batasi penggunaan HP/tablet di luar keperluan sekolah
-- Pakai fitur "Screen Time" atau "Digital Wellbeing" di HP-mu
-- Buat jadwal: kapan online dan kapan offline
+#### Atur Waktu Layar (*Screen Time*)
+- Batasi penggunaan gawai di luar keperluan sekolah
+- Pakai fitur "*Screen Time*" atau "*Digital Wellbeing*" di gawaimu
+- Buat jadwal: kapan *online* dan kapan *offline*
 
-#### Keseimbangan Online dan Offline
+#### Keseimbangan *Online* dan *Offline*
 - Luangkan waktu untuk aktivitas di luar rumah
-- Bermain dengan teman di dunia nyata juga penting!
-- Olahraga, membaca buku, atau melakukan hobi offline
+- Bermain dengan teman di dunia nyata juga penting.
+- Olahraga, membaca buku, atau melakukan hobi *offline*
 
 #### Jaga Kesehatan Mental
-- Jangan bandingkan hidupmu dengan postingan orang lain
+- Jangan bandingkan hidupmu dengan unggahan (*postings*) orang lain
 - Ingat: orang biasanya hanya membagikan sisi terbaik mereka di media sosial
 - Jika merasa sedih atau cemas karena media sosial, ceritakan ke orang tua atau guru`
     },
@@ -4011,7 +4002,7 @@ Jangan diam menjadi penonton! Ubah dirimu menjadi **Upstander (Pahlawan Penolong
           options: [
             {
               id: "a",
-              text: "Menggunakan HP sebanyak mungkin",
+              text: "Menggunakan gawai sebanyak mungkin",
               isCorrect: false
             },
             {
@@ -4021,7 +4012,7 @@ Jangan diam menjadi penonton! Ubah dirimu menjadi **Upstander (Pahlawan Penolong
             },
             {
               id: "c",
-              text: "Memiliki HP yang paling mahal",
+              text: "Memiliki gawai yang paling mahal",
               isCorrect: false
             },
             {
@@ -4035,7 +4026,7 @@ Jangan diam menjadi penonton! Ubah dirimu menjadi **Upstander (Pahlawan Penolong
         {
           id: qid(),
           type: "essay",
-          question: "Mengapa penting untuk membatasi waktu layar (screen time)? Sebutkan 2 dampak negatif jika terlalu lama bermain HP!",
+          question: "Mengapa penting untuk membatasi waktu layar (screen time)? Sebutkan 2 dampak negatif jika terlalu lama bermain gawai!",
           correctAnswer: "Dampak: kesehatan mata terganggu, kurang bersosialisasi langsung, kurang olahraga, kesehatan mental terganggu, nilai sekolah menurun.",
           points: 20
         }
@@ -4047,7 +4038,7 @@ Jangan diam menjadi penonton! Ubah dirimu menjadi **Upstander (Pahlawan Penolong
       title: "Ayo, Bereksplorasi!",
       content: `## Simulasi: Jadi Teman Baik Digital 
 
-Dalam simulasi ini, kamu akan menghadapi berbagai situasi di media digital (grup WhatsApp, video pendek, chat pribadi, Instagram, dan game online). Tugasmu mengenali perundungan siber dan memilih respons yang sopan serta berempati.
+Dalam simulasi ini, kamu akan menghadapi berbagai situasi di media digital (grup *WhatsApp*, video pendek, pesan pribadi, *Instagram*, dan gim *online*). Tugasmu mengenali perundungan siber dan memilih respons yang sopan serta berempati.
 
 Kamu akan:
 1. Mengenali bentuk-bentuk perundungan siber (cyberbullying)
@@ -4351,7 +4342,7 @@ Pesan itu muncul berulang saat Dika masuk ke permainan.`,
             },
             {
               id: "d",
-              text: "Selalu menjadi rahasia pribadi yang hanya diketahui oleh pembuat handphone.",
+              text: "Selalu menjadi rahasia pribadi yang hanya diketahui oleh pembuat gawai.",
               isCorrect: false
             }
           ],
@@ -4419,32 +4410,30 @@ Bayangkan kamu sudah susah payah membuat gambar yang indah, lalu seseorang menga
       title: "Kata Kunci",
       content: ` **Karya Digital** – Hasil ciptaan seseorang yang dibuat, disimpan, atau dibagikan menggunakan perangkat digital (gambar, tulisan, video, musik, desain).
 
- **Hak Cipta (Copyright)** – Hak hukum yang otomatis melindungi karya seseorang saat karya itu selesai dibuat, agar tidak dicuri atau diakui orang lain.
+ **Hak Cipta (*Copyright*)** – Hak hukum yang otomatis melindungi karya seseorang saat karya itu selesai dibuat, agar tidak dicuri atau diakui orang lain.
 
  **Plagiarisme (Plagiat)** – Tindakan mengambil karya orang lain dan mengakuinya sebagai karya sendiri; dalam pendidikan disebut menyontek.
 
  **Atribusi (Kredit Karya)** – Mencantumkan nama pembuat dan sumber karya sebagai bentuk penghargaan saat meminjam karya orang lain.
 
- **Lisensi Creative Commons (CC)** – Tanda bahwa sebuah karya boleh dipakai secara gratis, biasanya dengan syarat mencantumkan nama pembuatnya.
+ **Lisensi *Creative Commons* (CC)** – Tanda bahwa sebuah karya boleh dipakai secara gratis, biasanya dengan syarat mencantumkan nama pembuatnya.
 
  **DJKI** – Direktorat Jenderal Kekayaan Intelektual; lembaga Indonesia yang mengatur hak cipta dan kekayaan intelektual.
 
- **Watermark** – Tanda nama atau logo kecil pada karya digital sebagai bukti kepemilikan.`
+ ***Watermark*** – Tanda nama atau logo kecil pada karya digital sebagai bukti kepemilikan.`
     },
     {
       type: "peta-materi",
       title: "Peta Materi",
-      content: ` Peta perjalanan belajarmu:
+      content: `Peta perjalanan belajarmu:
 
- Tahap 1: Bersiap belajar dari cerita Bima dan istana pasir miliknya.
- Tahap 2: Menjawab tantangan awal tentang hak cipta dan plagiarisme.
- Tahap 3: Belajar tentang karya digital, mengapa harus dihargai, dan jurus 3J.
- Tahap 4: Latihan memahami – Plagiarisme dan lisensi Creative Commons.
- Tahap 5: Mengamati studi kasus karya Gita yang dicuri.
- Tahap 6: Bereksplorasi dalam simulasi Menggunakan Konten dengan Bertanggung Jawab.
- Tahap 7: Uji pemahaman akhir dan refleksi.
-
-Jadilah Pelindung Karya yang jujur dan kreatif! `
+Tahap 1: Membaca cerita Raka tentang pesan berantai di grup kelas.
+Tahap 2: Menjawab tantangan awal "Seberapa Jeli Matamu?".
+Tahap 3: Mempelajari materi tentang hoaks, fakta, opini, dan cara mengecek fakta.
+Tahap 4: Menganalisis informasi untuk menentukan apakah informasi tersebut valid atau meragukan.
+Tahap 5: Mengevaluasi kredibilitas portal berita berdasarkan sumber, tanggal, isi, bukti, dan gaya bahasa.
+Tahap 6: Menentukan tindakan yang tepat melalui simulasi Detektif Fakta.
+Tahap 7: Mengerjakan uji pemahaman dan refleksi belajar.`
     },
     {
       type: "bersiap-belajar",
@@ -4562,109 +4551,109 @@ Di dunia digital, kejadian seperti ini sering sekali terjadi. Banyak orang yang 
       title: "Yuk, Belajar Bersama!",
       content: `## Menghargai Karya Orang Lain
 
-Halo, teman - teman yang hebat! Pernahkah kamu menggambar sesuatu yang sangat bagus, lalu memajangnya di dinding kamarmu ? Kamu pasti merasa bangga, kan ? Nah, di dunia internet atau dunia digital, kita juga bisa membuat karya yang luar biasa, lho! Yuk, kita pelajari apa itu karya digital dan bagaimana cara kita menghargainya!
+Halo, teman-teman yang hebat. Pernahkah kamu menggambar sesuatu yang sangat bagus, lalu memajangnya di dinding kamarmu? Kamu pasti merasa bangga, kan? Nah, di dunia internet atau dunia digital, kita juga bisa membuat karya yang luar biasa, lho. Yuk, kita pelajari apa itu karya digital dan bagaimana cara kita menghargainya.
 
-### A.Apa Itu Karya Digital ?
+### A. Apa Itu Karya Digital?
 
-        Pernahkah kamu membuat gambar di HP, menulis cerita atau puisi di komputer, membuat video pendek yang lucu, atau mendesain poster dengan aplikasi seperti Canva ? Semua kegiatan seru itu menghasilkan sesuatu yang disebut karya digital.
+Pernahkah kamu membuat gambar di gawai, menulis cerita atau puisi di komputer, membuat video pendek yang lucu, atau mendesain poster dengan aplikasi seperti *Canva*? Semua kegiatan seru itu menghasilkan sesuatu yang disebut karya digital.
 
-Karya digital adalah hasil ciptaan seseorang yang dibuat, disimpan, atau dibagikan menggunakan perangkat digital seperti HP, komputer, tablet, atau kamera.
+Karya digital adalah hasil ciptaan seseorang yang dibuat, disimpan, atau dibagikan menggunakan perangkat digital seperti gawai, komputer, tablet, atau kamera.
 
 Coba lihat berbagai macam bentuk karya digital di bawah ini:
 
-| No. | Jenis Karya Digital | Contohnya Apa Saja ? |
+| No. | Jenis Karya Digital | Contohnya Apa Saja? |
 | ---| ---| ---|
-| 1 | Gambar / Visual | Ilustrasi, foto hasil jepretan kamera, ikon, stiker WhatsApp. |
-| 2 | Tulisan | Cerita pendek(cerpen), artikel blog, puisi, atau caption di media sosial. |
-| 3 | Video | Vlog jalan - jalan, animasi kartun, video presentasi tugas sekolah. |
-| 4 | Musik atau Audio | Lagu, rekaman suara podcast, atau efek suara lucu. |
-| 5 | Desain | Poster lomba, logo kelas, jadwal piket yang dihias, slide presentasi. |
-| 6 | Konten Media Sosial | Video pendek, Reels, unggahan Instagram, dan konten edukasi di TikTok. |
+| 1 | Gambar / Visual | Ilustrasi, foto hasil jepretan kamera, ikon, stiker *WhatsApp*. |
+| 2 | Tulisan | Cerita pendek (cerpen), artikel blog, puisi, atau takarir (*caption*) di media sosial. |
+| 3 | Video | *Vlog* jalan-jalan, animasi kartun, video presentasi tugas sekolah. |
+| 4 | Musik atau Audio | Lagu, rekaman suara *podcast*, atau efek suara lucu. |
+| 5 | Desain | Poster lomba, logo kelas, jadwal piket yang dihias, salindia presentasi. |
+| 6 | Konten Media Sosial | Video pendek, *Reels*, unggahan *Instagram*, dan konten edukasi di *TikTok*. |
 
-      Ingat, ya! Karya digital itu tidak turun begitu saja dari langit.Ada manusia sungguhan di baliknya yang membuatnya dengan susah payah.Mereka menggunakan waktu, tenaga, pikiran, dan kreativitas yang luar biasa.
+Ingat, ya. Karya digital itu tidak turun begitu saja dari langit. Ada manusia sungguhan di baliknya yang membuatnya dengan susah payah. Mereka menggunakan waktu, tenaga, pikiran, dan kreativitas yang luar biasa.
 
-Bayangkan jika kamu membangun istana pasir yang sangat besar di pantai seharian penuh.Lalu, tiba - tiba ada orang lain yang memasang bendera namanya di istanamu dan berteriak, "Ini istana buatanku!" Tentu kamu akan merasa sangat sedih dan marah, bukan ? Hal yang sama juga berlaku di dunia digital.Itulah sebabnya, karya digital sangat perlu dihargai!
+Bayangkan jika kamu membangun istana pasir yang sangat besar di pantai seharian penuh. Lalu, tiba-tiba ada orang lain yang memasang bendera namanya di istanamu dan berteriak, "Ini istana buatanku!" Tentu kamu akan merasa sangat sedih dan marah, bukan? Hal yang sama juga berlaku di dunia digital. Itulah sebabnya, karya digital sangat perlu dihargai.
 
-### B.Mengapa Kita Tidak Boleh Asal Mengambil Karya Orang Lain ?
+### B. Mengapa Kita Tidak Boleh Asal Mengambil Karya Orang Lain?
 
-        Internet itu seperti perpustakaan dan taman bermain raksasa.Ada jutaan gambar, video, lagu, dan tulisan di sana.Namun, bukan berarti semua barang di taman bermain itu boleh kita bawa pulang dan kita akui sebagai milik kita, ya.
+Internet itu seperti perpustakaan dan taman bermain raksasa. Ada jutaan gambar, video, lagu, dan tulisan di sana. Namun, bukan berarti semua barang di taman bermain itu boleh kita bawa pulang dan kita akui sebagai milik kita, ya.
 
-Mengambil karya orang lain tanpa izin, tidak menyebutkan siapa pembuatnya, atau bahkan mengakuinya sebagai buatanmu sendiri adalah tindakan yang tidak jujur.Dalam dunia pendidikan, tindakan mengambil karya orang lain dan mengakuinya sebagai karya sendiri disebut ** Plagiarisme(Plagiat) **.Seorang pahlawan digital pantang melakukan hal ini!
+Mengambil karya orang lain tanpa izin, tidak menyebutkan siapa pembuatnya, atau bahkan mengakuinya sebagai buatanmu sendiri adalah tindakan yang tidak jujur. Dalam dunia pendidikan, tindakan mengambil karya orang lain dan mengakuinya sebagai karya sendiri disebut **Plagiarisme (Plagiat)**. Seorang pahlawan digital pantang melakukan hal ini.
 
 Perhatikan panduan keren di bawah ini agar kamu tidak salah langkah:
 
-| Tindakan di Dunia Digital | Boleh atau Tidak ? | Kenapa Begitu ? |
+| Tindakan di Dunia Digital | Boleh atau Tidak? | Kenapa Begitu? |
 | ---| ---| ---|
-| Memakai foto kucing dari internet, lalu menulis nama pembuat dan sumber situsnya. | Boleh! | Karena kita jujur tidak mengaku sebagai pembuatnya dan memberi tahu dari mana asalnya. |
-| Mengunduh poster teman, menghapus namanya, lalu menggantinya dengan nama kita. | Tidak Boleh! | Ini namanya pencurian digital.Sangat tidak menghargai pembuat aslinya. |
-| Menyalin(copy - paste) tulisan orang lain dari internet lalu dikumpulkan sebagai tugas sekolah. | Tidak Boleh! | Ini namanya plagiat.Kamu tidak belajar apa - apa dengan menyontek. |
-| Melihat poster keren di internet, lalu menjadikannya inspirasi untuk membuat poster buatanmu sendiri. | Boleh! | Inspirasi itu bagus! Kita membuat karya baru yang berbeda dengan usaha kita sendiri. |
-| Mengunggah ulang(repost) video YouTube orang lain ke channel kita tanpa izin pemiliknya. | Tidak Boleh! | Video itu adalah hasil keringat orang lain. |
+| Memakai foto kucing dari internet, lalu menulis nama pembuat dan sumber situsnya. | Boleh. | Karena kita jujur tidak mengaku sebagai pembuatnya dan memberi tahu dari mana asalnya. |
+| Mengunduh poster teman, menghapus namanya, lalu menggantinya dengan nama kita. | Tidak Boleh. | Ini namanya pencurian digital. Sangat tidak menghargai pembuat aslinya. |
+| Menyalin (*copy-paste*) tulisan orang lain dari internet lalu dikumpulkan sebagai tugas sekolah. | Tidak Boleh. | Ini namanya plagiat. Kamu tidak belajar apa-apa dengan menyontek. |
+| Melihat poster keren di internet, lalu menjadikannya inspirasi untuk membuat poster buatanmu sendiri. | Boleh. | Inspirasi itu bagus. Kita membuat karya baru yang berbeda dengan usaha kita sendiri. |
+| Mengunggah ulang (*repost*) video *YouTube* orang lain ke saluran (*channel*) kita tanpa izin pemiliknya. | Tidak Boleh. | Video itu adalah hasil keringat orang lain. |
 
-### C.Apa Itu Hak Cipta ? (Tanda Pengenal Tak Terlihat)
+### C. Apa Itu Hak Cipta? (Tanda Pengenal Tak Terlihat)
 
-      Teman - teman, pernah dengar kata Hak Cipta ?
+Teman-teman, pernah dengar kata Hak Cipta?
 
-        Hak cipta itu seperti tanda pengenal atau gembok tak terlihat yang dimiliki seseorang atas karya yang dibuatnya.Ketika seseorang selesai membuat gambar, cerita, lagu, atau video, secara otomatis karya itu dilindungi oleh aturan bernama hak cipta.
+Hak cipta itu seperti tanda pengenal atau gembok tak terlihat yang dimiliki seseorang atas karya yang dibuatnya. Ketika seseorang selesai membuat gambar, cerita, lagu, atau video, secara otomatis karya itu dilindungi oleh aturan bernama hak cipta.
 
-Untuk anak - anak hebat sepertimu, cukup ingat rumus sederhana ini:
+Untuk anak-anak hebat sepertimu, cukup ingat rumus sederhana ini:
 > **“Kalau bukan tanganku dan pikiranku yang membuat, maka aku tidak boleh mengaku sebagai pembuatnya.”**
 
-      Di Indonesia, ada markas besar yang mengatur tentang ini, namanya ** DJKI(Direktorat Jenderal Kekayaan Intelektual) **.DJKI menjelaskan bahwa hak cipta itu langsung muncul dan menempel pada suatu karya saat karya itu selesai dibuat(diwujudkan).Jadi, hukum melindungi karya - karya tersebut agar tidak dicuri orang.
+Di Indonesia, ada markas besar yang mengatur tentang ini, namanya **DJKI (Direktorat Jenderal Kekayaan Intelektual)**. DJKI menjelaskan bahwa hak cipta itu langsung muncul dan menempel pada suatu karya saat karya itu selesai dibuat (diwujudkan). Jadi, hukum melindungi karya-karya tersebut agar tidak dicuri orang.
 
-### D.Jurus Rahasia: Ingat "3J" Saat Menggunakan Karya Digital
+### D. Jurus Rahasia: Ingat "3J" Saat Menggunakan Karya Digital
 
-Agar kamu selalu aman dan menjadi anak yang beretika di dunia maya, gunakan jurus rahasia 3J!
+Agar kamu selalu aman dan menjadi anak yang beretika di dunia maya, gunakan jurus rahasia 3J.
 
-1. ** Jujur **
-      Jujur berarti berani berkata benar.Banggalah pada karya buatanmu sendiri, meskipun belum sempurna.Jangan pernah mengakui karya orang lain sebagai hasil kerjamu.Tugas yang dikerjakan sendiri jauh lebih bernilai di mata gurumu!
+1. **Jujur**
+Jujur berarti berani berkata benar. Banggalah pada karya buatanmu sendiri, meskipun belum sempurna. Jangan pernah mengakui karya orang lain sebagai hasil kerjamu. Tugas yang dikerjakan sendiri jauh lebih bernilai di mata gurumu.
 
-2. ** Jelaskan Sumber **
-      Jika kamu meminjam buku temanmu, kamu pasti akan bilang pada ibumu, "Bu, ini buku pinjaman dari Budi." Di internet juga sama! Jika kamu menggunakan gambar, informasi, atau foto dari internet, jelaskan siapa pembuatnya dan dari mana kamu mengambilnya.
+2. **Jelaskan Sumber**
+Jika kamu meminjam buku temanmu, kamu pasti akan bilang pada ibumu, "Bu, ini buku pinjaman dari Budi." Di internet juga sama. Jika kamu menggunakan gambar, informasi, atau foto dari internet, jelaskan siapa pembuatnya dan dari mana kamu mengambilnya.
 
-3. ** Jangan Asal Ambil **
-      Tidak semua barang di internet itu "gratis".Ada karya yang boleh dipakai bebas, ada yang harus minta izin dulu, dan ada yang sama sekali tidak boleh diubah.
-        Nah, ada karya yang memang sengaja digratiskan oleh pembuatnya untuk dipakai belajar.Biasanya karya ini memiliki tanda ** Lisensi Creative Commons(CC) **.Meskipun gratis, aturan Creative Commons biasanya tetap memintamu untuk mencantumkan nama pembuatnya sebagai bentuk rasa terima kasih.
+3. **Jangan Asal Ambil**
+Tidak semua barang di internet itu "gratis". Ada karya yang boleh dipakai bebas, ada yang harus minta izin dulu, dan ada yang sama sekali tidak boleh diubah.
+Nah, ada karya yang memang sengaja digratiskan oleh pembuatnya untuk dipakai belajar. Biasanya karya ini memiliki tanda **Lisensi Creative Commons (CC)**. Meskipun gratis, aturan *Creative Commons* biasanya tetap memintamu untuk mencantumkan nama pembuatnya sebagai bentuk rasa terima kasih.
 
 Sebelum menyimpan gambar dari internet, tanyakan pada dirimu:
-      - Siapa yang membuat gambar ini ?
-        - Apakah situs ini mengizinkanku untuk menggunakannya ?
-        - Jika ragu, segera tanya pada Ayah, Ibu, atau Guru di sekolah!
+- Siapa yang membuat gambar ini?
+- Apakah situs ini mengizinkanku untuk menggunakannya?
+- Jika ragu, segera tanya pada Ayah, Ibu, atau Guru di sekolah.
 
-### E.Cara Menuliskan Sumber Gambar yang Benar(Standar Nasional & Internasional)
+### E. Cara Menuliskan Sumber Gambar yang Benar (Standar Nasional & Internasional)
 
-Teman - teman, sekadar menulis "Sumber: Google" atau "Sumber: Internet" itu kurang tepat, lho! Google itu hanya mesin pencari, bukan pembuat gambarnya. 
+Teman-teman, sekadar menulis "Sumber: Google" atau "Sumber: Internet" itu kurang tepat, lho. *Google* itu hanya mesin pencari, bukan pembuat gambarnya. 
 
 Untuk menuliskan sumber gambar secara benar dan bertanggung jawab, ada dua standar utama yang bisa kita gunakan sesuai kebutuhan tugas kita:
 
-#### 1. Standar Internasional(Gaya APA Edisi ke - 7)
-Gaya APA(American Psychological Association) 7th Edition adalah standar internasional yang paling sering digunakan dalam penulisan ilmiah.
-- ** Aturan Posisi **: 
-  - ** Nomor Gambar(Figure Number) ** ditulis tebal(bold) di ** atas ** gambar(misal: ** Gambar 1 ** atau ** Figure 1 **).
-  - ** Judul Gambar(Image Title) ** ditulis miring(italics) di bawah nomor gambar dengan huruf kapital di setiap kata penting(Title Case).
-  - ** Catatan Sumber(Note) ** diletakkan di ** bawah ** gambar diawali kata * Note.* atau * Catatan.* (tulisan miring).
-- ** Format Catatan di Bawah Gambar **:
-      - * Dari Situs Web *: 
-    * Catatan *.Dari * Judul Halaman Web * [Deskripsi Format], oleh Nama Pembuat, Tahun, Nama Situs(URL).
-  - * Dari Buku *: 
-    * Catatan *.Dari * Judul Buku * (hlm.halaman), oleh Nama Pembuat, Tahun, Penerbit.
-  - * Dari Media Sosial(Instagram) *: 
-    * Catatan *.Dari * Teks Postingan * [Deskripsi Format], oleh Nama Pembuat[@username], Tahun, Nama Platform(URL).
+#### 1. Standar Internasional (Gaya APA Edisi ke-7)
+Gaya APA (*American Psychological Association*) *7th Edition* adalah standar internasional yang paling sering digunakan dalam penulisan ilmiah.
+- **Aturan Posisi**: 
+  - **Nomor Gambar (*Figure Number*)** ditulis tebal (*bold*) di **atas** gambar (misal: **Gambar 1** atau **Figure 1**).
+  - **Judul Gambar (*Image Title*)** ditulis miring (*italics*) di bawah nomor gambar dengan huruf kapital di setiap kata penting (*Title Case*).
+  - **Catatan Sumber (*Note*)** diletakkan di **bawah** gambar diawali kata *Note.* atau *Catatan.* (tulisan miring).
+- **Format Catatan di Bawah Gambar**:
+  - *Dari Situs Web*: 
+    *Catatan*. Dari *Judul Halaman Web* [Deskripsi Format], oleh Nama Pembuat, Tahun, Nama Situs (URL).
+  - *Dari Buku*: 
+    *Catatan*. Dari *Judul Buku* (hlm. halaman), oleh Nama Pembuat, Tahun, Penerbit.
+  - *Dari Media Sosial (Instagram)*: 
+    *Catatan*. Dari *Teks Postingan* [Deskripsi Format], oleh Nama Pembuat [@username], Tahun, Nama Platform (URL).
 
-* Contoh Penerapan APA 7th:*
-** Gambar 1 **
-* Keindahan Danau Kaco di Jambi *
-      [Contoh Gambar Danau Kaco]
-      * Catatan *.Dari * Wisata Alam Jambi * [Foto], oleh Humas Pemprov Jambi, 2022, Portal Resmi Jambi(https://jambiprov.go.id).
+*Contoh Penerapan APA 7th:*
+**Gambar 1**
+*Keindahan Danau Kaco di Jambi*
+[Contoh Gambar Danau Kaco]
+*Catatan*. Dari *Wisata Alam Jambi* [Foto], oleh Humas Pemprov Jambi, 2022, Portal Resmi Jambi (https://jambiprov.go.id).
 
-        ---
+---
 
-#### 2. Standar Nasional(Panduan Pencantuman Gambar Indonesia)
+#### 2. Standar Nasional (Panduan Pencantuman Gambar Indonesia)
 Di Indonesia, pencantuman gambar diatur dalam standar penulisan dokumen resmi atau buku pelajaran nasional.
-- ** Aturan Posisi **: Keterangan diletakkan seluruhnya di ** bawah ** gambar secara ringkas.
-- ** Format Keterangan **: \`Gambar [Nomor]. [Judul Gambar] (Sumber: [Nama Pembuat/Situs], [Tahun])\`
+- **Aturan Posisi**: Keterangan diletakkan seluruhnya di **bawah** gambar secara ringkas.
+- **Format Keterangan**: \`Gambar [Nomor]. [Judul Gambar] (Sumber: [Nama Pembuat/Situs], [Tahun])\`
 - **Format Detail**:
-  - *Dari Situs Web*: \`Gambar 1. Judul Gambar (Sumber: Nama Website/Situs Resmi, Tahun, URL)\`
+  - *Dari Situs Web*: \`Gambar 1. Judul Gambar (Sumber: Nama Situs Web/Situs Resmi, Tahun, URL)\`
   - *Dari Buku*: \`Gambar 2. Judul Gambar (Sumber: Nama Belakang Penulis, Tahun: Halaman)\`
   - *Dari Media Sosial*: \`Gambar 3. Judul Gambar (Sumber: Akun Instagram @username, Tahun)\`
 
@@ -4678,15 +4667,15 @@ Di Indonesia, pencantuman gambar diatur dalam standar penulisan dokumen resmi at
 
 | Karya/Sumber Gambar | Gaya Internasional (APA 7th) | Gaya Nasional (Indonesia) |
 |---|---|---|
-| **Gambar dari Website Resmi** | *Catatan*. Dari *Planet Mars* [Foto], oleh NASA, 2021, NASA (https://nasa.gov). | Gambar 1. Planet Mars (Sumber: NASA, 2021, www.nasa.gov) |
+| **Gambar dari Situs Web Resmi** | *Catatan*. Dari *Planet Mars* [Foto], oleh NASA, 2021, NASA (https://nasa.gov). | Gambar 1. Planet Mars (Sumber: NASA, 2021, www.nasa.gov) |
 | **Gambar dari Buku Cetak** | *Catatan*. Dari *Siklus Air* [Ilustrasi], oleh Sutopo, 2019, Penerbit Tiga Serangkai. | Gambar 2. Siklus Air (Sumber: Sutopo, 2019: hlm. 45) |
 | **Foto dari Media Sosial** | *Catatan*. Dari *Poster Hemat Energi* [Grafis], oleh Budi [@budicreative], 2023, Instagram (https://instagram.com/p/123). | Gambar 3. Poster Hemat Energi (Sumber: Instagram @budicreative, 2023) |
 | **Karya/Gambar Buatan Sendiri** | *Catatan*. Karya buatan sendiri oleh [Nama Kamu], Tahun. | Gambar 4. Poster Kebersihan (Sumber: Dokumentasi Pribadi [Nama Kamu], Tahun) |
 
-Dengan membiasakan menulis sumber gambar sesuai aturan ini, kamu sudah belajar menjadi peneliti cilik yang hebat, jujur, dan menghargai jerih payah pembuat karya asli!
+Dengan membiasakan menulis sumber gambar sesuai aturan ini, kamu sudah belajar menjadi peneliti cilik yang hebat, jujur, dan menghargai jerih payah pembuat karya asli.
 
 **Pesan Digi:**
-"Internet adalah perpustakaan ilmu yang sangat luas. Jadilah pengunjung yang baik. Jangan asal mengambil! Jadilah pengguna digital yang jujur: banggalah membuat karyamu sendiri, selalu tuliskan sumber saat meminjam, dan hargailah karya ciptaan orang lain."`
+"Internet adalah perpustakaan ilmu yang sangat luas. Jadilah pengunjung yang baik. Jangan asal mengambil. Jadilah pengguna digital yang jujur: banggalah membuat karyamu sendiri, selalu tuliskan sumber saat meminjam, dan hargailah karya ciptaan orang lain."`
     },
     {
       type: "ayo-memahami",
@@ -5174,44 +5163,54 @@ const topic8: Topic = {
     {
       type: "kata-kunci",
       title: "Kata Kunci",
-      content: `Kampanye digital - Ajakan positif dalam bentuk karya digital yang disebarkan melalui internet untuk mengajak orang lain menggunakan teknologi dengan cerdas.
-Karya digital - Hasil ciptaan atau karya kreatif (seperti poster, komik, atau slide) yang dibuat menggunakan perangkat komputer atau handphone.
-Pesan positif - Pesan atau ajakan baik yang bermanfaat, mendidik, dan menginspirasi orang lain untuk berbuat kebaikan.
-Aman - Terlindungi dari bahaya di dunia maya, seperti penipuan, tautan berbahaya, atau penyebaran data pribadi.
-Sopan - Berbicara dan bertindak dengan santun, menghargai perasaan orang lain di internet.
-Bertanggung jawab - Menyadari dampak dari apa yang kita tulis atau bagikan, serta siap menanggung akibatnya.
-Data pribadi - Informasi penting tentang diri kita yang harus dijaga kerahasiaannya di internet, seperti kata sandi atau alamat.
-Sumber karya - Keterangan asal-usul karya orang lain (kredit) yang kita gunakan sebagai bentuk penghargaan atas jerih payah penciptanya.
-Komentar baik - Tanggapan positif yang sopan di dunia digital yang tidak menyakiti atau membuat orang lain sedih.
-Refleksi - Kegiatan memikirkan kembali apa yang telah dipelajari dan dilakukan untuk menjadi pribadi yang lebih baik.`
+      content: `**Kampanye Digital** – Ajakan positif dalam bentuk karya digital yang disebarkan melalui internet untuk mengajak orang lain menggunakan teknologi dengan cerdas.
+
+**Karya Digital** – Hasil ciptaan atau karya kreatif (seperti poster, komik, atau salindia) yang dibuat menggunakan perangkat komputer atau gawai.
+
+**Pesan Positif** – Pesan atau ajakan baik yang bermanfaat, mendidik, dan menginspirasi orang lain untuk berbuat kebaikan.
+
+**Aman** – Terlindungi dari bahaya di dunia maya, seperti penipuan, tautan berbahaya, atau penyebaran informasi pribadi.
+
+**Sopan** – Berbicara dan bertindak dengan santun, menghargai perasaan orang lain di internet.
+
+**Bertanggung Jawab** – Menyadari dampak dari apa yang kita tulis atau bagikan, serta siap menanggung akibatnya.
+
+**Informasi Pribadi** – Informasi penting tentang diri kita yang harus dijaga kerahasiaannya di internet, seperti kata sandi atau alamat.
+
+**Sumber Karya** – Keterangan asal-usul karya orang lain (kredit) yang kita gunakan sebagai bentuk penghargaan atas jerih payah penciptanya.
+
+**Komentar Baik** – Tanggapan positif yang sopan di dunia digital yang tidak menyakiti atau membuat orang lain sedih.
+
+**Refleksi** – Kegiatan memikirkan kembali apa yang telah dipelajari dan dilakukan untuk menjadi pribadi yang lebih baik.`
     },
     {
       type: "peta-materi",
       title: "Peta Materi",
       content: `Peta perjalanan belajarmu:
-Tahap 1: Bersiap belajar dengan merenungi pentingnya mengajak orang lain bersikap bijak di internet.
-Tahap 2: Menjawab tantangan awal tentang kampanye digital.
-Tahap 3: Belajar tentang konsep kampanye digital, prinsip membuat konten aman, dan metadata.
-Tahap 4: Latihan memahami – Metadata, izin memfoto, dan konten positif.
-Tahap 5: Mengamati studi kasus video Hana yang viral.
-Tahap 6: Bereksplorasi membuat kampanye digital di Galeri Kelas virtual.
-Tahap 7: Uji pemahaman akhir dan refleksi belajar.`
+
+Tahap 1: Membaca cerita Raka tentang pesan berantai di grup kelas.
+Tahap 2: Menjawab tantangan awal "Seberapa Jeli Matamu?".
+Tahap 3: Mempelajari materi tentang hoaks, fakta, opini, dan cara mengecek fakta.
+Tahap 4: Menganalisis informasi untuk menentukan apakah informasi tersebut valid atau meragukan.
+Tahap 5: Mengevaluasi kredibilitas portal berita berdasarkan sumber, tanggal, isi, bukti, dan gaya bahasa.
+Tahap 6: Menentukan tindakan yang tepat melalui simulasi Detektif Fakta.
+Tahap 7: Mengerjakan uji pemahaman dan refleksi belajar.`
     },
     {
       type: "bersiap-belajar",
       title: "Bersiap-Siap Belajar",
       content: "Jawablah pertanyaan pemandu di bawah ini berdasarkan bacaan pengantar secara mandiri.",
       passage: `Selamat! Kamu sudah sampai pada topik terakhir.
-Sebelumnya, kamu sudah belajar banyak hal tentang dunia digital. Kamu belajar menggunakan HP, Chromebook, atau komputer sesuai tujuan pembelajaran. Kamu juga belajar mengecek informasi, menjaga data pribadi, berhati-hati sebelum mengklik tautan, berbicara dengan santun, menjadi teman yang baik di dunia digital, serta menghargai karya orang lain.
+Sebelumnya, kamu sudah belajar banyak hal tentang dunia digital. Kamu belajar menggunakan gawai, *Chromebook*, atau komputer sesuai tujuan pembelajaran. Kamu juga belajar mengecek informasi, menjaga data pribadi, berhati-hati sebelum mengklik tautan, berbicara dengan santun, menjadi teman yang baik di dunia digital, serta menghargai karya orang lain.
 Sekarang, saatnya kamu menunjukkan apa yang sudah kamu pahami.
 Coba pikirkan sebentar.
 Pernahkah kamu melihat teman yang langsung percaya pada berita yang belum jelas?
 Pernahkah kamu melihat komentar yang membuat orang lain sedih atau malu?
-Pernahkah kamu melihat seseorang membagikan foto atau data pribadi tanpa berpikir panjang?
+Pernahkah kamu melihat seseorang membagikan foto atau informasi pribadi tanpa berpikir panjang?
 Pernahkah kamu ingin mengingatkan teman agar lebih hati-hati saat menggunakan internet?
 Di dunia digital, kita tidak hanya belajar untuk melindungi diri sendiri. Kita juga bisa mengajak orang lain agar menggunakan teknologi dengan lebih aman, sopan, dan bertanggung jawab.
 Pada topik ini, kamu akan membuat kampanye digital. Kampanye digital adalah ajakan yang dibuat dalam bentuk karya, seperti poster, slide, gambar digital, infografik mini, komik pendek, atau pesan singkat. Kampanye ini berisi pesan agar teman-teman menjadi pengguna digital yang cerdas.
-Kamu boleh memilih pesan kampanye tentang menjaga data pribadi, tidak asal klik, mengecek informasi, berbicara santun, tidak melakukan cyberbullying, atau menghargai karya orang lain.
+Kamu boleh memilih pesan kampanye tentang menjaga informasi pribadi, tidak asal klik, mengecek informasi, berbicara santun, tidak melakukan cyberbullying, atau menghargai karya orang lain.
 Yuk, tunjukkan bahwa kamu siap menjadi pengguna digital yang aman, sopan, jujur, dan bertanggung jawab!`,
       mediaType: "image",
       mediaUrl: "/kampanye_digital_bersiap.png",
@@ -5252,7 +5251,7 @@ Yuk, tunjukkan bahwa kamu siap menjadi pengguna digital yang aman, sopan, jujur,
             },
             {
               id: "c",
-              text: "Membagikan data pribadi teman",
+              text: "Membagikan informasi pribadi teman",
               isCorrect: false
             },
             {
@@ -5298,37 +5297,37 @@ Yuk, tunjukkan bahwa kamu siap menjadi pengguna digital yang aman, sopan, jujur,
       title: "Yuk, Belajar Bersama!",
       content: `## Menjadi Kreator Digital yang Bertanggung Jawab
 
-Sebagai anak muda di era digital, kamu memiliki kemampuan luar biasa untuk **berkreasi dan berbagi** karya dengan dunia. Tapi kekuatan ini datang dengan **tanggung jawab**!
+Sebagai anak muda di era digital, kamu memiliki kemampuan luar biasa untuk **berkreasi dan berbagi** karya dengan dunia. Tapi kekuatan ini datang dengan **tanggung jawab**.
 
 ### Prinsip-Prinsip Membuat Konten yang Aman
 
-#### 1. Pikirkan Sebelum Posting (Think Before You Post) 
+#### 1. Pikirkan Sebelum Mengunggah (*Think Before You Post*)
 
-Sebelum memposting, tanyakan pada dirimu:
+Sebelum mengunggah (*posting*), tanyakan pada dirimu:
 - "Apakah konten ini aman untuk dilihat semua orang?"
 - "Apakah konten ini bisa menyakiti perasaan seseorang?"
 - "Apakah aku bangga jika guru atau orang tua melihat ini?"
 - "Apakah konten ini mengandung informasi pribadi yang seharusnya dirahasiakan?"
 
-Jika jawabannya "TIDAK" untuk salah satu pertanyaan di atas, **jangan posting!**
+Jika jawabannya "TIDAK" untuk salah satu pertanyaan di atas, **jangan diunggah.**
 
-#### 2. Jangan Bagikan Informasi Pribadi 
+#### 2. Jangan Bagikan Informasi Pribadi
 
 Saat membuat konten, jangan pernah memperlihatkan:
 - Lokasi rumah atau sekolah
 - Seragam sekolah dengan nama dan alamat sekolah terlihat jelas
-- Nomor telepon atau alamat email
+- Nomor telepon atau alamat surel (*email*)
 - Informasi keuangan keluarga
 
-**Tips:** Periksa metadata foto! Beberapa HP menyimpan lokasi GPS dalam foto yang kamu ambil. Matikan fitur lokasi saat mengambil foto.
+**Tips:** Periksa *metadata* foto. Beberapa gawai menyimpan lokasi GPS dalam foto yang kamu ambil. Matikan fitur lokasi saat mengambil foto.
 
-#### 3. Hormati Privasi Orang Lain 
+#### 3. Hormati Privasi Orang Lain
 
 - **Minta izin** sebelum memfoto atau merekam video orang lain
-- **Jangan posting** foto atau video teman tanpa persetujuan mereka
-- **Blur wajah** orang lain jika mereka tidak ingin terlihat
+- **Jangan unggah** foto atau video teman tanpa persetujuan mereka
+- ***Blur* wajah** orang lain jika mereka tidak ingin terlihat
 
-#### 4. Buat Konten yang Positif 
+#### 4. Buat Konten yang Positif
 
 Konten positif bisa berupa:
 - Tutorial (cara menggambar, memasak, belajar)
@@ -5336,31 +5335,31 @@ Konten positif bisa berupa:
 - Karya seni digital
 - Cerita atau puisi
 - Tips menjaga lingkungan
-- Review jujur tentang game atau buku
+- Ulasan (*review*) jujur tentang gim atau buku
 
-#### 5. Lindungi Karyamu 
+#### 5. Lindungi Karyamu
 
 Cara melindungi konten yang kamu buat:
-- **Tambahkan watermark** – Tanda nama atau logo kecil di karyamu
-- **Simpan file asli** – Selalu simpan versi asli (sebelum diedit) sebagai bukti kepemilikan
+- **Tambahkan *watermark*** – Tanda nama atau logo kecil di karyamu
+- **Simpan *file* asli** – Selalu simpan versi asli (sebelum diedit) sebagai bukti kepemilikan
 - **Catat tanggal pembuatan** – Ini bisa menjadi bukti jika ada yang mengaku sebagai pembuat
-- **Gunakan platform yang aman** – Posting di platform yang memiliki perlindungan hak cipta
+- **Gunakan platform yang aman** – Unggah di platform yang memiliki perlindungan hak cipta
 
 ### Metadata: Informasi Tersembunyi dalam File
 
-Tahukah kamu bahwa setiap foto yang kamu ambil dengan HP menyimpan informasi tersembunyi? Ini disebut **metadata**, yang bisa berisi:
+Tahukah kamu bahwa setiap foto yang kamu ambil dengan gawai menyimpan informasi tersembunyi? Ini disebut **metadata**, yang bisa berisi:
 - Lokasi GPS di mana foto diambil
 - Tanggal dan waktu pengambilan
 - Jenis perangkat yang digunakan
 - Pengaturan kamera
 
-**Penting:** Sebelum membagikan foto, periksa dan hapus metadata yang mengandung lokasi!
+**Penting:** Sebelum membagikan foto, periksa dan hapus metadata yang mengandung lokasi.
 
 ### Konten yang TIDAK Boleh Dibuat
 
- Konten yang mengandung kekerasan atau bullying
- Konten yang menyebarkan kebencian (hate speech)
- Konten yang mengandung informasi palsu (hoaks)
+ Konten yang mengandung kekerasan atau perundungan (*bullying*)
+ Konten yang menyebarkan kebencian (*hate speech*)
+ Konten yang menyebarkan informasi palsu (hoaks)
  Konten yang membahayakan diri sendiri atau orang lain
  Konten yang melanggar hak cipta orang lain
  Konten yang menampilkan informasi pribadi orang lain tanpa izin`
@@ -5551,7 +5550,7 @@ Orang asing mulai mengirim pesan dan bahkan ada yang menyebut nama sekolahnya.
             },
             {
               id: "c",
-              text: "Posternya terlihat serius, jadi pembuat boleh menambahkan nama lengkap dan nomor HP agar lebih dipercaya.",
+              text: "Posternya terlihat serius, jadi pembuat boleh menambahkan nama lengkap dan nomor gawai agar lebih dipercaya.",
               isCorrect: false
             },
             {
@@ -5643,7 +5642,7 @@ Orang asing mulai mengirim pesan dan bahkan ada yang menyebut nama sekolahnya.
             },
             {
               id: "c",
-              text: "Menghapus nomor HP dan alamat rumah, serta cukup menulis identitas seperlunya sesuai aturan kelas.",
+              text: "Menghapus nomor gawai dan alamat rumah, serta cukup menulis identitas seperlunya sesuai aturan kelas.",
               isCorrect: true
             },
             {
@@ -5715,12 +5714,12 @@ Orang asing mulai mengirim pesan dan bahkan ada yang menyebut nama sekolahnya.
         {
           id: qid(),
           type: "mc",
-          context: `Setelah poster hampir selesai, kamu sadar ada nomor HP pribadi anggota kelompok di bagian kontak. Poster belum dikirim ke guru.`,
+          context: `Setelah poster hampir selesai, kamu sadar ada nomor gawai pribadi anggota kelompok di bagian kontak. Poster belum dikirim ke guru.`,
           question: "Keputusan terbaik adalah....",
           options: [
             {
               id: "a",
-              text: "Tetap mengirim poster karena nomor HP bisa membantu teman bertanya tentang kampanye.",
+              text: "Tetap mengirim poster karena nomor gawai bisa membantu teman bertanya tentang kampanye.",
               isCorrect: false
             },
             {
@@ -5847,8 +5846,8 @@ export const preTestQuestions: Question[] = [
     options: [
       { id: 'a', text: 'Kartu identitas yang dicetak digital', isCorrect: false },
       { id: 'b', text: 'Semua informasi tentang dirimu yang ada di internet', isCorrect: true },
-      { id: 'c', text: 'Nomor HP', isCorrect: false },
-      { id: 'd', text: 'Password email', isCorrect: false },
+      { id: 'c', text: 'Nomor gawai', isCorrect: false },
+      { id: 'd', text: 'Kata sandi surel', isCorrect: false },
     ],
     points: 10,
   },
@@ -5883,7 +5882,7 @@ export const preTestQuestions: Question[] = [
     options: [
       { id: 'a', text: 'Perangkat lunak yang berguna', isCorrect: false },
       { id: 'b', text: 'Perangkat lunak jahat yang merusak komputer', isCorrect: true },
-      { id: 'c', text: 'Game online populer', isCorrect: false },
+      { id: 'c', text: 'Gim online populer', isCorrect: false },
       { id: 'd', text: 'Aplikasi belajar', isCorrect: false },
     ],
     points: 10,
@@ -5951,10 +5950,10 @@ export const preTestQuestions: Question[] = [
   {
     id: 'pre-10',
     type: 'mc',
-    question: 'Password yang paling aman adalah...',
+    question: 'Kata sandi yang paling aman adalah...',
     options: [
       { id: 'a', text: '123456', isCorrect: false },
-      { id: 'b', text: 'password', isCorrect: false },
+      { id: 'b', text: 'katasandi', isCorrect: false },
       { id: 'c', text: 'B1ntang_L@ut!99', isCorrect: true },
       { id: 'd', text: 'namasaya', isCorrect: false },
     ],
@@ -6001,7 +6000,7 @@ export const postTestQuestions: Question[] = [
       { id: 'a', text: 'Menangkap ikan secara online', isCorrect: false },
       { id: 'b', text: 'Menipu seseorang agar memberikan data pribadi', isCorrect: true },
       { id: 'c', text: 'Mengirim foto ikan ke teman', isCorrect: false },
-      { id: 'd', text: 'Bermain game memancing', isCorrect: false },
+      { id: 'd', text: 'Bermain gim memancing', isCorrect: false },
     ],
     points: 10,
   },
@@ -6034,7 +6033,7 @@ export const postTestQuestions: Question[] = [
     type: 'mc',
     question: 'Digital wellbeing berarti...',
     options: [
-      { id: 'a', text: 'Menggunakan HP sepuasnya', isCorrect: false },
+      { id: 'a', text: 'Menggunakan gawai sepuasnya', isCorrect: false },
       { id: 'b', text: 'Menjaga keseimbangan dan kesehatan dalam penggunaan teknologi', isCorrect: true },
       { id: 'c', text: 'Memiliki gadget terbaru', isCorrect: false },
       { id: 'd', text: 'Selalu online 24 jam', isCorrect: false },
@@ -6082,7 +6081,7 @@ export const postTestQuestions: Question[] = [
     type: 'mc',
     question: 'Tempat paling aman untuk mengunduh aplikasi adalah...',
     options: [
-      { id: 'a', text: 'Website acak di internet', isCorrect: false },
+      { id: 'a', text: 'Situs web acak di internet', isCorrect: false },
       { id: 'b', text: 'Link dari pesan WhatsApp', isCorrect: false },
       { id: 'c', text: 'Toko resmi seperti Play Store atau App Store', isCorrect: true },
       { id: 'd', text: 'Pop-up iklan', isCorrect: false },
@@ -6114,7 +6113,7 @@ export const rubricCriteria: RubricCriterion[] = [
     id: 'rubric-penerapan',
     name: 'Penerapan Pengetahuan',
     description:
-      'Kemampuan siswa dalam menerapkan pengetahuan literasi digital dalam situasi nyata, seperti membuat password yang kuat, mengenali phishing, dan menggunakan konten secara etis.',
+      'Kemampuan siswa dalam menerapkan pengetahuan literasi digital dalam situasi nyata, seperti membuat kata sandi yang kuat, mengenali phishing, dan menggunakan konten secara etis.',
     weight: 25,
   },
   {
