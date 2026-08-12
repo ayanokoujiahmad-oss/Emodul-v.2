@@ -100,7 +100,7 @@ const PrintModal: React.FC<PrintModalProps> = ({ accounts, onClose }) => {
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
         onClick={(e) => e.stopPropagation()}
-        className="bg-white rounded-2xl shadow-xl max-w-2xl w-full max-h-[80vh] overflow-auto p-6"
+        className="bg-white rounded-2xl shadow-xl max-w-2xl w-full max-h-[80dvh] overflow-auto p-6"
       >
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-display font-bold text-lg text-surface-800">Kartu Kredensial Siswa</h3>

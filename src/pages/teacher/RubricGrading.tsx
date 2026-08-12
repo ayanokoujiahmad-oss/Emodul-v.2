@@ -561,7 +561,7 @@ function ManageRubricModal({ initialCriteria, onClose, onSave }: ManageRubricMod
 
  return (
  <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4 z-50">
- <div className="bg-white rounded-2xl p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-xl space-y-4">
+ <div className="bg-white rounded-2xl p-6 max-w-2xl w-full max-h-[90dvh] overflow-y-auto shadow-xl space-y-4">
  <div className="flex items-center justify-between border-b border-gray-100 pb-3">
  <h3 className="font-display font-bold text-lg text-surface-800 flex items-center gap-2">
  Konfigurasi Rubrik Aktivitas
@@ -575,7 +575,7 @@ function ManageRubricModal({ initialCriteria, onClose, onSave }: ManageRubricMod
  Sesuaikan kriteria evaluasi dan penjelasan deskripsi tingkat 1-4 untuk aktivitas ini. Total bobot kriteria harus tepat 100%.
  </p>
 
- <div className="space-y-4 max-h-[50vh] overflow-y-auto pr-1">
+ <div className="space-y-4 max-h-[50dvh] overflow-y-auto pr-1">
  {criteria.map((c, idx) => (
  <div key={c.id} className="p-4 bg-gray-50 rounded-2xl border border-gray-200/60 space-y-3">
  <div className="flex gap-2 items-center">
@@ -1393,7 +1393,7 @@ export default function RubricGrading() {
  }
 
  return (
- <div className="flex flex-col lg:flex-row gap-6 h-auto lg:h-[calc(100vh-140px)]">
+ <div className="flex flex-col lg:flex-row gap-6 h-auto lg:h-[calc(100dvh-140px)]">
  {/* Left panel: Students list & Topic select */}
  <div className={`w-full lg:w-72 flex-shrink-0 bg-white rounded-2xl shadow-card border border-gray-100 flex flex-col overflow-hidden ${selectedStudentIdx !== -1 ? 'hidden lg:flex' : 'flex'}`}>
  <div className="p-4 border-b border-gray-100 space-y-3">

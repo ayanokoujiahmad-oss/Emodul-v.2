@@ -164,7 +164,7 @@ export function Topik7TantanganAwal({ answers = {}, onSave }: ActivityProps) {
           className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 cursor-zoom-out"
           onClick={() => setIsZoomed(false)}
         >
-          <div className="relative max-w-4xl max-h-[90vh] bg-white rounded-3xl p-2 animate-pop-in">
+          <div className="relative max-w-4xl max-h-[90dvh] bg-white rounded-3xl p-2 animate-pop-in">
             <button 
               className="absolute -top-10 right-0 text-white text-sm font-bold flex items-center gap-1 hover:text-orange-400 transition-colors"
               onClick={() => setIsZoomed(false)}
@@ -174,7 +174,7 @@ export function Topik7TantanganAwal({ answers = {}, onSave }: ActivityProps) {
             <img
               src={COMIC_SLIDES[panel].src}
               alt={COMIC_SLIDES[panel].alt}
-              className="max-h-[85vh] w-auto object-contain rounded-2xl"
+              className="max-h-[85dvh] w-auto object-contain rounded-2xl"
             />
           </div>
         </div>

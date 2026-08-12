@@ -908,7 +908,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                 className="fixed inset-0 z-[9999] bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 cursor-zoom-out"
                 onClick={() => setZoomImage(null)}
               >
-                <div className="relative max-w-3xl max-h-[90vh] bg-white rounded-3xl p-2 animate-pop-in">
+                <div className="relative max-w-3xl max-h-[90dvh] bg-white rounded-3xl p-2 animate-pop-in">
                   <button
                     className="absolute -top-10 right-0 text-white text-sm font-bold flex items-center gap-1 hover:text-violet-400 transition-colors"
                     onClick={() => setZoomImage(null)}
@@ -918,7 +918,7 @@ export function YukBelajarTopik8({ onActivitySave, activityAnswers = {} }: YukBe
                   <img
                     src={zoomImage}
                     alt="Zoomed Poster"
-                    className="max-h-[85vh] w-auto object-contain rounded-2xl"
+                    className="max-h-[85dvh] w-auto object-contain rounded-2xl"
                   />
                 </div>
               </div>

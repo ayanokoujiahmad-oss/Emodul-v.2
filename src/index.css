@@ -14,6 +14,15 @@
   --color-surface-dark: #171615;
   --glass-bg: rgba(255, 255, 255, 0.92);
   --glass-border: #e6e6e6;
+
+  /* Navbar height token — used by teacher layout to subtract from viewport */
+  --app-navbar-h: 3.5rem;   /* h-14 = 56px (mobile) */
+}
+
+@media (min-width: 640px) {
+  :root {
+    --app-navbar-h: 4rem;    /* sm:h-16 = 64px (desktop) */
+  }
 }
 
 * {
@@ -38,6 +47,7 @@ body {
   background-size: 40px 40px;
   color: #31302e;
   min-height: 100vh;
+  min-height: 100dvh;
   overflow-x: hidden;
   overscroll-behavior-y: contain;
   text-rendering: optimizeLegibility;
@@ -45,6 +55,7 @@ body {
 
 #root {
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 main,

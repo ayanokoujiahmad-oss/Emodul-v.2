@@ -519,7 +519,7 @@ const TeacherDashboard: React.FC = () => {
   };
 
   return (
-    <div className="flex h-screen overflow-hidden bg-surface-50">
+    <div className="flex overflow-hidden bg-surface-50" style={{ height: 'calc(100dvh - var(--app-navbar-h))' }}>
       {/* Desktop Sidebar */}
       <div className="hidden lg:flex flex-shrink-0">
         <Sidebar

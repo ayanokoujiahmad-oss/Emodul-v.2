@@ -57,7 +57,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     <motion.aside
       animate={{ width: isSidebarCollapsed ? 72 : 256 }}
       transition={{ duration: 0.25, ease: 'easeInOut' }}
-      className="relative flex h-screen flex-col border-r border-surface-200 bg-white text-surface-800 shadow-card"
+      className="relative flex h-full flex-col border-r border-surface-200 bg-white text-surface-800 shadow-card"
     >
       {/* Header */}
       <div className="flex items-center justify-between border-b border-surface-200 px-4 py-5">

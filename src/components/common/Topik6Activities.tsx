@@ -303,7 +303,7 @@ GK
  <img 
  src="/edo_terpeleset.png" 
  alt="Edo terpeleset" 
- className="w-full max-h-[70vh] object-contain rounded-2xl"
+ className="w-full max-h-[70dvh] object-contain rounded-2xl"
  />
  <div className="p-4 text-center">
  <p className="font-bold text-primary-800 text-base">Foto Edo Terpeleset</p>

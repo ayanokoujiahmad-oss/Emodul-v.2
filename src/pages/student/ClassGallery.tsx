@@ -783,7 +783,7 @@ const DetailModal: React.FC<DetailModalProps> = ({
       onClick={onClose}
     >
       <motion.div
-        className="bg-white rounded-3xl w-full max-w-lg max-h-[85vh] flex flex-col shadow-xl overflow-hidden"
+        className="bg-white rounded-3xl w-full max-w-lg max-h-[85dvh] flex flex-col shadow-xl overflow-hidden"
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
@@ -809,7 +809,7 @@ const DetailModal: React.FC<DetailModalProps> = ({
         </div>
 
         {/* Content */}
-        <div className="p-5 border-b border-gray-100 max-h-[60vh] overflow-y-auto">
+        <div className="p-5 border-b border-gray-100 max-h-[60dvh] overflow-y-auto">
           {item.mediaType === 'image' && item.imageUrl && (
             <div className="mb-4 rounded-2xl overflow-hidden border border-gray-150 bg-gray-50 max-h-[300px] flex items-center justify-center">
               <img src={item.imageUrl} alt="Karya poster" className="max-h-[300px] w-auto object-contain" loading="lazy" decoding="async" />

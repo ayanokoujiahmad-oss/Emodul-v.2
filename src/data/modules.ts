@@ -22,12 +22,12 @@ function qid(): string {
 }
 
 /* ═══════════════════════════════════════════════
- TOPIC 1 – Aku Cerdas di Dunia Digital!
+ TOPIC 1 – Aku Cerdas di Dunia Digital
  ═══════════════════════════════════════════════ */
 const topic1: Topic = {
   id: "topik-1",
   number: 1,
-  title: "Aku Cerdas di Dunia Digital!",
+  title: "Aku Cerdas di Dunia Digital",
   description: "Belajar memahami dunia digital, internet, manfaat, risiko, dan kebiasaan pengguna digital yang cerdas.",
   icon: "fingerprint",
   color: "bg-indigo-500",
@@ -37,7 +37,7 @@ const topic1: Topic = {
     {
       type: "tujuan",
       title: "Tujuan Pembelajaran",
-      content: `Setelah menyelesaikan materi dan aktivitas pada topik 1 "Aku Cerdas di Dunia Digital!" kamu diharapkan mampu:
+      content: `Setelah menyelesaikan materi dan aktivitas pada topik 1 "Aku Cerdas di Dunia Digital" kamu diharapkan mampu:
 1. menghubungkan jenis perangkat digital dengan fungsi dan manfaatnya secara logis;
 2. menganalisis manfaat dan risiko penggunaan perangkat digital dalam kehidupan sehari-hari; dan
 3. menyusun komitmen tindakan yang bijak, aman, dan bertanggung jawab dalam menggunakan perangkat digital.`
@@ -5830,7 +5830,7 @@ export const moduleData: Module = {
   id: 'modul-1',
   title: 'Aku Cerdas di Dunia Digital',
   description:
-    'Modul pembelajaran literasi digital dan keamanan siber untuk siswa kelas 6 SD. Terdiri dari 8 topik yang membahas identitas digital, hoaks, privasi, keamanan siber, etika komunikasi, media sosial, hak cipta, dan kreasi konten yang aman.',
+    'Modul pembelajaran literasi digital dan keamanan siber untuk siswa Sekolah Dasar. Terdiri dari 8 topik yang membahas identitas digital, hoaks, privasi, keamanan siber, etika komunikasi, media sosial, hak cipta, dan kreasi konten yang aman.',
   topics: [topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8],
 };
 

@@ -504,7 +504,7 @@ export default function LoginPage() {
 
                 {/* Footer */}
                 <p className="mt-4 text-center text-sm text-surface-500">
-                    2026 SiberCerdas · Literasi Digital Kelas 6 SD
+                    © 2026 SiberCerdas · E-Modul Literasi Digital Sekolah Dasar
                 </p>
             </motion.div>
 
@@ -663,7 +663,7 @@ export default function LoginPage() {
                             </div>
 
                             {/* Biodata image */}
-                            <div className="max-h-[70vh] overflow-y-auto p-4">
+                            <div className="max-h-[70dvh] overflow-y-auto p-4">
                                 <img
                                     src="/biodata_developer.png"
                                     alt="Biodata Developer"

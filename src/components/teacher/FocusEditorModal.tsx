@@ -243,7 +243,7 @@ export default function FocusEditorModal({
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 10 }}
         transition={{ duration: 0.2 }}
-        className="bg-white rounded-3xl w-full max-w-5xl h-[90vh] flex flex-col shadow-2xl overflow-hidden border border-gray-100"
+        className="bg-white rounded-3xl w-full max-w-5xl h-[90dvh] flex flex-col shadow-2xl overflow-hidden border border-gray-100"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-3.5 border-b border-gray-100 bg-gradient-to-r from-gray-50 to-white">

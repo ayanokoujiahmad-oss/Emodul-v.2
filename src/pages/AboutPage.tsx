@@ -301,13 +301,13 @@ export default function AboutPage() {
                         onClick={() => setIsZoomed(false)}
                     >
                         <div
-                            className="relative max-w-full max-h-[90vh] bg-white rounded-2xl p-2 shadow-2xl cursor-default"
+                            className="relative max-w-full max-h-[90dvh] bg-white rounded-2xl p-2 shadow-2xl cursor-default"
                             onClick={(e) => e.stopPropagation()}
                         >
                             <img
                                 src="/biodata_developer.jpg"
                                 alt="Abraar Dzulqadri Zoomed"
-                                className="max-w-[85vw] max-h-[80vh] rounded-lg object-contain md:max-w-md"
+                                className="max-w-[85vw] max-h-[80dvh] rounded-lg object-contain md:max-w-md"
                             />
                             <button
                                 onClick={() => setIsZoomed(false)}

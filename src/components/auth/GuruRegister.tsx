@@ -293,7 +293,7 @@ export default function GuruRegister() {
 
  {/* Footer */}
  <p className="mt-6 text-center text-xs text-surface-500">
- 2026 SiberCerdas · Literasi Digital Kelas 6 SD
+ © 2026 SiberCerdas · E-Modul Literasi Digital Sekolah Dasar
  </p>
  </motion.div>
  </div>

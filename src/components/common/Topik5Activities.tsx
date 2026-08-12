@@ -654,7 +654,7 @@ export function Topik5ChatBijak({ answers = {}, onSave }: ActivityProps) {
             <img 
               src="/keluarga_bahagia.jpeg" 
               alt="Keluarga Bahagia" 
-              className="rounded-2xl max-w-full max-h-[80vh] object-contain shadow-inner"
+              className="rounded-2xl max-w-full max-h-[80dvh] object-contain shadow-inner"
             />
             <p className="text-sm text-white mt-3 font-semibold text-center tracking-wide px-4 py-1 bg-black/40 rounded-full border border-white/10">
               Calon guru profesional

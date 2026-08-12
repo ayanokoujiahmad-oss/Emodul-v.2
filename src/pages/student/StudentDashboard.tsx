@@ -292,7 +292,7 @@ const StudentDashboard: React.FC = () => {
   }
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-surface-50">
+    <div className="relative min-h-screen overflow-x-hidden bg-surface-50">
       <div className="pointer-events-none absolute left-8 top-8 h-9 w-9 rotate-6 rounded-xl border border-sticker-purple/40 bg-sticker-purple/25" />
       <div className="pointer-events-none absolute right-10 top-28 h-8 w-20 -rotate-3 rounded-full border border-sticker-teal/30 bg-sticker-teal/15" />
       <div className="pointer-events-none absolute bottom-12 left-1/4 h-10 w-10 -rotate-6 rounded-xl border border-sticker-pink/30 bg-sticker-pink/15" />

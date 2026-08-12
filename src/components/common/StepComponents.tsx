@@ -451,12 +451,12 @@ export function BersiapBelajarStep({
                 animate={{ scale: 1, y: 0 }}
                 exit={{ scale: 0.95, y: 10 }}
                 onClick={(e) => e.stopPropagation()}
-                className="relative max-w-5xl max-h-[90vh] w-full overflow-auto rounded-2xl bg-white p-2 shadow-2xl border border-gray-100 flex items-center justify-center cursor-default"
+                className="relative max-w-5xl max-h-[90dvh] w-full overflow-auto rounded-2xl bg-white p-2 shadow-2xl border border-gray-100 flex items-center justify-center cursor-default"
               >
                 <img
                   src={zoomedComic}
                   alt="Komik diperbesar"
-                  className="max-w-full max-h-[85vh] object-contain rounded-xl"
+                  className="max-w-full max-h-[85dvh] object-contain rounded-xl"
                 />
               </motion.div>
               <button
@@ -10581,7 +10581,7 @@ export function AyoMengamatiTopik4Gamified({
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 20 }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="relative max-w-4xl max-h-[80vh] w-full flex items-center justify-center p-2 bg-white rounded-3xl border border-slate-200/50 shadow-2xl"
+              className="relative max-w-4xl max-h-[80dvh] w-full flex items-center justify-center p-2 bg-white rounded-3xl border border-slate-200/50 shadow-2xl"
               onClick={(e) => e.stopPropagation()} // Prevent closing on clicking image itself
             >
               {/* Close Button on top of the comic container */}
@@ -10597,7 +10597,7 @@ export function AyoMengamatiTopik4Gamified({
               <img
                 src={currentPageData.image}
                 alt={currentPageData.title}
-                className="rounded-2xl max-w-full max-h-[75vh] object-contain shadow-inner"
+                className="rounded-2xl max-w-full max-h-[75dvh] object-contain shadow-inner"
               />
 
               {/* Left/Right controls inside lightbox */}
