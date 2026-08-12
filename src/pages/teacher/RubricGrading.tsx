@@ -1460,7 +1460,7 @@ export default function RubricGrading() {
  </p>
  </div>
 
- <div className="flex-1 overflow-y-auto p-2 space-y-0.5">
+ <div className="lg:flex-1 lg:overflow-y-auto p-2 space-y-0.5">
  {filteredStudents.length === 0? (
  <div className="flex flex-col items-center justify-center h-32 text-gray-400 text-sm">
  <User size={24} className="mb-2" />
@@ -1540,7 +1540,7 @@ export default function RubricGrading() {
  </div>
 
  {/* Main grading body */}
- <div className="flex-1 overflow-y-auto p-6 space-y-6">
+ <div className="lg:flex-1 lg:overflow-y-auto p-6 space-y-6">
     {currentSubmission?.isDraft && (
       <div className="flex items-center gap-2 p-3 bg-amber-50 rounded-xl text-amber-700 text-xs font-bold border border-amber-200">
         <AlertCircle size={14} className="text-amber-500" />
