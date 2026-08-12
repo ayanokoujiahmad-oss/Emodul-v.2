@@ -1395,7 +1395,7 @@ export default function RubricGrading() {
  return (
  <div className="flex flex-col lg:flex-row gap-6 h-auto lg:h-[calc(100dvh-140px)]">
  {/* Left panel: Students list & Topic select */}
- <div className={`w-full lg:w-72 flex-shrink-0 bg-white rounded-2xl shadow-card border border-gray-100 flex flex-col overflow-hidden ${selectedStudentIdx !== -1 ? 'hidden lg:flex' : 'flex'}`}>
+ <div className={`w-full lg:w-72 flex-shrink-0 bg-white rounded-2xl shadow-card border border-gray-100 flex flex-col lg:overflow-hidden ${selectedStudentIdx !== -1 ? 'hidden lg:flex' : 'flex'}`}>
  <div className="p-4 border-b border-gray-100 space-y-3">
  <div>
  <label className="block text-xs text-gray-400 font-semibold mb-1">Pilih Topik</label>
@@ -1488,7 +1488,7 @@ export default function RubricGrading() {
  </div>
 
  {/* Right panel: Grading workspace */}
- <div className={`flex-1 bg-white rounded-2xl shadow-card border border-gray-100 flex flex-col overflow-hidden ${selectedStudentIdx === -1 ? 'hidden lg:flex' : 'flex'}`}>
+ <div className={`flex-1 bg-white rounded-2xl shadow-card border border-gray-100 flex flex-col lg:overflow-hidden ${selectedStudentIdx === -1 ? 'hidden lg:flex' : 'flex'}`}>
  {!selectedStudent? (
  <div className="flex-1 flex flex-col items-center justify-center text-gray-400 py-16">
  <User size={40} className="mb-3" />
